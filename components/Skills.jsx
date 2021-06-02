@@ -1,17 +1,24 @@
 import "animate.css";
 import Slide from "react-reveal/Slide";
+import Zoom from "react-reveal/Zoom";
 
 function Skills() {
 	return (
 		<div className='h-full w-full'>
 			<div className='flex items-center justify-center mb-12'>
-				<div className='bg-green-400 h-[0.15rem] w-[7.5rem]'></div>
-				<span className='font-bold text-2xl text-gray-800 mx-2'>Skills</span>
-				<div className='bg-green-400 h-[0.15rem] w-[7.5rem]'></div>
+				<Zoom duration={1000} left>
+					<div className='bg-green-400 h-[0.15rem] w-[7.5rem]'></div>
+				</Zoom>
+				<Zoom>
+					<span className='font-bold text-2xl text-gray-800 mx-2'>Skills</span>
+				</Zoom>
+				<Zoom duration={1000} right>
+					<div className='bg-green-400 h-[0.15rem] w-[7.5rem]'></div>
+				</Zoom>
 			</div>
 			<div className='w-full flex flex-col items-center space-y-8'>
 				<div className='flex space-x-4'>
-					<Slide left>
+					<Slide duration={1000} delay={1000} left>
 						<div className='flex flex-col items-center space-y-2 animate__animated animate__fadeInLeft'>
 							<img
 								className='h-40 rounded-md shadow-lg'
@@ -22,7 +29,7 @@ function Skills() {
 							<h3 className='text-lg tracking-wider text-gray-700'>HTML</h3>
 						</div>
 					</Slide>
-					<Slide right>
+					<Slide duration={1000} delay={1000} right>
 						<div className='flex flex-col items-center space-y-2 animate__animated animate__fadeInRight'>
 							<img
 								className='h-40 rounded-md shadow-lg'
@@ -35,7 +42,7 @@ function Skills() {
 					</Slide>
 				</div>
 				<div className='flex space-x-4 '>
-					<Slide bottom>
+					<Slide duration={1000} delay={1000} bottom>
 						<div className='flex flex-col items-center space-y-2 animate__animated animate__fadeInLeft'>
 							<img
 								className='h-40 rounded-md shadow-lg'
@@ -48,7 +55,7 @@ function Skills() {
 							</h3>
 						</div>
 					</Slide>
-					<Slide bottom>
+					<Slide duration={1000} delay={1000} bottom>
 						<div className='flex flex-col items-center space-y-2 animate__animated animate__fadeInRight'>
 							<img
 								className='h-40 rounded-md shadow-lg'
@@ -61,7 +68,7 @@ function Skills() {
 					</Slide>
 				</div>
 				<div className='flex space-x-4 '>
-					<Slide left>
+					<Slide duration={1000} delay={1000} left>
 						<div className='flex flex-col items-center space-y-2 animate__animated animate__fadeInLeft'>
 							<img
 								className='h-40 rounded-md shadow-lg'
@@ -72,7 +79,7 @@ function Skills() {
 							<h3 className='text-lg tracking-wider text-gray-700'>Next JS</h3>
 						</div>
 					</Slide>
-					<Slide right>
+					<Slide duration={1000} delay={1000} right>
 						<div className='flex flex-col items-center space-y-2 animate__animated animate__fadeInRight'>
 							<img
 								className='h-40 rounded-md shadow-lg'
@@ -87,7 +94,7 @@ function Skills() {
 					</Slide>
 				</div>
 				<div className='flex space-x-4'>
-					<Slide bottom>
+					<Slide duration={1000} delay={1000} bottom>
 						<div className='flex flex-col items-center space-y-2 animate__animated animate__fadeInLeft'>
 							<img
 								className='h-40 rounded-md shadow-lg'
@@ -100,7 +107,7 @@ function Skills() {
 							</h3>
 						</div>
 					</Slide>
-					<Slide bottom>
+					<Slide duration={1000} delay={1000} bottom>
 						<div className='flex flex-col items-center space-y-2 animate__animated animate__fadeInRight'>
 							<img
 								className='h-40 rounded-md shadow-lg'
@@ -115,7 +122,7 @@ function Skills() {
 					</Slide>
 				</div>
 				<div className='flex space-x-4'>
-					<Slide left>
+					<Slide duration={1000} delay={1000} left>
 						<div className='flex flex-col items-center space-y-2 animate__animated animate__fadeInLeft'>
 							<img
 								className='h-40 rounded-md shadow-lg'
@@ -126,7 +133,7 @@ function Skills() {
 							<h3 className='text-lg tracking-wider text-gray-700'>SASS</h3>
 						</div>
 					</Slide>
-					<Slide right>
+					<Slide duration={1000} delay={1000} right>
 						<div className='flex flex-col items-center space-y-2 animate__animated animate__fadeIn'>
 							<img
 								className='h-40 rounded-md shadow-lg'
