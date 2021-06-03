@@ -17,8 +17,8 @@ function Skills() {
 				</Zoom>
 			</div>
 			<div className='w-full flex flex-col items-center space-y-8'>
-				<div className='flex space-x-4'>
-					<Slide duration={1000} delay={1000} left>
+				<Slide duration={1000} bottom>
+					<div className='flex space-x-4 overflow-x-hidden'>
 						<div className='flex flex-col items-center space-y-2 animate__animated animate__fadeInLeft'>
 							<img
 								className='h-40 rounded-md shadow-lg'
@@ -28,8 +28,7 @@ function Skills() {
 							/>
 							<h3 className='text-lg tracking-wider text-gray-700'>HTML</h3>
 						</div>
-					</Slide>
-					<Slide duration={1000} delay={1000} right>
+
 						<div className='flex flex-col items-center space-y-2 animate__animated animate__fadeInRight'>
 							<img
 								className='h-40 rounded-md shadow-lg'
@@ -39,10 +38,8 @@ function Skills() {
 							/>
 							<h3 className='text-lg tracking-wider text-gray-700'>CSS</h3>
 						</div>
-					</Slide>
-				</div>
-				<div className='flex space-x-4 '>
-					<Slide duration={1000} delay={1000} bottom>
+					</div>
+					<div className='flex space-x-4 overflow-y-hidden'>
 						<div className='flex flex-col items-center space-y-2 animate__animated animate__fadeInLeft'>
 							<img
 								className='h-40 rounded-md shadow-lg'
@@ -54,8 +51,7 @@ function Skills() {
 								JavaScript
 							</h3>
 						</div>
-					</Slide>
-					<Slide duration={1000} delay={1000} bottom>
+
 						<div className='flex flex-col items-center space-y-2 animate__animated animate__fadeInRight'>
 							<img
 								className='h-40 rounded-md shadow-lg'
@@ -65,10 +61,8 @@ function Skills() {
 							/>
 							<h3 className='text-lg tracking-wider text-gray-700'>React JS</h3>
 						</div>
-					</Slide>
-				</div>
-				<div className='flex space-x-4 '>
-					<Slide duration={1000} delay={1000} left>
+					</div>
+					<div className='flex space-x-4 overflow-x-visible'>
 						<div className='flex flex-col items-center space-y-2 animate__animated animate__fadeInLeft'>
 							<img
 								className='h-40 rounded-md shadow-lg'
@@ -78,8 +72,7 @@ function Skills() {
 							/>
 							<h3 className='text-lg tracking-wider text-gray-700'>Next JS</h3>
 						</div>
-					</Slide>
-					<Slide duration={1000} delay={1000} right>
+
 						<div className='flex flex-col items-center space-y-2 animate__animated animate__fadeInRight'>
 							<img
 								className='h-40 rounded-md shadow-lg'
@@ -91,10 +84,8 @@ function Skills() {
 								Tailwind CSS
 							</h3>
 						</div>
-					</Slide>
-				</div>
-				<div className='flex space-x-4'>
-					<Slide duration={1000} delay={1000} bottom>
+					</div>
+					<div className='flex space-x-4 overflow-y-hidden'>
 						<div className='flex flex-col items-center space-y-2 animate__animated animate__fadeInLeft'>
 							<img
 								className='h-40 rounded-md shadow-lg'
@@ -106,8 +97,7 @@ function Skills() {
 								Bootstrap5
 							</h3>
 						</div>
-					</Slide>
-					<Slide duration={1000} delay={1000} bottom>
+
 						<div className='flex flex-col items-center space-y-2 animate__animated animate__fadeInRight'>
 							<img
 								className='h-40 rounded-md shadow-lg'
@@ -119,10 +109,8 @@ function Skills() {
 								Materialize CSS
 							</h3>
 						</div>
-					</Slide>
-				</div>
-				<div className='flex space-x-4'>
-					<Slide duration={1000} delay={1000} left>
+					</div>
+					<div className='flex space-x-4 overflow-x-hidden'>
 						<div className='flex flex-col items-center space-y-2 animate__animated animate__fadeInLeft'>
 							<img
 								className='h-40 rounded-md shadow-lg'
@@ -132,8 +120,7 @@ function Skills() {
 							/>
 							<h3 className='text-lg tracking-wider text-gray-700'>SASS</h3>
 						</div>
-					</Slide>
-					<Slide duration={1000} delay={1000} right>
+
 						<div className='flex flex-col items-center space-y-2 animate__animated animate__fadeIn'>
 							<img
 								className='h-40 rounded-md shadow-lg'
@@ -143,8 +130,8 @@ function Skills() {
 							/>
 							<h3 className='text-lg tracking-wider text-gray-700'>Git</h3>
 						</div>
-					</Slide>
-				</div>
+					</div>
+				</Slide>
 			</div>
 		</div>
 	);
