@@ -4,13 +4,13 @@ import Zoom from "react-reveal/Zoom";
 
 function Skills() {
 	return (
-		<div className='h-full w-full'>
+		<div className='h-full w-full text-gray-100'>
 			<div className='flex items-center justify-center mb-12'>
 				<Zoom duration={1000} left>
 					<div className='bg-green-400 h-[0.15rem] w-[7.5rem]'></div>
 				</Zoom>
 				<Zoom>
-					<span className='font-bold text-2xl text-gray-800 mx-2'>Skills</span>
+					<span className='font-bold text-2xl mx-2'>Skills</span>
 				</Zoom>
 				<Zoom duration={1000} right>
 					<div className='bg-green-400 h-[0.15rem] w-[7.5rem]'></div>
@@ -21,114 +21,106 @@ function Skills() {
 					<div className='flex space-x-4 overflow-x-hidden'>
 						<div className='flex flex-col items-center space-y-2 animate__animated animate__fadeInLeft'>
 							<img
-								className='h-40 rounded-md shadow-lg'
+								className='h-40 rounded-md'
 								loading='lazy'
 								src='/skills-html5.png'
 								alt='logo'
 							/>
-							<h3 className='text-lg tracking-wider text-gray-700'>HTML</h3>
+							<h3 className='text-lg tracking-wider'>HTML</h3>
 						</div>
 
 						<div className='flex flex-col items-center space-y-2 animate__animated animate__fadeInRight'>
 							<img
-								className='h-40 rounded-md shadow-lg'
+								className='h-40 rounded-md'
 								loading='lazy'
 								src='/skills-css.png'
 								alt='logo'
 							/>
-							<h3 className='text-lg tracking-wider text-gray-700'>CSS</h3>
+							<h3 className='text-lg tracking-wider'>CSS</h3>
 						</div>
 					</div>
 					<div className='flex space-x-4 overflow-y-hidden'>
 						<div className='flex flex-col items-center space-y-2 animate__animated animate__fadeInLeft'>
 							<img
-								className='h-40 rounded-md shadow-lg'
+								className='h-40 rounded-md'
 								loading='lazy'
 								src='/skills-js.png'
 								alt='logo'
 							/>
-							<h3 className='text-lg tracking-wider text-gray-700'>
-								JavaScript
-							</h3>
+							<h3 className='text-lg tracking-wider'>JavaScript</h3>
 						</div>
 
 						<div className='flex flex-col items-center space-y-2 animate__animated animate__fadeInRight'>
 							<img
-								className='h-40 rounded-md shadow-lg'
+								className='h-40 rounded-md'
 								loading='lazy'
 								src='/skill-reactjs.png'
 								alt='logo'
 							/>
-							<h3 className='text-lg tracking-wider text-gray-700'>React JS</h3>
+							<h3 className='text-lg tracking-wider'>React JS</h3>
 						</div>
 					</div>
 					<div className='flex space-x-4 overflow-x-visible'>
 						<div className='flex flex-col items-center space-y-2 animate__animated animate__fadeInLeft'>
 							<img
-								className='h-40 rounded-md shadow-lg'
+								className='h-40 rounded-md'
 								loading='lazy'
 								src='/nextjs-logo.png'
 								alt='logo'
 							/>
-							<h3 className='text-lg tracking-wider text-gray-700'>Next JS</h3>
+							<h3 className='text-lg tracking-wider'>Next JS</h3>
 						</div>
 
 						<div className='flex flex-col items-center space-y-2 animate__animated animate__fadeInRight'>
 							<img
-								className='h-40 rounded-md shadow-lg'
+								className='h-40 rounded-md'
 								loading='lazy'
 								src='/skills-tailwind.jpg'
 								alt='logo'
 							/>
-							<h3 className='text-lg tracking-wider text-gray-700'>
-								Tailwind CSS
-							</h3>
+							<h3 className='text-lg tracking-wider'>Tailwind CSS</h3>
 						</div>
 					</div>
 					<div className='flex space-x-4 overflow-y-hidden'>
 						<div className='flex flex-col items-center space-y-2 animate__animated animate__fadeInLeft'>
 							<img
-								className='h-40 rounded-md shadow-lg'
+								className='h-40 rounded-md'
 								loading='lazy'
 								src='/skills-bootstrap5.png'
 								alt='logo'
 							/>
-							<h3 className='text-lg tracking-wider text-gray-700'>
-								Bootstrap5
-							</h3>
+							<h3 className='text-lg tracking-wider'>Bootstrap5</h3>
 						</div>
 
 						<div className='flex flex-col items-center space-y-2 animate__animated animate__fadeInRight'>
 							<img
-								className='h-40 rounded-md shadow-lg'
+								className='h-40 rounded-md'
 								loading='lazy'
 								src='/materializecss.png'
 								alt='logo'
 							/>
-							<h3 className='text-lg tracking-wider text-gray-700'>
-								Materialize CSS
-							</h3>
+							<h3 className='text-lg tracking-wider'>Materialize CSS</h3>
 						</div>
 					</div>
 					<div className='flex space-x-4 overflow-x-hidden'>
 						<div className='flex flex-col items-center space-y-2 animate__animated animate__fadeInLeft'>
 							<img
-								className='h-40 rounded-md shadow-lg'
+								className='h-40 rounded-md'
 								loading='lazy'
 								src='/skills-sass.jpeg'
 								alt='logo'
 							/>
-							<h3 className='text-lg tracking-wider text-gray-700'>SASS</h3>
+							<h3 className='text-lg tracking-wider'>SASS</h3>
 						</div>
 
 						<div className='flex flex-col items-center space-y-2 animate__animated animate__fadeIn'>
 							<img
-								className='h-40 rounded-md shadow-lg'
+								className='h-40 rounded-md'
 								loading='lazy'
 								src='/skills-git.jpeg'
 								alt='logo'
 							/>
-							<h3 className='text-lg tracking-wider text-gray-700'>Git</h3>
+							<h3 className='text-lg tracking-wider'>Git</h3>
 						</div>
 					</div>
 				</Slide>
