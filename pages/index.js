@@ -74,12 +74,12 @@ export default function Home() {
 			>
 				<AiOutlineMenu className='text-3xl text-[#00ffff]' />
 			</div>
-			<main className=''>
+			<main className={`${openSideBar ? "filter blur-sm" : ""}`}>
 				<About openSideBar={openSideBar} />
 				<Skills openSideBar={openSideBar} />
 				<Projects openSideBar={openSideBar} />
 			</main>
-			<footer>
+			<footer className={`${openSideBar ? "filter blur-sm" : ""}`}>
 				<Contact />
 				<div className='flex w-full justify-center text-gray-400 mb-8'>
 					<p>Built with Nextjs and Talwindcss</p>
