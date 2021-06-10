@@ -9,6 +9,8 @@ import Projects from "../components/project/Projects";
 import Contact from "../components/Contact";
 import Social from "../components/Social";
 
+import Slide from "react-reveal/Slide";
+
 export default function Home() {
 	const [visible, setVisible] = useState(true);
 	const [openSideBar, setOpenSideBar] = useState(false);
@@ -74,20 +76,23 @@ export default function Home() {
 			>
 				<AiOutlineMenu className='text-3xl text-[#00ffff]' />
 			</div>
+
 			<main className={`${openSideBar ? "filter blur-sm" : ""}`}>
 				<About openSideBar={openSideBar} />
 				<Skills openSideBar={openSideBar} />
 				<Projects openSideBar={openSideBar} />
 			</main>
 			<footer className={`${openSideBar ? "filter blur-sm" : ""}`}>
-				<Contact />
-				<div className='flex w-full justify-center text-gray-400 mb-8'>
-					<p>Built with Nextjs and Talwindcss</p>
-				</div>
-				<Social />
-				<div className='flex w-full justify-center text-sm text-gray-400 mb-8'>
-					<p>Design inspired by Brittany Chiang</p>
-				</div>
+				<Slide bottom duration={1000}>
+					<Contact />
+					<div className='flex w-full justify-center text-gray-400 mb-8'>
+						<p>Built with Nextjs and Talwindcss</p>
+					</div>
+					<Social />
+					<div className='flex w-full justify-center text-sm text-gray-400 mb-8'>
+						<p>Design inspired by Brittany Chiang</p>
+					</div>
+				</Slide>
 			</footer>
 		</div>
 	);

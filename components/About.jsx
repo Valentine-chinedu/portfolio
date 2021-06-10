@@ -3,19 +3,17 @@ import Slide from "react-reveal/Slide";
 
 function About() {
 	return (
-		<div className=' px-6 h-full pt-28 mb-8'>
-			<Slide bottom>
+		<div className='relative px-6 pb-12 h-full mb-8 text-gray-100'>
+			<Slide bottom duration={1000}>
 				<div className='flex items-center justify-center mb-8 overflow-x-hidden'>
-					<div className='bg-green-400 h-[0.15rem] w-[7rem]'></div>
+					<div className='bg-[#00ffff] h-[0.15rem] w-[7rem]'></div>
 
-					<span className='font-bold text-2xl text-gray-100 mx-2'>
-						About Me
-					</span>
+					<span className='font-bold text-2xl mx-2'>About Me</span>
 
-					<div className='bg-green-400 h-[0.15rem] w-[7rem]'></div>
+					<div className='bg-[#00ffff] h-[0.15rem] w-[7rem]'></div>
 				</div>
 
-				<div className='space-y-6 tracking-wider mb-8 overflow-y-hidden text-gray-100'>
+				<div className='space-y-6 tracking-wider mb-8 overflow-y-hidden'>
 					<p>
 						I am Valentine Chinedu. I am a web developer who enjoys building
 						engaging websites.

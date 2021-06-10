@@ -1,27 +1,21 @@
-import "animate.css";
 import Slide from "react-reveal/Slide";
-import Zoom from "react-reveal/Zoom";
 
 function Skills() {
 	return (
-		<div className='h-full w-full text-gray-100'>
-			<div className='flex items-center justify-center mb-12'>
-				<Zoom duration={1000} left>
-					<div className='bg-green-400 h-[0.15rem] w-[7.5rem]'></div>
-				</Zoom>
-				<Zoom>
+		<div className='h-full w-full mb-16 text-gray-100'>
+			<Slide duration={1000} bottom>
+				<div className='flex items-center justify-center mb-8'>
+					<div className='bg-[#00ffff] h-[0.15rem] w-[7.5rem]'></div>
+
 					<span className='font-bold text-2xl mx-2'>Skills</span>
-				</Zoom>
-				<Zoom duration={1000} right>
-					<div className='bg-green-400 h-[0.15rem] w-[7.5rem]'></div>
-				</Zoom>
-			</div>
-			<div className='w-full flex flex-col items-center space-y-8'>
-				<Slide duration={1000} bottom>
+
+					<div className='bg-[#00ffff] h-[0.15rem] w-[7.5rem]'></div>
+				</div>
+				<div className='w-full flex flex-col items-center space-y-8'>
 					<div className='flex space-x-4 overflow-x-hidden'>
 						<div className='flex flex-col items-center space-y-2 animate__animated animate__fadeInLeft'>
 							<img
-								className='h-40 rounded-md'
+								className='h-40 rounded-md shadow-lg'
 								loading='lazy'
 								src='/skills-html5.png'
 								alt='logo'
@@ -31,7 +25,7 @@ function Skills() {
 
 						<div className='flex flex-col items-center space-y-2 animate__animated animate__fadeInRight'>
 							<img
-								className='h-40 rounded-md'
+								className='h-40 rounded-md shadow-lg'
 								loading='lazy'
 								src='/skills-css.png'
 								alt='logo'
@@ -42,7 +36,7 @@ function Skills() {
 					<div className='flex space-x-4 overflow-y-hidden'>
 						<div className='flex flex-col items-center space-y-2 animate__animated animate__fadeInLeft'>
 							<img
-								className='h-40 rounded-md'
+								className='h-40 rounded-md shadow-lg'
 								loading='lazy'
 								src='/skills-js.png'
 								alt='logo'
@@ -52,7 +46,7 @@ function Skills() {
 
 						<div className='flex flex-col items-center space-y-2 animate__animated animate__fadeInRight'>
 							<img
-								className='h-40 rounded-md'
+								className='h-40 rounded-md shadow-lg'
 								loading='lazy'
 								src='/skill-reactjs.png'
 								alt='logo'
@@ -63,7 +57,7 @@ function Skills() {
 					<div className='flex space-x-4 overflow-x-visible'>
 						<div className='flex flex-col items-center space-y-2 animate__animated animate__fadeInLeft'>
 							<img
-								className='h-40 rounded-md'
+								className='h-40 rounded-md shadow-lg'
 								loading='lazy'
 								src='/nextjs-logo.png'
 								alt='logo'
@@ -73,7 +67,7 @@ function Skills() {
 
 						<div className='flex flex-col items-center space-y-2 animate__animated animate__fadeInRight'>
 							<img
-								className='h-40 rounded-md'
+								className='h-40 rounded-md shadow-lg'
 								loading='lazy'
 								src='/skills-tailwind.jpg'
 								alt='logo'
@@ -84,7 +78,7 @@ function Skills() {
 					<div className='flex space-x-4 overflow-y-hidden'>
 						<div className='flex flex-col items-center space-y-2 animate__animated animate__fadeInLeft'>
 							<img
-								className='h-40 rounded-md'
+								className='h-40 rounded-md shadow-lg'
 								loading='lazy'
 								src='/skills-bootstrap5.png'
 								alt='logo'
@@ -94,7 +88,7 @@ function Skills() {
 
 						<div className='flex flex-col items-center space-y-2 animate__animated animate__fadeInRight'>
 							<img
-								className='h-40 rounded-md'
+								className='h-40 rounded-md shadow-lg'
 								loading='lazy'
 								src='/materializecss.png'
 								alt='logo'
@@ -105,7 +99,7 @@ function Skills() {
 					<div className='flex space-x-4 overflow-x-hidden'>
 						<div className='flex flex-col items-center space-y-2 animate__animated animate__fadeInLeft'>
 							<img
-								className='h-40 rounded-md'
+								className='h-40 rounded-md shadow-lg'
 								loading='lazy'
 								src='/skills-sass.jpeg'
 								alt='logo'
@@ -115,7 +109,7 @@ function Skills() {
 
 						<div className='flex flex-col items-center space-y-2 animate__animated animate__fadeIn'>
 							<img
-								className='h-40 rounded-md'
+								className='h-40 rounded-md shadow-lg'
 								loading='lazy'
 								src='/skills-git.jpeg'
 								alt='logo'
@@ -123,8 +117,8 @@ function Skills() {
 							<h3 className='text-lg tracking-wider'>Git</h3>
 						</div>
 					</div>
-				</Slide>
-			</div>
+				</div>
+			</Slide>
 		</div>
 	);
 }
