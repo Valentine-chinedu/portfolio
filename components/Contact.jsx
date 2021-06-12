@@ -28,10 +28,10 @@ function Contact() {
 		}).then(() => setQuery({ name: "", email: "", message: "" }));
 	};
 	return (
-		<div className='flex flex-col items-center  h-full w-full py-8 mb-12'>
-			<h1 className='text-3xl font-bold text-gray-300 mb-8'>Hire Me</h1>
+		<div id='contact' className='flex flex-col items-center h-full w-full py-8'>
+			<h1 className='text-3xl md:4xl font-bold text-gray-400 mb-8'>Hire Me</h1>
 
-			<div className='flex flex-col items-center text-gray-100 text-lg mb-8'>
+			<div className='flex flex-col items-center text-gray-400 text-sm md:text-xl mb-8'>
 				<p>I'm readily available to work with</p>
 				<p>you</p>
 			</div>
@@ -39,18 +39,18 @@ function Contact() {
 			<form onSubmit={formSubmit} className='w-full flex flex-col items-center'>
 				<div>
 					<input
-						className='w-80 h-10 pl-2 rounded-md opacity-60 mb-4 focus:outline-none'
+						className='w-80 md:w-[38rem] h-10 md:h-14 pl-2 rounded-md opacity-60 mb-4 focus:outline-none'
 						type='text'
 						name='name'
 						required
-						placeholder='Your Name'
+						placeholder='Your name'
 						value={query.name}
 						onChange={handleParam()}
 					/>
 				</div>
 				<div>
 					<input
-						className='w-80 h-10 pl-2 rounded-md opacity-60 mb-4 focus:outline-none'
+						className='w-80 md:w-[38rem] h-10 md:h-14 pl-2 rounded-md opacity-60 mb-4 focus:outline-none'
 						type='email'
 						name='email'
 						placeholder='Email'
@@ -58,30 +58,26 @@ function Contact() {
 						onChange={handleParam()}
 					/>
 				</div>
-				<div className='mb-3'>
+				<div className='mb-3 md:mb-5'>
 					<textarea
-						className='rounded-md opacity-60 pl-2 pt- focus:outline-none'
+						className='rounded-md md:w-[38rem] opacity-60 pl-2 focus:outline-none'
 						name='message'
 						placeholder='Your message...'
 						required
 						value={query.message}
 						onChange={handleParam()}
 						rows='8'
-						cols='38'
+						cols='43'
 					/>
 				</div>
-				<div className='space-x-3 flex w-full items-start pl-12 mb-6'>
+				<div className='flex w-full items-start pl-12 md:pl-20 mb-6'>
 					<button
-						className='border border-[#88a1a1] py-0.5 px-2 rounded-md text-[#00ffff]'
+						className='border border-[#00ffff] py-0.5 px-2 md:py-2 text-sm md:text-lg rounded-md text-[#00ffff]'
 						type='submit'
 					>
 						Send Message
 					</button>
 				</div>
-
-				{/* {state.succeeded && (
-						<p className='text-gray-300 text-sm'>message sent!</p>
-					)} */}
 			</form>
 		</div>
 	);
