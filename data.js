@@ -1,24 +1,27 @@
-const data = [
+const datas = [
 	{
-		Name: "Onstore",
+		_id: 1,
+		title: "Onstore",
 		description:
 			"An ecommerce web app where clothing accessories like Suit Trousers, Joggers Pants, shirts, shoes and watches can be purchased. ",
 		tools: "React commerce.js Tailwindcss",
 		github: "https://github.com/Valentine-chinedu/onstore_project/tree/master",
 		url: "https://onstore-project.firebaseapp.com/",
-		image: "/onstore screenshot.png",
+		image: "/onstore_screenshot.png",
 	},
 
 	{
-		Name: "SocialHangout",
+		_id: 2,
+		title: "SocialHangout",
 		description: "A social media web app for sharing posts and media",
 		tools: "React Firebase Tailwindcss",
 		github: "https://github.com/Valentine-chinedu/onstore_project/tree/master",
 		url: "https://onstore-project.firebaseapp.com/",
-		image: "/socialhangout screenshot.png",
+		image: "/socialhangout_screenshot.png",
 	},
 	{
-		Name: "Google-clone",
+		_id: 3,
+		title: "Google-clone",
 		description:
 			"A clone of google search engine with full search functionality. ",
 		tools: "Nextjs Google-Api  Tailwindcss",
@@ -28,4 +31,4 @@ const data = [
 	},
 ];
 
-export default { data };
+export default datas;
