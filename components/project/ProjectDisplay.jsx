@@ -1,14 +1,21 @@
 function ProjectDisplay({ data }) {
 	return (
 		<div
-			className='flex flex-col justify-around relative overflow-hidden mx-6 rounded-md mb-6 h-72 p-6 text-gray-100 bg-cover bg-[#001a1a] bg-blend-soft-light'
+			className='flex flex-col justify-around relative overflow-hidden mx-6 md:mx-12 rounded-md mb-6 h-72 md:h-[25rem] p-6 text-gray-300 bg-cover bg-[#001a1a] bg-blend-soft-light'
 			style={{ backgroundImage: `url(${data.image})` }}
 		>
-			<a href={data.url} className='relative font-bold text-lg mb-6'>
+			<a
+				href={data.url}
+				className='relative font-bold text-gray-200 text-lg md:text-2xl mb-6'
+			>
 				{data.title}
 			</a>
-			<p className='relative mb-6 tracking-wide'>{data.description}</p>
-			<h3 className='relative mb-4 tracking-wider '>{data.tools}</h3>
+			<p className='relative mb-6 tracking-wide text-sm md:text-lg'>
+				{data.description}
+			</p>
+			<h3 className='relative mb-4 tracking-wider text-sm md:text-lg'>
+				{data.tools}
+			</h3>
 			<div className='relative flex space-x-4'>
 				<a className='text-[#00ffff]' href={data.github}>
 					<svg
