@@ -38,7 +38,7 @@ function About() {
 						'
 				></div>
 				<img
-					className='h-[13rem] w-[13rem] md:h-[14rem] md:w-[14rem] lg:h-60 lg:w-60 object-cover rounded z-30 relative lg:right-10 lg:bottom-1'
+					className='h-[13rem] w-[13rem] md:h-[14rem] md:w-[14rem] lg:h-60 lg:w-60 object-cover rounded z-30 relative lg:right-10 lg:bottom-1 transform'
 					src='/IMG_20210614_135621.jpg'
 					alt='png'
 					loading='lazy'
