@@ -4,7 +4,7 @@ function Social() {
 			<div className='flex justify-center lg:items-center space-x-6 text-gray-400 mb-4'>
 				<a href='https://github.com/Valentine-chinedu' target='_blank'>
 					<svg
-						className='h-5 lg:hover:text-[#00ffff]'
+						className='h-5 hover:text-[#00ffff]'
 						xmlns='http://www.w3.org/2000/svg'
 						role='img'
 						viewBox='0 0 24 24'
@@ -21,7 +21,7 @@ function Social() {
 				</a>
 				<a href='' target='_blank'>
 					<svg
-						className='h-5 lg:hover:text-[#00ffff]'
+						className='h-5 hover:text-[#00ffff]'
 						xmlns='http://www.w3.org/2000/svg'
 						role='img'
 						viewBox='0 0 24 24'
