@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 import Intro from "../components/Intro";
-import DropDown from "../components/DropDown";
+import SideMenu from "../components/SideMenu";
 import About from "../components/About";
 import Skills from "../components/skill/Skills";
 import Projects from "../components/project/Projects";
@@ -56,25 +56,25 @@ export default function Home() {
 					<div className='hidden lg:flex h-full justify-around w-[35rem] text-sm'>
 						<a href='#about' className='flex items-center space-x-1 group'>
 							<p className='text-[#00ffff] font-medium'>01.</p>
-							<h2 className='text-gray-300 font-semibold tracking-wider group-hover:border-b border-[#00ffff]'>
+							<h2 className='text-gray-200 font-semibold tracking-wider group-hover:border-b border-[#00ffff]'>
 								About
 							</h2>
 						</a>
 						<a href='#skills' className='flex items-center space-x-1 group'>
 							<p className='text-[#00ffff] font-medium'>02.</p>
-							<h2 className='text-gray-300 font-semibold tracking-wider group-hover:border-b border-[#00ffff]'>
+							<h2 className='text-gray-200 font-semibold tracking-wider group-hover:border-b border-[#00ffff]'>
 								Skills
 							</h2>
 						</a>
 						<a href='#projects' className='flex items-center space-x-1 group'>
 							<p className='text-[#00ffff] font-medium'>03.</p>
-							<h2 className='text-gray-300 font-semibold tracking-wider group-hover:border-b border-[#00ffff] '>
+							<h2 className='text-gray-200 font-semibold tracking-wider group-hover:border-b border-[#00ffff] '>
 								Projects
 							</h2>
 						</a>
 						<a href='#contact' className='flex items-center space-x-1 group'>
 							<p className='text-[#00ffff] font-medium'>04.</p>
-							<h2 className='text-gray-300 font-semibold tracking-wider group-hover:border-b border-[#00ffff] '>
+							<h2 className='text-gray-200 font-semibold tracking-wider group-hover:border-b border-[#00ffff] '>
 								Contact
 							</h2>
 						</a>
@@ -93,7 +93,7 @@ export default function Home() {
 						<AiOutlineMenu className='text-4xl text-[#00ffff]' />
 					</div>
 				</nav>
-				<DropDown openSideBar={openSideBar} setOpenSideBar={setOpenSideBar} />
+				<SideMenu openSideBar={openSideBar} setOpenSideBar={setOpenSideBar} />
 				<Intro openSideBar={openSideBar} />
 			</header>
 
