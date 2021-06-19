@@ -1,29 +1,29 @@
 function ProjectDisplay({ project }) {
 	return (
 		<div
-			className='flex flex-col justify-around overflow-hidden mx-6 md:mx-12 lg:mx-0 rounded-md mb-6 lg:mb-20 h-72 md:h-[25rem] lg:h-96 lg:w-[30rem] p-6 text-gray-400 bg-cover bg-[#0d5050] bg-blend-soft-light lg:hover:bg-blend-normal '
+			className='flex flex-col justify-around overflow-hidden mx-6 md:mx-12 lg:mx-0 rounded-md mb-6 lg:mb-20 h-72 md:h-[25rem] lg:h-96 lg:w-[30rem] p-6 text-gray-200 lg:text-gray-400 bg-cover bg-[#0d5050] bg-blend-soft-light lg:hover:bg-blend-normal '
 			style={{ backgroundImage: `url(${project.image})` }}
 		>
 			<div className='lg:absolute lg:right-24 lg:flex flex-col items-end'>
 				<a
 					href={project.url}
-					className='font-bold text-gray-300 text-lg md:text-2xl mb-6 hover:text-[#00ffff]'
+					className='font-bold text-gray-100 text-lg md:text-2xl mb-6 hover:text-[#00ffff]'
 				>
 					{project.title}
 				</a>
-				<p className='mb-6 tracking-wide text-sm md:text-lg lg:text-sm lg:font-semibold lg:bg-gray-700 lg:w-96 lg:rounded lg:py-6 lg:pl-12 lg:pr-2 lg:shadow-lg'>
+				<p className='mb-6 tracking-wide text-base md:text-lg mt-6 md:mt-8 lg:text-sm lg:font-semibold lg:bg-gray-700 lg:w-96 lg:rounded lg:py-6 lg:pl-12 lg:pr-2 lg:shadow-lg'>
 					{project.description}
 				</p>
-				<h3 className='mb-4 tracking-wider text-sm md:text-lg lg:text-sm lg:font-semibold'>
+				<h3 className='mb-12 lg:mb-4 tracking-wider text-base md:text-lg lg:text-sm lg:font-semibold'>
 					{project.tools}
 				</h3>
-				<div className='flex space-x-4'>
+				<div className='flex space-x-4 '>
 					<a
-						className='text-gray-400 lg:hover:text-[#00ffff]'
+						className='text-[#00ffff] lg:text-gray-400 lg:hover:text-[#00ffff]'
 						href={project.github}
 					>
 						<svg
-							className='h-5'
+							className='h-5 md:h-6 lg:h-5'
 							xmlns='http://www.w3.org/2000/svg'
 							role='img'
 							viewBox='0 0 24 24'
@@ -39,11 +39,11 @@ function ProjectDisplay({ project }) {
 						</svg>
 					</a>
 					<a
-						className='text-gray-400 lg:hover:text-[#00ffff]'
+						className='text-[#00ffff] lg:text-gray-400 lg:hover:text-[#00ffff]'
 						href={project.url}
 					>
 						<svg
-							className='h-5'
+							className='h-5 md:h-6 lg:h-5'
 							xmlns='http://www.w3.org/2000/svg'
 							role='img'
 							viewBox='0 0 24 24'

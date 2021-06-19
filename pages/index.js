@@ -131,16 +131,14 @@ export default function Home() {
 					openSideBar ? "filter blur-sm" : ""
 				}`}
 			>
-				<Slide bottom duration={1000}>
-					<Contact />
-					<div className='flex w-full justify-center text-gray-400 mb-6 lg:mb-4 text-sm'>
-						<p>Built with Nextjs and Tailwindcss</p>
-					</div>
-					<Social />
-					<div className='flex w-full justify-center text-sm text-gray-400 mb-4 md:mb-8'>
-						<p>Design inspired by Brittany Chiang</p>
-					</div>
-				</Slide>
+				<Contact />
+				<div className='flex w-full justify-center text-gray-300 mb-6 lg:mb-4 text-sm'>
+					<p>Built with Nextjs and Tailwindcss</p>
+				</div>
+				<Social />
+				<div className='flex w-full justify-center text-sm text-gray-300 mb-4 md:mb-8'>
+					<p>Design inspired by Brittany Chiang</p>
+				</div>
 			</footer>
 		</div>
 	);

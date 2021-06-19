@@ -1,4 +1,4 @@
-import Zoom from "react-reveal/Zoom";
+import Fade from "react-reveal/Fade";
 
 function Intro({ openSideBar }) {
 	return (
@@ -7,15 +7,21 @@ function Intro({ openSideBar }) {
 				openSideBar ? "filter blur-sm" : ""
 			}`}
 		>
-			<h3 className='text-[#00ffff] md:text-base lg:text-lg mb-4 md:mb-6 font-semibold tracking-wider'>
-				Hi, my name is
-			</h3>
-			<h1 className='font-extrabold text-3xl md:text-5xl lg:text-7xl text-gray-300 mb-3 md:mb-6'>
-				Valentine Chinedu.
-			</h1>
-			<h1 className='font-bold text-3xl md:text-5xl lg:text-6xl text-gray-400 mb-8 md:mb-14'>
-				I build things for the web.
-			</h1>
+			<Fade top>
+				<h3 className='text-[#00ffff] md:text-base lg:text-lg mb-4 md:mb-6 font-semibold tracking-wider'>
+					Hi, my name is
+				</h3>
+			</Fade>
+			<Fade left cascade duration={1000}>
+				<h1 className='font-bold text-3xl md:text-5xl lg:text-7xl text-gray-100 mb-3 md:mb-6 overflow-hidden'>
+					Valentine Chinedu.
+				</h1>
+			</Fade>
+			<Fade bottom>
+				<h1 className='font-bold text-3xl md:text-5xl lg:text-6xl text-gray-400 mb-8 md:mb-14'>
+					I build things for the web.
+				</h1>
+			</Fade>
 			<p className='text-lg lg:text-xl text-gray-300 mb-12 border-2 border-[#00ffff] py-4 px-4 md:mb-16 md:w-[25rem] lg:w-[28rem]'>
 				I'm a Nigerian based web developer who specializes in building
 				exceptional digital expriences, accessible and human-centered products.

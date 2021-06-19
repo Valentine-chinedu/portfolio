@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Fade from "react-reveal/Fade";
 
 function Contact() {
 	const [query, setQuery] = useState({
@@ -29,18 +30,20 @@ function Contact() {
 	};
 	return (
 		<div id='contact' className='flex flex-col items-center h-full w-full py-8'>
-			<h1 className='text-3xl md:text-4xl lg:text-5xl font-bold text-gray-300 mb-8'>
-				Get In Touch
-			</h1>
+			<Fade right>
+				<h1 className='text-3xl md:text-4xl lg:text-5xl font-bold text-gray-100 mb-8'>
+					Get In Touch
+				</h1>
+			</Fade>
 
-			<div className='flex flex-col items-center text-gray-400 text-sm md:text-xl mb-8 '>
+			<div className='flex flex-col items-center text-gray-300 text-base md:text-xl mb-8 '>
 				<p>I'm readily available to work with</p>
 				<p>you</p>
 			</div>
-			<div className='text-gray-400 text-sm mb-4 md:mb-8 md:text-lg lg:fixed lg:bottom-28 lg:-left-36 lg:flex items-center transform lg:rotate-90 lg:space-x-8 lg:text-sm'>
+			<div className='text-gray-300 text-sm mb-4 md:mb-8 md:text-lg lg:fixed lg:bottom-28 lg:-left-36 lg:flex items-center transform lg:rotate-90 lg:space-x-8 lg:text-sm'>
 				<a
 					href='mailto:valentine.chinedu@gmail.com'
-					className='tracking-wide lg:hover:text-[#00ffff]'
+					className='tracking-wide hover:text-[#00ffff]'
 				>
 					valentine.chinedu@gmail.com
 				</a>
@@ -50,7 +53,7 @@ function Contact() {
 			<form onSubmit={formSubmit} className='w-full flex flex-col items-center'>
 				<div>
 					<input
-						className='w-80 md:w-[38rem] lg:w-[50rem] h-10 md:h-14 pl-2 lg:pl-8 rounded-md opacity-60 mb-4 focus:outline-none'
+						className='w-[23rem] md:w-[38rem] lg:w-[50rem] h-10 md:h-14 pl-2 lg:pl-8 rounded-md opacity-60 mb-4 focus:outline-none'
 						type='text'
 						name='name'
 						required
@@ -61,7 +64,7 @@ function Contact() {
 				</div>
 				<div>
 					<input
-						className='w-80 md:w-[38rem] lg:w-[50rem] h-10 md:h-14 pl-2 lg:pl-8 rounded-md opacity-60 mb-4 focus:outline-none'
+						className='w-[23rem] md:w-[38rem] lg:w-[50rem] h-10 md:h-14 pl-2 lg:pl-8 rounded-md opacity-60 mb-4 focus:outline-none'
 						type='email'
 						name='email'
 						placeholder='Email'
@@ -71,7 +74,7 @@ function Contact() {
 				</div>
 				<div className='mb-3 md:mb-5 lg:mb-8'>
 					<textarea
-						className='rounded-md md:w-[38rem] lg:w-[50rem] opacity-60 pl-2 lg:pl-8 lg:pt-4 focus:outline-none'
+						className='rounded-md w-[23rem] md:w-[38rem] lg:w-[50rem] pt-2 opacity-60 pl-2 lg:pl-8 lg:pt-4 focus:outline-none'
 						name='message'
 						placeholder='Your message...'
 						required
@@ -81,7 +84,7 @@ function Contact() {
 						cols='43'
 					/>
 				</div>
-				<div className='flex w-full items-start pl-12 lg:pl-12 md:pl-20 mb-6 '>
+				<div className='flex w-full items-start pl-6 lg:pl-12 md:pl-20 mb-6 '>
 					<button
 						className='border border-[#00ffff] lg:hover:bg-[#00ffff] lg:hover:bg-opacity-10 py-0.5 px-2 md:py-2 text-sm md:text-lg rounded-md text-[#00ffff]'
 						type='submit'
