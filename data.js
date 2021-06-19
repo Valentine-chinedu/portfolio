@@ -1,4 +1,4 @@
-const datas = [
+export const projects = [
 	{
 		_id: 1,
 		title: "Onstore",
@@ -31,4 +31,55 @@ const datas = [
 	},
 ];
 
-export default datas;
+export const skills = [
+	{
+		_id: 1,
+		src: "/skills-html5.png",
+		title: "HTML",
+	},
+	{
+		_id: 2,
+		src: "/skills-css.png",
+		title: "CSS",
+	},
+	{
+		_id: 3,
+		src: "/skills-js.png",
+		title: "JAVASCRIPT",
+	},
+	{
+		_id: 4,
+		src: "/skill-reactjs.png",
+		title: "REACTJS",
+	},
+	{
+		_id: 5,
+		src: "/nextjs-logo.png",
+		title: "NEXTJS",
+	},
+	{
+		_id: 6,
+		src: "/skills-tailwind.jpg",
+		title: "TAILWINDCSS",
+	},
+	{
+		_id: 7,
+		src: "/skills-bootstrap5.png",
+		title: "BOOTSTRAP",
+	},
+	{
+		_id: 8,
+		src: "/materializecss.png",
+		title: "MATERIALIZECSS",
+	},
+	{
+		_id: 9,
+		src: "/skills-sass.jpeg",
+		title: "SASS",
+	},
+	{
+		_id: 10,
+		src: "/skills-git.jpeg",
+		title: "GIT",
+	},
+];
