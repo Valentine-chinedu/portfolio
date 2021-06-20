@@ -11,6 +11,7 @@ import Contact from "../components/Contact";
 import Social from "../components/Social";
 
 import Slide from "react-reveal/Slide";
+import Rotate from "react-reveal/Rotate";
 
 export default function Home() {
 	const [visible, setVisible] = useState(true);
@@ -40,7 +41,7 @@ export default function Home() {
 
 			<header className='h-screen w-full'>
 				<nav
-					className={`fixed flex justify-between items-center z-40 w-full px-6 transition-height ease-in-out duration-500 overflow-hidden bg-gray-700 bg-opacity-20 lg:bg-opacity-100 lg:h-[4.5rem] ${
+					className={`fixed flex justify-between items-center z-40 w-full px-6 transition-height ease-in-out duration-500 overflow-hidden bg-[#0e001b] bg-opacity-20 lg:bg-opacity-60 lg:h-[4.5rem] ${
 						visible ? "h-[4.5rem]" : "h-0"
 					}`}
 				>
@@ -54,35 +55,37 @@ export default function Home() {
 						/>
 					</div>
 					<div className='hidden lg:flex h-full justify-around w-[35rem] text-sm'>
-						<a href='#about' className='flex items-center space-x-1 group'>
-							<p className='text-[#00ffff] font-medium'>01.</p>
-							<h2 className='text-gray-200 font-semibold tracking-wider group-hover:border-b border-[#00ffff]'>
-								About
-							</h2>
-						</a>
-						<a href='#skills' className='flex items-center space-x-1 group'>
-							<p className='text-[#00ffff] font-medium'>02.</p>
-							<h2 className='text-gray-200 font-semibold tracking-wider group-hover:border-b border-[#00ffff]'>
-								Skills
-							</h2>
-						</a>
-						<a href='#projects' className='flex items-center space-x-1 group'>
-							<p className='text-[#00ffff] font-medium'>03.</p>
-							<h2 className='text-gray-200 font-semibold tracking-wider group-hover:border-b border-[#00ffff] '>
-								Projects
-							</h2>
-						</a>
-						<a href='#contact' className='flex items-center space-x-1 group'>
-							<p className='text-[#00ffff] font-medium'>04.</p>
-							<h2 className='text-gray-200 font-semibold tracking-wider group-hover:border-b border-[#00ffff] '>
-								Contact
-							</h2>
-						</a>
-						<div className='flex items-center'>
-							<button className=' border-solid border border-[#00ffff] text-[#00ffff] hover:bg-[#00ffff] hover:bg-opacity-20 rounded px-4 py-2 font-semibold focus:outline-none'>
-								Resume
-							</button>
-						</div>
+						<Rotate>
+							<a href='#about' className='flex items-center space-x-1 group'>
+								<p className='text-[#00ffff] font-medium'>01.</p>
+								<h2 className='text-gray-200 font-semibold tracking-wider group-hover:border-b border-[#00ffff]'>
+									About
+								</h2>
+							</a>
+							<a href='#skills' className='flex items-center space-x-1 group'>
+								<p className='text-[#00ffff] font-medium'>02.</p>
+								<h2 className='text-gray-200 font-semibold tracking-wider group-hover:border-b border-[#00ffff]'>
+									Skills
+								</h2>
+							</a>
+							<a href='#projects' className='flex items-center space-x-1 group'>
+								<p className='text-[#00ffff] font-medium'>03.</p>
+								<h2 className='text-gray-200 font-semibold tracking-wider group-hover:border-b border-[#00ffff] '>
+									Projects
+								</h2>
+							</a>
+							<a href='#contact' className='flex items-center space-x-1 group'>
+								<p className='text-[#00ffff] font-medium'>04.</p>
+								<h2 className='text-gray-200 font-semibold tracking-wider group-hover:border-b border-[#00ffff] '>
+									Contact
+								</h2>
+							</a>
+							<div className='flex items-center'>
+								<button className=' border-solid border border-[#00ffff] text-[#00ffff] hover:bg-[#00ffff] hover:bg-opacity-20 rounded px-4 py-2 font-semibold focus:outline-none'>
+									Resume
+								</button>
+							</div>
+						</Rotate>
 					</div>
 					<div
 						onClick={() => {
