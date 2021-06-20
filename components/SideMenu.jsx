@@ -3,7 +3,7 @@ import { VscChromeClose } from "react-icons/vsc";
 function DropDown({ openSideBar, setOpenSideBar }) {
 	return (
 		<div
-			className={`lg:hidden flex-col overflow-hidden items-center fixed h-[46rem] md:h-screen z-50 inset-y-0 right-0 overflow-x-hidden bg-gray-700 transition-width duration-500 ease-in-out ${
+			className={`lg:hidden flex-col overflow-hidden items-center fixed h-[46rem] md:h-screen z-50 inset-y-0 right-0 overflow-x-hidden bg-[#170030] transition-width duration-500 ease-in-out ${
 				openSideBar ? "w-80 md:w-[26rem]" : "w-0"
 			}`}
 		>
