@@ -41,13 +41,16 @@ function Contact() {
 				<p>you</p>
 			</div>
 			<div className='text-gray-300 text-sm mb-4 md:mb-8 md:text-lg lg:fixed lg:bottom-28 lg:-left-36 lg:flex items-center transform lg:rotate-90 lg:space-x-8 lg:text-sm'>
-				<a
-					href='mailto:valentine.chinedu@gmail.com'
-					className='tracking-wide hover:text-[#00ffff]'
-				>
-					valentine.chinedu@gmail.com
-				</a>
-				<div className='hidden lg:flex items-center bg-[#00ffff] h-[0.10rem] w-[10rem] mt-1'></div>
+				<Fade right duration={1000} delay={1000}>
+					<a
+						href='mailto:valentine.chinedu@gmail.com'
+						className='tracking-wide hover:text-[#00ffff]'
+					>
+						valentine.chinedu@gmail.com
+					</a>
+
+					<div className='hidden lg:flex items-center bg-[#00ffff] h-[0.10rem] w-[10rem] mt-1'></div>
+				</Fade>
 			</div>
 
 			<form onSubmit={formSubmit} className='w-full flex flex-col items-center'>
