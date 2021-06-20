@@ -44,7 +44,7 @@ function Contact() {
 				<Fade right duration={1000} delay={1000}>
 					<a
 						href='mailto:valentine.chinedu@gmail.com'
-						className='tracking-wide hover:text-[#00ffff]'
+						className='tracking-wide hover:text-[#00ffff] overflow-hidden'
 					>
 						valentine.chinedu@gmail.com
 					</a>

@@ -10,7 +10,7 @@ import Projects from "../components/project/Projects";
 import Contact from "../components/Contact";
 import Social from "../components/Social";
 
-import Slide from "react-reveal/Slide";
+import Fade from "react-reveal/Fade";
 import Rotate from "react-reveal/Rotate";
 
 export default function Home() {
@@ -123,11 +123,11 @@ export default function Home() {
 			</div>
 
 			<main className={`${openSideBar ? "filter blur-sm" : ""}`}>
-				<Slide bottom duration={1000}>
+				<Fade bottom duration={1000}>
 					<About openSideBar={openSideBar} />
 					<Skills openSideBar={openSideBar} />
 					<Projects openSideBar={openSideBar} />
-				</Slide>
+				</Fade>
 			</main>
 			<footer
 				className={`lg:container lg:mx-auto lg:px-80 lg:pt-4 ${
