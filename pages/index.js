@@ -1,7 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
-import { useState, useEffect } from "react";
-import { AiOutlineMenu } from "react-icons/ai";
+import { useState } from "react";
 import Intro from "../components/Intro";
 import SideMenu from "../components/SideMenu";
 import About from "../components/About";
@@ -10,26 +9,26 @@ import Projects from "../components/project/Projects";
 import Contact from "../components/Contact";
 import Social from "../components/Social";
 
+import { AiOutlineMenu } from "react-icons/ai";
+// import { ImArrowUp } from "react-icons/im";
+import { useScrollPosition } from "@n8tb1t/use-scroll-position";
 import Fade from "react-reveal/Fade";
 import Rotate from "react-reveal/Rotate";
 
 export default function Home() {
-	const [visible, setVisible] = useState(true);
 	const [openSideBar, setOpenSideBar] = useState(false);
+	const [hideOnScroll, setHideOnScroll] = useState(true);
 
-	const handleScroll = () => {
-		if (window.scrollY > 100) {
-			setVisible(false);
-		} else {
-			setVisible(true);
-		}
-	};
-
-	useEffect(() => {
-		window.addEventListener("scroll", handleScroll);
-
-		return () => window.removeEventListener("scroll", handleScroll);
-	}, []);
+	useScrollPosition(
+		({ prevPos, currPos }) => {
+			const isShow = currPos.y > prevPos.y;
+			if (isShow !== hideOnScroll) setHideOnScroll(isShow);
+		},
+		[hideOnScroll],
+		false,
+		false,
+		300
+	);
 
 	return (
 		<div className='font-sans overflow-hidden bg-[#100020] z-20 h-full w-full '>
@@ -41,11 +40,11 @@ export default function Home() {
 
 			<header className='h-screen w-full'>
 				<nav
-					className={`fixed flex justify-between items-center z-40 w-full px-6 transition-height ease-in-out duration-500 overflow-hidden bg-[#0e001b] bg-opacity-20 lg:bg-opacity-60 lg:h-[4.5rem] ${
-						visible ? "h-[4.5rem]" : "h-0"
+					className={`fixed flex justify-between items-center z-40 w-full px-6 transition-height ease-in-out duration-500 overflow-hidden bg-[#0e001b] bg-opacity-80 lg:bg-opacity-80 ${
+						hideOnScroll ? "h-[4.5rem]" : "h-0"
 					}`}
 				>
-					<div className='flex '>
+					<a href='#home' className='flex '>
 						<Image
 							src='/logo_transparent.png'
 							alt='logo'
@@ -53,29 +52,29 @@ export default function Home() {
 							height={64}
 							responsive='true'
 						/>
-					</div>
+					</a>
 					<div className='hidden lg:flex h-full justify-around w-[35rem] text-sm'>
-						<Rotate>
+						<Rotate duration={1000} delay={1000}>
 							<a href='#about' className='flex items-center space-x-1 group'>
-								<p className='text-[#00ffff] font-medium'>01.</p>
+								<p className='text-[#00ffff] font-medium font-mono'>01.</p>
 								<h2 className='text-gray-200 font-semibold tracking-wider group-hover:border-b border-[#00ffff]'>
 									About
 								</h2>
 							</a>
 							<a href='#skills' className='flex items-center space-x-1 group'>
-								<p className='text-[#00ffff] font-medium'>02.</p>
+								<p className='text-[#00ffff] font-medium font-mono'>02.</p>
 								<h2 className='text-gray-200 font-semibold tracking-wider group-hover:border-b border-[#00ffff]'>
 									Skills
 								</h2>
 							</a>
 							<a href='#projects' className='flex items-center space-x-1 group'>
-								<p className='text-[#00ffff] font-medium'>03.</p>
+								<p className='text-[#00ffff] font-medium font-mono'>03.</p>
 								<h2 className='text-gray-200 font-semibold tracking-wider group-hover:border-b border-[#00ffff] '>
 									Projects
 								</h2>
 							</a>
 							<a href='#contact' className='flex items-center space-x-1 group'>
-								<p className='text-[#00ffff] font-medium'>04.</p>
+								<p className='text-[#00ffff] font-medium font-mono'>04.</p>
 								<h2 className='text-gray-200 font-semibold tracking-wider group-hover:border-b border-[#00ffff] '>
 									Contact
 								</h2>
@@ -110,19 +109,9 @@ export default function Home() {
 				></div>
 			)}
 
-			{/* Side menu button */}
-			<div
-				onClick={() => {
-					setOpenSideBar(true);
-				}}
-				className={`lg:hidden fixed z-40 bottom-8 right-5 bg-gray-200 p-1 bg-opacity-10 ${
-					visible ? "invisible" : ""
-				}`}
+			<main
+				className={`overflow-hidden ${openSideBar ? "filter blur-sm" : ""}`}
 			>
-				<AiOutlineMenu className='text-3xl md:text-4xl text-[#00ffff]' />
-			</div>
-
-			<main className={`${openSideBar ? "filter blur-sm" : ""}`}>
 				<Fade bottom duration={1000}>
 					<About openSideBar={openSideBar} />
 					<Skills openSideBar={openSideBar} />
@@ -135,11 +124,11 @@ export default function Home() {
 				}`}
 			>
 				<Contact />
-				<div className='flex w-full justify-center text-gray-300 mb-6 lg:mb-4 text-sm'>
+				<Social />
+				<div className='flex w-full justify-center text-gray-300 mb-2 text-sm md:text-base'>
 					<p>Built with Nextjs and Tailwindcss</p>
 				</div>
-				<Social />
-				<div className='flex w-full justify-center text-sm text-gray-300 mb-4 md:mb-8'>
+				<div className='flex w-full justify-center text-sm md:text-base text-gray-300 mb-4 md:mb-8'>
 					<p>Design inspired by Brittany Chiang</p>
 				</div>
 			</footer>

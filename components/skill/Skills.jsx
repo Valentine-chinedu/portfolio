@@ -4,22 +4,22 @@ function Skills() {
 	return (
 		<div
 			id='skills'
-			className='h-full w-full overflow-hidden mb-16 lg:mb-32 pt-8 text-gray-300 lg:container lg:mx-auto lg:px-80'
+			className='h-full w-full overflow-hidden mb-20 lg:mb-32 pt-8 text-gray-300 lg:container px-6 md:px-7 lg:mx-auto lg:px-80'
 		>
-			<div className='flex items-center justify-center mb-8 lg:mb-16'>
-				<div className='bg-[#00ffff] h-[0.10rem] w-[8.5rem] md:w-[17.5rem] lg:w-[24.5rem]'></div>
+			<div className='flex items-center mb-8 md:mb-12 lg:justify-start text-lg md:text-2xl'>
+				<div className='text-[#00ffff] lg:text-xl font-mono'>02.</div>
 
-				<span className='font-bold text-2xl text-gray-100 md:text-3xl mx-2 md:mx-4 md:space-x-8'>
-					Skills
+				<span className='font-bold text-gray-100 ml-2 mr-3 md:ml-4 md:mr-5'>
+					Skills and Tools
 				</span>
 
-				<div className='bg-[#00ffff] h-[0.10rem] w-[8.5rem] md:w-[17.5rem] lg:w-[24.5rem]'></div>
+				<div className='bg-[#00ffff] h-[0.10rem] w-[11.5rem] md:w-[27.5rem] lg:w-[23rem]'></div>
 			</div>
-			<div className='grid grid-cols-2 gap-1 md:grid-cols-3 md:gap-2 lg:grid-cols-4 lg:gap-4 md:px-7'>
+			<div className='grid grid-cols-2 gap-1 md:grid-cols-3 md:gap-2 lg:grid-cols-4 lg:gap-4 '>
 				{skills.map((skill) => (
 					<div
 						key={skill._id}
-						className='flex flex-col items-center space-y-2 mb-4'
+						className='flex flex-col items-center space-y-2 mb-4 overflow-hidden'
 					>
 						<img
 							className='h-32 md:h-40 lg:h-52 lg:w-52 rounded-md'
