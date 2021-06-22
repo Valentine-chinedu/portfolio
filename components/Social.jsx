@@ -2,12 +2,12 @@ import Fade from "react-reveal/Fade";
 
 function Social() {
 	return (
-		<div className='lg:fixed lg:flex lg:-right-24 lg:bottom-24 transform lg:rotate-90 lg:space-x-8'>
+		<div className='lg:fixed lg:flex lg:-right-20 lg:bottom-24 transform lg:rotate-90 lg:space-x-8'>
 			<Fade right duration={1000} delay={1000}>
 				<div className='flex justify-center lg:items-center space-x-6 text-gray-400 mb-4 overflow-hidden'>
 					<a href='https://github.com/Valentine-chinedu' target='_blank'>
 						<svg
-							className='h-5 hover:text-[#00ffff]'
+							className='h-4 md:h-5  hover:text-[#00ffff]'
 							xmlns='http://www.w3.org/2000/svg'
 							role='img'
 							viewBox='0 0 24 24'
@@ -24,7 +24,7 @@ function Social() {
 					</a>
 					<a href='' target='_blank'>
 						<svg
-							className='h-5 hover:text-[#00ffff]'
+							className='h-4 md:h-5 hover:text-[#00ffff]'
 							xmlns='http://www.w3.org/2000/svg'
 							role='img'
 							viewBox='0 0 24 24'
@@ -41,7 +41,7 @@ function Social() {
 					</a>
 					<a href='' target='_blank'>
 						<svg
-							className='h-5 lg:hover:text-[#00ffff]'
+							className='h-4 md:h-5 lg:hover:text-[#00ffff]'
 							xmlns='http://www.w3.org/2000/svg'
 							role='img'
 							viewBox='0 0 24 24'
@@ -59,7 +59,7 @@ function Social() {
 						</svg>
 					</a>
 				</div>
-				<div className='hidden lg:flex items-center bg-[#00ffff] h-[0.10rem] w-[10rem] mt-3 overflow-hidden'></div>
+				<div className='hidden lg:flex items-center bg-[#00ffff] h-[0.10rem] w-[7rem] mt-3 overflow-hidden'></div>
 			</Fade>
 		</div>
 	);

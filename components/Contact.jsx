@@ -36,20 +36,20 @@ function Contact() {
 				</h1>
 			</Fade>
 
-			<div className='flex flex-col items-center text-gray-300 text-base md:text-xl mb-8 '>
+			<div className='flex flex-col items-center text-gray-300 text-base md:text-xl mb-2 '>
 				<p>I'm readily available to work with</p>
 				<p>you</p>
 			</div>
-			<div className='text-gray-300 text-sm mb-4 md:mb-8 md:text-lg lg:fixed lg:bottom-28 lg:-left-36 lg:flex items-center transform lg:rotate-90 lg:space-x-8 lg:text-sm'>
+			<div className='text-gray-300 text-sm mb-4 md:mb-12 md:text-lg lg:fixed lg:bottom-28 lg:-left-36 lg:flex items-center transform lg:rotate-90 lg:space-x-8 lg:text-sm'>
 				<Fade right duration={1000} delay={1000}>
 					<a
 						href='mailto:valentine.chinedu@gmail.com'
 						className='tracking-wide hover:text-[#00ffff] overflow-hidden'
 					>
-						valentine.chinedu@gmail.com
+						valentinechinedudev@gmail.com
 					</a>
 
-					<div className='hidden lg:flex items-center bg-[#00ffff] h-[0.10rem] w-[10rem] mt-1'></div>
+					<div className='hidden lg:flex items-center bg-[#00ffff] h-[0.10rem] w-[8rem] mt-1'></div>
 				</Fade>
 			</div>
 
@@ -87,7 +87,7 @@ function Contact() {
 						cols='43'
 					/>
 				</div>
-				<div className='flex w-full items-start pl-6 lg:pl-12 md:pl-20 mb-6 '>
+				<div className='flex w-full items-start pl-6 mb-10 md:mb-16 lg:pl-12 lg:mb-12 md:pl-20'>
 					<button
 						className='border border-[#00ffff] lg:hover:bg-[#00ffff] lg:hover:bg-opacity-10 py-0.5 px-2 md:py-2 text-sm md:text-lg rounded-md text-[#00ffff]'
 						type='submit'

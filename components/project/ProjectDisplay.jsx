@@ -1,7 +1,7 @@
 function ProjectDisplay({ project }) {
 	return (
 		<div
-			className='flex flex-col justify-around overflow-hidden mx-6 md:mx-12 lg:mx-0 rounded-md mb-6 lg:mb-20 h-72 md:h-[25rem] lg:h-96 lg:w-[30rem] p-6 text-gray-200 lg:text-gray-300 bg-cover bg-[#0d5050] bg-blend-soft-light lg:hover:bg-blend-normal '
+			className='flex flex-col justify-around overflow-hidden rounded-md mb-6 md:mb-12 lg:mb-20 h-72 md:h-[25rem] lg:h-96 lg:w-[30rem] p-6 text-gray-200 lg:text-gray-300 bg-cover bg-[#0d5050] bg-blend-soft-light lg:hover:bg-blend-normal '
 			style={{ backgroundImage: `url(${project.image})` }}
 		>
 			<div className='lg:absolute lg:right-24 lg:flex flex-col items-end'>

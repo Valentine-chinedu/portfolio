@@ -2,20 +2,20 @@ function About() {
 	return (
 		<div
 			id='about'
-			className='relative px-6 md:px-12 pb-12 h-full overflow-hidden mb-8 md:mb-20 pt-8 lg:flex lg:container lg:mx-auto lg:px-80'
+			className='relative px-6 pb-6 md:px-12 h-full overflow-hidden md:pb-4 mb-20 pt-8 lg:flex lg:container lg:mx-auto lg:px-80'
 		>
 			<div className=''>
-				<div className='flex items-center mb-8 lg:justify-start'>
-					<div className='bg-[#00ffff] h-[0.15rem] w-[7rem] md:w-[15rem] lg:hidden'></div>
+				<div className='flex items-center mb-8 md:mb-12 lg:justify-start text-lg md:text-2xl'>
+					<div className='text-[#00ffff] lg:text-xl font-mono'>01.</div>
 
-					<span className='font-bold text-2xl text-gray-100 md:text-3xl mx-2 md:mx-4'>
+					<span className='font-bold text-gray-100 ml-2 mr-3 md:ml-4 md:mr-5'>
 						About Me
 					</span>
 
-					<div className='bg-[#00ffff] h-[0.10rem]  w-[7rem] md:w-[15rem] lg:w-[23.5rem]'></div>
+					<div className='bg-[#00ffff] h-[0.10rem]  w-[14rem] md:w-[30rem] lg:w-[23rem]'></div>
 				</div>
 
-				<div className='space-y-6 tracking-wider mb-8 md:mb-16 pl-2 overflow-hidden text-base md:text-lg text-gray-300 lg:tracking-normal lg:mr-4'>
+				<div className='space-y-6 tracking-wider mb-8 md:mb-16 overflow-hidden text-base md:text-lg text-gray-300 lg:tracking-normal lg:mr-4'>
 					<p>
 						I am Valentine Chinedu. I am a frontend web developer who enjoys
 						building engaging websites.

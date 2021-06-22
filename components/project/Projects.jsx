@@ -5,19 +5,19 @@ function Projects() {
 	return (
 		<div
 			id='projects'
-			className='mb-16 pt-8 lg:container overflow-hidden lg:mx-auto lg:px-80'
+			className='mb-20 pt-8 lg:container overflow-hidden px-6 md:px-12 lg:mx-auto lg:px-80'
 		>
-			<div className='flex items-center justify-center mb-8 lg:mb-16'>
-				<div className='bg-[#00ffff] h-[0.10rem] w-[8rem] md:w-[16.5rem] lg:w-[23.5rem]'></div>
+			<div className='flex items-center mb-8 md:mb-12 text-lg md:text-2xl lg:justify-start'>
+				<div className='text-[#00ffff] font-mono'>03.</div>
 
-				<span className='font-bold text-2xl text-gray-100 md:text-3xl mx-2 md:mx-4 md:space-x-8'>
+				<span className='font-bold text-gray-100 ml-2 mr-3 md:ml-4 md:mr-5'>
 					Projects
 				</span>
 
-				<div className='bg-[#00ffff] h-[0.10rem] w-[8rem] md:w-[16.5rem] lg:w-[23.5rem]'></div>
+				<div className='bg-[#00ffff] h-[0.10rem]  w-[16rem] md:w-[32rem] lg:w-[23rem]'></div>
 			</div>
 			{projects.map((project) => (
-				<div key={project._id} className='relative'>
+				<div key={project._id} className='relative overflow-hidden'>
 					<ProjectDisplay project={project} />
 				</div>
 			))}

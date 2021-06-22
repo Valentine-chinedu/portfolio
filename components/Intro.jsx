@@ -3,12 +3,13 @@ import Fade from "react-reveal/Fade";
 function Intro({ openSideBar }) {
 	return (
 		<div
+			id='home'
 			className={`flex flex-col justify-center overflow-hidden px-6 md:pl-12 h-screen w-full lg:container lg:mx-auto lg:px-80 lg:mb-4 ${
 				openSideBar ? "filter blur-sm" : ""
 			}`}
 		>
 			<Fade top>
-				<h3 className='text-[#00ffff] md:text-base lg:text-lg mb-4 md:mb-6 font-semibold tracking-wider'>
+				<h3 className='text-[#00ffff] md:text-lg lg:text-lg mb-4 md:mb-6 font-semibold tracking-wider'>
 					Hi, my name is
 				</h3>
 			</Fade>
