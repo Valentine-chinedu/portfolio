@@ -5,7 +5,7 @@ export const projects = [
 		description:
 			"An ecommerce web app where clothing accessories like Suit Trousers, Joggers Pants, shirts, shoes and watches can be purchased. ",
 		tools: "React commerce.js Tailwindcss",
-		github: "https://github.com/Valentine-chinedu/onstore_project/tree/master",
+		github: "https://github.com/Valentine-chinedu/onstore_project",
 		url: "https://onstore-project.firebaseapp.com/",
 		image: "/onstore_screenshot.png",
 	},
@@ -15,8 +15,8 @@ export const projects = [
 		title: "SocialHangout",
 		description: "A social media web app for sharing posts and media",
 		tools: "React Firebase Tailwindcss",
-		github: "https://github.com/Valentine-chinedu/onstore_project/tree/master",
-		url: "https://onstore-project.firebaseapp.com/",
+		github: "https://github.com/Valentine-chinedu/socialhangout",
+		url: "https://socialhnagout-f995d.web.app",
 		image: "/socialhangout_screenshot.png",
 	},
 	{
@@ -25,8 +25,8 @@ export const projects = [
 		description:
 			"A clone of google search engine with full search functionality. ",
 		tools: "Nextjs Google-Api  Tailwindcss",
-		github: "https://github.com/Valentine-chinedu/onstore_project/tree/master",
-		url: "https://onstore-project.firebaseapp.com/",
+		github: "https://github.com/Valentine-chinedu/google_clone",
+		url: "https://google-clone-blue.vercel.app/",
 		image: "/google_search_clone.png",
 	},
 ];
