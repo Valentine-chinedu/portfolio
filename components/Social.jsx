@@ -40,7 +40,7 @@ function Social() {
 						</svg>
 					</a>
 					<a
-						href='https://www.linkedin.com/in/chinedu-valentine-0b614313b/'
+						href='https://www.linkedin.com/in/valentine-chinedu-9bb74b215/'
 						target='_blank'
 					>
 						<svg

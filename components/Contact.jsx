@@ -23,7 +23,7 @@ function Contact() {
 		Object.entries(query).forEach(([key, value]) => {
 			formData.append(key, value);
 		});
-		fetch("https://getform.io/f/d970cf61-3c77-4030-b0ba-27affe5b4473", {
+		fetch("https://getform.io/f/1123de77-c137-4b78-a48e-1d5745223d28", {
 			method: "POST",
 			body: formData,
 		}).then(() => setQuery({ name: "", email: "", message: "" }));
@@ -46,7 +46,7 @@ function Contact() {
 						href='mailto:valentine.chinedu@gmail.com'
 						className='tracking-wide hover:text-[#00ffff] overflow-hidden'
 					>
-						valentinechinedudev@gmail.com
+						valentine11.dev@gmail.com
 					</a>
 
 					<div className='hidden lg:flex items-center bg-[#00ffff] h-[0.10rem] w-[8rem] mt-1'></div>
@@ -54,9 +54,9 @@ function Contact() {
 			</div>
 
 			<form onSubmit={formSubmit} className='w-full flex flex-col items-center'>
-				<div>
+				<div className=''>
 					<input
-						className='w-[23rem] md:w-[38rem] lg:w-[50rem] h-10 md:h-14 pl-2 lg:pl-8 rounded-md opacity-60 mb-4 focus:outline-none'
+						className='w-[21rem] md:w-[38rem] lg:w-[50rem] h-10 md:h-14 pl-2 lg:pl-8 rounded-md opacity-60 mb-4 focus:outline-none'
 						type='text'
 						name='name'
 						required
@@ -67,7 +67,7 @@ function Contact() {
 				</div>
 				<div>
 					<input
-						className='w-[23rem] md:w-[38rem] lg:w-[50rem] h-10 md:h-14 pl-2 lg:pl-8 rounded-md opacity-60 mb-4 focus:outline-none'
+						className='w-[21rem] md:w-[38rem] lg:w-[50rem] h-10 md:h-14 pl-2 lg:pl-8 rounded-md opacity-60 mb-4 focus:outline-none'
 						type='email'
 						name='email'
 						placeholder='Email'
@@ -77,7 +77,7 @@ function Contact() {
 				</div>
 				<div className='mb-3 md:mb-5 lg:mb-8'>
 					<textarea
-						className='rounded-md w-[23rem] md:w-[38rem] lg:w-[50rem] pt-2 opacity-60 pl-2 lg:pl-8 lg:pt-4 focus:outline-none'
+						className='rounded-md w-[21rem] md:w-[38rem] lg:w-[50rem] pt-2 opacity-60 pl-2 lg:pl-8 lg:pt-4 focus:outline-none'
 						name='message'
 						placeholder='Your message...'
 						required

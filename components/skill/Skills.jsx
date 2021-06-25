@@ -13,7 +13,7 @@ function Skills() {
 					Skills and Tools
 				</span>
 
-				<div className='bg-[#00ffff] h-[0.10rem] w-[11.5rem] md:w-[27.5rem] lg:w-[23rem]'></div>
+				{/* <div className='bg-[#00ffff] h-[0.10rem] w-[11.5rem] md:w-[27.5rem] lg:w-[23rem]'></div> */}
 			</div>
 			<div className='grid grid-cols-2 gap-1 md:grid-cols-3 md:gap-2 lg:grid-cols-4 lg:gap-4 '>
 				{skills.map((skill) => (

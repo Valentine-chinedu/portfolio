@@ -13,8 +13,6 @@ function Projects() {
 				<span className='font-bold text-gray-100 ml-2 mr-3 md:ml-4 md:mr-5'>
 					Projects
 				</span>
-
-				<div className='bg-[#00ffff] h-[0.10rem]  w-[16rem] md:w-[32rem] lg:w-[23rem]'></div>
 			</div>
 			{projects.map((project) => (
 				<div key={project._id} className='relative overflow-hidden'>
