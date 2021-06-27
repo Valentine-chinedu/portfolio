@@ -16,7 +16,7 @@ export const projects = [
 		description: "A social media web app for sharing posts and media",
 		tools: "React Firebase Tailwindcss",
 		github: "https://github.com/Valentine-chinedu/socialhangout",
-		url: "https://socialhnagout-f995d.web.app",
+		url: "https://socialhangout-f995d.web.app/",
 		image: "/socialhangout_screenshot.png",
 	},
 	{
