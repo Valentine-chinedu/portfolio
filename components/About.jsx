@@ -36,7 +36,7 @@ function About() {
 			</div>
 			<div className='flex w-full justify-center lg:mt-16'>
 				<div
-					className='h-[11rem] w-[11rem] md:h-[15rem] md:w-[15rem] lg:h-50 lg:w-60 border-2 border-[#00ffff] rounded absolute top-[26.5rem] right-[6.5rem] md:top-[27rem] md:right-[15.5rem] lg:right-[21rem] lg:top-[8.5rem]
+					className='h-[11rem] w-[11rem] md:h-[15rem] md:w-[15rem] lg:h-50 lg:w-60 border-2 border-[#00ffff] rounded absolute top-[30rem] right-[5rem] md:top-[27rem] md:right-[15.5rem] lg:right-[21rem] lg:top-[8.5rem]
 						'
 				></div>
 
