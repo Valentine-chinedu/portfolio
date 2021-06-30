@@ -3,7 +3,7 @@ import Fade from "react-reveal/Fade";
 function Social() {
 	return (
 		<div className='lg:fixed lg:flex lg:-right-20 lg:bottom-24 transform lg:rotate-90 lg:space-x-8'>
-			<Fade right duration={1000} delay={1000}>
+			<Fade right duration={1000}>
 				<div className='flex justify-center lg:items-center space-x-6 text-gray-400 mb-4 overflow-hidden'>
 					<a href='https://github.com/Valentine-chinedu' target='_blank'>
 						<svg
