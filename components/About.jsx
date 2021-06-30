@@ -4,7 +4,7 @@ function About() {
 	return (
 		<div
 			id='about'
-			className='relative px-6 pb-6 md:px-12 h-full overflow-hidden md:pb-4 mb-20 pt-8 lg:flex lg:container lg:mx-auto lg:px-80'
+			className=' px-6 pb-6 md:px-12 h-full overflow-hidden md:pb-4 mb-20 pt-8 lg:flex lg:container lg:mx-auto lg:px-80'
 		>
 			<div className=''>
 				<div className='flex items-center mb-8 md:mb-12 lg:justify-start text-lg md:text-2xl'>
@@ -34,14 +34,14 @@ function About() {
 					</p>
 				</div>
 			</div>
-			<div className='flex w-full justify-center lg:mt-16'>
-				<div
+			<div className='flex relative w-full justify-center lg:mt-16'>
+				{/* <div
 					className='h-[11rem] w-[11rem] md:h-[15rem] md:w-[15rem] lg:h-50 lg:w-60 border-2 border-[#00ffff] rounded absolute top-[29.5rem] right-[5.5rem] md:top-[27rem] md:right-[15.5rem] lg:right-[21rem] lg:top-[8.5rem]
 						'
-				></div>
+				></div> */}
 
 				<img
-					className='h-[11rem] w-[11rem] md:h-[15rem] md:w-[15rem] lg:h-60 lg:w-60 object-fill md:object-cover rounded z-20'
+					className='h-56 w-56 md:h-80 md:w-80 lg:h-60 lg:w-60 object-cover rounded z-20 filter drop-shadow-2xl'
 					src='/IMG_20210614_135621.jpg'
 					alt='png'
 					loading='lazy'
