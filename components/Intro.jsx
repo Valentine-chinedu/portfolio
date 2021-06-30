@@ -15,7 +15,7 @@ function Intro({ openSideBar }) {
 			</Fade>
 			<Fade left cascade duration={1000}>
 				<h1 className='font-bold text-3xl md:text-5xl lg:text-7xl text-gray-100 mb-3 md:mb-6 overflow-hidden'>
-					Valentine Chinedu.
+					Valentine Okosi C.
 				</h1>
 			</Fade>
 			<Fade bottom>
