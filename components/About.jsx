@@ -35,13 +35,13 @@ function About() {
 				</div>
 			</div>
 			<div className='flex w-full justify-center lg:mt-16'>
-				{/* <div
-					className='h-[13rem] w-[13rem] md:h-[14rem] md:w-[14rem] lg:h-50 lg:w-60 border-2 border-[#00ffff] rounded absolute top-3 right-[4rem] md:top-4 md:right-[13rem] lg:left-4 lg:top-[2rem]
+				<div
+					className='h-[11rem] w-[11rem] md:h-[15rem] md:w-[15rem] lg:h-50 lg:w-60 border-2 border-[#00ffff] rounded absolute top-[31rem] right-[5.5rem] md:top-[27rem] md:right-[15.5rem] lg:right-[21rem] lg:top-[8.5rem]
 						'
-				></div> */}
+				></div>
 
 				<img
-					className='h-[10rem] w-[10rem] md:h-[14rem] md:w-[14rem] lg:h-60 lg:w-60 object-fill md:object-cover rounded'
+					className='h-[11rem] w-[11rem] md:h-[15rem] md:w-[15rem] lg:h-60 lg:w-60 object-fill md:object-cover rounded z-20'
 					src='/IMG_20210614_135621.jpg'
 					alt='png'
 					loading='lazy'
