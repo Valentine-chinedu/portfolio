@@ -41,7 +41,7 @@ function About() {
 				></div> */}
 
 				<img
-					className='h-56 w-56 md:h-80 md:w-80 lg:h-60 lg:w-60 object-cover rounded z-20 filter drop-shadow-2xl'
+					className='h-56 w-56 md:h-80 md:w-80 lg:h-60 lg:w-60 object-fill rounded z-20 filter drop-shadow-2xl'
 					src='/IMG_20210614_135621.jpg'
 					alt='png'
 					loading='lazy'
