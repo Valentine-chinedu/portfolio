@@ -19,8 +19,8 @@ function About() {
 
 				<div className='space-y-6 tracking-wider mb-8 md:mb-16 overflow-hidden text-base md:text-lg text-gray-300 lg:tracking-normal lg:mr-4'>
 					<p>
-						I am Valentine Chinedu. I am a frontend web developer who enjoys
-						building engaging websites.
+						I am Valentine. I am a frontend web developer who enjoys building
+						engaging websites.
 					</p>
 					<p>
 						I am currently focused on front-end, my motivation is to use my web
