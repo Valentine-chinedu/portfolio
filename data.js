@@ -21,6 +21,15 @@ export const projects = [
 	},
 	{
 		_id: 3,
+		title: "English-Dictionary",
+		description: "An app for searching meaning of English words",
+		tools: "React CSS Material-UI",
+		github: "https://github.com/Valentine-chinedu/English-dictionary",
+		url: "https://english-dictionary-psi.vercel.app/",
+		image: "/dictionary.png",
+	},
+	{
+		_id: 4,
 		title: "Google-clone",
 		description:
 			"A clone of google search engine with full search functionality. ",
