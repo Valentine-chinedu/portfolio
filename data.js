@@ -83,12 +83,22 @@ export const skills = [
 	},
 	{
 		_id: 9,
+		src: "/matui.png",
+		title: "MATERIAL-UI",
+	},
+	{
+		_id: 10,
 		src: "/skills-sass.jpeg",
 		title: "SASS",
 	},
 	{
-		_id: 10,
+		_id: 11,
 		src: "/skills-git.jpeg",
 		title: "GIT",
+	},
+	{
+		_id: 12,
+		src: "/vscode_logo.jpeg",
+		title: "VSCODE",
 	},
 ];
