@@ -4,13 +4,13 @@ function About() {
 	return (
 		<div
 			id='about'
-			className=' px-6 pb-6 md:px-12 h-full overflow-hidden md:pb-4 mb-20 pt-8 lg:flex lg:container lg:mx-auto lg:px-80'
+			className=' px-6 pb-6 md:px-12 h-full overflow-hidden md:pb-4 mb-20 pt-8 lg:flex lg:container lg:mx-auto lg:px-80 lg:space-x-8'
 		>
 			<div className=''>
 				<div className='flex items-center mb-8 md:mb-12 lg:justify-start text-lg md:text-2xl'>
 					<div className='text-[#00ffff] lg:text-xl font-mono'>01.</div>
 
-					<span className='font-bold text-gray-100 ml-2 mr-3 md:ml-4 md:mr-5'>
+					<span className='font-bold text-gray-300 ml-2 mr-3 md:ml-4 md:mr-5'>
 						About Me
 					</span>
 
@@ -35,13 +35,8 @@ function About() {
 				</div>
 			</div>
 			<div className='flex relative w-full justify-center lg:mt-16'>
-				{/* <div
-					className='h-[11rem] w-[11rem] md:h-[15rem] md:w-[15rem] lg:h-50 lg:w-60 border-2 border-[#00ffff] rounded absolute top-[29.5rem] right-[5.5rem] md:top-[27rem] md:right-[15.5rem] lg:right-[21rem] lg:top-[8.5rem]
-						'
-				></div> */}
-
 				<img
-					className='h-56 w-56 md:h-80 md:w-80 lg:h-60 lg:w-60 object-fill rounded z-20 filter drop-shadow-2xl'
+					className='h-56 w-56 md:h-80 md:w-80 lg:h-80 lg:w-80 object-fill rounded z-20'
 					src='/IMG_20210614_135621.jpg'
 					alt='png'
 					loading='lazy'
