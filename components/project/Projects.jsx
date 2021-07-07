@@ -10,7 +10,7 @@ function Projects() {
 			<div className='flex items-center mb-8 md:mb-12 text-lg md:text-2xl lg:justify-start'>
 				<div className='text-[#00ffff] font-mono'>03.</div>
 
-				<span className='font-bold text-gray-100 ml-2 mr-3 md:ml-4 md:mr-5'>
+				<span className='font-bold text-gray-300 ml-2 mr-3 md:ml-4 md:mr-5'>
 					Projects
 				</span>
 			</div>
