@@ -31,8 +31,7 @@ export const projects = [
 	{
 		_id: 4,
 		title: "Google-clone",
-		description:
-			"A clone of google search engine with full search functionality. ",
+		description: "A clone of google search with full search functionality. ",
 		tools: "Nextjs Google-Api  Tailwindcss",
 		github: "https://github.com/Valentine-chinedu/google_clone",
 		url: "https://google-clone-blue.vercel.app/",
