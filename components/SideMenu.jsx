@@ -50,7 +50,7 @@ function SideMenu({ openSideBar, setOpenSideBar }) {
 				</a>
 				<div className='flex flex-col items-center'>
 					<a
-						href='https://drive.google.com/file/d/1Ql5XyKJKs7cx_untCUSvKiWNKnsqbGKJ/view?usp=sharing'
+						href='https://drive.google.com/file/d/1wTzIU36vxZoSh7EDdX2QDx6G0xS3vk3H/view?usp=sharing'
 						target='_blank'
 						className=' border-solid border-2 border-[#00ffff] text-[#00ffff] rounded px-12 py-3 font-semibold'
 					>
