@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import { useState } from "react";
-import Intro from "../components/Intro";
+import LandingPage from "../components/LandingPage";
 import SideMenu from "../components/SideMenu";
 import About from "../components/About";
 import Skills from "../components/Skills";
@@ -78,9 +78,13 @@ export default function Home() {
 								</h2>
 							</a>
 							<div className='flex items-center'>
-								<button className=' border-solid border border-[#00ffff] text-[#00ffff] hover:bg-[#00ffff] hover:bg-opacity-20 rounded px-4 py-2 font-semibold focus:outline-none'>
+								<a
+									href='/resume.pdf'
+									target='_blank'
+									className=' border-solid border border-[#00ffff] text-[#00ffff] hover:bg-[#00ffff] hover:bg-opacity-20 rounded px-4 py-2 font-semibold focus:outline-none'
+								>
 									Resume
-								</button>
+								</a>
 							</div>
 						</Rotate>
 					</div>
@@ -88,13 +92,13 @@ export default function Home() {
 						onClick={() => {
 							setOpenSideBar(true);
 						}}
-						className='lg:hidden relative left-1 '
+						className='lg:hidden relative left-1 cursor-pointer'
 					>
 						<AiOutlineMenu className='text-4xl text-[#00ffff]' />
 					</div>
 				</nav>
 				<SideMenu openSideBar={openSideBar} setOpenSideBar={setOpenSideBar} />
-				<Intro openSideBar={openSideBar} />
+				<LandingPage openSideBar={openSideBar} />
 			</header>
 
 			{/* close sidebar on screen touch/click */}

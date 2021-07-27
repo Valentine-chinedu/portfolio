@@ -11,7 +11,7 @@ function SideMenu({ openSideBar, setOpenSideBar }) {
 				onClick={() => setOpenSideBar(false)}
 				className='flex w-full justify-end pt-4 pr-6'
 			>
-				<VscChromeClose className='text-4xl md:text-5xl text-[#00ffff]' />
+				<VscChromeClose className='text-4xl text-[#00ffff] cursor-pointer' />
 			</div>
 			<div className='space-y-6 md:space-y-10 flex h-full flex-col md:text-lg'>
 				<a
@@ -48,11 +48,11 @@ function SideMenu({ openSideBar, setOpenSideBar }) {
 						Contact
 					</h2>
 				</a>
-				<div className='flex flex-col items-center'>
+				<div className='flex flex-col items-center '>
 					<a
-						href='https://drive.google.com/file/d/1wTzIU36vxZoSh7EDdX2QDx6G0xS3vk3H/view?usp=sharing'
+						href='/resume.pdf'
 						target='_blank'
-						className=' border-solid border-2 border-[#00ffff] text-[#00ffff] rounded px-12 py-3 font-semibold'
+						className=' border-solid border-2 border-[#00ffff] text-[#00ffff] rounded px-12 py-3 font-semibold z-50'
 					>
 						Resume
 					</a>
