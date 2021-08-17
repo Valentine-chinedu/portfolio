@@ -12,6 +12,17 @@ export const projects = [
 
 	{
 		_id: 2,
+		title: "Movie-search-app",
+		description:
+			"An app for searching, viewing and reading about movies, review and their ratings",
+		tools: "React Sass Redux TMDb-Api",
+		github: "https://github.com/Valentine-chinedu/movie-app",
+		url: "https://movie-app-c3582.web.app",
+		image: "/movie-image.jpg",
+	},
+
+	{
+		_id: 3,
 		title: "SocialHangout",
 		description: "A social media web app for sharing posts and media",
 		tools: "React Firebase Tailwindcss",
@@ -19,15 +30,7 @@ export const projects = [
 		url: "https://socialhangout-f995d.web.app/",
 		image: "/socialhangout_screenshot.png",
 	},
-	{
-		_id: 3,
-		title: "English-Dictionary",
-		description: "An app for searching meaning of English words",
-		tools: "React CSS Material-UI",
-		github: "https://github.com/Valentine-chinedu/English-dictionary",
-		url: "https://english-dictionary-psi.vercel.app/",
-		image: "/dictionary.png",
-	},
+
 	{
 		_id: 4,
 		title: "Google-clone",
