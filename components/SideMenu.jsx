@@ -48,15 +48,15 @@ function SideMenu({ openSideBar, setOpenSideBar }) {
 						Contact
 					</h2>
 				</a>
-				<div className='flex flex-col items-center '>
+				{/* <div className='flex flex-col items-center '>
 					<a
-						href='/resume.pdf'
+						href='/valentine_okosi_resume'
 						target='_blank'
 						className=' border-solid border-2 border-[#00ffff] text-[#00ffff] rounded px-12 py-3 font-semibold z-50'
 					>
 						Resume
 					</a>
-				</div>
+				</div> */}
 			</div>
 		</div>
 	);

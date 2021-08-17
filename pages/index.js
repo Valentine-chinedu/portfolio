@@ -77,15 +77,15 @@ export default function Home() {
 									Contact
 								</h2>
 							</a>
-							<div className='flex items-center'>
+							{/* <div className='flex items-center'>
 								<a
-									href='/resume.pdf'
+									href='/valentine_okosi_resume'
 									target='_blank'
 									className=' border-solid border border-[#00ffff] text-[#00ffff] hover:bg-[#00ffff] hover:bg-opacity-20 rounded px-4 py-2 font-semibold focus:outline-none'
 								>
 									Resume
 								</a>
-							</div>
+							</div> */}
 						</Rotate>
 					</div>
 					<div
