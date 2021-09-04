@@ -1,19 +1,19 @@
-import Head from "next/head";
-import Image from "next/image";
-import { useState } from "react";
-import LandingPage from "../components/LandingPage";
-import SideMenu from "../components/SideMenu";
-import About from "../components/About";
-import Skills from "../components/Skills";
-import Projects from "../components/project/Projects";
-import Contact from "../components/Contact";
-import Social from "../components/Social";
+import Head from 'next/head';
+import Image from 'next/image';
+import { useState } from 'react';
+import LandingPage from '../components/LandingPage';
+import SideMenu from '../components/SideMenu';
+import About from '../components/About';
+import Skills from '../components/Skills';
+import Projects from '../components/project/Projects';
+import Contact from '../components/Contact';
+import Social from '../components/Social';
 
-import { AiOutlineMenu } from "react-icons/ai";
+import { AiOutlineMenu } from 'react-icons/ai';
 // import { ImArrowUp } from "react-icons/im";
-import { useScrollPosition } from "@n8tb1t/use-scroll-position";
-import Fade from "react-reveal/Fade";
-import Rotate from "react-reveal/Rotate";
+import { useScrollPosition } from '@n8tb1t/use-scroll-position';
+import Fade from 'react-reveal/Fade';
+import Rotate from 'react-reveal/Rotate';
 
 export default function Home() {
 	const [openSideBar, setOpenSideBar] = useState(false);
@@ -40,7 +40,7 @@ export default function Home() {
 			<header className='h-screen w-full'>
 				<nav
 					className={`fixed flex justify-between items-center z-40 w-full px-6 transition-height ease-in-out duration-500 overflow-hidden bg-[#0e001b] bg-opacity-30 ${
-						hideOnScroll ? "h-[4.5rem]" : "h-0"
+						hideOnScroll ? 'h-[4.5rem]' : 'h-0'
 					}`}
 				>
 					<a href='#home' className='flex '>
@@ -59,16 +59,16 @@ export default function Home() {
 									About
 								</h2>
 							</a>
-							<a href='#skills' className='flex items-center space-x-1 group'>
-								<p className='text-[#00ffff] font-medium font-mono'>02.</p>
-								<h2 className='text-gray-200 font-semibold tracking-wider group-hover:border-b border-[#00ffff]'>
-									Skills
-								</h2>
-							</a>
 							<a href='#projects' className='flex items-center space-x-1 group'>
-								<p className='text-[#00ffff] font-medium font-mono'>03.</p>
+								<p className='text-[#00ffff] font-medium font-mono'>02.</p>
 								<h2 className='text-gray-200 font-semibold tracking-wider group-hover:border-b border-[#00ffff] '>
 									Projects
+								</h2>
+							</a>
+							<a href='#skills' className='flex items-center space-x-1 group'>
+								<p className='text-[#00ffff] font-medium font-mono'>03.</p>
+								<h2 className='text-gray-200 font-semibold tracking-wider group-hover:border-b border-[#00ffff]'>
+									Skills
 								</h2>
 							</a>
 							<a href='#contact' className='flex items-center space-x-1 group'>
@@ -112,17 +112,17 @@ export default function Home() {
 			)}
 
 			<main
-				className={`overflow-hidden ${openSideBar ? "filter blur-sm" : ""}`}
+				className={`overflow-hidden ${openSideBar ? 'filter blur-sm' : ''}`}
 			>
 				<Fade bottom duration={1000}>
 					<About openSideBar={openSideBar} />
-					<Skills openSideBar={openSideBar} />
 					<Projects openSideBar={openSideBar} />
+					<Skills openSideBar={openSideBar} />
 				</Fade>
 			</main>
 			<footer
 				className={`lg:container lg:mx-auto lg:px-80 lg:pt-4 text-gray-300 ${
-					openSideBar ? "filter blur-sm" : ""
+					openSideBar ? 'filter blur-sm' : ''
 				}`}
 			>
 				<Contact />
