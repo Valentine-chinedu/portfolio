@@ -1,10 +1,10 @@
-import { VscChromeClose } from "react-icons/vsc";
+import { VscChromeClose } from 'react-icons/vsc';
 
 function SideMenu({ openSideBar, setOpenSideBar }) {
 	return (
 		<div
 			className={`lg:hidden flex-col space-y-28 md:space-y-56 text-gray-400 overflow-hidden fixed h-[46rem] md:h-screen z-50 inset-y-0 right-0 overflow-x-hidden bg-[#120024] transition-width duration-500 ease-in-out ${
-				openSideBar ? "w-80 md:w-[26rem]" : "w-0"
+				openSideBar ? 'w-80 md:w-[26rem]' : 'w-0'
 			}`}
 		>
 			<div
@@ -24,19 +24,19 @@ function SideMenu({ openSideBar, setOpenSideBar }) {
 				</a>
 				<a
 					onClick={() => setOpenSideBar(false)}
-					href='#skills'
-					className='flex flex-col items-center'
-				>
-					<p className='text-[#00ffff] font-medium'>02.</p>
-					<h2 className='font-semibold tracking-wider md:text-lg'>Skills</h2>
-				</a>
-				<a
-					onClick={() => setOpenSideBar(false)}
 					href='#projects'
 					className='flex flex-col items-center'
 				>
-					<p className='text-[#00ffff] font-medium'>03.</p>
+					<p className='text-[#00ffff] font-medium'>02.</p>
 					<h2 className='font-semibold tracking-wider md:text-lg'>Projects</h2>
+				</a>
+				<a
+					onClick={() => setOpenSideBar(false)}
+					href='#skills'
+					className='flex flex-col items-center'
+				>
+					<p className='text-[#00ffff] font-medium'>03.</p>
+					<h2 className='font-semibold tracking-wider md:text-lg'>Skills</h2>
 				</a>
 				<a
 					onClick={() => setOpenSideBar(false)}
