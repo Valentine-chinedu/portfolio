@@ -1,10 +1,10 @@
-import React, { useState } from "react";
-import Fade from "react-reveal/Fade";
+import React, { useState } from 'react';
+import Fade from 'react-reveal/Fade';
 
 function Contact() {
 	const [query, setQuery] = useState({
-		name: "",
-		email: "",
+		name: '',
+		email: '',
 	});
 
 	// Update inputs value
@@ -23,10 +23,10 @@ function Contact() {
 		Object.entries(query).forEach(([key, value]) => {
 			formData.append(key, value);
 		});
-		fetch("https://getform.io/f/1123de77-c137-4b78-a48e-1d5745223d28", {
-			method: "POST",
+		fetch('https://getform.io/f/1123de77-c137-4b78-a48e-1d5745223d28', {
+			method: 'POST',
 			body: formData,
-		}).then(() => setQuery({ name: "", email: "", message: "" }));
+		}).then(() => setQuery({ name: '', email: '', message: '' }));
 	};
 	return (
 		<div
@@ -59,7 +59,7 @@ function Contact() {
 			<form onSubmit={formSubmit} className='w-full flex flex-col items-center'>
 				<div className=''>
 					<input
-						className='w-[21rem] md:w-[38rem] lg:w-[50rem] h-10 md:h-14 pl-2 lg:pl-8 rounded-md opacity-60 mb-4 focus:outline-none'
+						className='text-gray-900 text-sm md:text-lg w-[21rem] md:w-[38rem] lg:w-[50rem] h-10 md:h-14 pl-2 lg:pl-8 rounded-md opacity-60 mb-4 focus:outline-none'
 						type='text'
 						name='name'
 						required
@@ -70,7 +70,7 @@ function Contact() {
 				</div>
 				<div>
 					<input
-						className='w-[21rem] md:w-[38rem] lg:w-[50rem] h-10 md:h-14 pl-2 lg:pl-8 rounded-md opacity-60 mb-4 focus:outline-none'
+						className='text-gray-900 text-sm md:text-lg w-[21rem] md:w-[38rem] lg:w-[50rem] h-10 md:h-14 pl-2 lg:pl-8 rounded-md opacity-60 mb-4 focus:outline-none'
 						type='email'
 						name='email'
 						placeholder='Email'
@@ -80,7 +80,7 @@ function Contact() {
 				</div>
 				<div className='mb-3 md:mb-5 lg:mb-8'>
 					<textarea
-						className='rounded-md w-[21rem] md:w-[38rem] lg:w-[50rem] pt-2 opacity-60 pl-2 lg:pl-8 lg:pt-4 focus:outline-none'
+						className='text-gray-900 text-sm md:text-lg rounded-md w-[21rem] md:w-[38rem] lg:w-[50rem] pt-2 opacity-60 pl-2 lg:pl-8 lg:pt-4 focus:outline-none'
 						name='message'
 						placeholder='Your message...'
 						required
