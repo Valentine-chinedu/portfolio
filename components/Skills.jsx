@@ -7,7 +7,7 @@ function Skills() {
 			id='skills'
 			className='h-full w-full text-gray-300 overflow-hidden mb-20 lg:mb-32 pt-8 lg:container px-6 md:px-7 lg:mx-auto lg:px-80'
 		>
-			<div className='flex items-center mb-8 md:mb-12 md:ml-5 lg:ml-0 lg:justify-start text-lg md:text-2xl'>
+			<div className='flex items-center mb-8 md:mb-12 md:ml-5 lg:ml-0 lg:justify-start text-xl md:text-3xl'>
 				<div className='text-[#00ffff] lg:text-xl font-mono'>03.</div>
 
 				<span className='font-bold ml-2 mr-3 md:ml-4 md:mr-5 '>

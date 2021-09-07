@@ -9,7 +9,7 @@ function About() {
 			className='flex flex-col items-center lg:flex-row px-6 pb-6 md:px-12 h-full w-full overflow-hidden md:pb-20 mb-20 pt-8 lg:flex lg:container lg:mx-auto lg:px-80 lg:space-x-8'
 		>
 			<div className=''>
-				<div className='flex items-center mb-8 md:mb-12 lg:justify-start text-lg md:text-2xl'>
+				<div className='flex items-center mb-8 md:mb-12 lg:justify-start text-xl md:text-3xl'>
 					<div className='text-[#00ffff] lg:text-xl font-mono'>01.</div>
 
 					<span className='font-bold text-gray-300 ml-2 mr-3 md:ml-4 md:mr-5'>

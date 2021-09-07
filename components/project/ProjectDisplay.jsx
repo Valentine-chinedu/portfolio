@@ -2,7 +2,7 @@ function ProjectDisplay({ project }) {
 	return (
 		<div className='relative'>
 			<div className='mb-4 lg:absolute lg:bottom-28 lg:left-[26rem] flex flex-col lg:items-end text-gray-300 lg:text-gray-400'>
-				<h2 className='font-semibold text-gray-300 lg:text-gray-300 text-lg md:text-3xl'>
+				<h2 className='font-semibold text-gray-300 lg:text-gray-300 text-lg md:text-2xl'>
 					{project.title}
 				</h2>
 				<p className='mb-6 tracking-wide text-sm md:text-lg mt-6 md:mt-8 lg:text-sm lg:font-semibold lg:bg-gray-700 lg:w-96 lg:rounded lg:py-6 lg:pl-12 lg:pr-2 lg:shadow-lg'>
