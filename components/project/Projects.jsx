@@ -5,7 +5,7 @@ function Projects() {
 	return (
 		<div
 			id='projects'
-			className='mb-20 pt-8 lg:container overflow-hidden px-6 md:px-12 lg:mx-auto lg:px-80'
+			className='mb-20 pt-8 lg:container overflow-hidden lg:overflow-visible px-6 md:px-12 lg:mx-auto lg:px-80'
 		>
 			<div className='flex items-center mb-8 md:mb-12 text-xl md:text-3xl lg:justify-start'>
 				<div className='text-[#00ffff] font-mono'>02.</div>

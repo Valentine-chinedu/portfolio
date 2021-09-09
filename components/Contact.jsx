@@ -57,46 +57,48 @@ function Contact() {
 			</div>
 
 			<form onSubmit={formSubmit} className='w-full flex flex-col items-center'>
-				<div className=''>
-					<input
-						className='text-gray-900 text-sm md:text-lg w-[21rem] md:w-[38rem] lg:w-[50rem] h-10 md:h-14 pl-2 lg:pl-8 rounded-md opacity-60 mb-4 focus:outline-none'
-						type='text'
-						name='name'
-						required
-						placeholder='Your name'
-						value={query.name}
-						onChange={handleParam()}
-					/>
-				</div>
 				<div>
-					<input
-						className='text-gray-900 text-sm md:text-lg w-[21rem] md:w-[38rem] lg:w-[50rem] h-10 md:h-14 pl-2 lg:pl-8 rounded-md opacity-60 mb-4 focus:outline-none'
-						type='email'
-						name='email'
-						placeholder='Email'
-						value={query.email}
-						onChange={handleParam()}
-					/>
-				</div>
-				<div className='mb-3 md:mb-5 lg:mb-8'>
-					<textarea
-						className='text-gray-900 text-sm md:text-lg rounded-md w-[21rem] md:w-[38rem] lg:w-[50rem] pt-2 opacity-60 pl-2 lg:pl-8 lg:pt-4 focus:outline-none'
-						name='message'
-						placeholder='Your message...'
-						required
-						value={query.message}
-						onChange={handleParam()}
-						rows='8'
-						cols='43'
-					/>
-				</div>
-				<div className='flex w-full items-start pl-6 mb-10 md:mb-16 lg:pl-12 lg:mb-12 md:pl-20'>
-					<button
-						className='border border-[#00ffff] lg:hover:bg-[#babdbd] lg:hover:bg-opacity-10 py-0.5 px-2 md:py-2 text-sm md:text-lg rounded-md text-[#00ffff]'
-						type='submit'
-					>
-						Send Message
-					</button>
+					<div className=''>
+						<input
+							className='text-gray-900 text-sm md:text-lg w-[21rem] md:w-[38rem] lg:w-[50rem] h-10 md:h-14 pl-2 lg:pl-8 rounded-md opacity-60 mb-4 focus:outline-none'
+							type='text'
+							name='name'
+							required
+							placeholder='Your name'
+							value={query.name}
+							onChange={handleParam()}
+						/>
+					</div>
+					<div>
+						<input
+							className='text-gray-900 text-sm md:text-lg w-[21rem] md:w-[38rem] lg:w-[50rem] h-10 md:h-14 pl-2 lg:pl-8 rounded-md opacity-60 mb-4 focus:outline-none'
+							type='email'
+							name='email'
+							placeholder='Email'
+							value={query.email}
+							onChange={handleParam()}
+						/>
+					</div>
+					<div className='mb-3 md:mb-5 lg:mb-8'>
+						<textarea
+							className='text-gray-900 text-sm md:text-lg rounded-md w-[21rem] md:w-[38rem] lg:w-[50rem] pt-2 opacity-60 pl-2 lg:pl-8 lg:pt-4 focus:outline-none'
+							name='message'
+							placeholder='Your message...'
+							required
+							value={query.message}
+							onChange={handleParam()}
+							rows='8'
+							cols='43'
+						/>
+					</div>
+					<div className='flex w-full items-start mb-10 md:mb-16 lg:mb-12'>
+						<button
+							className='border border-[#00ffff] lg:hover:bg-[#babdbd] lg:hover:bg-opacity-10 py-0.5 px-2 md:py-2 text-sm md:text-lg rounded-md text-[#00ffff]'
+							type='submit'
+						>
+							Send Message
+						</button>
+					</div>
 				</div>
 			</form>
 		</div>
