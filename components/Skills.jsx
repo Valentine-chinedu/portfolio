@@ -1,45 +1,66 @@
-import { skills } from '../data';
+import { motion, useAnimation } from 'framer-motion';
 import Image from 'next/image';
+import { useEffect } from 'react';
+import { useInView } from 'react-intersection-observer';
 
 function Skills() {
+	const [ref, inView] = useInView({ threshold: 0.3 });
+	const animation = useAnimation();
+
+	useEffect(() => {
+		if (inView) {
+			animation.start({
+				y: 0,
+				opacity: 1,
+				transition: {
+					duration: 1.25,
+				},
+			});
+		}
+		if (!inView) {
+			animation.start({ y: 100, opacity: 0 });
+		}
+	}, [inView]);
+
 	return (
 		<div
+			ref={ref}
 			id='skills'
-			className='h-full w-full text-gray-300 overflow-hidden mb-20 lg:mb-32 pt-8 lg:container px-6 md:px-7 lg:mx-auto lg:px-80'
+			className='flex flex-col items-center p-2 md:p-0 w-full text-stone-50 h-screen bg-black'
 		>
-			<div className='flex items-center mb-8 md:mb-12 md:ml-5 lg:ml-0 lg:justify-start text-xl md:text-3xl'>
-				<div className='text-[#00ffff] lg:text-xl font-mono'>03.</div>
-
-				<span className='font-bold ml-2 mr-3 md:ml-4 md:mr-5 '>
-					Skills and Tools
-				</span>
-
-				{/* <div className='bg-[#00ffff] h-[0.10rem] w-[11.5rem] md:w-[27.5rem] lg:w-[23rem]'></div> */}
-			</div>
-			<div className='grid grid-cols-2 gap-1 md:grid-cols-3 md:gap-2 lg:grid-cols-4 lg:gap-4 '>
-				{skills.map((skill) => (
-					<div
-						key={skill._id}
-						className='flex flex-col items-center space-y-2 mb-4 overflow-hidden'
-					>
-						<Image
-							className='rounded-md'
-							src={skill.src}
-							alt='logo'
-							width={128}
-							height={128}
-							reponsive
-						/>
-						{/* <img
-							className='h-32 md:h-40 lg:h-52 lg:w-52 rounded-md'
-							loading='lazy'
-							src={skill.src}
-							alt='logo'
-						/> */}
-						<h3 className='tracking-wider'>{skill.title}</h3>
+			<motion.div
+				animate={animation}
+				className='flex flex-col items-center justify-center w-full md:w-4/5 h-full'
+			>
+				<p className='relative top-4 md:top-0 text-sm md:text-xl md:w-5/6 lg:w-2/5'>
+					I'm a life long learner and enjoy learning new stuff! Below are
+					programming languages, tools, framworks and libraries that I work
+					with. Some of them I control better than the other.
+				</p>
+				<div className='relative top-8 md:top-14'>
+					<Image src={'/HTML_Monochromatic.png'} width={400} height={400} />
+				</div>
+				<div className='relative bottom-5 md:bottom-0 flex w-full md:w-5/6 lg:w-3/5 justify-between p-4 border-t-2 border-cyan-400'>
+					<div className='text-sm md:text-lg space-y-8'>
+						<h3>Javascript(ES6)</h3>
+						<h3>Typescript</h3>
+						<h3>Html 5</h3>
+						<h3>Css 3</h3>
 					</div>
-				))}
-			</div>
+					<div className='text-sm md:text-lg space-y-8'>
+						<h3>Tailwindcss</h3>
+						<h3>SASS</h3>
+						<h3>Styled Component</h3>
+						<h3>Bootstrap</h3>
+					</div>
+					<div className='text-sm md:text-lg space-y-8'>
+						<h3>Nextjs</h3>
+						<h3>Material Ui</h3>
+						<h3>Git</h3>
+						<h3>Vscode</h3>
+					</div>
+				</div>
+			</motion.div>
 		</div>
 	);
 }
