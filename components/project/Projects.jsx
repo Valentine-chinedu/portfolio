@@ -1,24 +1,22 @@
-import { projects } from '../../data';
-import ProjectDisplay from './ProjectDisplay';
+import GoogleClone from './GoogleClone';
+import MovieApp from './MovieApp';
+import Onstore from './Onstore';
+import SocialHangout from './SocialHangout';
+import Spacex from './Spacex';
 
 function Projects() {
 	return (
 		<div
 			id='projects'
-			className='mb-20 pt-8 lg:container overflow-hidden lg:overflow-visible px-6 md:px-12 lg:mx-auto lg:px-80'
+			className='flex justify-center pt-8 bg-[url(/fakurian-design-ICTjWYzpoc0-unsplash.jpg)] bg-cover bg-fixed h-full'
 		>
-			<div className='flex items-center mb-8 md:mb-12 text-xl md:text-3xl lg:justify-start'>
-				<div className='text-[#00ffff] font-mono'>02.</div>
-
-				<span className='font-bold text-gray-300 ml-2 mr-3 md:ml-4 md:mr-5'>
-					Projects
-				</span>
+			<div className='flex flex-col items-center w-screen lg:w-4/5 h-full overflow-x-hidden'>
+				<Onstore />
+				<MovieApp />
+				<Spacex />
+				<SocialHangout />
+				<GoogleClone />
 			</div>
-			{projects.map((project) => (
-				<div key={project._id} className='relative overflow-hidden'>
-					<ProjectDisplay project={project} />
-				</div>
-			))}
 		</div>
 	);
 }
