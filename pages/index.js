@@ -14,8 +14,12 @@ export default function Home() {
 	return (
 		<div className='font-sans overflow-x-hidden  z-20 h-full w-full'>
 			<Head>
-				<title>Valentine Okosi C.</title>
+				<title>Valentine's Portfolio.</title>
 				<link rel='icon' href='/favicon-32x32.png' />
+				<meta property='og:image' content='/portfolio-screenshot.jpg' />
+				<meta property='og:image:type' content='image/jpeg' />
+				<meta property='og:image:width' content='300' />
+				<meta property='og:image:height' content='300' />
 			</Head>
 
 			<header className='h-screen w-full overflow-hidden'>

@@ -17,7 +17,7 @@ const ProjectDisplay1 = ({
 }) => {
 	const [ref, isVisible] = useInView({ threshold: 0.2 });
 
-	const variantsL = {
+	const variants = {
 		visible: {
 			opacity: 1,
 			x: 0,
@@ -46,7 +46,7 @@ const ProjectDisplay1 = ({
 			</div>
 			<div className='flex flex-col lg:flex-row items-center justify-center w-full space-y-8 md:space-y-14 lg:space-x-32'>
 				<motion.div
-					variants={variantsL}
+					variants={variants}
 					animate={isVisible ? 'visible' : 'hidden'}
 					transition={{ duration: 2, ease: 'easeInOut' }}
 					className='flex  items-center'
