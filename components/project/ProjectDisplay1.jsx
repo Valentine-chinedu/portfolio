@@ -44,7 +44,7 @@ const ProjectDisplay1 = ({
 			<div className='relative mb-10 md:mb-12 lg:mb-0 lg:bottom-28 text-xl md:text-2xl uppercase font-bold text-stone-50 pl-4'>
 				<p>{projects}</p>
 			</div>
-			<div className='flex flex-col lg:flex-row items-center justify-center w-full space-y-8 md:space-y-14 lg:space-x-32'>
+			<div className='flex flex-col lg:flex-row items-center justify-center w-full h-full space-y-8 md:space-y-14 lg:space-x-32'>
 				<motion.div
 					variants={variants}
 					animate={isVisible ? 'visible' : 'hidden'}

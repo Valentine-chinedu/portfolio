@@ -124,14 +124,14 @@ function Contact() {
 							target='_blank'
 							rel='noopener noreferrer'
 						>
-							<ImLinkedin className='md:text-3xl text-cyan-500 hover:text-cyan-300' />
+							<ImLinkedin className='text-2xl md:text-3xl text-cyan-500 hover:text-cyan-300' />
 						</a>
 						<a
 							href='https://github.com/Valentine-chinedu'
 							target='_blank'
 							rel='noopener noreferrer'
 						>
-							<BsGithub className='md:text-3xl text-cyan-500 hover:text-cyan-300' />
+							<BsGithub className='text-2xl md:text-3xl text-cyan-500 hover:text-cyan-300' />
 						</a>
 					</div>
 				</div>
