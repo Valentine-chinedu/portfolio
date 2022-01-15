@@ -26,7 +26,7 @@ function LandingPage({ openSideBar }) {
 					variants={variants}
 					initial='hidden'
 					animate='show'
-					className='absolute px-4 md:right-[10rem] lg:right-0 z-40 lg:w-full '
+					className='flex flex-col justify-center lg:flex-none h-full absolute px-4 md:right-[10rem] lg:right-0 z-40 lg:w-full '
 				>
 					<h3 className='text-cyan-400 md:text-lg lg:text-lg mb-4 md:mb-6 font-semibold tracking-wider'>
 						Hi, my name is

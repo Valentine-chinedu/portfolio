@@ -111,14 +111,14 @@ function Contact() {
 						</div>
 					</div>
 				</form>
-				<div className='flex relative top-16 md:top-32 lg:top-20 items-center justify-center space-x-8 md:space-x-16 w-3/5'>
+				<div className='flex relative h-ful top-20 md:top-44 lg:top-24 items-center justify-center space-x-8 md:space-x-16 lg:w-3/5'>
 					<a
 						href='mailto:valentine.chinedu@gmail.com'
 						className=' md:text-lg tracking-wide text-stone-50 hover:text-cyan-500 '
 					>
 						valentine11.dev@gmail.com
 					</a>
-					<div className='flex space-x-6'>
+					<div className='flex space-x-4'>
 						<a
 							href='https://www.linkedin.com/in/valentine-chinedu-9bb74b215/'
 							target='_blank'
