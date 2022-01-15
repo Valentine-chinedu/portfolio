@@ -10,7 +10,7 @@ function Skills() {
 	useEffect(() => {
 		if (inView) {
 			animation.start({
-				y: 0,
+				x: 0,
 				opacity: 1,
 				transition: {
 					duration: 1.25,
@@ -18,7 +18,7 @@ function Skills() {
 			});
 		}
 		if (!inView) {
-			animation.start({ y: 100, opacity: 0 });
+			animation.start({ x: -100, opacity: 0 });
 		}
 	}, [inView]);
 
