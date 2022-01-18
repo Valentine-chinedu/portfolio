@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import { useState } from 'react';
 import LandingPage from '../components/LandingPage';
+import { BsArrowUpCircle } from 'react-icons/bs';
 
 import Skills from '../components/Skills';
 import Projects from '../components/project/Projects';
@@ -12,7 +13,7 @@ export default function Home() {
 	const [openSideBar, setOpenSideBar] = useState(false);
 
 	return (
-		<div className='font-sans overflow-x-hidden  z-20 h-full w-full'>
+		<div className='font-sans overflow-x-hidden  z-20 h-full w-full scroll-smooth'>
 			<Head>
 				<title>Valentine's Portfolio.</title>
 				<link rel='icon' href='/favicon-32x32.png' />

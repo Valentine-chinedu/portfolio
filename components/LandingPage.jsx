@@ -17,7 +17,7 @@ function LandingPage({ openSideBar }) {
 	return (
 		<div
 			id='home'
-			className={`relative flex flex-co justify-center bg-gradient-to-t from-black to-black overflow-hidden px-6 md:pl-12 h-screen w-full lg:mb-4 ${
+			className={`relative flex flex-co justify-center bg-gradient-to-t from-black to-black overflow-hidden px-6 md:pl-12 h-screen w-full lg:mb-4 z-10 ${
 				openSideBar ? 'filter blur-sm' : ''
 			}`}
 		>

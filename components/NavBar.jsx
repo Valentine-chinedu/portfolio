@@ -1,63 +1,66 @@
 import { VscChromeClose } from 'react-icons/vsc';
 import { AiOutlineMenu } from 'react-icons/ai';
+import Link from 'next/link';
 
 function NavBar({ openSideBar, setOpenSideBar }) {
 	return (
-		<div className='lg:absolute flex justify-center items-center z-40 w-screen overflow-x-hidden h-[4.5rem] bg-gradient-to-tr from-cyan-900 to-black'>
+		<div className='fixed flex justify-center items-center z-50 lg:z-20 w-full overflow-x-hidden h-[4.5rem] bg-gradient-to-tr from-cyan-900 to-black'>
 			<div className='flex justify-between items-center w-11/12 h-full'>
-				<a href='#home' className='flex '>
-					<img
-						className='h-8 md:h-10'
-						src='/portfolio_logo.png'
-						alt='logo'
-						loading='lazy'
-					/>
-				</a>
+				<Link href='/'>
+					<a className='flex '>
+						<img
+							className='h-8 md:h-10'
+							src='/portfolio_logo.png'
+							alt='logo'
+							loading='lazy'
+						/>
+					</a>
+				</Link>
 				<nav
 					className={`flex flex-col lg:justify-around items-center justify-center space-y-16 lg:space-y-0 fixed inset-y-0 right-0 lg:relative lg:flex-row bg-gradient-to-tr from-cyan-900 to-black lg:bg-none lg:w-[35rem] overflow-x-hidden ${
 						openSideBar ? 'w-80' : 'w-0'
-					} h-full text-sm z-50 transition-width duration-1000`}
+					} h-full text-sm z-50 transition-width duration-500`}
 				>
-					<a
-						href='#home'
-						onClick={() => {
-							setOpenSideBar(false);
-						}}
-					>
-						<h2 className='h-full px-2 text-stone-50 font-semibold tracking-wider hover:bg-cyan-500 text-lg'>
+					<Link href='/'>
+						<a
+							className='px-2 text-stone-50 font-semibold tracking-wider hover:text-stone-200 text-lg z-50'
+							onClick={() => {
+								setOpenSideBar(false);
+							}}
+						>
 							Home
-						</h2>
-					</a>
-					<a
-						href='#projects'
-						onClick={() => {
-							setOpenSideBar(false);
-						}}
-					>
-						<h2 className='h-full px-2 text-stone-50 font-semibold tracking-wider lg:hover:bg-cyan-500 text-lg'>
+						</a>
+					</Link>
+					<Link href='#projects'>
+						<a
+							className='px-2 text-stone-50 font-semibold tracking-wider hover:text-stone-300 text-lg z-50'
+							onClick={() => {
+								setOpenSideBar(false);
+							}}
+						>
 							Projects
-						</h2>
-					</a>
-					<a
-						href='#skills'
-						onClick={() => {
-							setOpenSideBar(false);
-						}}
-					>
-						<h2 className='h-full px-2 text-stone-50 font-semibold tracking-wider hover:bg-cyan-500 text-lg'>
+						</a>
+					</Link>
+					<Link href='#skills'>
+						<a
+							className='px-2 text-stone-50 font-semibold tracking-wider hover:text-stone-300 text-lg'
+							onClick={() => {
+								setOpenSideBar(false);
+							}}
+						>
 							Skills
-						</h2>
-					</a>
-					<a
-						href='#contact'
-						onClick={() => {
-							setOpenSideBar(false);
-						}}
-					>
-						<h2 className='h-full px-2 text-stone-50 font-semibold tracking-wider hover:bg-cyan-500 text-lg'>
+						</a>
+					</Link>
+					<Link href='#contact'>
+						<a
+							className='px-2 text-stone-50 font-semibold tracking-wider hover:text-stone-300 text-lg'
+							onClick={() => {
+								setOpenSideBar(false);
+							}}
+						>
 							Contact
-						</h2>
-					</a>
+						</a>
+					</Link>
 					{/* <div className='flex items-center'>
 								<a
 									href='/valentine_okosi_resume'
