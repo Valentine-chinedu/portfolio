@@ -1,6 +1,7 @@
 import { VscChromeClose } from 'react-icons/vsc';
 import { AiOutlineMenu } from 'react-icons/ai';
 import Link from 'next/link';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 function NavBar({ openSideBar, setOpenSideBar }) {
 	return (
@@ -31,7 +32,7 @@ function NavBar({ openSideBar, setOpenSideBar }) {
 							Home
 						</a>
 					</Link>
-					<Link href='#projects'>
+					<AnchorLink offset='50' href='#projects'>
 						<a
 							className='px-2 text-stone-50 font-semibold tracking-wider hover:text-stone-300 text-lg z-50'
 							onClick={() => {
@@ -40,8 +41,8 @@ function NavBar({ openSideBar, setOpenSideBar }) {
 						>
 							Projects
 						</a>
-					</Link>
-					<Link href='#skills'>
+					</AnchorLink>
+					<AnchorLink offset='50' href='#skills'>
 						<a
 							className='px-2 text-stone-50 font-semibold tracking-wider hover:text-stone-300 text-lg'
 							onClick={() => {
@@ -50,8 +51,8 @@ function NavBar({ openSideBar, setOpenSideBar }) {
 						>
 							Skills
 						</a>
-					</Link>
-					<Link href='#contact'>
+					</AnchorLink>
+					<AnchorLink href='#contact'>
 						<a
 							className='px-2 text-stone-50 font-semibold tracking-wider hover:text-stone-300 text-lg'
 							onClick={() => {
@@ -60,7 +61,7 @@ function NavBar({ openSideBar, setOpenSideBar }) {
 						>
 							Contact
 						</a>
-					</Link>
+					</AnchorLink>
 					{/* <div className='flex items-center'>
 								<a
 									href='/valentine_okosi_resume'
