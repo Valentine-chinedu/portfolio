@@ -7,7 +7,7 @@ import { Fade } from 'react-reveal';
 function About() {
 	return (
 		<div
-			id='about'
+			title='about'
 			className='flex flex-col bg-red-500 items-center lg:flex-row px-6 pb-6 md:px-12 h-full w-full overflow-hidden md:pb-20 mb-20 pt-8 lg:flex lg:container lg:mx-auto lg:px-80 lg:space-x-8'
 		>
 			<div>
