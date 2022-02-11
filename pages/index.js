@@ -1,19 +1,26 @@
 import Head from 'next/head';
-import { useState } from 'react';
-import LandingPage from '../components/LandingPage';
-import { BsArrowUpCircle } from 'react-icons/bs';
+import { useContext, useEffect } from 'react';
+import LandingPage from '../components/home/LandingPage';
 
-import Skills from '../components/Skills';
-import Projects from '../components/project/Projects';
-import Contact from '../components/Contact';
+import Skills from '../components/home/Skills';
+import Projects from '../components/home/Projects';
+import Contact from '../components/home/Contact';
 
-import NavBar from '../components/NavBar';
+import GlobalStateContext from '../contextprovider/Context';
+import About from '../components/home/About';
+import Blog from '../components/home/Blog';
+import { useTheme } from 'next-themes';
 
 export default function Home() {
-	const [openSideBar, setOpenSideBar] = useState(false);
+	const { openSideBar, setOpenSideBar } = useContext(GlobalStateContext);
+	const { isLoaded } = useContext(GlobalStateContext);
+	const { setTheme } = useTheme();
 
+	useEffect(() => {
+		setTheme('dark');
+	}, []);
 	return (
-		<div className='font-sans overflow-x-hidden  z-20 h-full w-full scroll-smooth'>
+		<div className='primary-theme dark:secondary-theme z-20 h-full w-full overflow-x-hidden pb-24 font-sans transition-all duration-700 md:pb-32 lg:pb-40'>
 			<Head>
 				<title>Valentine's Portfolio.</title>
 				<link rel='icon' href='/favicon-32x32.png' />
@@ -23,11 +30,11 @@ export default function Home() {
 				<meta property='og:image:height' content='300' />
 			</Head>
 
-			<header className='h-screen w-full overflow-hidden'>
-				<NavBar openSideBar={openSideBar} setOpenSideBar={setOpenSideBar} />
-
-				<LandingPage openSideBar={openSideBar} />
-			</header>
+			{!isLoaded && (
+				<div className='h-screen w-full overflow-hidden'>
+					<LandingPage />
+				</div>
+			)}
 
 			{/* close sidebar on screen touch/click */}
 			{openSideBar && (
@@ -35,19 +42,23 @@ export default function Home() {
 					onClick={() => {
 						setOpenSideBar(false);
 					}}
-					className='fixed h-full inset-0 z-40'
+					className='fixed inset-0 z-40 h-full'
 				></div>
 			)}
 
-			<main
-				className={`overflow-hidden ${openSideBar ? 'filter blur-sm' : ''}`}
-			>
-				<Projects openSideBar={openSideBar} />
-				<Skills openSideBar={openSideBar} />
-			</main>
-			<footer className={`lg:container ${openSideBar ? 'filter blur-sm' : ''}`}>
-				<Contact />
-			</footer>
+			{isLoaded && (
+				<main
+					className={`space-y-32 overflow-hidden md:space-y-52 lg:space-y-60 ${
+						openSideBar ? 'blur-sm filter' : ''
+					}`}
+				>
+					<About />
+					<Projects openSideBar={openSideBar} />
+					<Skills openSideBar={openSideBar} />
+					<Blog openSideBar={openSideBar} />
+					<Contact />
+				</main>
+			)}
 		</div>
 	);
 }
