@@ -1,10 +1,10 @@
-import { googleClone } from '../../projectData';
-import ProjectDisplay1 from './ProjectDisplay1';
+import { googleClone } from './projectData';
+import ProjectDetails from './ProjectDetails';
 
 const GoogleClone = () => {
 	return (
-		<div className='h-screen w-full'>
-			<ProjectDisplay1
+		<div>
+			<ProjectDetails
 				title={googleClone.title}
 				description={googleClone.description}
 				tools={googleClone.tools}

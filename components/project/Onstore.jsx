@@ -1,11 +1,10 @@
-import { onstore } from '../../projectData';
-import ProjectDisplay1 from './ProjectDisplay1';
+import { onstore } from './projectData';
+import ProjectDetails from './ProjectDetails';
 
 const Onstore = () => {
 	return (
-		<div className='h-screen w-full'>
-			<ProjectDisplay1
-				projects='Projects'
+		<div>
+			<ProjectDetails
 				title={onstore.title}
 				description={onstore.description}
 				tools={onstore.tools}

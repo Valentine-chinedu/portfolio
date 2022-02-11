@@ -1,10 +1,10 @@
-import { spacex } from '../../projectData';
-import ProjectDisplay1 from './ProjectDisplay1';
+import { spacex } from './projectData';
+import ProjectDetails from './ProjectDetails';
 
 const Spacex = () => {
 	return (
-		<div className='h-screen w-full'>
-			<ProjectDisplay1
+		<div>
+			<ProjectDetails
 				title={spacex.title}
 				description={spacex.description}
 				tools={spacex.tools}
