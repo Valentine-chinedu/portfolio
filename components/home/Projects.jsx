@@ -24,7 +24,7 @@ function Projects() {
 	}, [inView]);
 
 	const details =
-		'Learning concepts and codes is not just enough, so I like keeping busy with building projects to consolidate and showcase what I have learnt. Click on the button to view the projects that I have worked on.';
+		'Learning concepts and code is not just enough, so I like keeping busy with building projects to consolidate and showcase what I have learnt. Click on the button to view the projects that I have worked on.';
 
 	return (
 		<div ref={ref} className=' flex h-full w-full flex-col items-center'>
@@ -34,6 +34,7 @@ function Projects() {
 				image='/illustra/development.png'
 				details={details}
 				link='/Projects'
+				as='/projects'
 				name='Projects'
 			/>
 		</div>

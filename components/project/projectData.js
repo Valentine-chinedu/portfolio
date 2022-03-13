@@ -11,7 +11,7 @@ const onstore = {
 const movieApp = {
 	title: 'Movie-search-app',
 	description:
-		'An app for searching, viewing and reading about your favourite movies. reviews and ratings',
+		'An app for searching, viewing and reading about your favourite movies. reviews and ratings.',
 	tools: 'React React-Redux Sass TMDb-Api',
 	github: 'https://github.com/Valentine-chinedu/movie-app',
 	url: 'https://movie-app-c3582.web.app',
@@ -20,11 +20,12 @@ const movieApp = {
 
 const socialHangout = {
 	title: 'SocialHangout',
-	description: 'A social media web app for sharing posts and media',
+	description:
+		'A clone of Twitter web version with tweet and user authentication functionality.',
 	tools: 'React Tailwindcss Firebase',
 	github: 'https://github.com/Valentine-chinedu/socialhangout',
 	url: 'https://socialhangout-f995d.web.app/',
-	image: '/socialhangout_screenshot.png',
+	image: '/twitter_clone.png',
 };
 
 const googleClone = {
