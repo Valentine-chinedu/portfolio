@@ -4,9 +4,9 @@
 
 @layer components {
 	.primary-theme {
-		@apply bg-amber-50 text-gray-700;
+		@apply bg-[#f9f5fc] text-gray-800;
 	}
 	.secondary-theme {
-		@apply bg-[#050514] text-gray-200;
+		@apply bg-[#010e03] text-gray-200;
 	}
 }
