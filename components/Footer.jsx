@@ -36,61 +36,37 @@ const Footer = () => {
 	};
 	return (
 		<div
-			className={`flex flex-col bg-gray-900 px-8 pt-8 pb-2 md:h-64 md:px-12 md:pb-4 lg:h-72 lg:pb-8 ${
+			className={`flex flex-col bg-gray-900 px-8 pt-4 pb-2 md:h-56 md:px-12 md:pb-4 lg:h-60 lg:py-8 ${
 				openSideBar && 'blur-sm filter'
 			}`}
 		>
-			<div className='mb-10 flex h-full flex-col items-center justify-center'>
-				<h1 className='mb-2 text-stone-50 md:mb-6 md:text-xl'>
-					Subscribe to my newsletter
-				</h1>
+			<div className='mb-4 flex flex-col items-center'></div>
 
-				<form onSubmit={formSubmit} className=''>
-					<div className=' flex w-72 items-center justify-between rounded-md border border-cyan-500 py-2 px-2 md:w-96 md:py-3 md:px-4'>
-						<FiSend className='text-lg text-stone-100 md:text-2xl' />
-						<input
-							className='h-full w-[10rem] bg-gray-900 text-sm text-stone-100 focus:opacity-100 focus:outline-none md:w-[14rem] md:text-lg '
-							type='email'
-							name='email'
-							placeholder='Email address'
-							value={query.email}
-							onChange={handleParam()}
-						/>
-						<button
-							className='text-sm font-semibold uppercase text-cyan-500 md:text-lg'
-							type='submit'
-						>
-							Subscribe
-						</button>
-					</div>
-				</form>
-			</div>
-
-			<div className='flex h-full items-end justify-between lg:justify-around'>
-				<h3 className='text-sm text-stone-100 md:text-lg'>
-					&copy;2022 Valentine Okosi C.
+			<div className='flex h-full w-full items-end justify-center space-x-8 md:space-x-28 lg:space-x-40'>
+				<h3 className='text-xs text-stone-100 md:text-lg'>
+					&copy; 2022 Valentine Okosi C.
 				</h3>
-				<div className='flex items-center space-x-4 md:space-x-6 lg:space-x-10'>
+				<div className='flex items-center space-x-3 md:space-x-6 lg:space-x-10'>
 					<a
-						href='mailto:valentine.chinedu@gmail.com'
+						href='mailto:valentine11.dev@gmail.com'
 						target='_blank'
 						rel='noopener noreferrer'
 					>
-						<BsEnvelope className='text-xl text-gray-300 hover:text-cyan-300 md:text-3xl' />
+						<BsEnvelope className='text-xl text-gray-300 hover:text-fuchsia-500 dark:hover:text-[#00FFFF] md:text-3xl' />
 					</a>
 					<a
 						href='https://www.linkedin.com/in/valentine-chinedu-9bb74b215/'
 						target='_blank'
 						rel='noopener noreferrer'
 					>
-						<ImLinkedin className='text-lg text-blue-700 hover:text-cyan-300 md:text-3xl' />
+						<ImLinkedin className='text-lg text-gray-300 hover:text-fuchsia-500 dark:hover:text-[#00FFFF] md:text-3xl' />
 					</a>
 					<a
 						href='https://github.com/Valentine-chinedu'
 						target='_blank'
 						rel='noopener noreferrer'
 					>
-						<BsGithub className='text-xl text-gray-300 hover:text-cyan-300 md:text-3xl' />
+						<BsGithub className='text-xl text-gray-300 hover:text-fuchsia-500 dark:hover:text-[#00FFFF] md:text-3xl' />
 					</a>
 					<a
 						className='relative h-5 w-5 md:h-7 md:w-7'
