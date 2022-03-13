@@ -39,7 +39,7 @@ function Form() {
 				}`}
 			>
 				<div className='flex h-full flex-col items-center justify-center'>
-					<h1 className='mb-12 text-3xl font-bold text-stone-50 md:text-4xl lg:text-5xl'>
+					<h1 className='mb-12 text-3xl font-bold text-gray-800 dark:text-gray-100 md:text-4xl lg:text-5xl'>
 						Get In Touch
 					</h1>
 
@@ -83,7 +83,7 @@ function Form() {
 							</div>
 							<div className='mb-10 flex w-full items-start md:mb-16 lg:mb-12'>
 								<button
-									className=' border-stone-70 dark:text-gray-10 rounded-md border-2 border-cyan-400 px-2 py-2 font-bold tracking-wider shadow-md shadow-gray-500 transition-all duration-700 md:px-4 lg:text-lg lg:hover:text-xl'
+									className='rounded-md border-2 border-fuchsia-500 px-2 py-2 font-bold tracking-wider hover:bg-fuchsia-500 dark:border-[#00FFFF] dark:hover:bg-[#00FFFF] dark:hover:text-gray-800 md:px-4 lg:text-lg'
 									type='submit'
 								>
 									Send Message
