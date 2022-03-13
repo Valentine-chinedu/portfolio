@@ -28,17 +28,14 @@ const Styling = () => {
 		'HTML5',
 		'CSS3',
 		'Boostrap',
-		'MaterializeCss',
-		'TailwindCss',
+		'Materialize CSS',
+		'Tailwind CSS',
 		'StyledComponent',
 		'FramerMotion',
 	];
 
 	return (
-		<motion.div
-			ref={ref}
-			className='justify-cente flex h-full w-full flex-col items-center '
-		>
+		<motion.div ref={ref} className='flex h-full w-full flex-col items-center '>
 			<SkillsDetails
 				title='Markup and Styling'
 				description={description}

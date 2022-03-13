@@ -27,10 +27,7 @@ const VersionControl = () => {
 	const tags = ['Git', 'Github'];
 
 	return (
-		<motion.div
-			ref={ref}
-			className='justify-cente flex w-full flex-col items-center'
-		>
+		<motion.div ref={ref} className='flex w-full flex-col items-center'>
 			<SkillsDetails
 				title='Version Control'
 				description={description}

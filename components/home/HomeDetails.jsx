@@ -2,19 +2,25 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Button from './Button';
 
-const HomeDetails = ({ animation, title, details, link, image, name }) => {
+const HomeDetails = ({ animation, title, details, link, as, image, name }) => {
 	return (
 		<motion.div
 			animate={animation}
-			className='flex w-[90%] flex-col items-center justify-center bg-amber-200/40 py-5 dark:bg-[#080827] md:w-4/5 md:py-10 lg:w-4/6 lg:py-14'
+			className='flex w-[90%] flex-col items-center justify-center  md:w-4/5 md:py-10 lg:w-4/6 lg:py-14'
 		>
-			<h2 className='font-serif font-bold uppercase text-stone-700 dark:text-blue-50 md:text-xl'>
-				{title}
-			</h2>
+			<div className='flex w-full items-center justify-center space-x-2 md:space-x-4 lg:space-x-8'>
+				<span className='h-0.5 w-20 bg-fuchsia-600 dark:bg-[#00FFFF] md:w-40 lg:w-60'></span>
+				<h2 className='font-bold uppercase text-fuchsia-600 dark:text-[#00FFFF] md:text-xl'>
+					{title}
+				</h2>
+				<span className='h-0.5 w-20 bg-fuchsia-600 dark:bg-[#00FFFF] md:w-40 lg:w-60'></span>
+			</div>
 			<div className='relative h-80 w-80 md:h-96 md:w-96'>
 				<Image src={image} alt='profile picture' layout='fill' />
 			</div>
-			<p className='mb-8 px-8 font-medium md:text-lg lg:text-xl '>{details}</p>
+			<p className='mb-8 px-8 font-medium md:text-lg lg:w-4/5 lg:text-lg'>
+				{details}
+			</p>
 			<Button link={link} name={name} />
 		</motion.div>
 	);

@@ -44,7 +44,7 @@ const ProjectDetails = ({ title, description, tools, github, url, image }) => {
 					className='flex items-center'
 				>
 					<a href={url} target='_blank'>
-						<div className='relative h-[18rem] w-72 rounded-md ring-4 ring-cyan-500 md:h-[28rem] md:w-[32rem] lg:h-[28rem]'>
+						<div className='relative h-[18rem] w-72 rounded-md ring-4 ring-fuchsia-500 dark:ring-cyan-500 md:h-[28rem] md:w-[32rem] lg:h-[28rem]'>
 							<Image
 								className='transform rounded-md duration-500 hover:scale-110'
 								src={image}
@@ -61,10 +61,10 @@ const ProjectDetails = ({ title, description, tools, github, url, image }) => {
 					transition={{ duration: 2, ease: 'easeInOut' }}
 					className='flex w-full flex-col space-y-5 px-10 md:space-y-10 md:px-32 lg:w-96 lg:items-center'
 				>
-					<h2 className='text-xl font-bold text-gray-600 dark:text-stone-50 md:text-3xl lg:w-96'>
+					<h2 className='text-xl font-bold text-gray-800 dark:text-stone-50 md:text-3xl lg:w-96'>
 						{title}
 					</h2>
-					<p className='bg-gradient-to-br from-cyan-900 to-cyan-600 p-2 text-sm font-semibold tracking-wide text-stone-50 shadow-lg shadow-gray-500 md:w-[26rem] md:p-4 md:text-lg lg:w-96 lg:rounded lg:py-6 lg:pl-12 lg:pr-2 lg:text-sm'>
+					<p className='bg-gradient-to-br from-fuchsia-900 to-fuchsia-500 p-2 text-sm font-semibold tracking-wide text-stone-50 shadow-lg shadow-gray-500 dark:from-cyan-900 dark:to-cyan-600 md:w-[26rem] md:p-4 md:text-lg lg:w-96 lg:rounded lg:py-6 lg:pl-12 lg:pr-2 lg:text-sm'>
 						{description}
 					</p>
 					<h3 className='text-sm font-medium tracking-wider text-gray-800 dark:text-stone-50 md:text-lg lg:w-96 lg:text-base lg:font-semibold'>
@@ -81,7 +81,7 @@ const ProjectDetails = ({ title, description, tools, github, url, image }) => {
 								strokeWidth='2'
 								strokeLinecap='round'
 								strokeLinejoin='round'
-								className='h-5 text-cyan-500 hover:text-cyan-300 md:h-7 lg:h-8'
+								className='h-5 text-fuchsia-600 hover:text-fuchsia-400 dark:text-cyan-500 dark:hover:text-[#00FFFF] md:h-7 lg:h-8'
 							>
 								<title>External Link</title>
 								<path d='M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6'></path>
@@ -99,7 +99,7 @@ const ProjectDetails = ({ title, description, tools, github, url, image }) => {
 								strokeWidth='2'
 								strokeLinecap='round'
 								strokeLinejoin='round'
-								className='h-5 text-cyan-500 hover:text-cyan-300 md:h-7 lg:h-8'
+								className='dark:hover:text-cyan h-5 text-fuchsia-600 hover:text-fuchsia-400 dark:text-cyan-500 dark:hover:text-[#00FFFF] md:h-7 lg:h-8'
 							>
 								<title>GitHub</title>
 								<path d='M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22'></path>

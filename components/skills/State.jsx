@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
 import SkillsDetails from './SkillsDetails';
 
-const FrameWorks = () => {
+const State = () => {
 	const [ref, inView] = useInView({ threshold: 0.3 });
 	const animation = useAnimation();
 
@@ -23,19 +23,19 @@ const FrameWorks = () => {
 	}, [inView]);
 
 	const description =
-		'Libraries and frameworks makes it easier to work with Javascript. Reactjs being one of the most popular Javascript library, I took my time to learn and understand how it works and how to use it effectively. I also love working with Nextjs because of its production ready features including server and static rendering.';
-	const tags = ['Reactjs', 'Nextjs'];
+		'Redux, Context-api and React-hooks is my go to for global state management. While Context-api together with React-hooks is mostly enough for most of my projects, I can confortably work with Redux or of recent Redux/Toolkit if the Project demands for it.';
+	const tags = ['Redux', 'Context-api/React-hooks'];
 	return (
 		<motion.div ref={ref} className='flex h-full w-full flex-col items-center'>
 			<SkillsDetails
-				title='Library/Frameworks'
+				title='State Management'
 				description={description}
 				tags={tags}
 				animation={animation}
-				image='/images/next-js-vs-react.png'
+				image='/images/redux-context.png'
 			/>
 		</motion.div>
 	);
 };
 
-export default FrameWorks;
+export default State;

@@ -34,7 +34,8 @@ function Blog() {
 				image='/illustra/news.png'
 				details={details}
 				link='/Blog'
-				name='View Blog'
+				as='/blog'
+				name='View Articles'
 			/>
 		</div>
 	);

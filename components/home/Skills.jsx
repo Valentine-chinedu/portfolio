@@ -34,6 +34,7 @@ function Skills() {
 				image='/illustra/skill.png'
 				details={details}
 				link='/Skills'
+				as='/skills'
 				name='View skills'
 			/>
 		</div>

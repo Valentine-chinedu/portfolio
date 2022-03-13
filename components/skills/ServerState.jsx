@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
 import SkillsDetails from './SkillsDetails';
 
-const FrameWorks = () => {
+const ServerState = () => {
 	const [ref, inView] = useInView({ threshold: 0.3 });
 	const animation = useAnimation();
 
@@ -23,19 +23,22 @@ const FrameWorks = () => {
 	}, [inView]);
 
 	const description =
-		'Libraries and frameworks makes it easier to work with Javascript. Reactjs being one of the most popular Javascript library, I took my time to learn and understand how it works and how to use it effectively. I also love working with Nextjs because of its production ready features including server and static rendering.';
-	const tags = ['Reactjs', 'Nextjs'];
+		'While using context-api/hooks or Redux for state management, I find React-query and RTK-query best suitable for managing asynchronous state in React. Although I prefer working with react-query over rtk-query both offers the same functionalities for data fetching and caching and I feel confortable working with both.';
+	const tags = ['React-Query', 'RTK-Query'];
 	return (
-		<motion.div ref={ref} className='flex h-full w-full flex-col items-center'>
+		<motion.div
+			ref={ref}
+			className='justify-cente flex h-full w-full flex-col items-center'
+		>
 			<SkillsDetails
-				title='Library/Frameworks'
+				title='Data Fetching'
 				description={description}
 				tags={tags}
 				animation={animation}
-				image='/images/next-js-vs-react.png'
+				image='/images/react-query.png'
 			/>
 		</motion.div>
 	);
 };
 
-export default FrameWorks;
+export default ServerState;

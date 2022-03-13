@@ -24,7 +24,7 @@ function Projects() {
 	}, [inView]);
 
 	const details =
-		'Feel free to reach out if you are looking to hire or collabrate on a project. I will always be glad to hear from you';
+		"Do you think that I would make a great addition to your team? I think so too. I am a young and passionate learner, ready to succeed in the tech world. I have a background that has built up my collabrative and communication skills. I'm dedicated to learning the ins and outs of your tech stack to keep up with high standard your users are used to.";
 
 	return (
 		<div ref={ref} className=' flex h-full w-full flex-col items-center pb-8  '>
@@ -34,7 +34,8 @@ function Projects() {
 				image='/illustra/Form.png'
 				details={details}
 				link='/Form'
-				name='Fill Form'
+				as='/form'
+				name='Contact form'
 			/>
 		</div>
 	);
