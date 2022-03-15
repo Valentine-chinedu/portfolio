@@ -29,8 +29,8 @@ function Projects() {
 			<div className='flex h-full w-full flex-col items-center overflow-x-hidden lg:w-4/6 lg:px-12'>
 				<Onstore />
 				<MovieApp />
-				<Spacex />
 				<SocialHangout />
+				<Spacex />
 				<GoogleClone />
 			</div>
 		</motion.div>
