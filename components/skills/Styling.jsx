@@ -37,7 +37,7 @@ const Styling = () => {
 	return (
 		<motion.div ref={ref} className='flex h-full w-full flex-col items-center '>
 			<SkillsDetails
-				title='Markup and Styling'
+				title='Markup/Styling'
 				description={description}
 				tags={tags}
 				animation={animation}
