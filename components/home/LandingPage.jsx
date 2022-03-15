@@ -64,17 +64,18 @@ function LandingPage({ openSideBar }) {
 			animate='in'
 			exit='out'
 			variants={pageVariantsAnim}
-			className='relative flex h-screen flex-col items-center justify-center'
+			className='flex h-screen flex-col items-center justify-center space-y-10'
 		>
 			<motion.svg
 				initial={{ opacity: 0 }}
 				animate={{ opacity: 1 }}
 				transition={{ duration: 2, ease: 'easeIn' }}
-				className='absolute h-24 md:bottom-[30rem] md:h-36 lg:bottom-[26rem] lg:h-48'
+				className='relative h-24 md:h-36 lg:h-48'
 				width='332'
 				height='274'
 				viewBox='0 0 332 274'
 				fill='none'
+				s
 				xmlns='http://www.w3.org/2000/svg'
 			>
 				{/* <rect width='332' height='274' fill='#E5E5E5' /> */}
@@ -83,8 +84,7 @@ function LandingPage({ openSideBar }) {
 					animate={{ pathLength: 1 }}
 					transition={{ duration: 2 }}
 					d='M166.326 16.1886H16V258.651H166.326'
-					stroke='#3C0573'
-					stroke-opacity='0.89'
+					stroke='#c300ff'
 					stroke-width='20'
 				/>
 				<motion.path
@@ -116,13 +116,13 @@ function LandingPage({ openSideBar }) {
 					/>
 				</g>
 			</motion.svg>
-			<div className='h-56'></div>
+
 			{show && (
 				<motion.div
 					variants={sentence}
 					initial='hidden'
 					animate='visible'
-					className=' flex w-full flex-col items-center justify-center font-serif uppercase'
+					className='flex w-full flex-col items-center justify-center font-serif uppercase'
 				>
 					<div>
 						{line1.split('').map((char, index) => (

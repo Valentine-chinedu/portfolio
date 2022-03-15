@@ -1,11 +1,14 @@
-import NavBar from '../components/NavBar';
-import Head from 'next/head';
 import '../styles.css';
-import { GlobalStateProvider } from '../contextprovider/Context';
 import { useEffect, useState } from 'react';
+
 import { ThemeProvider, useTheme } from 'next-themes';
-import Footer from '../components/Footer';
+import { GlobalStateProvider } from '../contextprovider/Context';
+
+import Head from 'next/head';
 import { useRouter } from 'next/router';
+
+import Footer from '../components/Footer';
+import Header from '../components/header/Header';
 
 function MyApp({ Component, pageProps }) {
 	const [show, setShow] = useState(false);
@@ -26,7 +29,7 @@ function MyApp({ Component, pageProps }) {
 		setTheme('dark');
 	}, []);
 	return (
-		<div className=''>
+		<div className='h-full overflow-hidden'>
 			<Head>
 				<link rel='preconnect' href='https://fonts.googleapis.com' />
 				<link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
@@ -37,7 +40,7 @@ function MyApp({ Component, pageProps }) {
 			</Head>
 			<GlobalStateProvider>
 				<ThemeProvider attribute='class'>
-					{show && <NavBar />}
+					{show && <Header />}
 					<Component {...pageProps} />
 					{show && <Footer />}
 				</ThemeProvider>
