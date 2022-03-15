@@ -31,7 +31,7 @@ const socialHangout = {
 const googleClone = {
 	title: 'Google-clone',
 	description: 'A clone of google search with full search functionality. ',
-	tools: 'Nextjs Tailwindcss Google-Api',
+	tools: 'Nextjs Tailwindcss Google-Api ServerSide-Rendering',
 	github: 'https://github.com/Valentine-chinedu/google_clone',
 	url: 'https://google-clone-blue.vercel.app/',
 	image: '/google_search_clone.png',
