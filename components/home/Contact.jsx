@@ -35,7 +35,7 @@ function Projects() {
 				details={details}
 				link='/Form'
 				as='/form'
-				name='Contact form'
+				name='Contact Me'
 			/>
 		</div>
 	);
