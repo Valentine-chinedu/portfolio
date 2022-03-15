@@ -36,48 +36,96 @@ const Footer = () => {
 	};
 	return (
 		<div
-			className={`flex flex-col bg-gray-900 px-8 pt-4 pb-2 md:h-56 md:px-12 md:pb-4 lg:h-60 lg:py-8 ${
+			className={`flex h-60 flex-col items-center justify-center space-y-5 bg-gray-900 py-2 md:h-72 md:space-y-8 ${
 				openSideBar && 'blur-sm filter'
 			}`}
 		>
-			<div className='mb-4 flex flex-col items-center'></div>
-
-			<div className='flex h-full w-full items-end justify-center space-x-8 md:space-x-28 lg:space-x-40'>
-				<h3 className='text-xs text-stone-100 md:text-lg'>
-					&copy; 2022 Valentine Okosi C.
-				</h3>
-				<div className='flex items-center space-x-3 md:space-x-6 lg:space-x-10'>
+			<div className='mb-4 text-gray-100 md:space-x-8 md:text-xl'>
+				<Link href='/'>
 					<a
-						href='mailto:valentine11.dev@gmail.com'
-						target='_blank'
-						rel='noopener noreferrer'
+						className=' z-50 cursor-pointer tracking-wider lg:hover:text-gray-300'
+						onClick={() => {
+							setOpenSideBar(false);
+						}}
 					>
-						<BsEnvelope className='text-xl text-gray-300 hover:text-fuchsia-500 dark:hover:text-[#00FFFF] md:text-3xl' />
+						Home
 					</a>
+				</Link>
+				<Link href='/Projects'>
 					<a
-						href='https://www.linkedin.com/in/valentine-chinedu-9bb74b215/'
-						target='_blank'
-						rel='noopener noreferrer'
+						className='cursor-pointer tracking-wider lg:hover:text-gray-300'
+						onClick={() => {
+							setOpenSideBar(false);
+						}}
 					>
-						<ImLinkedin className='text-lg text-gray-300 hover:text-fuchsia-500 dark:hover:text-[#00FFFF] md:text-3xl' />
+						Projects
 					</a>
+				</Link>
+				<Link href='/Skills'>
 					<a
-						href='https://github.com/Valentine-chinedu'
-						target='_blank'
-						rel='noopener noreferrer'
+						className='cursor-pointer tracking-wider lg:hover:text-gray-300'
+						onClick={() => {
+							setOpenSideBar(false);
+						}}
 					>
-						<BsGithub className='text-xl text-gray-300 hover:text-fuchsia-500 dark:hover:text-[#00FFFF] md:text-3xl' />
+						Skills
 					</a>
+				</Link>
+				<Link href='/Blog'>
 					<a
-						className='relative h-5 w-5 md:h-7 md:w-7'
-						href='valentineokosi.hashnode.dev'
-						target='_blank'
-						rel='noopener noreferrer'
+						className='cursor-pointer tracking-wider lg:hover:text-gray-300'
+						onClick={() => {
+							setOpenSideBar(false);
+						}}
 					>
-						<Image src='/brand-icon.png' layout='fill' />
+						Blog
 					</a>
-				</div>
+				</Link>
+				<Link href='/Form'>
+					<a
+						className='cursor-pointer tracking-wider lg:hover:text-gray-300'
+						onClick={() => {
+							setOpenSideBar(false);
+						}}
+					>
+						Contact
+					</a>
+				</Link>
 			</div>
+			<div className='md flex items-center space-x-8 lg:space-x-10'>
+				<a
+					href='mailto:valentine11.dev@gmail.com'
+					target='_blank'
+					rel='noopener noreferrer'
+				>
+					<BsEnvelope className='text-3xl text-gray-300 hover:text-fuchsia-500 dark:hover:text-[#00FFFF] md:text-4xl' />
+				</a>
+				<a
+					href='https://www.linkedin.com/in/valentine-chinedu-9bb74b215/'
+					target='_blank'
+					rel='noopener noreferrer'
+				>
+					<ImLinkedin className='text-2xl text-gray-300 hover:text-fuchsia-500 dark:hover:text-[#00FFFF] md:text-3xl' />
+				</a>
+				<a
+					href='https://github.com/Valentine-chinedu'
+					target='_blank'
+					rel='noopener noreferrer'
+				>
+					<BsGithub className='text-3xl text-gray-300 hover:text-fuchsia-500 dark:hover:text-[#00FFFF] md:text-4xl' />
+				</a>
+				<a
+					className='relative h-8 w-8 md:h-10 md:w-10'
+					href='https://valentineokosi.hashnode.dev'
+					target='_blank'
+					rel='noopener noreferrer'
+				>
+					<Image src='/brand-icon.png' layout='fill' />
+				</a>
+			</div>
+			<h3 className=' text-stone-100 md:text-xl'>
+				&copy; 2022 Valentine Okosi Chinedu.
+			</h3>
 		</div>
 	);
 };
