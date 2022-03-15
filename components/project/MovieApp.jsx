@@ -1,10 +1,10 @@
-import { movieApp } from '../../projectData';
-import ProjectDisplay1 from './ProjectDisplay1';
+import { movieApp } from './projectData';
+import ProjectDetails from './ProjectDetails';
 
 const MovieApp = () => {
 	return (
-		<div className='h-screen w-full'>
-			<ProjectDisplay1
+		<div>
+			<ProjectDetails
 				title={movieApp.title}
 				description={movieApp.description}
 				tools={movieApp.tools}

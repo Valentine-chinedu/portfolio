@@ -1,21 +1,26 @@
+import React, { useContext } from 'react';
 import Head from 'next/head';
-import { useState } from 'react';
-import LandingPage from '../components/LandingPage';
-import { BsArrowUpCircle } from 'react-icons/bs';
+import { useEffect } from 'react';
 
-import Skills from '../components/Skills';
-import Projects from '../components/project/Projects';
-import Contact from '../components/Contact';
+import Home from '../components/home/Home';
+import LandingPage from '../components/home/LandingPage';
 
-import NavBar from '../components/NavBar';
+import { useTheme } from 'next-themes';
+import GlobalStateContext from '../contextprovider/Context';
 
-export default function Home() {
-	const [openSideBar, setOpenSideBar] = useState(false);
+export default function index() {
+	const { isLoaded } = useContext(GlobalStateContext);
+
+	const { setTheme } = useTheme();
+
+	useEffect(() => {
+		setTheme('dark');
+	}, []);
 
 	return (
-		<div className='font-sans overflow-x-hidden  z-20 h-full w-full scroll-smooth'>
+		<div className='primary-theme dark:secondary-theme z-20 h-full w-full overflow-x-hidden pb-24 font-sans transition-all duration-700 md:pb-32 lg:pb-40'>
 			<Head>
-				<title>Valentine's Portfolio.</title>
+				<title>Valentine Okosi.</title>
 				<link rel='icon' href='/favicon-32x32.png' />
 				<meta property='og:image' content='/portfolio-screenshot.jpg' />
 				<meta property='og:image:type' content='image/jpeg' />
@@ -23,31 +28,7 @@ export default function Home() {
 				<meta property='og:image:height' content='300' />
 			</Head>
 
-			<header className='h-screen w-full overflow-hidden'>
-				<NavBar openSideBar={openSideBar} setOpenSideBar={setOpenSideBar} />
-
-				<LandingPage openSideBar={openSideBar} />
-			</header>
-
-			{/* close sidebar on screen touch/click */}
-			{openSideBar && (
-				<div
-					onClick={() => {
-						setOpenSideBar(false);
-					}}
-					className='fixed h-full inset-0 z-40'
-				></div>
-			)}
-
-			<main
-				className={`overflow-hidden ${openSideBar ? 'filter blur-sm' : ''}`}
-			>
-				<Projects openSideBar={openSideBar} />
-				<Skills openSideBar={openSideBar} />
-			</main>
-			<footer className={`lg:container ${openSideBar ? 'filter blur-sm' : ''}`}>
-				<Contact />
-			</footer>
+			{isLoaded ? <Home /> : <LandingPage />}
 		</div>
 	);
 }

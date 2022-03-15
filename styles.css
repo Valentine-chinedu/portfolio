@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.primary-theme {
+		@apply bg-[#f9f5fc] text-gray-800;
+	}
+	.secondary-theme {
+		@apply bg-[#010e03] text-gray-200;
+	}
+}

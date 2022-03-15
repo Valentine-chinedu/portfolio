@@ -1,10 +1,10 @@
-import { socialHangout } from '../../projectData';
-import ProjectDisplay1 from './ProjectDisplay1';
+import { socialHangout } from './projectData';
+import ProjectDetails from './ProjectDetails';
 
 const SocialHangout = () => {
 	return (
-		<div className='h-screen w-full'>
-			<ProjectDisplay1
+		<div>
+			<ProjectDetails
 				title={socialHangout.title}
 				description={socialHangout.description}
 				tools={socialHangout.tools}
