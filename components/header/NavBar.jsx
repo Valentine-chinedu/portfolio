@@ -42,16 +42,19 @@ const NavBar = ({ openSideBar, setOpenSideBar }) => {
 						Skills
 					</a>
 				</Link>
-				<Link href='/Blog'>
-					<a
-						className='cursor-pointer px-2 tracking-wider after:absolute after:bg-fuchsia-600 after:duration-1000 hover:after:transition-[width] dark:after:bg-[#00FFFF] lg:after:bottom-1 lg:after:block lg:after:h-0.5 lg:after:w-0 lg:hover:after:w-10'
-						onClick={() => {
-							setOpenSideBar(false);
-						}}
-					>
-						Blog
-					</a>
-				</Link>
+
+				<a
+					className='cursor-pointer px-2 tracking-wider after:absolute after:bg-fuchsia-600 after:duration-1000 hover:after:transition-[width] dark:after:bg-[#00FFFF] lg:after:bottom-1 lg:after:block lg:after:h-0.5 lg:after:w-0 lg:hover:after:w-10'
+					onClick={() => {
+						setOpenSideBar(false);
+					}}
+					href='https://valentineokosi.hashnode.dev'
+					target='_blank'
+					rel='noopener noreferrer'
+				>
+					Blog
+				</a>
+
 				<Link href='/Form'>
 					<a
 						className='cursor-pointer px-2 tracking-wider after:absolute after:bg-fuchsia-600 after:duration-1000 hover:after:transition-[width] dark:after:bg-[#00FFFF] lg:after:bottom-1 lg:after:block lg:after:h-0.5 lg:after:w-0 lg:hover:after:w-[4rem]'
