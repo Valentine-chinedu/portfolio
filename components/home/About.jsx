@@ -30,12 +30,12 @@ function About() {
 
 				<div className='flex w-full flex-col items-center space-y-2 px-6 font-medium text-gray-800 dark:text-blue-50 md:text-lg lg:w-3/5 lg:px-0'>
 					<p>
-						I'm Valentine Okosi, A Frontend developer who is passionate about
-						developing web apps that positively impact businesses. I enjoy being
-						creative, using code as a way to express myself. I strive to
-						develope visually appealing designs with user exprience always the
-						focus. Currently, I am available for a suitable frontend engineering
-						position, with opportunities for continuous learning.
+						I'm Valentine Okosi, A Frontend developer who is determined to make
+						an impact and succeed. I enjoy being creative, using code as a way
+						to express myself. I strive to develope visually appealing designs
+						with user exprience always the focus. Currently, I am available for
+						a suitable frontend development position, with opportunities for
+						continuous learning.
 					</p>
 				</div>
 			</div>

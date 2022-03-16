@@ -3,44 +3,19 @@ import Link from 'next/link';
 import { useContext, useState } from 'react';
 import { BsEnvelope, BsGithub } from 'react-icons/bs';
 
-import { FiSend } from 'react-icons/fi';
 import { ImLinkedin } from 'react-icons/im';
 import GlobalStateContext from '../contextprovider/Context';
 
 const Footer = () => {
 	const { openSideBar } = useContext(GlobalStateContext);
-	const [query, setQuery] = useState({
-		email: '',
-	});
 
-	// Update inputs value
-	const handleParam = () => (e) => {
-		const name = e.target.name;
-		const value = e.target.value;
-		setQuery((prevState) => ({
-			...prevState,
-			[name]: value,
-		}));
-	};
-	// Form submit function
-	const formSubmit = (e) => {
-		e.preventDefault();
-		const formData = new FormData();
-		Object.entries(query).forEach(([key, value]) => {
-			formData.append(key, value);
-		});
-		fetch('https://getform.io/f/1123de77-c137-4b78-a48e-1d5745223d28', {
-			method: 'POST',
-			body: formData,
-		}).then(() => setQuery({ email: '' }));
-	};
 	return (
 		<div
-			className={`flex h-60 flex-col items-center justify-center space-y-5 bg-gray-900 py-2 md:h-72 md:space-y-8 ${
+			className={`flex h-48 flex-col items-center justify-center space-y-5 bg-gray-900 py-2 dark:bg-gray-700 md:space-y-8 ${
 				openSideBar && 'blur-sm filter'
 			}`}
 		>
-			<div className='mb-4 text-gray-100 md:space-x-8 md:text-xl'>
+			<div className='mb-4 space-x-4 text-gray-100 md:space-x-8 md:text-xl'>
 				<Link href='/'>
 					<a
 						className=' z-50 cursor-pointer tracking-wider lg:hover:text-gray-300'
