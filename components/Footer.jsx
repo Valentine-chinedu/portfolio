@@ -11,7 +11,7 @@ const Footer = () => {
 
 	return (
 		<div
-			className={`flex h-48 flex-col items-center justify-center space-y-5 bg-gray-900 py-2 dark:bg-gray-700 md:space-y-8 ${
+			className={`flex h-48 flex-col items-center justify-center space-y-5 bg-gray-900 py-20 dark:bg-gray-700 md:space-y-8 md:py-28 lg:py-32 ${
 				openSideBar && 'blur-sm filter'
 			}`}
 		>

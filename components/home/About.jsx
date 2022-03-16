@@ -28,7 +28,7 @@ function About() {
 					</div>
 				</div>
 
-				<div className='flex w-full flex-col items-center space-y-2 px-6 font-medium text-gray-800 dark:text-blue-50 md:text-lg lg:w-3/5 lg:px-0'>
+				<div className='flex w-full flex-col items-center space-y-2 px-6 font-medium text-gray-800 dark:text-blue-50 md:px-3 md:text-lg lg:w-3/5 lg:px-0'>
 					<p>
 						I'm Valentine Okosi, A Frontend developer who is determined to make
 						an impact and succeed. I enjoy being creative, using code as a way
