@@ -36,7 +36,7 @@ const Theme = () => {
 				} rounded-3xl border border-fuchsia-500 text-black transition-all duration-1000 dark:border-[#00FFFF] dark:text-white`}
 			>
 				<button
-					className='focus:outline-none'
+					className='active:outline-none'
 					onClick={() => setToggledTheme((prev) => !prev)}
 				>
 					<FaCircle className='text-sm lg:text-base' />
