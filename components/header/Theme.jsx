@@ -35,7 +35,10 @@ const Theme = () => {
 					theme === 'light' ? 'justify-start' : 'justify-end'
 				} rounded-3xl border border-fuchsia-500 text-black transition-all duration-1000 dark:border-[#00FFFF] dark:text-white`}
 			>
-				<button onClick={() => setToggledTheme((prev) => !prev)}>
+				<button
+					className='focus:outline-none'
+					onClick={() => setToggledTheme((prev) => !prev)}
+				>
 					<FaCircle className='text-sm lg:text-base' />
 				</button>
 			</div>
