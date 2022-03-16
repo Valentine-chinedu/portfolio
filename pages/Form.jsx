@@ -48,9 +48,9 @@ function Form() {
 						className='flex w-full flex-col items-center'
 					>
 						<div>
-							<div className=''>
+							<div>
 								<input
-									className='mb-4 h-10 w-[21rem] rounded-md border-2 border-stone-700 pl-2 text-sm text-stone-50 opacity-60 focus:bg-gray-100 focus:text-gray-700 focus:opacity-100 focus:outline-none dark:border-stone-50 dark:bg-gray-900 md:h-14 md:w-[38rem] md:text-lg lg:w-[50rem] lg:pl-8'
+									className='input-text'
 									type='text'
 									name='name'
 									required
@@ -61,7 +61,7 @@ function Form() {
 							</div>
 							<div>
 								<input
-									className='mb-4 h-10 w-[21rem] rounded-md border-2 border-gray-700 pl-2 text-sm text-stone-50 opacity-60 focus:bg-gray-100 focus:text-gray-700 focus:opacity-100 focus:outline-none dark:border-stone-50 dark:bg-gray-900 md:h-14 md:w-[38rem] md:text-lg lg:w-[50rem] lg:pl-8'
+									className='input-text'
 									type='email'
 									name='email'
 									placeholder='Email'
@@ -71,7 +71,7 @@ function Form() {
 							</div>
 							<div className='mb-3 md:mb-5 lg:mb-8'>
 								<textarea
-									className='w-[21rem] rounded-md border-2 border-gray-700 pt-2 pl-2 text-sm text-stone-50 opacity-60 focus:bg-gray-100 focus:text-gray-700 focus:opacity-100 focus:outline-none dark:border-stone-50 dark:bg-gray-900 md:w-[38rem] md:text-lg lg:w-[50rem] lg:pl-8 lg:pt-4'
+									className='textarea-text'
 									name='message'
 									placeholder='Your message...'
 									required
