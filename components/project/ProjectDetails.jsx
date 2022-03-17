@@ -1,9 +1,6 @@
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 
-import { FaExternalLinkAlt } from 'react-icons/fa';
-import { BsGithub } from 'react-icons/bs';
-
 import { useInView } from 'react-intersection-observer';
 
 const ProjectDetails = ({ title, description, tools, github, url, image }) => {
@@ -41,7 +38,7 @@ const ProjectDetails = ({ title, description, tools, github, url, image }) => {
 					variants={variants}
 					animate={isVisible ? 'visible' : 'hidden'}
 					transition={{ duration: 2, ease: 'easeInOut' }}
-					className='flex items-center'
+					className='flex w-full justify-center'
 				>
 					<a href={url} target='_blank'>
 						<div className='relative h-[18rem] w-72 rounded-md ring-4 ring-fuchsia-500 dark:ring-cyan-500 md:h-[28rem] md:w-[32rem] lg:h-[28rem]'>

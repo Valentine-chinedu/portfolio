@@ -30,7 +30,7 @@ function Projects() {
 		<div ref={ref} className=' flex h-full w-full flex-col items-center'>
 			<HomeDetails
 				animation={animation}
-				title='featured projects'
+				title='Projects'
 				image='/illustra/development.png'
 				details={details}
 				link='/Projects'

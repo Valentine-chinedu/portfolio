@@ -33,7 +33,7 @@ function Blog() {
 				<div className='flex w-full items-center justify-center space-x-2 md:space-x-4 lg:space-x-8'>
 					<span className='h-0.5 w-20 bg-fuchsia-600 dark:bg-[#00FFFF] md:w-40 lg:w-60'></span>
 					<h2 className='font-bold uppercase text-fuchsia-600 dark:text-[#00FFFF] md:text-xl'>
-						Technical Blog
+						Blog
 					</h2>
 					<span className='h-0.5 w-20 bg-fuchsia-600 dark:bg-[#00FFFF] md:w-40 lg:w-60'></span>
 				</div>

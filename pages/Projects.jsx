@@ -19,14 +19,14 @@ function Projects() {
 			exit='out'
 			variants={pageVariantsAnim}
 			onClick={() => setOpenSideBar(false)}
-			className={`primary-theme dark:secondary-theme flex h-full flex-col items-center justify-center pt-24 md:pt-36 ${
+			className={`primary-theme dark:secondary-theme flex h-full w-full flex-col items-center justify-center pt-24 md:pt-36 ${
 				openSideBar ? 'blur-sm filter' : ''
 			}`}
 		>
 			<h2 className='font-extrabold uppercase text-gray-800 dark:text-gray-100 md:text-2xl'>
 				projects built
 			</h2>
-			<div className='flex h-full w-full flex-col items-center overflow-x-hidden lg:w-4/6 lg:px-12'>
+			<div className='flex h-full w-full flex-col items-center overflow-x-hidden lg:w-full'>
 				<Onstore />
 				<MovieApp />
 				<SocialHangout />

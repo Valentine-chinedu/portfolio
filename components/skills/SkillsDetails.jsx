@@ -11,7 +11,7 @@ const SkillsDetails = ({ title, description, tags, animation, image }) => {
 				<div className='mb-8 flex w-full items-center justify-center space-x-2 md:mb-12 md:space-x-4 lg:mb-14 lg:space-x-8'>
 					<span className='h-0.5 w-20 bg-fuchsia-600 dark:bg-[#00FFFF] md:w-40 lg:w-60'></span>
 
-					<h3 className='font-bold uppercase text-fuchsia-600 dark:text-[#00FFFF] md:text-xl lg:w-auto'>
+					<h3 className='font-bold uppercase text-fuchsia-600 dark:text-[#00FFFF] md:text-xl'>
 						{title}
 					</h3>
 					<span className='h-0.5 w-20 bg-fuchsia-600 dark:bg-[#00FFFF] md:w-40 lg:w-60'></span>

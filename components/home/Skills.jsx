@@ -30,7 +30,7 @@ function Skills() {
 		<div ref={ref} className='flex h-full w-full flex-col items-center '>
 			<HomeDetails
 				animation={animation}
-				title='Technical skills'
+				title='Skills'
 				image='/illustra/skill.png'
 				details={details}
 				link='/Skills'
