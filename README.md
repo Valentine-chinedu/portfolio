@@ -1,5 +1,12 @@
-Personal portfolio built to showcase some of the projects that i have built and future personal projects.
+# PORTFOLIO
 
-To view projects scroll down to project section or use the navigation menu. On the projects section you can open the projects on browser by clicking on the title or on the link icon at the bottom.
+## General info
+This project was built to act as portfolio website for my frontend projects
 
-To view the code click on the the github icon on the project section.
+## Technologies
+
+* Nextjs
+* Tailwind CSS
+* Framer motion
+
+
