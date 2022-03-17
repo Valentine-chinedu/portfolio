@@ -38,13 +38,13 @@ function About() {
 					</div>
 
 					<ul className='ml-2 w-full list-inside list-disc space-y-1.5 pr-2 text-sm font-medium md:space-y-1 md:text-xl'>
-						<li>Convert designes to pixel perfect HTML code</li>
+						<li>Convert designs to pixel perfect HTML code</li>
 						<li>Ensure Responsiveness and compatability</li>
 						<li>Style and Animate websites</li>
 						<li>Add interactivity to websites</li>
 						<li>Build Single Page Apps</li>
 						<li>Build Server-side rendered and Static-site websites</li>
-						<li>Perfome CRUD operation using REST API</li>
+						<li>Perform CRUD operation using REST API</li>
 					</ul>
 				</div>
 			</div>
