@@ -29,10 +29,7 @@ const ProjectDetails = ({ title, description, tools, github, url, image }) => {
 	};
 
 	return (
-		<div
-			ref={ref}
-			className='relative my-20 flex h-full w-full flex-col md:my-28 lg:my-32'
-		>
+		<div ref={ref} className='md:my- relative flex h-full w-full flex-col'>
 			<div className=' flex h-full w-full flex-col items-center justify-center space-y-8 md:space-y-14 lg:flex-row lg:space-x-36'>
 				<motion.div
 					variants={variants}
@@ -41,7 +38,7 @@ const ProjectDetails = ({ title, description, tools, github, url, image }) => {
 					className='flex w-full justify-center'
 				>
 					<a href={url} target='_blank'>
-						<div className='relative h-[18rem] w-72 rounded-md ring-4 ring-fuchsia-500 dark:ring-cyan-500 md:h-[28rem] md:w-[32rem] lg:h-[28rem]'>
+						<div className='relative h-72 w-72 rounded-md ring-4 ring-fuchsia-500 dark:ring-cyan-500 md:h-96 md:w-[28rem]'>
 							<Image
 								className='transform rounded-md duration-500 hover:scale-110'
 								src={image}
@@ -58,13 +55,13 @@ const ProjectDetails = ({ title, description, tools, github, url, image }) => {
 					transition={{ duration: 2, ease: 'easeInOut' }}
 					className='flex w-full flex-col space-y-5 px-10 md:space-y-10 md:px-32 lg:w-96 lg:items-center'
 				>
-					<h2 className='text-xl font-bold text-gray-800 dark:text-stone-50 md:text-3xl lg:w-96'>
+					<h2 className='text-lg font-bold text-gray-600 dark:text-gray-200 md:text-3xl lg:w-96'>
 						{title}
 					</h2>
 					<p className='bg-gradient-to-br from-fuchsia-900 to-fuchsia-500 p-2 text-sm font-semibold tracking-wide text-stone-50 shadow-lg shadow-gray-500 dark:from-cyan-900 dark:to-cyan-600 md:w-[26rem] md:p-4 md:text-lg lg:w-96 lg:rounded lg:py-6 lg:pl-12 lg:pr-2 lg:text-sm'>
 						{description}
 					</p>
-					<h3 className='text-sm font-medium tracking-wider text-gray-800 dark:text-stone-50 md:text-lg lg:w-96 lg:text-base lg:font-semibold'>
+					<h3 className='text-sm font-bold tracking-wider text-gray-600 dark:text-gray-200 md:text-base lg:w-96 lg:text-base lg:font-semibold'>
 						{tools}
 					</h3>
 					<div className='flex space-x-4 md:space-x-8 lg:w-96 lg:justify-start'>
