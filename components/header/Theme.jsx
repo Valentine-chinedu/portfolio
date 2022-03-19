@@ -16,7 +16,7 @@ const Theme = () => {
 		<div className='flex items-center lg:space-x-3'>
 			<svg
 				xmlns='http://www.w3.org/2000/svg'
-				className='h-5 w-5 text-gray-50 md:h-6 md:w-6 lg:h-7 lg:w-7'
+				className='h-5 w-5 text-[#f9f5fc] md:h-6 md:w-6 lg:h-7 lg:w-7'
 				fill='none'
 				viewBox='0 0 24 24'
 				stroke='currentColor'
@@ -45,7 +45,7 @@ const Theme = () => {
 
 			<svg
 				xmlns='http://www.w3.org/2000/svg'
-				className='h-4 w-4 text-black md:h-5 md:w-5 lg:h-6 lg:w-6'
+				className='h-4 w-4 text-[#010e03] md:h-5 md:w-5 lg:h-6 lg:w-6'
 				fill='none'
 				viewBox='0 0 24 24'
 				stroke='currentColor'
