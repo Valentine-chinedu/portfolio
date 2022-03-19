@@ -9,7 +9,6 @@
 		"test": "jest"
 	},
 	"dependencies": {
-		"@formspree/react": "^2.2.3",
 		"framer-motion": "^5.5.5",
 		"next": "^12.0.7",
 		"next-themes": "^0.0.15",
@@ -17,9 +16,7 @@
 		"react-anchor-link-smooth-scroll": "^1.0.12",
 		"react-dom": "^17.0.2",
 		"react-icons": "^4.2.0",
-		"react-intersection-observer": "^8.33.1",
-		"react-scroll": "^1.8.4",
-		"react-typewriter-effect": "^1.1.0"
+		"react-intersection-observer": "^8.33.1"
 	},
 	"devDependencies": {
 		"@testing-library/jest-dom": "^5.14.1",
@@ -28,8 +25,8 @@
 		"babel-jest": "^27.0.6",
 		"jest": "^27.0.6",
 		"postcss": "^8.4.5",
-		"prettier": "^2.5.1",
-		"prettier-plugin-tailwindcss": "^0.1.3",
+		"prettier": "^2.6.0",
+		"prettier-plugin-tailwindcss": "^0.1.8",
 		"tailwindcss": "^3.0.8"
 	}
 }
