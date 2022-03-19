@@ -1,7 +1,7 @@
 const onstore = {
 	title: 'Onstore',
 	description:
-		'An ecommerce web app where clothing accessories like Suit Trousers, Joggers Pants, shirts, shoes and watches can be purchased. ',
+		'Headless E-commerce web app where clothing accessories like Suit Trousers, Joggers Pants, shirts, shoes and watches can be purchased. ',
 	tools: 'React Typescript Tailwindcss Context-api commerce.js',
 	github: 'https://github.com/Valentine-chinedu/onstore_project',
 	url: 'https://onstore-project.firebaseapp.com/',
