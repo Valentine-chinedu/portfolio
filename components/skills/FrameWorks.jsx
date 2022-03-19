@@ -23,7 +23,7 @@ const FrameWorks = () => {
 	}, [inView]);
 
 	const description =
-		'Libraries and frameworks makes it easier to work with Javascript. Reactjs being one of the most popular Javascript library, I took my time to learn and understand how it works and how to use it effectively. I also love working with Nextjs because of its production ready features including server and static rendering.';
+		'Libraries and frameworks makes it easier to work with Javascript. Reactjs being one of the most popular Javascript library, I took my time to learn and understand how it works and how to use it effectively. I also love working with Nextjs because of its production ready features including SEO, Server-side rendering and Static-site generation.';
 	const tags = ['Reactjs', 'Nextjs'];
 	return (
 		<motion.div ref={ref} className='flex h-full w-full flex-col items-center'>
