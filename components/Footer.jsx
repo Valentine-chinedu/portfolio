@@ -6,66 +6,54 @@ import { BsEnvelope, BsGithub } from 'react-icons/bs';
 import { ImLinkedin } from 'react-icons/im';
 import GlobalStateContext from '../contextprovider/Context';
 
+import AnchorLink from 'react-anchor-link-smooth-scroll';
+
 const Footer = () => {
 	const { openSideBar } = useContext(GlobalStateContext);
 
 	return (
 		<div
-			className={`flex h-48 flex-col items-center justify-center space-y-5 bg-gray-900 py-20 dark:bg-gray-700 md:space-y-8 md:py-28 lg:py-32 ${
+			className={`flex h-48 flex-col items-center justify-center space-y-5 bg-gray-900 pt-20 pb-10 dark:bg-gray-700 md:space-y-8 md:py-28 lg:py-32 ${
 				openSideBar && 'blur-sm filter'
 			}`}
 		>
-			<div className='mb-4 space-x-4 text-gray-100 md:space-x-8 md:text-xl'>
-				<Link href='/'>
-					<a
-						className=' z-50 cursor-pointer tracking-wider lg:hover:text-gray-300'
-						onClick={() => {
-							setOpenSideBar(false);
-						}}
-					>
-						Home
-					</a>
-				</Link>
-				<Link href='/Projects'>
-					<a
-						className='cursor-pointer tracking-wider lg:hover:text-gray-300'
-						onClick={() => {
-							setOpenSideBar(false);
-						}}
-					>
-						Projects
-					</a>
-				</Link>
-				<Link href='/Skills'>
-					<a
-						className='cursor-pointer tracking-wider lg:hover:text-gray-300'
-						onClick={() => {
-							setOpenSideBar(false);
-						}}
-					>
-						Skills
-					</a>
-				</Link>
-				<Link href='/Blog'>
-					<a
-						className='cursor-pointer tracking-wider lg:hover:text-gray-300'
-						onClick={() => {
-							setOpenSideBar(false);
-						}}
-					>
-						Blog
-					</a>
-				</Link>
-				<Link href='/Form'>
-					<a
-						className='cursor-pointer tracking-wider lg:hover:text-gray-300'
-						onClick={() => {
-							setOpenSideBar(false);
-						}}
-					>
-						Contact
-					</a>
-				</Link>
+			<div className='mb-4 space-x-4 text-sm text-gray-200 md:space-x-8 md:text-base'>
+				<AnchorLink
+					href='#home'
+					offset={() => 100}
+					abou
+					className=' z-50 cursor-pointer tracking-wider lg:hover:text-gray-300'
+				>
+					Home
+				</AnchorLink>
+				<AnchorLink
+					href='#projects'
+					offset={() => 100}
+					className='cursor-pointer tracking-wider lg:hover:text-gray-300'
+				>
+					Projects
+				</AnchorLink>
+				<AnchorLink
+					href='#skills'
+					offset={() => 100}
+					className='cursor-pointer tracking-wider lg:hover:text-gray-300'
+				>
+					Skills
+				</AnchorLink>
+				<AnchorLink
+					href='#blog'
+					offset={() => 100}
+					className='cursor-pointer tracking-wider lg:hover:text-gray-300'
+				>
+					Blog
+				</AnchorLink>
+				<AnchorLink
+					href='#contact'
+					offset={() => 100}
+					className='cursor-pointer tracking-wider lg:hover:text-gray-300'
+				>
+					Contact
+				</AnchorLink>
 			</div>
 			<div className='md flex items-center space-x-8 lg:space-x-10'>
 				<a
@@ -98,7 +86,7 @@ const Footer = () => {
 					<Image src='/brand-icon.png' layout='fill' />
 				</a>
 			</div>
-			<h3 className=' text-stone-100 md:text-xl'>
+			<h3 className=' text-sm text-stone-100 md:text-base'>
 				&copy; 2022 Valentine Okosi Chinedu.
 			</h3>
 		</div>

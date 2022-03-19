@@ -1,8 +1,9 @@
 import React from 'react';
 
-import Link from 'next/link';
 import { AiOutlineMenu } from 'react-icons/ai';
 import { VscChromeClose } from 'react-icons/vsc';
+
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 const NavBar = ({ openSideBar, setOpenSideBar }) => {
 	return (
@@ -12,59 +13,58 @@ const NavBar = ({ openSideBar, setOpenSideBar }) => {
 					openSideBar ? 'w-64 md:w-96' : 'w-0'
 				} transition-width z-50 h-full text-sm duration-500`}
 			>
-				<Link href='/'>
-					<a
-						className=' z-50 cursor-pointer px-2 tracking-wider after:absolute after:bg-fuchsia-600 after:duration-1000 hover:after:transition-[width] dark:after:bg-[#00FFFF] lg:after:bottom-1 lg:after:block lg:after:h-0.5 lg:after:w-0 lg:hover:after:w-12'
-						onClick={() => {
-							setOpenSideBar(false);
-						}}
-					>
-						Home
-					</a>
-				</Link>
-				<Link href='/Projects'>
-					<a
-						className='z-50 cursor-pointer px-2 tracking-wider after:absolute after:bg-fuchsia-600 after:duration-1000 hover:after:transition-[width] dark:after:bg-[#00FFFF] lg:after:bottom-1 lg:after:block lg:after:h-0.5 lg:after:w-0 lg:hover:after:w-[4.2rem]'
-						onClick={() => {
-							setOpenSideBar(false);
-						}}
-					>
-						Projects
-					</a>
-				</Link>
-				<Link href='/Skills'>
-					<a
-						className='cursor-pointer px-2 tracking-wider after:absolute after:bg-fuchsia-600 after:duration-1000 hover:after:transition-[width] dark:after:bg-[#00FFFF] lg:after:bottom-1 lg:after:block lg:after:h-0.5 lg:after:w-0 lg:hover:after:w-11'
-						onClick={() => {
-							setOpenSideBar(false);
-						}}
-					>
-						Skills
-					</a>
-				</Link>
+				<AnchorLink
+					href='#home'
+					offset={() => 100}
+					className=' z-50 cursor-pointer px-2 tracking-wider after:absolute after:bg-fuchsia-600 after:duration-1000 hover:after:transition-[width] dark:after:bg-[#00FFFF] lg:after:bottom-1 lg:after:block lg:after:h-0.5 lg:after:w-0 lg:hover:after:w-12'
+					onClick={() => {
+						setOpenSideBar(false);
+					}}
+				>
+					Home
+				</AnchorLink>
+				<AnchorLink
+					href='#projects'
+					offset={() => 100}
+					className='z-50 cursor-pointer px-2 tracking-wider after:absolute after:bg-fuchsia-600 after:duration-1000 hover:after:transition-[width] dark:after:bg-[#00FFFF] lg:after:bottom-1 lg:after:block lg:after:h-0.5 lg:after:w-0 lg:hover:after:w-[4.2rem]'
+					onClick={() => {
+						setOpenSideBar(false);
+					}}
+				>
+					Projects
+				</AnchorLink>
+				<AnchorLink
+					href='#skills'
+					offset={() => 100}
+					className='cursor-pointer px-2 tracking-wider after:absolute after:bg-fuchsia-600 after:duration-1000 hover:after:transition-[width] dark:after:bg-[#00FFFF] lg:after:bottom-1 lg:after:block lg:after:h-0.5 lg:after:w-0 lg:hover:after:w-11'
+					onClick={() => {
+						setOpenSideBar(false);
+					}}
+				>
+					Skills
+				</AnchorLink>
 
-				<a
+				<AnchorLink
+					href='#blog'
+					offset={() => 100}
 					className='cursor-pointer px-2 tracking-wider after:absolute after:bg-fuchsia-600 after:duration-1000 hover:after:transition-[width] dark:after:bg-[#00FFFF] lg:after:bottom-1 lg:after:block lg:after:h-0.5 lg:after:w-0 lg:hover:after:w-10'
 					onClick={() => {
 						setOpenSideBar(false);
 					}}
-					href='https://valentineokosi.hashnode.dev'
-					target='_blank'
-					rel='noopener noreferrer'
 				>
 					Blog
-				</a>
+				</AnchorLink>
 
-				<Link href='/Form'>
-					<a
-						className='cursor-pointer px-2 tracking-wider after:absolute after:bg-fuchsia-600 after:duration-1000 hover:after:transition-[width] dark:after:bg-[#00FFFF] lg:after:bottom-1 lg:after:block lg:after:h-0.5 lg:after:w-0 lg:hover:after:w-[4rem]'
-						onClick={() => {
-							setOpenSideBar(false);
-						}}
-					>
-						Contact
-					</a>
-				</Link>
+				<AnchorLink
+					href='#contact'
+					offset={() => 100}
+					className='cursor-pointer px-2 tracking-wider after:absolute after:bg-fuchsia-600 after:duration-1000 hover:after:transition-[width] dark:after:bg-[#00FFFF] lg:after:bottom-1 lg:after:block lg:after:h-0.5 lg:after:w-0 lg:hover:after:w-[4rem]'
+					onClick={() => {
+						setOpenSideBar(false);
+					}}
+				>
+					Contact
+				</AnchorLink>
 				{/* <div className='flex items-center'>
             <a
                 href='/valentine_okosi_resume'
