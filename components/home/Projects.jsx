@@ -1,8 +1,13 @@
 import { useAnimation } from 'framer-motion';
 import { useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
-
-import HomeDetails from './HomeDetails';
+import {
+	GoogleClone,
+	MovieApp,
+	Onstore,
+	SocialHangout,
+	Spacex,
+} from '../project';
 
 function Projects() {
 	const [ref, inView] = useInView({ threshold: 0.3 });
@@ -23,20 +28,22 @@ function Projects() {
 		}
 	}, [inView]);
 
-	const details =
-		'Learning concepts and code is not just enough, so I like keeping busy with building projects to consolidate and showcase what I have learnt. Click on the button to view the projects that I have worked on.';
-
 	return (
-		<div ref={ref} className=' flex h-full w-full flex-col items-center'>
-			<HomeDetails
-				animation={animation}
-				title='Projects'
-				image='/illustra/development.png'
-				details={details}
-				link='/Projects'
-				as='/projects'
-				name='Projects'
-			/>
+		<div
+			ref={ref}
+			className='flex h-full w-full flex-col items-center'
+			id='projects'
+		>
+			<h2 className='mb-16 text-lg font-bold uppercase text-gray-600 dark:text-gray-200 md:mb-24 md:text-2xl lg:mb-36 lg:text-3xl'>
+				my work
+			</h2>
+			<div className='flex h-full w-full flex-col items-center space-y-32 overflow-x-hidden md:space-y-36 lg:w-full lg:space-y-60'>
+				<Onstore />
+				<MovieApp />
+				<SocialHangout />
+				<Spacex />
+				<GoogleClone />
+			</div>
 		</div>
 	);
 }

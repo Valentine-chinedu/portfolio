@@ -1,6 +1,12 @@
 import { useAnimation } from 'framer-motion';
 import { useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
+import FrameWorks from '../skills/FrameWorks';
+import Programming from '../skills/Programming';
+import ServerState from '../skills/ServerState';
+import State from '../skills/State';
+import Styling from '../skills/Styling';
+import VersionControl from '../skills/VersionControl';
 
 import HomeDetails from './HomeDetails';
 
@@ -23,20 +29,23 @@ function Skills() {
 		}
 	}, [inView]);
 
-	const details =
-		'I"m a life long learner and enjoy learning new stuff! Improving my skills on a daily basis helps me keep up to date with the latest technologies. Although I"m focused on frontend skills for now, I also intend to delve into backend skills in the near future.';
-
 	return (
-		<div ref={ref} className='flex h-full w-full flex-col items-center '>
-			<HomeDetails
-				animation={animation}
-				title='Skills'
-				image='/illustra/skill.png'
-				details={details}
-				link='/Skills'
-				as='/skills'
-				name='View skills'
-			/>
+		<div
+			ref={ref}
+			className='flex h-full w-full flex-col items-center'
+			id='skills'
+		>
+			<h2 className='mb-16 text-lg font-bold uppercase text-gray-600 dark:text-gray-200 md:mb-24 md:text-xl lg:mb-36 lg:text-2xl'>
+				Technologies I work with
+			</h2>
+			<div className='space-y-32 md:space-y-36 lg:space-y-40'>
+				<Programming />
+				<Styling />
+				<FrameWorks />
+				<State />
+				<ServerState />
+				<VersionControl />
+			</div>
 		</div>
 	);
 }
