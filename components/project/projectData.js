@@ -8,6 +8,16 @@ const onstore = {
 	image: '/onstore_screenshot.png',
 };
 
+const estateguru = {
+	title: 'EstateGuru',
+	description:
+		'An Estate listing site for Buying and renting your favourite realestate in Dubia. ',
+	tools: 'Nextjs Tailwindcss Bayut-Rapidapi Axios',
+	github: 'https://github.com/Valentine-chinedu/Estate-Guru',
+	url: 'https://estate-guru.vercel.app/',
+	image: '/estate-guru.png',
+};
+
 const movieApp = {
 	title: 'Movie-search-app',
 	description:
@@ -28,15 +38,6 @@ const socialHangout = {
 	image: '/twitter_clone.png',
 };
 
-const googleClone = {
-	title: 'Google-clone',
-	description: 'A clone of google search with full search functionality. ',
-	tools: 'Nextjs Tailwindcss Google-Api ServerSide-Rendering',
-	github: 'https://github.com/Valentine-chinedu/google_clone',
-	url: 'https://google-clone-blue.vercel.app/',
-	image: '/google_search_clone.png',
-};
-
 const spacex = {
 	title: 'spaceX-Info',
 	description:
@@ -47,4 +48,4 @@ const spacex = {
 	image: '/spacex-img.jpg',
 };
 
-export { onstore, movieApp, socialHangout, googleClone, spacex };
+export { onstore, movieApp, socialHangout, estateguru, spacex };

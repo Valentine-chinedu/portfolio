@@ -2,7 +2,7 @@ import { useAnimation } from 'framer-motion';
 import { useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
 import {
-	GoogleClone,
+	EstateGuru,
 	MovieApp,
 	Onstore,
 	SocialHangout,
@@ -39,10 +39,10 @@ function Projects() {
 			</h2>
 			<div className='flex h-full w-full flex-col items-center space-y-32 overflow-x-hidden md:space-y-36 lg:w-full lg:space-y-60'>
 				<Onstore />
-				<MovieApp />
+				<EstateGuru />
 				<SocialHangout />
 				<Spacex />
-				<GoogleClone />
+				<MovieApp />
 			</div>
 		</div>
 	);
