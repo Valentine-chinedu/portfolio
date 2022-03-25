@@ -6,6 +6,7 @@ import Skills from '../home/Skills';
 import Projects from '../home/Projects';
 import Contact from '../home/Contact';
 import Blog from '../home/Blog';
+import LandingPage from './LandingPage';
 
 const Home = () => {
 	const { openSideBar, setOpenSideBar } = useContext(GlobalStateContext);
@@ -27,6 +28,7 @@ const Home = () => {
 					openSideBar ? 'blur-sm filter' : ''
 				}`}
 			>
+				<LandingPage />
 				<About />
 				<Projects />
 				<Skills />
