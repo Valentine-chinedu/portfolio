@@ -3,7 +3,7 @@ import Head from 'next/head';
 import { useEffect } from 'react';
 
 import Home from '../components/home/Home';
-import LandingPage from '../components/home/LandingPage';
+import Intro from '../components/home/Intro';
 
 import { useTheme } from 'next-themes';
 import GlobalStateContext from '../contextprovider/Context';
@@ -28,7 +28,7 @@ export default function index() {
 				<meta property='og:image:height' content='300' />
 			</Head>
 
-			{isLoaded ? <Home /> : <LandingPage />}
+			{isLoaded ? <Home /> : <Intro />}
 		</div>
 	);
 }
