@@ -23,7 +23,7 @@ const Styling = () => {
 	}, [inView]);
 
 	const description =
-		'I am quite confortable with HTML5 and CSS3. Although I have learnt and worked with CSS frameworks like Bootstrap and materialize CSS, I prefer writing my own CSS using tailwind CSS because of its utility based classes and Styled Components because of its components level styling when working with Reactjs. For animation, I do minor animations with CSS animation but for more advanced animation I use Framer-motion.';
+		'I am quite confortable with HTML5 and CSS3. Although I have learnt and worked with CSS frameworks like Bootstrap and materialize CSS, I love writing my own CSS using tailwind CSS because of its utility based classes and Styled Components because of its components level styling when working with Reactjs. For animation, I do minor animations with CSS animation but for more advanced animation I use Framer-motion.';
 	const tags = [
 		'HTML5',
 		'CSS3',

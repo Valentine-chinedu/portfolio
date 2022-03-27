@@ -60,7 +60,7 @@ function Projects() {
 						Get In Touch
 					</h1>
 
-					<p className='mb-8 text-sm font-medium text-gray-600 dark:text-gray-200 md:mb-12 md:text-base lg:mb-16 lg:w-4/6'>
+					<p className='mb-8 font-medium text-gray-800 dark:text-gray-300 md:mb-12 md:text-lg lg:mb-16 lg:w-4/6 lg:text-xl'>
 						Do you think that I would make a great addition to your team? I
 						think so too. I am a young and passionate learner, ready to succeed
 						in the tech world. I have a background that has built up my
@@ -90,6 +90,7 @@ function Projects() {
 									className='input-text'
 									type='email'
 									name='email'
+									required
 									placeholder='Email'
 									value={query.email}
 									onChange={handleParam()}

@@ -23,7 +23,7 @@ const Programming = () => {
 	}, [inView]);
 
 	const description =
-		'Javascript being the only scripting language for the web I took my time to become conversant with the basics and confortable working with advanced features like ES6. I also prefer working with Typescript as it provides type safety and makes it easy detecting bugs and type errors when working on large projects.';
+		'Javascript being the only scripting language for the web I took my time to become conversant with its basics and confortable working with its advanced features like ES6. I also love working with Typescript as it provides type safety and makes it easy detecting bugs and type errors when working on large projects.';
 	const tags = ['Javascript', 'Typescript'];
 	return (
 		<motion.div ref={ref} className='flex h-full w-full flex-col items-center '>
