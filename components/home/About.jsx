@@ -1,31 +1,80 @@
-import { motion } from 'framer-motion';
-import { pageVariantsAnim } from '../../animation';
+import React, { useEffect } from 'react';
+import { motion, useAnimation } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
+
+import { RiArrowRightSFill } from 'react-icons/ri';
 
 function About() {
+	const [ref, inView] = useInView({ threshold: 0.3 });
+	const animation = useAnimation();
+
+	useEffect(() => {
+		if (inView) {
+			animation.start({
+				x: 0,
+				opacity: 1,
+				transition: {
+					duration: 1.25,
+				},
+			});
+		}
+		if (!inView) {
+			animation.start({ x: -100, opacity: 0 });
+		}
+	}, [inView]);
+
 	return (
 		<motion.div
-			initial='initial'
-			animate='in'
-			exit='out'
-			variants={pageVariantsAnim}
-			className=' flex h-full w-screen flex-col items-center pt-20 md:justify-center md:px-12 md:pt-28 lg:container lg:mx-auto lg:pt-0'
-			id='home'
+			ref={ref}
+			className=' md:pt- flex h-full w-screen flex-col items-center justify-center md:px-12 lg:container lg:mx-auto lg:pt-0'
+			id='about'
 		>
-			<div className='w-full lg:w-auto'>
-				<div className='flex w-full flex-col items-center space-y-4 lg:space-y-8'>
-					<h3 className='font-bold text-gray-600 dark:text-gray-200 md:text-xl lg:text-2xl'>
-						What I do
-					</h3>
+			<div className='flex h-full w-full flex-col items-center space-y-5 md:space-y-14 lg:w-7/12 lg:space-y-16'>
+				<h1 className='mb-2 text-lg font-bold uppercase text-gray-800 dark:text-gray-200 md:text-xl lg:text-2xl'>
+					About Me
+				</h1>
+				<div className='space-y-2 px-8 font-medium text-gray-800 dark:text-gray-300 md:space-y-4 md:text-center md:text-lg lg:px-0'>
+					<p>
+						Hello! My name is Valentine and I specialize in helping client build
+						businesses through developing effective and problem solving Frontend
+						Aplications. My interest in software development started in 2020
+						while working as a business developer in Lagos, Nigeria. I noticed
+						that most problems our clients and their customers faced was around
+						softwares, so I took interest in learning software development.
+					</p>
+					<p>
+						Fast-forward to today and I have become confortable building high
+						qaulity, responsive websites and web applications, utilizing modern
+						technologies like React and Nextjs.
+					</p>
+				</div>
+				<div className='flex w-full flex-col items-start space-y-4 pl-8 md:items-center md:space-y-8 lg:space-y-12 lg:px-0'>
+					<div className='flex w-full justify-center'>
+						<h3 className=' font-bold uppercase text-gray-800 dark:text-gray-200 md:text-lg lg:text-xl'>
+							What I do
+						</h3>
+					</div>
 
-					<ul className='w-12/12 ml-2 list-inside list-disc space-y-1.5 pr-2 text-sm font-medium text-gray-600 dark:text-gray-200 md:space-y-1 md:text-lg lg:space-y-2.5'>
-						<li>Convert designs to pixel perfect HTML code</li>
-						<li>Ensure Responsiveness and Compatability</li>
-						<li>Style and Animate websites</li>
-						<li>Add interactivity to websites</li>
-						<li>Build Single and Multi Page Apps</li>
-						<li>Build Server-side rendered and Static-site websites</li>
-						<li>Perform CRUD operation using REST API</li>
-					</ul>
+					<div className='w-12/12 flex items-center justify-center pr-2 font-medium text-gray-800 dark:text-gray-300 md:text-lg'>
+						<div className='mr-4 space-y-3 md:space-y-2.5'>
+							<RiArrowRightSFill className='text-fuchsia-600 dark:text-[#00FFFF]' />
+							<RiArrowRightSFill className='text-fuchsia-600 dark:text-[#00FFFF]' />
+							<RiArrowRightSFill className='text-fuchsia-600 dark:text-[#00FFFF]' />
+							<RiArrowRightSFill className='text-fuchsia-600 dark:text-[#00FFFF]' />
+							<RiArrowRightSFill className='text-fuchsia-600 dark:text-[#00FFFF]' />
+							<RiArrowRightSFill className='text-fuchsia-600 dark:text-[#00FFFF]' />
+							<RiArrowRightSFill className='text-fuchsia-600 dark:text-[#00FFFF]' />
+						</div>
+						<div>
+							<h3>Convert designs to pixel perfect HTML code</h3>
+							<h3>Ensure Responsiveness and Compatability</h3>
+							<h3>Style and Animate websites</h3>
+							<h3>Add interactivity to websites</h3>
+							<h3>Build Single and Multi Page Apps</h3>
+							<h3>Build Server-side rendered and Static-site websites</h3>
+							<h3>Perform CRUD operation using REST API</h3>
+						</div>
+					</div>
 				</div>
 			</div>
 		</motion.div>
