@@ -5,7 +5,13 @@ module.exports = {
 	],
 
 	darkMode: 'class',
-	theme: {},
+	theme: {
+		extend: {
+			screens: {
+				sp: '736',
+			},
+		},
+	},
 	variants: {
 		extend: {},
 	},

@@ -20,12 +20,12 @@ const SkillsDetails = ({ title, description, tags, animation, image }) => {
 					<Image src={image} alt='profile picture' layout='fill' />
 				</div>
 
-				<p className='mb-6 w-full text-left text-sm font-medium text-gray-800 dark:text-gray-300 md:text-base lg:w-4/5 lg:px-0'>
+				<p className='mb-6 w-full text-left text-sm font-medium text-gray-800 dark:text-gray-300 md:text-base lg:w-4/5 lg:px-0 lg:text-xl'>
 					{description}
 				</p>
 				<ul className=' w-full justify-center lg:flex lg:space-x-8'>
 					{tags.map((tag) => (
-						<li className='mb-2 bg-gray-800 p-1.5 text-sm font-semibold text-fuchsia-500 dark:text-[#00FFFF] lg:font-bold'>
+						<li className='mb-2 bg-gray-800 p-1.5 text-sm font-semibold text-fuchsia-500 dark:text-[#00FFFF] lg:text-base lg:font-bold'>
 							{tag}
 						</li>
 					))}

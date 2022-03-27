@@ -16,8 +16,8 @@ const LandingPage = () => {
 			className=' flex h-screen w-screen flex-col items-center pt-20 md:justify-center md:px-12 md:pt-28 lg:px-0 lg:pt-0'
 			id='home'
 		>
-			<div className='flex h-full w-full flex-col items-center justify-center space-y-12 md:space-y-20 lg:h-screen lg:w-9/12 lg:space-y-32'>
-				<div className='flex w-full flex-col items-center justify-center space-y-8 md:space-y-14 lg:flex-row-reverse lg:space-x-24'>
+			<div className='flex h-full w-full flex-col items-start justify-center space-y-12 md:space-y-20 lg:h-screen lg:w-9/12 lg:space-y-32'>
+				<div className='flex w-full flex-col items-center justify-center space-y-8 md:space-y-14 lg:flex-row-reverse lg:justify-evenly'>
 					<div className='flex h-64 w-64 items-center justify-center rounded-md shadow-md shadow-fuchsia-600 dark:shadow-[#00FFFF] md:h-80 md:w-80 lg:h-96 lg:w-96'>
 						<div className='relative h-48 w-44 rounded-full md:h-64 md:w-60 lg:h-72 lg:w-[17rem]'>
 							<Image

@@ -56,7 +56,7 @@ function Projects() {
 		>
 			<div className='flex h-full w-4/5 flex-col items-center justify-between'>
 				<div className='flex h-full flex-col items-center justify-center'>
-					<h1 className='mb-16 text-lg font-bold uppercase text-gray-800 dark:text-gray-100 md:text-xl lg:mb-32 lg:text-2xl'>
+					<h1 className='mb-16 text-lg font-bold uppercase text-gray-800 dark:text-gray-100 md:text-xl lg:mb-20 lg:text-2xl'>
 						Get In Touch
 					</h1>
 

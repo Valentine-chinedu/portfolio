@@ -33,7 +33,7 @@ function About() {
 				<h1 className='mb-2 text-lg font-bold uppercase text-gray-800 dark:text-gray-200 md:text-xl lg:text-2xl'>
 					About Me
 				</h1>
-				<div className='space-y-2 px-8 font-medium text-gray-800 dark:text-gray-300 md:space-y-4 md:text-center md:text-lg lg:px-0'>
+				<div className='space-y-2 px-8 font-medium text-gray-800 dark:text-gray-300 md:space-y-4 md:text-center md:text-lg lg:px-0 lg:text-xl'>
 					<p>
 						Hello! My name is Valentine and I specialize in helping client build
 						businesses through developing effective and problem solving Frontend
@@ -48,30 +48,40 @@ function About() {
 						technologies like React and Nextjs.
 					</p>
 				</div>
-				<div className='flex w-full flex-col items-start space-y-4 pl-8 md:items-center md:space-y-8 lg:space-y-12 lg:px-0'>
+				<div className='flex w-full flex-col items-start space-y-2 pl-2 md:items-center md:space-y-8 lg:space-y-12 lg:px-0'>
 					<div className='flex w-full justify-center'>
 						<h3 className=' font-bold uppercase text-gray-800 dark:text-gray-200 md:text-lg lg:text-xl'>
 							What I do
 						</h3>
 					</div>
 
-					<div className='w-12/12 flex items-center justify-center pr-2 font-medium text-gray-800 dark:text-gray-300 md:text-lg'>
-						<div className='mr-4 space-y-3 md:space-y-2.5'>
+					<div className='w-12/12  items-center justify-center font-medium text-gray-800 dark:text-gray-300 md:text-lg lg:text-xl'>
+						<div className='mb-3 flex items-center space-x-2'>
 							<RiArrowRightSFill className='text-fuchsia-600 dark:text-[#00FFFF]' />
-							<RiArrowRightSFill className='text-fuchsia-600 dark:text-[#00FFFF]' />
-							<RiArrowRightSFill className='text-fuchsia-600 dark:text-[#00FFFF]' />
-							<RiArrowRightSFill className='text-fuchsia-600 dark:text-[#00FFFF]' />
-							<RiArrowRightSFill className='text-fuchsia-600 dark:text-[#00FFFF]' />
-							<RiArrowRightSFill className='text-fuchsia-600 dark:text-[#00FFFF]' />
-							<RiArrowRightSFill className='text-fuchsia-600 dark:text-[#00FFFF]' />
-						</div>
-						<div>
 							<h3>Convert designs to pixel perfect HTML code</h3>
+						</div>
+						<div className='mb-3 flex items-center space-x-2'>
+							<RiArrowRightSFill className='text-fuchsia-600 dark:text-[#00FFFF]' />
 							<h3>Ensure Responsiveness and Compatability</h3>
+						</div>
+						<div className='mb-3 flex items-center space-x-2'>
+							<RiArrowRightSFill className='text-fuchsia-600 dark:text-[#00FFFF]' />
 							<h3>Style and Animate websites</h3>
+						</div>
+						<div className='mb-3 flex items-center space-x-2'>
+							<RiArrowRightSFill className='text-fuchsia-600 dark:text-[#00FFFF]' />
 							<h3>Add interactivity to websites</h3>
+						</div>
+						<div className='mb-3 flex items-center space-x-2'>
+							<RiArrowRightSFill className='text-fuchsia-600 dark:text-[#00FFFF]' />
 							<h3>Build Single and Multi Page Apps</h3>
-							<h3>Build Server-side rendered and Static-site websites</h3>
+						</div>
+						<div className='mb-3 flex items-center space-x-2'>
+							<RiArrowRightSFill className='text-fuchsia-600 dark:text-[#00FFFF]' />
+							<h3>Build Server-side rendered and Static-sites</h3>
+						</div>
+						<div className='mb-3 flex items-center space-x-2'>
+							<RiArrowRightSFill className='text-fuchsia-600 dark:text-[#00FFFF]' />
 							<h3>Perform CRUD operation using REST API</h3>
 						</div>
 					</div>
