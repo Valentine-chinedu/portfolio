@@ -21,36 +21,42 @@ const Footer = () => {
 				<AnchorLink
 					href='#home'
 					offset={() => 100}
-					abou
-					className=' z-50 cursor-pointer tracking-wider lg:hover:text-gray-300'
+					className=' z-50 cursor-pointer tracking-wider lg:hover:text-fuchsia-600 lg:dark:hover:text-[#00FFFF]'
 				>
 					Home
 				</AnchorLink>
 				<AnchorLink
+					href='#about'
+					offset={() => 100}
+					className=' z-50 cursor-pointer tracking-wider lg:hover:text-fuchsia-600 lg:dark:hover:text-[#00FFFF]'
+				>
+					About
+				</AnchorLink>
+				<AnchorLink
 					href='#projects'
 					offset={() => 100}
-					className='cursor-pointer tracking-wider lg:hover:text-gray-300'
+					className='cursor-pointer tracking-wider lg:hover:text-fuchsia-600 lg:dark:hover:text-[#00FFFF]'
 				>
 					Projects
 				</AnchorLink>
 				<AnchorLink
 					href='#skills'
 					offset={() => 100}
-					className='cursor-pointer tracking-wider lg:hover:text-gray-300'
+					className='cursor-pointer tracking-wider lg:hover:text-fuchsia-600 lg:dark:hover:text-[#00FFFF]'
 				>
 					Skills
 				</AnchorLink>
 				<AnchorLink
 					href='#blog'
 					offset={() => 100}
-					className='cursor-pointer tracking-wider lg:hover:text-gray-300'
+					className='cursor-pointer tracking-wider lg:hover:text-fuchsia-600 lg:dark:hover:text-[#00FFFF]'
 				>
 					Blog
 				</AnchorLink>
 				<AnchorLink
 					href='#contact'
 					offset={() => 100}
-					className='cursor-pointer tracking-wider lg:hover:text-gray-300'
+					className='cursor-pointer tracking-wider lg:hover:text-fuchsia-600 lg:dark:hover:text-[#00FFFF]'
 				>
 					Contact
 				</AnchorLink>
