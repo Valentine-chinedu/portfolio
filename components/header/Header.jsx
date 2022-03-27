@@ -21,7 +21,7 @@ function Header() {
 		>
 			<div className='flex h-full w-11/12 items-center justify-between lg:w-full lg:pl-6'>
 				<Logo />
-				<div className='flex items-center space-x-2 md:space-x-4 lg:space-x-0'>
+				<div className='flex items-center space-x-2 md:space-x-4 lg:space-x-8'>
 					<Theme />
 					<NavBar openSideBar={openSideBar} setOpenSideBar={setOpenSideBar} />
 				</div>
