@@ -26,14 +26,14 @@ function About() {
 	return (
 		<motion.div
 			ref={ref}
-			className=' md:pt- flex h-full w-screen flex-col items-center justify-center md:px-12 lg:container lg:mx-auto lg:pt-0'
+			className=' lg:mx-au flex h-full w-screen flex-col items-center justify-center md:px-12 lg:px-0 lg:pt-0'
 			id='about'
 		>
 			<div className='flex h-full w-full flex-col items-center space-y-5 md:space-y-14 lg:w-7/12 lg:space-y-16'>
 				<h1 className='mb-2 text-lg font-bold uppercase text-gray-800 dark:text-gray-200 md:text-xl lg:text-2xl'>
 					About Me
 				</h1>
-				<div className='space-y-2 px-8 font-medium text-gray-800 dark:text-gray-300 md:space-y-4 md:text-center md:text-lg lg:px-0 lg:text-xl'>
+				<div className='space-y-2 px-6 font-medium text-gray-800 dark:text-gray-300 md:space-y-4 md:px-8 md:text-center md:text-lg lg:px-0 lg:text-xl'>
 					<p>
 						Hello! My name is Valentine and I specialize in helping client build
 						businesses through developing effective and problem solving Frontend
@@ -48,7 +48,7 @@ function About() {
 						technologies like React and Nextjs.
 					</p>
 				</div>
-				<div className='flex w-full flex-col items-start space-y-2 pl-2 md:items-center md:space-y-8 lg:space-y-12 lg:px-0'>
+				<div className='flex w-full flex-col items-start space-y-2 pl-1 md:items-center md:space-y-8 lg:space-y-12 lg:px-0'>
 					<div className='flex w-full justify-center'>
 						<h3 className=' font-bold uppercase text-gray-800 dark:text-gray-200 md:text-lg lg:text-xl'>
 							What I do

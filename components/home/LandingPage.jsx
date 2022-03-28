@@ -13,7 +13,7 @@ const LandingPage = () => {
 			animate='in'
 			exit='out'
 			variants={pageVariantsAnim}
-			className=' flex h-screen w-screen flex-col items-center pt-20 md:justify-center md:px-12 md:pt-28 lg:px-0 lg:pt-0'
+			className=' bg flex h-screen w-screen flex-col items-center md:justify-center md:px-12 lg:px-0'
 			id='home'
 		>
 			<div className='flex h-full w-full flex-col items-start justify-center space-y-12 md:space-y-20 lg:h-screen lg:w-9/12 lg:space-y-32'>
