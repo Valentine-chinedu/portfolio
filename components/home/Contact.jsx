@@ -51,7 +51,7 @@ function Projects() {
 	return (
 		<div
 			ref={ref}
-			className=' flex h-full w-full flex-col items-center pb-8'
+			className=' flex h-full w-full flex-col items-center'
 			id='contact'
 		>
 			<div className='flex h-full w-4/5 flex-col items-center justify-between'>
