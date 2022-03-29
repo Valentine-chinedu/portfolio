@@ -32,7 +32,7 @@ const Theme = () => {
 
 			<div
 				className={`mx-1 flex w-12 md:w-14 ${
-					theme === 'light' ? 'justify-start' : 'justify-end'
+					theme === 'light' ? 'justify-end' : 'justify-start'
 				} rounded-3xl border border-fuchsia-500 text-black transition-all duration-1000 dark:border-[#00FFFF] dark:text-white`}
 			>
 				<button
