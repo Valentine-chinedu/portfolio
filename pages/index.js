@@ -22,7 +22,7 @@ export default function index() {
 			<Head>
 				<title>Valentine Okosi.</title>
 				<link rel='icon' href='/favicon-32x32.png' />
-				<meta property='og:image' content='/portfolio-screenshot.jpg' />
+				<meta property='og:image' content='/portfolio-photo.png' />
 				<meta property='og:image:type' content='image/jpeg' />
 				<meta property='og:image:width' content='300' />
 				<meta property='og:image:height' content='300' />
