@@ -49,7 +49,7 @@ const LandingPage = () => {
 						<h1 className='text-2xl font-bold uppercase text-fuchsia-600 dark:text-[#00FFFF] md:text-4xl lg:text-6xl'>
 							Valentine Okosi C.
 						</h1>
-						<p className=' text-center font-medium text-gray-200 md:text-lg lg:pr-4 lg:text-3xl'>
+						<p className=' text-center font-medium text-gray-400 md:text-lg lg:pr-4 lg:text-3xl'>
 							A Frontend Developer who enjoys building Webapps and Websites with
 							high perfomance and intuitive user experience.
 						</p>
