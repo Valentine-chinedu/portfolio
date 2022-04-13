@@ -9,7 +9,7 @@ const Logo = () => {
 		<>
 			<AnchorLink href='#home' offset={() => 100}>
 				<svg
-					className=' h-10 w-10'
+					className=' h-8 w-8 md:h-10 md:w-10'
 					width='332'
 					height='274'
 					viewBox='0 0 332 274'

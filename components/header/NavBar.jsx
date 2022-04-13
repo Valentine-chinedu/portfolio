@@ -81,7 +81,7 @@ const NavBar = ({ openSideBar, setOpenSideBar }) => {
 					}}
 					className='relative left-1 z-50 cursor-pointer lg:hidden'
 				>
-					<VscChromeClose className='text-4xl text-fuchsia-600 dark:text-[#00FFFF] lg:text-5xl' />
+					<VscChromeClose className='text-3xl text-fuchsia-600 dark:text-[#00FFFF] lg:text-5xl' />
 				</div>
 			) : (
 				<div
@@ -90,7 +90,7 @@ const NavBar = ({ openSideBar, setOpenSideBar }) => {
 					}}
 					className='relative left-1 cursor-pointer lg:hidden'
 				>
-					<AiOutlineMenu className='text-4xl text-fuchsia-600 dark:text-[#00FFFF] lg:text-5xl' />
+					<AiOutlineMenu className='text-3xl text-fuchsia-600 dark:text-[#00FFFF] lg:text-5xl' />
 				</div>
 			)}
 		</>
