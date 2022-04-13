@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { AiOutlineMenu } from 'react-icons/ai';
 import { VscChromeClose } from 'react-icons/vsc';
 
@@ -9,9 +7,9 @@ const NavBar = ({ openSideBar, setOpenSideBar }) => {
 	return (
 		<>
 			<nav
-				className={`primary-theme dark:secondary-theme fixed inset-y-0 right-0 flex flex-col items-center justify-center space-y-16 overflow-x-hidden text-lg font-bold md:space-y-20 md:text-xl lg:relative lg:h-10 lg:w-[35rem] lg:flex-row lg:space-x-8 lg:space-y-0 lg:bg-none lg:text-sm   ${
+				className={`primary-theme dark:secondary-theme fixed inset-y-0 right-0 flex flex-col items-center justify-center space-y-16 overflow-x-hidden text-lg font-bold md:space-y-20 md:text-xl lg:relative lg:h-10 lg:w-[35rem] lg:flex-row lg:space-x-8 lg:space-y-0 lg:bg-none lg:text-sm ${
 					openSideBar ? 'w-64 md:w-96' : 'w-0'
-				} transition-width z-50 h-full text-sm duration-500`}
+				} z-50 h-full text-sm transition-[width] duration-500`}
 			>
 				<AnchorLink
 					href='#home'
@@ -75,15 +73,6 @@ const NavBar = ({ openSideBar, setOpenSideBar }) => {
 				>
 					Contact
 				</AnchorLink>
-				{/* <div className='flex items-center'>
-            <a
-                href='/valentine_okosi_resume'
-                target='_blank'
-                className=' border-solid border border-[#00ffff] text-[#00ffff] hover:bg-[#00ffff] hover:bg-opacity-20 rounded px-4 py-2 font-semibold focus:outline-none'
-            >
-                Resume
-            </a>
-        </div> */}
 			</nav>
 			{openSideBar ? (
 				<div
