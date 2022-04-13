@@ -4,15 +4,15 @@
 
 @layer components {
 	.primary-theme {
-		@apply bg-[#f9f5fc] text-gray-800;
+		@apply bg-[#f9f5fc] text-gray-600;
 	}
 	.secondary-theme {
-		@apply bg-[#010e03] text-gray-200;
+		@apply bg-[#010e03] text-gray-300;
 	}
 	.input-text {
-		@apply md:h-14 md:w-[38rem] md:text-lg lg:w-[50rem] lg:pl-8 mb-4 h-10 w-[21rem] rounded-md border border-gray-600 bg-transparent pl-2 text-sm text-gray-600 focus:outline-none dark:border-gray-300 dark:text-gray-300;
+		@apply mb-4 h-10 w-[21rem] rounded-md border border-gray-600 bg-transparent pl-2 text-sm text-gray-600 focus:outline-none dark:border-gray-300 dark:text-gray-300 md:h-14 md:w-[38rem] md:text-lg lg:w-[50rem] lg:pl-8;
 	}
 	.textarea-text {
-		@apply md:w-[38rem] md:text-lg lg:w-[50rem] lg:pl-8 lg:pt-4 w-[21rem] rounded-md border border-gray-600 bg-transparent pt-2 pl-2 text-sm text-gray-600 focus:outline-none dark:border-gray-300 dark:text-gray-300;
+		@apply w-[21rem] rounded-md border border-gray-600 bg-transparent pt-2 pl-2 text-sm text-gray-600 focus:outline-none dark:border-gray-300 dark:text-gray-300 md:w-[38rem] md:text-lg lg:w-[50rem] lg:pl-8 lg:pt-4;
 	}
 }
