@@ -39,14 +39,14 @@ function Skills() {
 						Technologies I work with
 					</h2>
 				</div>
-				<div className='mb-12 font-medium text-gray-700 dark:text-gray-400 md:mb-24 md:text-lg lg:mb-32'>
+				<div className='mb-12 font-medium text-gray-700 dark:text-gray-300 md:mb-24 md:text-lg lg:mb-32'>
 					<p>
 						I'm fully committed to the philosophy of life-long learning, and I
 						believe if given the opportunity, I can learn anything.
 					</p>
 				</div>
 				<div className='flex w-full flex-col items-center justify-center space-y-10 font-medium md:flex-row md:items-start md:justify-between md:space-y-0 '>
-					<div className='flex flex-col items-center space-y-4 text-gray-700 dark:text-gray-400'>
+					<div className='flex flex-col items-center space-y-4 text-gray-700 dark:text-gray-300'>
 						<div className='flex flex-col items-center space-y-1 border-b-2 border-fuchsia-600 px-4 pb-1 dark:border-[#00ffff]'>
 							<FaCode className='text-5xl' />
 							<h2 className='font-bold uppercase text-fuchsia-600 dark:text-[#00ffff] lg:text-xl'>
@@ -60,7 +60,7 @@ function Skills() {
 							<li>Typescript</li>
 						</ul>
 					</div>
-					<div className='flex flex-col items-center space-y-4 text-gray-700 dark:text-gray-400'>
+					<div className='flex flex-col items-center space-y-4 text-gray-700 dark:text-gray-300'>
 						<div className='flex flex-col items-center space-y-1 border-b-2 border-fuchsia-600 px-4 pb-1 dark:border-[#00ffff]'>
 							<IoCodeWorkingSharp className='text-5xl' />
 							<h2 className='font-bold uppercase text-fuchsia-600 dark:text-[#00ffff] lg:text-xl'>
@@ -77,7 +77,7 @@ function Skills() {
 							<li>Styled Component</li>
 						</ul>
 					</div>
-					<div className='flex flex-col items-center space-y-4 text-gray-700 dark:text-gray-400'>
+					<div className='flex flex-col items-center space-y-4 text-gray-700 dark:text-gray-300'>
 						<div className='flex flex-col items-center space-y-1 border-b-2 border-fuchsia-600 px-4 pb-1 dark:border-[#00ffff] md:space-y-4'>
 							<FaTools className='text-4xl' />
 							<h2 className='font-bold uppercase text-fuchsia-600 dark:text-[#00ffff] lg:text-xl'>

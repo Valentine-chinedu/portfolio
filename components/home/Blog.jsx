@@ -43,7 +43,7 @@ function Blog() {
 				<div className='relative h-80 w-80 md:h-96 md:w-96'>
 					<Image src='/illustra/news.png' alt='profile picture' layout='fill' />
 				</div>
-				<p className=' mb-8 font-medium text-green-900 dark:text-gray-400 md:text-lg lg:w-4/5 lg:px-0 '>
+				<p className=' mb-8 font-medium text-green-900 dark:text-gray-300 md:text-lg lg:w-4/5 lg:px-0 '>
 					I occussionally write about the technologies that I have learnt. It
 					helps me reinforce, retain and share Knowledge, improve my ability to
 					talk about technologies. If I can write about them, I can talk about

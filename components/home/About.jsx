@@ -42,7 +42,7 @@ function About() {
 						A bit about myself
 					</h2>
 					<div className='space-y-2 lg:space-y-4'>
-						<div className='space-y-2 text-sm text-gray-700 dark:text-gray-400 md:text-base'>
+						<div className='space-y-2 text-sm text-gray-700 dark:text-gray-300 md:text-base'>
 							<p>
 								Hello! My name is Valentine and I specialize in helping client
 								build their business through developing effective and problem

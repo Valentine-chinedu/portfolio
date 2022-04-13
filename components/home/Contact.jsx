@@ -66,7 +66,7 @@ function Projects() {
 						</h3>
 					</div>
 
-					<p className='mb-8 font-medium text-gray-800 dark:text-gray-400 md:mb-12 md:text-lg lg:mb-12 lg:px-72 lg:text-lg'>
+					<p className='mb-8 font-medium text-gray-800 dark:text-gray-300 md:mb-12 md:text-lg lg:mb-12 lg:px-72 lg:text-lg'>
 						Do you think that I would make a great addition to your team? I
 						think so too. I am a young and passionate learner, ready to succeed
 						in the tech world. I have a background that has built up my
