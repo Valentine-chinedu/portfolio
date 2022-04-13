@@ -69,8 +69,8 @@ function Skills() {
 						</div>
 
 						<ul className='space-y-2 text-center text-lg font-medium lg:text-base'>
-							<li>Reactjs</li>
-							<li>Nextjs</li>
+							<li>Reactjs/Nextjs</li>
+							<li>Redux/React-Query</li>
 							<li>Tailwindcss</li>
 							<li>SASS</li>
 							<li>Bootstrap</li>
