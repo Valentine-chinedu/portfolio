@@ -55,14 +55,14 @@ const ProjectDetails = ({ title, description, tools, github, url, image }) => {
 					transition={{ duration: 2, ease: 'easeInOut' }}
 					className='flex w-full flex-col space-y-5 px-10 md:space-y-10 md:px-32 lg:w-96 lg:items-center'
 				>
-					<h2 className='text-lg font-bold text-gray-800 dark:text-gray-200 md:text-3xl lg:w-96'>
+					<h2 className='text-lg font-bold text-fuchsia-600 dark:text-[#00FFFF] md:text-3xl lg:w-96'>
 						{title}
 					</h2>
 					<p className='bg-gradient-to-br from-fuchsia-900 to-fuchsia-500 p-2 text-sm font-semibold tracking-wide text-stone-50 shadow-lg shadow-gray-500 dark:from-cyan-900 dark:to-cyan-600 md:w-[26rem] md:p-4 md:text-lg lg:w-96 lg:rounded'>
 						{description}
 					</p>
 
-					<h3 className='text-justify text-sm font-semibold tracking-wider text-gray-800 dark:text-gray-300 md:text-base lg:w-96 lg:text-lg lg:font-semibold'>
+					<h3 className='text-justify text-sm font-semibold tracking-wider text-gray-300 md:text-base lg:w-96 lg:text-lg lg:font-semibold'>
 						{tools}
 					</h3>
 					<div className='flex space-x-4 md:space-x-8 lg:w-96 lg:justify-start'>

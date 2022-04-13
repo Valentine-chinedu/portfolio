@@ -24,9 +24,7 @@ const Home = () => {
 			)}
 
 			<main
-				className={`space-y-24 overflow-hidden md:space-y-48 lg:space-y-60 ${
-					openSideBar ? 'blur-sm filter' : ''
-				}`}
+				className={`overflow-hidden ${openSideBar ? 'blur-sm filter' : ''}`}
 			>
 				<LandingPage />
 				<About />

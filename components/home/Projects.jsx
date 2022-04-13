@@ -1,6 +1,3 @@
-import { useAnimation } from 'framer-motion';
-import { useEffect } from 'react';
-import { useInView } from 'react-intersection-observer';
 import {
 	EstateGuru,
 	MovieApp,
@@ -10,33 +7,20 @@ import {
 } from '../project';
 
 function Projects() {
-	const [ref, inView] = useInView({ threshold: 0.3 });
-	const animation = useAnimation();
-
-	useEffect(() => {
-		if (inView) {
-			animation.start({
-				x: 0,
-				opacity: 1,
-				transition: {
-					duration: 1.25,
-				},
-			});
-		}
-		if (!inView) {
-			animation.start({ x: -100, opacity: 0 });
-		}
-	}, [inView]);
-
 	return (
 		<div
-			ref={ref}
-			className='flex h-full w-full flex-col items-center'
+			className='flex h-full w-full flex-col items-center bg-[url("/fakurian-design-ICTjWYzpoc0-unsplash.jpg")] bg-cover bg-fixed py-12 lg:py-40'
 			id='projects'
 		>
-			<h2 className='mb-16 text-lg font-bold uppercase text-gray-600 dark:text-gray-200 md:mb-24 md:text-2xl lg:mb-36 lg:text-3xl'>
-				projects
-			</h2>
+			<div className='relative mb-12 flex w-full justify-center lg:mb-20'>
+				<h2 className=' text-6xl font-bold uppercase text-gray-700 md:text-7xl lg:text-9xl'>
+					portfolio
+				</h2>
+				<h3 className='absolute bottom-3 text-lg font-semibold text-fuchsia-600 dark:text-[#00FFFF] md:text-2xl lg:bottom-6 lg:text-3xl lg:font-bold'>
+					Projects that I have built
+				</h3>
+			</div>
+
 			<div className='flex h-full w-full flex-col items-center space-y-32 overflow-x-hidden md:space-y-36 lg:w-full lg:space-y-60'>
 				<Onstore />
 				<EstateGuru />
