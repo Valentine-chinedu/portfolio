@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { useAnimation } from 'framer-motion';
+import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
 function Projects() {
@@ -36,31 +36,37 @@ function Projects() {
 	useEffect(() => {
 		if (inView) {
 			animation.start({
-				x: 0,
+				y: 0,
 				opacity: 1,
 				transition: {
-					duration: 1.25,
+					duration: 1.5,
 				},
 			});
-		}
-		if (!inView) {
-			animation.start({ x: -100, opacity: 0 });
 		}
 	}, [inView]);
 
 	return (
 		<div
 			ref={ref}
-			className=' flex h-full w-full flex-col items-center'
+			className=' flex h-full w-full flex-col items-center justify-center py-14 lg:py-40'
 			id='contact'
 		>
-			<div className='flex h-full w-4/5 flex-col items-center justify-between'>
+			<motion.div
+				initial={{ y: 100, opacity: 0 }}
+				animate={animation}
+				className='flex h-full w-4/5 flex-col items-center justify-center'
+			>
 				<div className='flex h-full flex-col items-center justify-center'>
-					<h1 className='mb-16 text-lg font-bold uppercase text-gray-800 dark:text-gray-100 md:text-xl lg:mb-20 lg:text-2xl'>
-						Get In Touch
-					</h1>
+					<div className='relative mb-10 flex w-full flex-col items-center lg:mb-20'>
+						<h2 className='text-5xl font-bold uppercase text-gray-300 dark:text-gray-800 md:text-6xl lg:text-9xl'>
+							contact
+						</h2>
+						<h3 className='absolute top-4 text-xl font-bold tracking-wide text-fuchsia-600 dark:text-[#00ffff] md:top-5 md:text-2xl lg:top-16 lg:mb-16 lg:text-3xl'>
+							Get in touch
+						</h3>
+					</div>
 
-					<p className='mb-8 font-medium text-gray-800 dark:text-gray-300 md:mb-12 md:text-lg lg:mb-16 lg:w-4/6 lg:text-xl'>
+					<p className='mb-8 font-medium text-gray-800 dark:text-gray-400 md:mb-12 md:text-lg lg:mb-12 lg:px-72 lg:text-lg'>
 						Do you think that I would make a great addition to your team? I
 						think so too. I am a young and passionate learner, ready to succeed
 						in the tech world. I have a background that has built up my
@@ -110,16 +116,16 @@ function Projects() {
 							</div>
 							<div className='mb-10 flex w-full items-start md:mb-16 lg:mb-12'>
 								<button
-									className='rounded-md border border-gray-600 px-2 py-2 text-sm font-bold tracking-wider hover:bg-fuchsia-500 dark:border-[#00FFFF] dark:hover:bg-[#00FFFF] dark:hover:text-gray-600 md:px-4 lg:text-base '
+									className='rounded-md border border-gray-600 px-3 py-1 text-sm font-bold tracking-wider text-gray-700 hover:bg-fuchsia-500 dark:border-[#00FFFF] dark:text-gray-300 dark:hover:bg-[#00FFFF] dark:hover:text-gray-700 md:px-6 md:py-2 md:text-base'
 									type='submit'
 								>
-									Send Message
+									Send
 								</button>
 							</div>
 						</div>
 					</form>
 				</div>
-			</div>
+			</motion.div>
 		</div>
 	);
 }
