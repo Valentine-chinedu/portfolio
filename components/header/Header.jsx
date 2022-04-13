@@ -17,7 +17,7 @@ function Header() {
 			animate='in'
 			exit='out'
 			variants={pageVariantsAnim}
-			className='primary-theme dark:secondary-theme fixed z-50 flex h-[2.5rem] w-full items-center justify-center overflow-x-hidden shadow-md md:h-[3rem] lg:z-20'
+			className='primary-theme dark:secondary-theme fixed z-50 flex h-[3rem] w-full items-center justify-center overflow-x-hidden py-3 shadow-md md:h-[4rem] lg:z-20'
 		>
 			<div className='flex h-full w-11/12 items-center justify-between lg:w-full lg:pl-6'>
 				<Logo />
