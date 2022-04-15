@@ -122,9 +122,9 @@ function Intro({ openSideBar }) {
 					variants={sentence}
 					initial='hidden'
 					animate='visible'
-					className='flex w-full flex-col items-center justify-center font-serif uppercase'
+					className='flex w-full flex-col items-center justify-center font-serif uppercase '
 				>
-					<div>
+					<div className='text-gray-300'>
 						{line1.split('').map((char, index) => (
 							<motion.span
 								key={char + '-' + index}
