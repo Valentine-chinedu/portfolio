@@ -35,39 +35,39 @@ const LandingPage = () => {
 			animate='in'
 			exit='out'
 			variants={pageVariantsAnim}
-			className='flex h-screen w-screen flex-col items-center justify-center bg-[url("/descWebp.png")] bg-cover md:px-12 lg:bg-contain lg:px-0'
+			className='flex h-screen w-screen flex-col items-center justify-center bg-[url("/descWebp.png")] bg-center pt-14 md:h-[750px] md:px-12 lg:px-0'
 			id='home'
 		>
 			<div className='flex h-full w-full flex-col items-center justify-center backdrop-blur-sm '>
-				<div className='flex w-full flex-col items-center justify-center space-y-6 md:space-y-14 lg:w-9/12 lg:flex-row lg:space-x-12'>
+				<div className='flex w-full flex-col items-center justify-center space-y-6  md:space-y-14 lg:w-9/12 lg:flex-row lg:space-x-12'>
 					<motion.div
 						initial={{ opacity: 0, x: -100 }}
 						animate={{ opacity: 1, x: 0 }}
 						transition={{ duration: 1.5, ease: 'easeIn', delay: 0.5 }}
-						className='flex w-11/12 flex-col items-center space-y-8 px-4 lg:w-3/5 lg:space-y-16 lg:px-0'
+						className='flex h-auto w-11/12 flex-col items-center space-y-4 px-4 lg:w-3/5 lg:space-y-12 lg:px-0'
 					>
-						<h1 className='text-2xl font-bold uppercase text-fuchsia-600 dark:text-[#00FFFF] md:text-4xl lg:text-6xl'>
-							Valentine Okosi C.
+						<h1 className='text-xl font-bold uppercase text-fuchsia-600 dark:text-[#00FFFF] lg:text-4xl'>
+							Chinedu Valentine Okosi.
 						</h1>
-						<p className=' text-center font-medium text-gray-300 md:text-lg lg:pr-4 lg:text-3xl'>
-							A Frontend Developer who enjoys building Webapps and Websites with
-							high perfomance and intuitive user experience.
+						<p className=' text-center font-medium text-gray-100 lg:pr-4 lg:text-xl '>
+							A Frontend Developer and Ui Designer who enjoys building Webapps
+							with high perfomance and intuitive user experience.
 						</p>
-						<div className='space-x-8 md:space-x-14 lg:space-x-14'>
+						<div>
 							<AnchorLink href='#contact' offset={() => 100}>
-								<a className='hover:text-100 rounded-lg border-2 border-fuchsia-600 py-1 px-2 font-medium text-gray-300 hover:bg-fuchsia-600 dark:border-[#00ffff] dark:hover:bg-[#00FFFF] dark:hover:text-gray-800 md:py-1.5 md:px-4 md:text-lg lg:text-xl'>
+								<a className='hover:text-100 rounded-lg border-2 border-fuchsia-600 py-1 px-2 text-sm font-medium text-gray-100 hover:bg-fuchsia-600 dark:border-[#00ffff] dark:hover:bg-[#00FFFF] dark:hover:text-gray-800 md:py-1.5 md:px-4 md:text-base'>
 									Get In Touch
 								</a>
 							</AnchorLink>
-							<a
+							{/* <a
 								href='/valentine_resume.pdf'
 								download
 								rel='noonpener noreferrer'
 								target='blank'
-								className='hover:text-100 rounded-lg border-2 border-fuchsia-600 py-1 px-2 font-medium text-gray-300 hover:bg-fuchsia-600 dark:border-[#00ffff]  dark:hover:bg-[#00FFFF] dark:hover:text-gray-800 md:py-1.5 md:px-4 md:text-lg lg:text-xl'
+								className='hover:text-100 rounded-lg border-2 border-fuchsia-600 py-1 px-2 text-sm font-medium text-gray-100 hover:bg-fuchsia-600 dark:border-[#00ffff]  dark:hover:bg-[#00FFFF] dark:hover:text-gray-900 md:py-1.5 md:px-4 md:text-base'
 							>
 								Resume
-							</a>
+							</a> */}
 						</div>
 					</motion.div>
 					<motion.div

@@ -11,7 +11,7 @@ const Footer = () => {
 
 	return (
 		<div
-			className={`primary-theme dark:secondary-theme flex h-44 flex-col items-center justify-center space-y-5 pt-20 pb-10 md:space-y-8 md:py-28 lg:py-32 ${
+			className={`primary-theme dark:secondary-theme flex h-44 flex-col items-center justify-center space-y-5 pt-20 pb-10 md:space-y-8 md:py-28 lg:py-20 ${
 				openSideBar && 'blur-sm filter'
 			}`}
 		>
@@ -46,7 +46,7 @@ const Footer = () => {
 					<Image src='/brand-icon.png' layout='fill' />
 				</a>
 			</div>
-			<h3 className=' text-sm font-medium text-gray-700 dark:text-gray-300 md:text-base'>
+			<h3 className=' text-sm font-medium text-gray-900 dark:text-gray-300 md:text-base'>
 				&copy; 2022 Chinedu Valentine Okosi.
 			</h3>
 		</div>

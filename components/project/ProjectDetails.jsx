@@ -40,7 +40,7 @@ const ProjectDetails = ({ title, description, tools, github, url, image }) => {
 					<a href={url} target='_blank'>
 						<div className='relative h-72 w-72 rounded-md ring-4 ring-fuchsia-500 dark:ring-cyan-500 md:h-96 md:w-[28rem]'>
 							<Image
-								className='transform rounded-md duration-500 hover:scale-110'
+								className='transform rounded-md duration-500 lg:hover:scale-110'
 								src={image}
 								alt='pics'
 								layout='fill'
@@ -62,7 +62,7 @@ const ProjectDetails = ({ title, description, tools, github, url, image }) => {
 						{description}
 					</p>
 
-					<h3 className='text-justify text-sm font-semibold tracking-wider text-gray-300 md:text-base lg:w-96 lg:text-lg lg:font-semibold'>
+					<h3 className='text-justify text-sm font-semibold tracking-wider text-gray-100 md:text-base lg:w-96 lg:text-lg lg:font-semibold'>
 						{tools}
 					</h3>
 					<div className='flex space-x-4 md:space-x-8 lg:w-96 lg:justify-start'>

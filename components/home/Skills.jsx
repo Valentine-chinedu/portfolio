@@ -31,7 +31,7 @@ function Skills() {
 				initial={{ y: 100, opacity: 0 }}
 				className='flex h-full flex-col items-center justify-center'
 			>
-				<div className='relative mb-4 flex w-full justify-center md:mb-4'>
+				<div className='relative mb-4 flex w-full justify-center md:mb-16'>
 					<h2 className='text-6xl font-bold text-gray-300 dark:text-gray-800 md:text-7xl lg:text-9xl lg:font-bold'>
 						SKILLS
 					</h2>
@@ -39,28 +39,36 @@ function Skills() {
 						Technologies I work with
 					</h2>
 				</div>
-				<div className='mb-12 font-medium text-gray-700 dark:text-gray-300 md:mb-24 md:text-lg lg:mb-32'>
-					<p>
+				<div className=' mb-8 flex flex-col items-center space-y-4 font-medium text-gray-900 dark:text-gray-300 md:mb-14 md:space-y-8 md:text-lg'>
+					<p className='mb-6 text-center lg:mb-0'>
 						I'm fully committed to the philosophy of life-long learning, and I
 						believe if given the opportunity, I can learn anything.
 					</p>
+					<div className='flex flex-col items-center text-gray-100'>
+						<h1 className='font-bold uppercase text-fuchsia-600 dark:text-[#00ffff] lg:text-xl'>
+							main skills
+						</h1>
+						<h2 className='text-gray-900 dark:text-gray-100'>
+							Frontend Development and Ui Design.
+						</h2>
+					</div>
 				</div>
-				<div className='flex w-full flex-col items-center justify-center space-y-10 font-medium md:flex-row md:items-start md:justify-between md:space-y-0 '>
-					<div className='flex flex-col items-center space-y-4 text-gray-700 dark:text-gray-300'>
+				<div className='flex w-full flex-col items-center justify-center space-y-10 font-medium md:flex-row md:items-start md:justify-start md:space-y-0 md:space-x-16 md:pl-10 lg:space-x-52 lg:pl-0 '>
+					<div className='flex flex-col items-center space-y-4 text-gray-900 dark:text-gray-100'>
 						<div className='flex flex-col items-center space-y-1 border-b-2 border-fuchsia-600 px-4 pb-1 dark:border-[#00ffff]'>
 							<FaCode className='text-5xl' />
 							<h2 className='font-bold uppercase text-fuchsia-600 dark:text-[#00ffff] lg:text-xl'>
-								main skills
+								programming
 							</h2>
 						</div>
 						<ul className='space-y-2 text-center text-lg font-medium lg:text-base'>
-							<li>Html</li>
-							<li>CSS</li>
 							<li>Javascript</li>
 							<li>Typescript</li>
+							<li>Html</li>
+							<li>CSS</li>
 						</ul>
 					</div>
-					<div className='flex flex-col items-center space-y-4 text-gray-700 dark:text-gray-300'>
+					<div className='flex flex-col items-center space-y-4 text-gray-900 dark:text-gray-100'>
 						<div className='flex flex-col items-center space-y-1 border-b-2 border-fuchsia-600 px-4 pb-1 dark:border-[#00ffff]'>
 							<IoCodeWorkingSharp className='text-5xl' />
 							<h2 className='font-bold uppercase text-fuchsia-600 dark:text-[#00ffff] lg:text-xl'>
@@ -77,7 +85,7 @@ function Skills() {
 							<li>Styled Component</li>
 						</ul>
 					</div>
-					<div className='flex flex-col items-center space-y-4 text-gray-700 dark:text-gray-300'>
+					<div className='flex flex-col items-center space-y-4 text-gray-900 dark:text-gray-100'>
 						<div className='flex flex-col items-center space-y-1 border-b-2 border-fuchsia-600 px-4 pb-1 dark:border-[#00ffff] md:space-y-4'>
 							<FaTools className='text-4xl' />
 							<h2 className='font-bold uppercase text-fuchsia-600 dark:text-[#00ffff] lg:text-xl'>
@@ -86,9 +94,10 @@ function Skills() {
 						</div>
 
 						<ul className='space-y-2 text-center text-lg font-medium lg:text-base'>
-							<li>Vscode</li>
-							<li>Git</li>
+							<li>Figma</li>
 							<li>Github</li>
+							<li>Git</li>
+							<li>Vscode</li>
 							<li>Google</li>
 						</ul>
 					</div>

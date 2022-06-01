@@ -5,7 +5,7 @@ const onstore = {
 	tools: 'React Typescript Tailwindcss Context-api commerce.js',
 	github: 'https://github.com/Valentine-chinedu/onstore_project',
 	url: 'https://onstore-project.firebaseapp.com/',
-	image: '/onstore_screenshot.png',
+	image: '/onstore_new.png',
 };
 
 const estateguru = {
@@ -15,7 +15,7 @@ const estateguru = {
 	tools: 'Nextjs Tailwindcss Bayut-Rapidapi Axios',
 	github: 'https://github.com/Valentine-chinedu/Estate-Guru',
 	url: 'https://estate-guru.vercel.app/',
-	image: '/estate-guru.png',
+	image: '/estate-guru-new.png',
 };
 
 const movieApp = {

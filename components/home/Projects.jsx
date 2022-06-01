@@ -24,8 +24,8 @@ function Projects() {
 			<div className='flex h-full w-full flex-col items-center space-y-32 overflow-x-hidden md:space-y-36 lg:w-full lg:space-y-60'>
 				<Onstore />
 				<EstateGuru />
-				<SocialHangout />
 				<Spacex />
+				<SocialHangout />
 				<MovieApp />
 			</div>
 		</div>
