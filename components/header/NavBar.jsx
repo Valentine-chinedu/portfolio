@@ -14,7 +14,7 @@ const NavBar = ({ openSideBar, setOpenSideBar }) => {
 				<AnchorLink
 					href='#home'
 					offset={() => 100}
-					className=' z-50 cursor-pointer px-2 tracking-wider after:absolute after:bg-fuchsia-600 after:duration-1000 hover:after:transition-[width] dark:after:bg-[#00FFFF] lg:after:bottom-1 lg:after:block lg:after:h-0.5 lg:after:w-0 lg:hover:after:w-12'
+					className='z-50 cursor-pointer px-2 tracking-wider after:absolute after:bg-fuchsia-600  after:duration-1000 hover:text-black hover:after:transition-[width] dark:after:bg-[#00FFFF] dark:hover:text-gray-100 lg:after:bottom-1 lg:after:block lg:after:h-0.5 lg:after:w-0 lg:hover:after:w-12'
 					onClick={() => {
 						setOpenSideBar(false);
 					}}
@@ -23,7 +23,7 @@ const NavBar = ({ openSideBar, setOpenSideBar }) => {
 				</AnchorLink>
 				<AnchorLink
 					href='#about'
-					className=' z-50 cursor-pointer px-2 tracking-wider after:absolute after:bg-fuchsia-600 after:duration-1000 hover:after:transition-[width] dark:after:bg-[#00FFFF] lg:after:bottom-1 lg:after:block lg:after:h-0.5 lg:after:w-0 lg:hover:after:w-12'
+					className=' z-50 cursor-pointer px-2 tracking-wider after:absolute after:bg-fuchsia-600 after:duration-1000 hover:text-black hover:after:transition-[width] dark:after:bg-[#00FFFF] dark:hover:text-gray-100 lg:after:bottom-1 lg:after:block lg:after:h-0.5 lg:after:w-0 lg:hover:after:w-12'
 					onClick={() => {
 						setOpenSideBar(false);
 					}}
@@ -32,7 +32,7 @@ const NavBar = ({ openSideBar, setOpenSideBar }) => {
 				</AnchorLink>
 				<AnchorLink
 					href='#projects'
-					className='z-50 cursor-pointer px-2 tracking-wider after:absolute after:bg-fuchsia-600 after:duration-1000 hover:after:transition-[width] dark:after:bg-[#00FFFF] lg:after:bottom-1 lg:after:block lg:after:h-0.5 lg:after:w-0 lg:hover:after:w-[4.2rem]'
+					className='z-50 cursor-pointer px-2 tracking-wider after:absolute after:bg-fuchsia-600 after:duration-1000 hover:text-black hover:after:transition-[width] dark:after:bg-[#00FFFF] dark:hover:text-gray-100 lg:after:bottom-1 lg:after:block lg:after:h-0.5 lg:after:w-0 lg:hover:after:w-[4.2rem]'
 					onClick={() => {
 						setOpenSideBar(false);
 					}}
@@ -41,7 +41,7 @@ const NavBar = ({ openSideBar, setOpenSideBar }) => {
 				</AnchorLink>
 				<AnchorLink
 					href='#skills'
-					className='cursor-pointer px-2 tracking-wider after:absolute after:bg-fuchsia-600 after:duration-1000 hover:after:transition-[width] dark:after:bg-[#00FFFF] lg:after:bottom-1 lg:after:block lg:after:h-0.5 lg:after:w-0 lg:hover:after:w-11'
+					className='cursor-pointer px-2 tracking-wider after:absolute after:bg-fuchsia-600 after:duration-1000 hover:text-black hover:after:transition-[width] dark:after:bg-[#00FFFF] dark:hover:text-gray-100 lg:after:bottom-1 lg:after:block lg:after:h-0.5 lg:after:w-0 lg:hover:after:w-11'
 					onClick={() => {
 						setOpenSideBar(false);
 					}}
@@ -51,7 +51,7 @@ const NavBar = ({ openSideBar, setOpenSideBar }) => {
 
 				<AnchorLink
 					href='#blog'
-					className='cursor-pointer px-2 tracking-wider after:absolute after:bg-fuchsia-600 after:duration-1000 hover:after:transition-[width] dark:after:bg-[#00FFFF] lg:after:bottom-1 lg:after:block lg:after:h-0.5 lg:after:w-0 lg:hover:after:w-10'
+					className='cursor-pointer px-2 tracking-wider after:absolute after:bg-fuchsia-600 after:duration-1000 hover:text-black hover:after:transition-[width] dark:after:bg-[#00FFFF] dark:hover:text-gray-100 lg:after:bottom-1 lg:after:block lg:after:h-0.5 lg:after:w-0 lg:hover:after:w-10'
 					onClick={() => {
 						setOpenSideBar(false);
 					}}
@@ -61,7 +61,7 @@ const NavBar = ({ openSideBar, setOpenSideBar }) => {
 
 				<AnchorLink
 					href='#contact'
-					className='cursor-pointer px-2 tracking-wider after:absolute after:bg-fuchsia-600 after:duration-1000 hover:after:transition-[width] dark:after:bg-[#00FFFF] lg:after:bottom-1 lg:after:block lg:after:h-0.5 lg:after:w-0 lg:hover:after:w-[4rem]'
+					className='cursor-pointer px-2 tracking-wider after:absolute after:bg-fuchsia-600 after:duration-1000 hover:text-black hover:after:transition-[width] dark:after:bg-[#00FFFF] dark:hover:text-gray-100 lg:after:bottom-1 lg:after:block lg:after:h-0.5 lg:after:w-0 lg:hover:after:w-[4rem]'
 					onClick={() => {
 						setOpenSideBar(false);
 					}}
