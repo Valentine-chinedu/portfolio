@@ -7,28 +7,6 @@ import { pageVariantsAnim } from '../../animation';
 import { useTheme } from 'next-themes';
 
 const LandingPage = () => {
-	const { theme } = useTheme();
-
-	// const variantsL = {
-	// 	visible: {
-	// 		opacity: 1,
-	// 		x: 0,
-	// 	},
-	// 	hidden: {
-	// 		opacity: 0,
-	// 		x: -100,
-	// 	},
-	// };
-	// const variantsR = {
-	// 	visible: {
-	// 		opacity: 1,
-	// 		x: 0,
-	// 	},
-	// 	hidden: {
-	// 		opacity: 0,
-	// 		x: 100,
-	// 	},
-	// };
 	return (
 		<motion.div
 			initial='initial'
@@ -73,7 +51,7 @@ const LandingPage = () => {
 					</motion.div>
 				</div>
 			</div>
-			<div className='absolute inset-0 bg-black bg-opacity-20'></div>
+			<div className='absolute inset-0 h-screen bg-black bg-opacity-20 lg:h-[750px]'></div>
 		</motion.div>
 	);
 };
