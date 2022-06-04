@@ -1,6 +1,6 @@
 
 
-![portfolio-photo](https://user-images.githubusercontent.com/65251662/163199889-7405838d-c08b-4f35-8582-a76b1e099414.png)
+![portfolio-photo-new](https://user-images.githubusercontent.com/65251662/171646591-d26b5d79-5b6f-447d-9690-62ec88f782e1.png)
 
 ## General info
 This is a Portfolio website built to house my personal projects.
@@ -15,6 +15,7 @@ This is a Portfolio website built to house my personal projects.
 ## View Website
 
 [valentineokosi.com](https://www.valentineokosi.com/) 
+
 
 
 
