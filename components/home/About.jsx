@@ -65,9 +65,9 @@ function About() {
 								softwares, so I took interest in learning software development.
 							</p>
 							<p>
-								Fast-forward to today and I have become confortable building
-								high qaulity, responsive websites and web applications,
-								utilizing modern technologies like React and Nextjs.
+								Fast-forward to today and I have become confortable designing
+								and building high qaulity web applications, utilizing modern
+								technologies like React, Nextjs and Figma.
 							</p>
 						</div>
 						<div className='text-sm text-fuchsia-600 dark:text-[#00FFFF] md:text-base lg:text-base'>

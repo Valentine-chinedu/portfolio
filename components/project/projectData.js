@@ -4,14 +4,14 @@ const onstore = {
 		'Headless E-commerce web app where clothing accessories like Suit Trousers, Joggers Pants, shirts, shoes and watches can be purchased. ',
 	tools: 'React Typescript Tailwindcss Context-api commerce.js',
 	github: 'https://github.com/Valentine-chinedu/onstore_project',
-	url: 'https://onstore-project.firebaseapp.com/',
+	url: 'https://onstore.vercel.app/',
 	image: '/onstore_new.png',
 };
 
 const estateguru = {
 	title: 'EstateGuru',
 	description:
-		'An Estate listing site for Buying and renting your favourite realestate in Dubia. ',
+		'An Estate Agency Website for Buying and renting your favourite Realestate in Dubia. ',
 	tools: 'Nextjs Tailwindcss Bayut-Rapidapi Axios',
 	github: 'https://github.com/Valentine-chinedu/Estate-Guru',
 	url: 'https://estate-guru.vercel.app/',

@@ -24,6 +24,14 @@ const Footer = () => {
 					<BsEnvelope className='text-3xl text-gray-500 hover:text-fuchsia-500 dark:hover:text-[#00FFFF] md:text-4xl' />
 				</a>
 				<a
+					className='relative h-8 w-8 md:h-10 md:w-10'
+					href='https://www.behance.net/valentichinedu'
+					target='_blank'
+					rel='noopener noreferrer'
+				>
+					<Image src='/behance.png' layout='fill' />
+				</a>
+				<a
 					href='https://linkedin.com/in/valentine-okosi'
 					target='_blank'
 					rel='noopener noreferrer'

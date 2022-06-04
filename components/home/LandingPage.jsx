@@ -50,7 +50,7 @@ const LandingPage = () => {
 							Chinedu Valentine Okosi.
 						</h1>
 						<p className='pb-6 text-center text-sm font-medium text-gray-100 md:text-xl lg:w-[40rem] lg:pb-6 lg:text-left lg:text-2xl '>
-							A Frontend Developer and Ui Designer who is specialized in
+							A Frontend Developer and a UI Designer who is specialized in
 							building Webapps with high perfomance and intuitive user
 							experience.
 						</p>
@@ -61,7 +61,7 @@ const LandingPage = () => {
 								</a>
 							</AnchorLink>
 							<a
-								href='/valentine_resume.pdf'
+								href='/chinedu_valentine_okosi_resume.pdf'
 								download
 								rel='noonpener noreferrer'
 								target='blank'
