@@ -33,7 +33,7 @@ const LandingPage = () => {
 							experience.
 						</p>
 						<div className='space-x-4 lg:mt-4 lg:space-x-8'>
-							<AnchorLink href='#contact' offset={() => 100}>
+							<AnchorLink href='#contact'>
 								<a className='hover:text-100 rounded-lg bg-gray-50 py-2 px-3 text-xs font-bold text-gray-900 hover:bg-fuchsia-600 dark:bg-gray-100 dark:hover:bg-[#00FFFF] dark:hover:text-gray-800 md:py-1.5 md:px-4 md:text-base'>
 									Get In Touch
 								</a>
