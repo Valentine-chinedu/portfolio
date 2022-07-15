@@ -44,16 +44,8 @@ function Skills() {
 						I'm fully committed to the philosophy of life-long learning, and I
 						believe if given the opportunity, I can learn anything.
 					</p>
-					<div className='flex flex-col items-center text-gray-100'>
-						<h1 className='font-bold uppercase text-fuchsia-600 dark:text-[#00ffff] lg:text-xl'>
-							main skills
-						</h1>
-						<h2 className='text-gray-900 dark:text-gray-100'>
-							Frontend Development and Ui Design.
-						</h2>
-					</div>
 				</div>
-				<div className='flex w-full flex-col items-center justify-center space-y-10 font-medium md:flex-row md:items-start md:justify-start md:space-y-0 md:space-x-16 md:pl-10 lg:space-x-52 lg:pl-0 '>
+				<div className='flex w-full flex-col items-center justify-center space-y-10 font-medium md:flex-row md:items-start md:justify-between md:space-y-0 lg:space-x-52 lg:pl-0 '>
 					<div className='flex flex-col items-center space-y-4 text-gray-900 dark:text-gray-100'>
 						<div className='flex flex-col items-center space-y-1 border-b-2 border-fuchsia-600 px-4 pb-1 dark:border-[#00ffff]'>
 							<FaCode className='text-5xl' />
