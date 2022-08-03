@@ -48,4 +48,14 @@ const spacex = {
 	image: '/spacex-img.jpg',
 };
 
-export { onstore, movieApp, socialHangout, estateguru, spacex };
+const cryptoDapp = {
+	title: 'CryptodApp',
+	description:
+		'Connect and transfer ETH between wallets and keep track of Transaction history. ',
+	tools: 'Reactjs Solidity Ether.js Hardhat',
+	github: 'https://github.com/Valentine-chinedu/web3-crypto-dapp',
+	url: 'https://web3-crypto-dapp.vercel.app/',
+	image: '/crypto _app_pics.png',
+};
+
+export { onstore, movieApp, socialHangout, estateguru, spacex, cryptoDapp };

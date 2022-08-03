@@ -5,6 +5,7 @@ import {
 	SocialHangout,
 	Spacex,
 } from '../project';
+import CryptoDapp from '../project/CryptoDapp';
 
 function Projects() {
 	return (
@@ -25,6 +26,7 @@ function Projects() {
 				<Onstore />
 				<EstateGuru />
 				<Spacex />
+				<CryptoDapp />
 				<SocialHangout />
 				<MovieApp />
 			</div>

@@ -12,7 +12,7 @@ const LandingPage = () => {
 			animate='in'
 			exit='out'
 			variants={pageVariantsAnim}
-			className='flex h-screen w-screen flex-col items-center justify-center bg-[url("/descWebp.png")] bg-cover bg-top md:px-12 lg:px-0'
+			className='flex h-screen w-screen flex-col items-center justify-center bg-[url("/descWebp.png")] bg-cover bg-top md:px-12 lg:h-[800px] lg:px-0'
 			id='home'
 		>
 			<div className='z-10 flex h-full w-full flex-col justify-center lg:items-start  '>
@@ -32,19 +32,19 @@ const LandingPage = () => {
 						</p>
 						<div className='space-x-4 lg:mt-4 lg:space-x-8'>
 							<AnchorLink href='#contact'>
-								<a className='hover:text-100 rounded-lg bg-gray-100 py-2 px-3 text-xs font-bold text-gray-900 hover:bg-[#00FFFF] hover:text-gray-800 md:py-1.5 md:px-4 md:text-base'>
+								<a className='rounded-lg bg-[#1fd8d8] py-1.5 px-4 text-sm font-bold text-gray-900 hover:bg-[#00FFFF] md:py-1.5 md:px-4 md:text-base'>
 									Get In Touch
 								</a>
 							</AnchorLink>
-							<a
-								href='/chinedu_valentine_okosi_resume.pdf'
-								download
-								rel='noonpener noreferrer'
-								target='blank'
-								className='rounded-lg bg-[#1fd8d8] py-1.5 px-4 text-sm font-bold text-gray-900 hover:bg-[#00FFFF] md:py-1.5 md:px-4 md:text-base'
+							<AnchorLink
+								href='#about'
+								className='hover:text-100 rounded-lg bg-gray-100 py-2 px-3 text-xs font-bold text-gray-900 hover:bg-[#00FFFF] hover:text-gray-800 md:py-1.5 md:px-4 md:text-base'
+								onClick={() => {
+									setOpenSideBar(false);
+								}}
 							>
-								Resume
-							</a>
+								About Me
+							</AnchorLink>
 						</div>
 					</motion.div>
 				</div>
