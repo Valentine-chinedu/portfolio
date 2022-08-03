@@ -3,7 +3,7 @@ import ProjectDetails from './ProjectDetails';
 
 const Spacex = () => {
 	return (
-		<div>
+		<>
 			<ProjectDetails
 				title={spacex.title}
 				description={spacex.description}
@@ -12,7 +12,7 @@ const Spacex = () => {
 				url={spacex.url}
 				image={spacex.image}
 			/>
-		</div>
+		</>
 	);
 };
 

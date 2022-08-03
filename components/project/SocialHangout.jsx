@@ -3,7 +3,7 @@ import ProjectDetails from './ProjectDetails';
 
 const SocialHangout = () => {
 	return (
-		<div>
+		<>
 			<ProjectDetails
 				title={socialHangout.title}
 				description={socialHangout.description}
@@ -12,7 +12,7 @@ const SocialHangout = () => {
 				url={socialHangout.url}
 				image={socialHangout.image}
 			/>
-		</div>
+		</>
 	);
 };
 
