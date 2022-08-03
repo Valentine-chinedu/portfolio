@@ -27,8 +27,8 @@ const Home = () => {
 				className={`overflow-hidden ${openSideBar ? 'blur-sm filter' : ''}`}
 			>
 				<LandingPage />
-				<About />
 				<Projects />
+				<About />
 				<Skills />
 				<Blog />
 				<Contact />
