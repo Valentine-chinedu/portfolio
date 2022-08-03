@@ -18,7 +18,7 @@ export default function index() {
 	}, []);
 
 	return (
-		<div className='primary-theme dark:secondary-theme z-20 h-full w-full overflow-x-hidden font-sans'>
+		<div className='z-20 h-full w-full overflow-x-hidden bg-[#010e03] font-sans text-gray-400'>
 			<Head>
 				<title>Valentine Okosi.</title>
 				<link rel='icon' href='/favicon-32x32.png' />
