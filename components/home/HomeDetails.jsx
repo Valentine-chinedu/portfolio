@@ -9,11 +9,11 @@ const HomeDetails = ({ animation, title, details, link, as, image, name }) => {
 			className='flex w-[90%] flex-col items-center justify-center  md:w-4/5 md:py-10 lg:w-4/6 lg:py-14'
 		>
 			<div className='flex w-full items-center justify-center space-x-2 md:space-x-4 lg:space-x-8'>
-				<span className='h-0.5 w-20 bg-fuchsia-600 dark:bg-[#00FFFF] md:w-40 lg:w-60'></span>
-				<h2 className='font-bold uppercase text-fuchsia-600 dark:text-[#00FFFF] md:text-lg lg:text-xl'>
+				<span className='h-0.5 w-20 bg-[#00FFFF] md:w-40 lg:w-60'></span>
+				<h2 className='font-bold uppercase text-[#00FFFF] md:text-lg lg:text-xl'>
 					{title}
 				</h2>
-				<span className='h-0.5 w-20 bg-fuchsia-600 dark:bg-[#00FFFF] md:w-40 lg:w-60'></span>
+				<span className='h-0.5 w-20 bg-[#00FFFF] md:w-40 lg:w-60'></span>
 			</div>
 			<div className='relative h-80 w-80 md:h-96 md:w-96'>
 				<Image src={image} alt='profile picture' layout='fill' />

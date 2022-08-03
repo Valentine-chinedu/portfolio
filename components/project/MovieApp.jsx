@@ -3,7 +3,7 @@ import ProjectDetails from './ProjectDetails';
 
 const MovieApp = () => {
 	return (
-		<div>
+		<>
 			<ProjectDetails
 				title={movieApp.title}
 				description={movieApp.description}
@@ -12,7 +12,7 @@ const MovieApp = () => {
 				url={movieApp.url}
 				image={movieApp.image}
 			/>
-		</div>
+		</>
 	);
 };
 

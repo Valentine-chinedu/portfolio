@@ -48,7 +48,7 @@ function Projects() {
 	return (
 		<div
 			ref={ref}
-			className=' flex h-full w-full flex-col items-center justify-center py-14 lg:py-40'
+			className=' flex h-full w-full flex-col items-center justify-center bg-neutral-900 py-14 lg:py-40'
 			id='contact'
 		>
 			<motion.div
@@ -58,15 +58,15 @@ function Projects() {
 			>
 				<div className='flex h-full flex-col items-center justify-center'>
 					<div className='relative mb-10 flex w-full flex-col items-center lg:mb-20'>
-						<h2 className='text-5xl font-bold uppercase text-gray-300 dark:text-gray-800 md:text-6xl lg:text-9xl'>
+						<h2 className='text-5xl font-bold uppercase text-gray-800 md:text-6xl lg:text-9xl'>
 							contact
 						</h2>
-						<h3 className='absolute top-4 text-xl font-bold tracking-wide text-fuchsia-600 dark:text-[#00ffff] md:top-5 md:text-2xl lg:top-16 lg:mb-16 lg:text-3xl'>
+						<h3 className='absolute top-4 text-xl font-bold tracking-wide text-[#00ffff] md:top-5 md:text-2xl lg:top-16 lg:mb-16 lg:text-3xl'>
 							Get in touch
 						</h3>
 					</div>
 
-					<p className='mb-8 font-medium text-gray-800 dark:text-gray-300 md:mb-12 md:text-lg lg:mb-12 lg:px-72 lg:text-lg'>
+					<p className='mb-8 font-medium text-gray-300 md:mb-12 md:text-lg lg:mb-12 lg:px-72 lg:text-lg'>
 						Do you think that I would make a great addition to your team? I
 						think so too. I am a young and passionate learner, ready to succeed
 						in the tech world. I have a background that has built up my
@@ -116,7 +116,7 @@ function Projects() {
 							</div>
 							<div className='mb-10 flex w-full items-start md:mb-16 lg:mb-12'>
 								<button
-									className='rounded-md border border-gray-600 px-3 py-1 text-sm font-bold tracking-wider text-gray-700 hover:bg-fuchsia-500 dark:border-[#00FFFF] dark:text-gray-300 dark:hover:bg-[#00FFFF] dark:hover:text-gray-700 md:px-6 md:py-2 md:text-base'
+									className='rounded-md border border-[#00FFFF] px-3 py-1 text-sm font-bold tracking-wider text-gray-300 hover:bg-[#00FFFF] hover:text-gray-700 md:px-6 md:py-2 md:text-base'
 									type='submit'
 								>
 									Send

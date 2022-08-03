@@ -5,6 +5,7 @@ import {
 	SocialHangout,
 	Spacex,
 } from '../project';
+import CryptoDapp from '../project/CryptoDapp';
 
 function Projects() {
 	return (
@@ -16,7 +17,7 @@ function Projects() {
 				<h2 className=' text-6xl font-bold uppercase text-gray-700 md:text-7xl lg:text-9xl'>
 					portfolio
 				</h2>
-				<h3 className='absolute bottom-3 text-lg font-semibold text-fuchsia-600 dark:text-[#00FFFF] md:text-2xl lg:bottom-6 lg:text-3xl lg:font-bold'>
+				<h3 className='absolute bottom-3 text-lg font-semibold text-[#00FFFF] md:text-2xl lg:bottom-6 lg:text-3xl lg:font-bold'>
 					Projects that I have built
 				</h3>
 			</div>
@@ -25,6 +26,7 @@ function Projects() {
 				<Onstore />
 				<EstateGuru />
 				<Spacex />
+				<CryptoDapp />
 				<SocialHangout />
 				<MovieApp />
 			</div>

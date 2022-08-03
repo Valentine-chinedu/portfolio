@@ -8,7 +8,7 @@ import Image from 'next/image';
 function About() {
 	const [show, setShow] = useState(false);
 
-	const [ref, inView] = useInView({ threshold: 0.3 });
+	const [ref, inView] = useInView({ threshold: 0.6 });
 	const animation = useAnimation();
 
 	useEffect(() => {
@@ -34,15 +34,15 @@ function About() {
 				initial={{ y: 100, opacity: 0 }}
 				className='flex h-full w-full flex-col items-center justify-center space-y-8 py-12 md:space-y-14 lg:w-8/12 lg:flex-row lg:space-x-20'
 			>
-				<div className='relative flex flex-col items-center space-y-2 px-6 font-medium text-gray-800 dark:text-gray-300 md:space-y-4 md:px-8 md:text-lg lg:w-3/6 lg:space-y-6 lg:px-0 lg:text-lg'>
-					<h1 className='mb-8 text-6xl font-bold uppercase text-gray-300 dark:text-gray-800 md:text-7xl lg:mb-0 lg:text-9xl'>
+				<div className='relative flex flex-col items-center space-y-2 px-6 font-medium text-gray-300 md:space-y-4 md:px-8 md:text-lg lg:w-3/6 lg:space-y-6 lg:px-0 lg:text-lg'>
+					<h1 className='mb-8 text-6xl font-bold uppercase text-gray-800 md:text-7xl lg:mb-0 lg:text-9xl'>
 						About
 					</h1>
-					<h2 className='absolute top-4 text-lg font-semibold tracking-wider text-fuchsia-600 dark:text-[#00FFFF] md:bottom-16 md:text-xl lg:top-12 lg:text-3xl lg:font-bold'>
+					<h2 className='absolute top-4 text-lg font-semibold tracking-wider text-[#00FFFF] md:bottom-16 md:text-xl lg:top-12 lg:text-3xl lg:font-bold'>
 						A bit about myself
 					</h2>
 					<div className='space-y-2'>
-						<div className='space-y-2 text-sm text-gray-900 dark:text-gray-300 md:text-base'>
+						<div className='space-y-2 text-sm text-gray-300 md:text-base'>
 							<p>
 								Hello! My name is Valentine and I specialize in helping client
 								build their business through developing effective and problem
@@ -70,7 +70,7 @@ function About() {
 								technologies like React, Nextjs and Figma.
 							</p>
 						</div>
-						<div className='text-sm text-fuchsia-600 dark:text-[#00FFFF] md:text-base lg:text-base'>
+						<div className='text-sm text-[#00FFFF] md:text-base lg:text-base'>
 							{show ? (
 								<button
 									className='font-semibold focus:outline-none'
@@ -89,7 +89,7 @@ function About() {
 						</div>
 					</div>
 				</div>
-				<div className='flex h-60 w-60 items-center justify-center rounded-md shadow-md shadow-fuchsia-600 dark:shadow-[#00FFFF] md:h-80 md:w-80 lg:h-96 lg:w-96'>
+				<div className='flex h-60 w-60 items-center justify-center rounded-md shadow-md shadow-[#00FFFF] md:h-80 md:w-80 lg:h-96 lg:w-96'>
 					<div className='relative h-48 w-44 rounded-full md:h-64 md:w-60 lg:h-72 lg:w-[17rem]'>
 						<Image
 							className=' rounded-full'

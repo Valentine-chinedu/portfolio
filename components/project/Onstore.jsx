@@ -3,7 +3,7 @@ import ProjectDetails from './ProjectDetails';
 
 const Onstore = () => {
 	return (
-		<div>
+		<>
 			<ProjectDetails
 				title={onstore.title}
 				description={onstore.description}
@@ -12,7 +12,7 @@ const Onstore = () => {
 				url={onstore.url}
 				image={onstore.image}
 			/>
-		</div>
+		</>
 	);
 };
 

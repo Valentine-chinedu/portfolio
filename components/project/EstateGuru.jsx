@@ -3,7 +3,7 @@ import ProjectDetails from './ProjectDetails';
 
 const EstateGuru = () => {
 	return (
-		<div>
+		<>
 			<ProjectDetails
 				title={estateguru.title}
 				description={estateguru.description}
@@ -12,7 +12,7 @@ const EstateGuru = () => {
 				url={estateguru.url}
 				image={estateguru.image}
 			/>
-		</div>
+		</>
 	);
 };
 

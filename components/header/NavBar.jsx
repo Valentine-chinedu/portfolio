@@ -7,14 +7,14 @@ const NavBar = ({ openSideBar, setOpenSideBar }) => {
 	return (
 		<>
 			<nav
-				className={`primary-theme dark:secondary-theme fixed inset-y-0 right-0 flex flex-col items-center justify-center space-y-16 overflow-x-hidden text-lg font-bold md:space-y-20 md:text-xl lg:relative lg:h-10 lg:w-[35rem] lg:flex-row lg:space-x-8 lg:space-y-0 lg:bg-none lg:text-sm ${
+				className={` fixed inset-y-0 right-0 flex flex-col items-center justify-center space-y-16 overflow-x-hidden bg-[#010e03] text-lg font-bold text-gray-50/80 md:space-y-20 md:text-xl lg:relative lg:h-10 lg:w-[35rem] lg:flex-row lg:space-x-8 lg:space-y-0 lg:bg-none lg:text-sm ${
 					openSideBar ? 'w-64 md:w-96' : 'w-0'
 				} z-50 h-full text-sm transition-[width] duration-500`}
 			>
 				<AnchorLink
 					href='#home'
 					offset={() => 100}
-					className='z-50 cursor-pointer px-2 tracking-wider after:absolute after:bg-fuchsia-600  after:duration-1000 hover:text-black hover:after:transition-[width] dark:after:bg-[#00FFFF] dark:hover:text-gray-100 lg:after:bottom-1 lg:after:block lg:after:h-0.5 lg:after:w-0 lg:hover:after:w-12'
+					className='z-50 cursor-pointer px-2 tracking-wider after:absolute after:bg-[#00FFFF] after:duration-1000 hover:text-gray-100 hover:after:transition-[width] lg:after:bottom-1 lg:after:block lg:after:h-0.5 lg:after:w-0 lg:hover:after:w-12'
 					onClick={() => {
 						setOpenSideBar(false);
 					}}
@@ -22,17 +22,8 @@ const NavBar = ({ openSideBar, setOpenSideBar }) => {
 					Home
 				</AnchorLink>
 				<AnchorLink
-					href='#about'
-					className=' z-50 cursor-pointer px-2 tracking-wider after:absolute after:bg-fuchsia-600 after:duration-1000 hover:text-black hover:after:transition-[width] dark:after:bg-[#00FFFF] dark:hover:text-gray-100 lg:after:bottom-1 lg:after:block lg:after:h-0.5 lg:after:w-0 lg:hover:after:w-12'
-					onClick={() => {
-						setOpenSideBar(false);
-					}}
-				>
-					About
-				</AnchorLink>
-				<AnchorLink
 					href='#projects'
-					className='z-50 cursor-pointer px-2 tracking-wider after:absolute after:bg-fuchsia-600 after:duration-1000 hover:text-black hover:after:transition-[width] dark:after:bg-[#00FFFF] dark:hover:text-gray-100 lg:after:bottom-1 lg:after:block lg:after:h-0.5 lg:after:w-0 lg:hover:after:w-[4.2rem]'
+					className='z-50 cursor-pointer px-2 tracking-wider after:absolute after:bg-[#00FFFF] after:duration-1000 hover:text-gray-100 hover:after:transition-[width] lg:after:bottom-1 lg:after:block lg:after:h-0.5 lg:after:w-0 lg:hover:after:w-[4.2rem]'
 					onClick={() => {
 						setOpenSideBar(false);
 					}}
@@ -40,8 +31,17 @@ const NavBar = ({ openSideBar, setOpenSideBar }) => {
 					Projects
 				</AnchorLink>
 				<AnchorLink
+					href='#about'
+					className=' z-50 cursor-pointer px-2 tracking-wider after:absolute after:bg-[#00FFFF] after:duration-1000 hover:text-gray-100 hover:after:transition-[width] lg:after:bottom-1 lg:after:block lg:after:h-0.5 lg:after:w-0 lg:hover:after:w-12'
+					onClick={() => {
+						setOpenSideBar(false);
+					}}
+				>
+					About
+				</AnchorLink>
+				<AnchorLink
 					href='#skills'
-					className='cursor-pointer px-2 tracking-wider after:absolute after:bg-fuchsia-600 after:duration-1000 hover:text-black hover:after:transition-[width] dark:after:bg-[#00FFFF] dark:hover:text-gray-100 lg:after:bottom-1 lg:after:block lg:after:h-0.5 lg:after:w-0 lg:hover:after:w-11'
+					className='cursor-pointer px-2 tracking-wider after:absolute after:bg-[#00FFFF] after:duration-1000 hover:text-gray-100 hover:after:transition-[width] lg:after:bottom-1 lg:after:block lg:after:h-0.5 lg:after:w-0 lg:hover:after:w-11'
 					onClick={() => {
 						setOpenSideBar(false);
 					}}
@@ -51,7 +51,7 @@ const NavBar = ({ openSideBar, setOpenSideBar }) => {
 
 				<AnchorLink
 					href='#blog'
-					className='cursor-pointer px-2 tracking-wider after:absolute after:bg-fuchsia-600 after:duration-1000 hover:text-black hover:after:transition-[width] dark:after:bg-[#00FFFF] dark:hover:text-gray-100 lg:after:bottom-1 lg:after:block lg:after:h-0.5 lg:after:w-0 lg:hover:after:w-10'
+					className='cursor-pointer px-2 tracking-wider after:absolute after:bg-[#00FFFF] after:duration-1000 hover:text-gray-100 hover:after:transition-[width] lg:after:bottom-1 lg:after:block lg:after:h-0.5 lg:after:w-0 lg:hover:after:w-10'
 					onClick={() => {
 						setOpenSideBar(false);
 					}}
@@ -59,15 +59,15 @@ const NavBar = ({ openSideBar, setOpenSideBar }) => {
 					Blog
 				</AnchorLink>
 
-				<AnchorLink
-					href='#contact'
-					className='cursor-pointer px-2 tracking-wider after:absolute after:bg-fuchsia-600 after:duration-1000 hover:text-black hover:after:transition-[width] dark:after:bg-[#00FFFF] dark:hover:text-gray-100 lg:after:bottom-1 lg:after:block lg:after:h-0.5 lg:after:w-0 lg:hover:after:w-[4rem]'
-					onClick={() => {
-						setOpenSideBar(false);
-					}}
+				<a
+					href='/chinedu_valentine_okosi_resume.pdf'
+					download
+					rel='noonpener noreferrer'
+					target='blank'
+					className='rounded-lg bg-[#1fd8d8] py-1.5 px-4 text-sm font-bold text-gray-900 hover:bg-[#00FFFF] md:py-1.5 md:px-4 md:text-base'
 				>
-					Contact
-				</AnchorLink>
+					Resume
+				</a>
 			</nav>
 			{openSideBar ? (
 				<div
@@ -76,7 +76,7 @@ const NavBar = ({ openSideBar, setOpenSideBar }) => {
 					}}
 					className='relative left-1 z-50 cursor-pointer lg:hidden'
 				>
-					<VscChromeClose className='text-3xl text-fuchsia-600 dark:text-[#00FFFF] lg:text-5xl' />
+					<VscChromeClose className='text text-[#00FFFF] lg:text-5xl' />
 				</div>
 			) : (
 				<div
@@ -85,7 +85,7 @@ const NavBar = ({ openSideBar, setOpenSideBar }) => {
 					}}
 					className='relative left-1 cursor-pointer lg:hidden'
 				>
-					<AiOutlineMenu className='text-3xl text-fuchsia-600 dark:text-[#00FFFF] lg:text-5xl' />
+					<AiOutlineMenu className='text text-[#00FFFF] lg:text-5xl' />
 				</div>
 			)}
 		</>
