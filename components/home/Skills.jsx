@@ -22,7 +22,7 @@ function Skills() {
 
 	return (
 		<motion.div
-			className='flex h-full w-full items-center justify-center bg-neutral-900 py-14 px-4 md:h-screen md:px-12 md:py-0 lg:px-0'
+			className='flex h-full w-full items-center justify-center bg-slate-900 py-14 px-4 md:h-screen md:px-12 md:py-0 lg:px-0'
 			id='skills'
 			ref={ref}
 		>
@@ -95,6 +95,7 @@ function Skills() {
 							<li>Gimp</li>
 							<li>Google</li>
 							<li>Firebase</li>
+							<li>Moralis</li>
 							<li>Vercel</li>
 						</ul>
 					</div>
