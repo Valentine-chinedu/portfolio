@@ -16,7 +16,7 @@ function Header() {
 			animate='in'
 			exit='out'
 			variants={pageVariantsAnim}
-			className='fixed z-50 flex h-[3rem] w-full items-center justify-center overflow-x-hidden bg-[#010e03] py-3 text-gray-400 shadow-md md:h-[4rem] lg:z-20'
+			className='fixed z-50 flex h-[3rem] w-full items-center justify-center overflow-x-hidden bg-[#010e03] bg-opacity-20 py-3 text-gray-400 shadow-md md:h-[4rem] lg:z-20'
 		>
 			<div className='flex h-full w-11/12 items-center justify-between lg:w-10/12 lg:pl-6'>
 				<Logo />

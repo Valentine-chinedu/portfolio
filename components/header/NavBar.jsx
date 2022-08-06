@@ -7,7 +7,7 @@ const NavBar = ({ openSideBar, setOpenSideBar }) => {
 	return (
 		<>
 			<nav
-				className={` fixed inset-y-0 right-0 flex flex-col items-center justify-center space-y-16 overflow-x-hidden bg-[#010e03] text-lg font-bold text-gray-50/80 md:space-y-20 md:text-xl lg:relative lg:h-10 lg:w-[35rem] lg:flex-row lg:space-x-8 lg:space-y-0 lg:bg-none lg:text-sm ${
+				className={` fixed inset-y-0 right-0 flex flex-col items-center justify-center space-y-16 overflow-x-hidden bg-[#010e03] text-lg font-bold text-gray-50/80 md:space-y-20 md:text-xl lg:relative lg:h-10 lg:w-[35rem] lg:flex-row lg:space-x-8 lg:space-y-0 lg:bg-opacity-5  lg:text-sm ${
 					openSideBar ? 'w-64 md:w-96' : 'w-0'
 				} z-50 h-full text-sm transition-[width] duration-500`}
 			>
@@ -49,16 +49,6 @@ const NavBar = ({ openSideBar, setOpenSideBar }) => {
 					Skills
 				</AnchorLink>
 
-				<AnchorLink
-					href='#blog'
-					className='cursor-pointer px-2 tracking-wider after:absolute after:bg-[#00FFFF] after:duration-1000 hover:text-gray-100 hover:after:transition-[width] lg:after:bottom-1 lg:after:block lg:after:h-0.5 lg:after:w-0 lg:hover:after:w-10'
-					onClick={() => {
-						setOpenSideBar(false);
-					}}
-				>
-					Blog
-				</AnchorLink>
-
 				<a
 					href='/chinedu_valentine_okosi_resume.pdf'
 					download
@@ -76,7 +66,7 @@ const NavBar = ({ openSideBar, setOpenSideBar }) => {
 					}}
 					className='relative left-1 z-50 cursor-pointer lg:hidden'
 				>
-					<VscChromeClose className='text text-[#00FFFF] lg:text-5xl' />
+					<VscChromeClose className='text text-2xl text-[#00FFFF] md:text-3xl lg:text-5xl' />
 				</div>
 			) : (
 				<div
@@ -85,7 +75,7 @@ const NavBar = ({ openSideBar, setOpenSideBar }) => {
 					}}
 					className='relative left-1 cursor-pointer lg:hidden'
 				>
-					<AiOutlineMenu className='text text-[#00FFFF] lg:text-5xl' />
+					<AiOutlineMenu className='text-2xl text-[#00FFFF] md:text-3xl lg:text-5xl' />
 				</div>
 			)}
 		</>
