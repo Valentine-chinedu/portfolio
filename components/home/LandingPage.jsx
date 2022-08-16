@@ -24,9 +24,9 @@ const LandingPage = () => {
 							Chinedu Valentine Okosi.
 						</h1>
 						<p className='pb-6 text-center text-base font-medium text-gray-100 md:text-xl lg:w-[40rem] lg:pb-6 lg:text-left lg:text-2xl '>
-							I'm a Frontend Developer who is specialized in building and
-							occasionally designing Webapps with high perfomance and intuitive
-							user experience.
+							I'm a software developer specialized in building frontend and web3
+							applications and occasionally designing Web apps with high
+							perfomance and intuitive user experience.
 						</p>
 						<div className='space-x-4 lg:mt-4 lg:space-x-8'>
 							<AnchorLink href='#contact'>

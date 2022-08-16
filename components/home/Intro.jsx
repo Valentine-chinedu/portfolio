@@ -1,59 +1,14 @@
 import { motion } from 'framer-motion';
-import { useTheme } from 'next-themes';
-import { useContext, useEffect, useState } from 'react';
+
+import { useContext, useEffect } from 'react';
 import { pageVariantsAnim } from '../../animation';
 import GlobalStateContext from '../../contextprovider/Context';
 
-function Intro({ openSideBar }) {
+function Intro() {
 	const { setIsLoaded } = useContext(GlobalStateContext);
-	const [show, setShow] = useState(false);
-	const { setTheme } = useTheme();
-
-	const line1 = 'welcome to my portfolio.';
-	const line2 = "I'm Valentine";
-	const line3 = 'A frontend developer.';
-
-	const sentence = {
-		hidden: { opacity: 1 },
-		visible: {
-			opacity: 1,
-			transition: {
-				delay: 0.5,
-				staggerChildren: 0.08,
-			},
-		},
-	};
-
-	const letter = {
-		hidden: { opacity: 0, y: 50 },
-		visible: {
-			opacity: 1,
-			y: 0,
-			transition: {
-				duration: 0.7,
-			},
-		},
-	};
-
-	const variants = {
-		hidden: {
-			opacity: 0,
-			y: 100,
-		},
-		show: {
-			opacity: 1,
-			y: 0,
-			transition: { duration: 1.25 },
-		},
-	};
 
 	useEffect(() => {
-		const timeOut = setTimeout(() => setIsLoaded(true), 9000);
-
-		return () => clearTimeout(timeOut);
-	}, []);
-	useEffect(() => {
-		const timeOut = setTimeout(() => setShow(true), 2000);
+		const timeOut = setTimeout(() => setIsLoaded(true), 3000);
 
 		return () => clearTimeout(timeOut);
 	}, []);
@@ -70,7 +25,7 @@ function Intro({ openSideBar }) {
 				initial={{ opacity: 0 }}
 				animate={{ opacity: 1 }}
 				transition={{ duration: 2, ease: 'easeIn' }}
-				className='relative h-24 md:h-36 lg:h-48'
+				className='relative h-36 md:h-52 lg:h-60'
 				width='332'
 				height='274'
 				viewBox='0 0 332 274'
@@ -117,7 +72,7 @@ function Intro({ openSideBar }) {
 				</g>
 			</motion.svg>
 
-			{show && (
+			{/* {show && (
 				<motion.div
 					variants={sentence}
 					initial='hidden'
@@ -157,7 +112,7 @@ function Intro({ openSideBar }) {
 						))}
 					</div>
 				</motion.div>
-			)}
+			)} */}
 		</motion.div>
 	);
 }
