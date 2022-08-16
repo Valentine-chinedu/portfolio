@@ -22,12 +22,12 @@ const ProjectDetails = ({ title, description, tools, github, url, image }) => {
 	}, [inView]);
 
 	return (
-		<div ref={ref} className='md:my- relative flex h-full w-full flex-col'>
-			<div className=' flex h-full w-full flex-col items-center justify-center space-y-8 md:space-y-14 lg:flex-row lg:space-y-0 lg:space-x-36'>
+		<div ref={ref} className='relative mb-4 flex h-full w-full flex-col'>
+			<div className=' flex h-full w-full flex-col items-center justify-center space-y-8 lg:flex-row lg:space-y-0 lg:space-x-36'>
 				<motion.div
 					initial={{ x: 100, opacity: 0 }}
 					animate={animation}
-					className='w-ful flex justify-center'
+					className='w-ful flex justify-center pt-4'
 				>
 					<a href={url} target='_blank'>
 						<div className='relative h-72 w-72 rounded-md ring-4 ring-cyan-500 md:h-96 md:w-[28rem]'>
@@ -44,9 +44,9 @@ const ProjectDetails = ({ title, description, tools, github, url, image }) => {
 				<motion.div
 					initial={{ x: -100, opacity: 0 }}
 					animate={animation}
-					className='flex w-full justify-center lg:w-96'
+					className='flex justify-center lg:w-96'
 				>
-					<div className='flex flex-col space-y-5 px-10 md:space-y-10 md:px-0 lg:w-96 lg:items-center'>
+					<div className='flex w-96 flex-col space-y-5 px-10 md:w-[28.5rem] md:space-y-8 md:px-0 lg:w-96 lg:items-center'>
 						<h2 className='text-lg font-bold text-[#00FFFF] md:text-3xl lg:w-96'>
 							{title}
 						</h2>
@@ -54,9 +54,13 @@ const ProjectDetails = ({ title, description, tools, github, url, image }) => {
 							{description}
 						</p>
 
-						<h3 className='text-justify text-sm font-semibold tracking-wider text-gray-100 md:text-base lg:w-96 lg:text-lg lg:font-semibold'>
-							{tools}
-						</h3>
+						<div className='flex w-full flex-wrap '>
+							{tools.map((tool) => (
+								<h1 className='pr-2 text-sm font-semibold  text-gray-100 md:text-base lg:text-lg lg:font-semibold'>
+									{tool}
+								</h1>
+							))}
+						</div>
 						<div className='flex space-x-4 md:space-x-8 lg:w-96 lg:justify-start'>
 							<a href={url} target='_blank' rel='noopener noreferrer'>
 								<svg

@@ -1,11 +1,5 @@
-import {
-	EstateGuru,
-	MovieApp,
-	Onstore,
-	SocialHangout,
-	Spacex,
-} from '../project';
-import CryptoDapp from '../project/CryptoDapp';
+import { projects } from '../project/projectData';
+import ProjectDetails from '../project/ProjectDetails';
 
 function Projects() {
 	return (
@@ -22,14 +16,21 @@ function Projects() {
 				</h3>
 			</div>
 
-			<div className='flex h-full w-full flex-col items-center space-y-32 overflow-x-hidden md:space-y-36 lg:w-full lg:space-y-60'>
-				<Onstore />
-				<EstateGuru />
-				<Spacex />
-				<CryptoDapp />
-				<SocialHangout />
-				<MovieApp />
-			</div>
+			{projects.map((project) => (
+				<div
+					key={project.id}
+					className='flex- mb-12 flex h-full w-full items-center overflow-x-hidden md:mb-20 lg:mb-32 lg:w-full'
+				>
+					<ProjectDetails
+						title={project.title}
+						description={project.description}
+						tools={project.tools}
+						github={project.github}
+						url={project.url}
+						image={project.image}
+					/>
+				</div>
+			))}
 		</div>
 	);
 }
