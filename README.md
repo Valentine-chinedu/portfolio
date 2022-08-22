@@ -1,15 +1,16 @@
 
 
-![portfolio-photo-new](https://user-images.githubusercontent.com/65251662/171646591-d26b5d79-5b6f-447d-9690-62ec88f782e1.png)
+![portfolio-photo](https://user-images.githubusercontent.com/65251662/185623430-2ee07885-fa46-455e-837c-b0bb1de18319.png)
+
 
 ## General info
-This is a Portfolio website built to house my personal projects.
+This is my personal Portfolio website built to showcase projects and other relevent information.
 
 ## Tools
 
 - Javascript
 - Nextjs
-- Tailwind Css
+- Tailwind CSS
 - Framer motion
 
 ## View Website
