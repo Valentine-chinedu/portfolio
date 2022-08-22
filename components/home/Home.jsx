@@ -5,7 +5,7 @@ import About from '../home/About';
 import Skills from '../home/Skills';
 import Projects from '../home/Projects';
 import Contact from '../home/Contact';
-import Blog from '../home/Blog';
+
 import LandingPage from './LandingPage';
 
 const Home = () => {

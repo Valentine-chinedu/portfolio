@@ -34,7 +34,7 @@ function About() {
 				initial={{ y: 100, opacity: 0 }}
 				className='flex h-full w-full flex-col items-center justify-center space-y-8 py-12 md:space-y-14 lg:w-8/12 lg:flex-row lg:space-x-20'
 			>
-				<div className='relative flex flex-col items-center space-y-2 px-6 font-medium text-gray-300 md:space-y-4 md:px-8 md:text-lg lg:w-3/6 lg:space-y-6 lg:px-0 lg:text-lg'>
+				<div className='relative flex flex-col items-center space-y-2 px-6 font-medium text-gray-300 md:space-y-4 md:px-20 md:text-lg lg:w-3/6 lg:space-y-6 lg:px-0 lg:text-lg'>
 					<h1 className='mb-8 text-6xl font-bold uppercase text-gray-800 md:text-7xl lg:mb-0 lg:text-9xl'>
 						About
 					</h1>
@@ -51,6 +51,8 @@ function About() {
 							<p>
 								Creating the best software exprience for costumers and
 								presenting products and services with the best possible design.
+								Currently I'm working as a frontend developer for PAGA, a
+								financial service provider focusing on mobile payment.
 							</p>
 						</div>
 						<div

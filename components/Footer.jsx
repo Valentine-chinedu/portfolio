@@ -21,16 +21,16 @@ const Footer = () => {
 					target='_blank'
 					rel='noopener noreferrer'
 				>
-					<BsEnvelope className='text-3xl text-gray-500 hover:text-fuchsia-500 dark:hover:text-[#00FFFF] md:text-4xl' />
+					<BsEnvelope className='text-3xl text-[#00FFFF] hover:text-[#14caca] md:text-4xl' />
 				</a>
 				<a
-					className='relative h-8 w-8 md:h-10 md:w-10'
+					className='relative h-8 w-8 md:h-8 md:w-8'
 					href='https://www.behance.net/valentichinedu'
 					target='_blank'
 					rel='noopener noreferrer'
 				>
 					<svg
-						className='fill-gray-500 text-3xl hover:fill-[#00FFFF] '
+						className='fill-[#00FFFF] text-3xl hover:fill-[#14caca] '
 						xmlns='http://www.w3.org/2000/svg'
 						viewBox='0 0 24 24'
 					>
@@ -42,14 +42,14 @@ const Footer = () => {
 					target='_blank'
 					rel='noopener noreferrer'
 				>
-					<ImLinkedin className='text-2xl text-gray-500 hover:text-fuchsia-500 dark:hover:text-[#00FFFF] md:text-3xl' />
+					<ImLinkedin className='text-2xl text-[#00FFFF] hover:text-[#14caca] md:text-3xl' />
 				</a>
 				<a
 					href='https://github.com/Valentine-chinedu'
 					target='_blank'
 					rel='noopener noreferrer'
 				>
-					<BsGithub className='text-3xl text-gray-500 hover:text-fuchsia-500 dark:hover:text-[#00FFFF] md:text-4xl' />
+					<BsGithub className='text-3xl text-[#00FFFF] hover:text-[#14caca] md:text-4xl' />
 				</a>
 				<a
 					className='relative h-8 w-8 md:h-10 md:w-10'
@@ -58,7 +58,7 @@ const Footer = () => {
 					rel='noopener noreferrer'
 				>
 					<svg
-						className='fill-gray-500 text-3xl hover:fill-[#00FFFF] md:text-4xl'
+						className='fill-[#00FFFF] text-3xl hover:fill-[#14caca] md:text-4xl'
 						viewBox='0 0 256 256'
 						version='1.1'
 						xmlns='http://www.w3.org/2000/svg'

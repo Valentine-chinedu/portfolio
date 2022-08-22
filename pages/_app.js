@@ -12,22 +12,19 @@ import Header from '../components/header/Header';
 
 function MyApp({ Component, pageProps }) {
 	const [show, setShow] = useState(false);
-	const { setTheme } = useTheme();
 
 	const router = useRouter();
 
 	useEffect(() => {
 		let timeOut;
 		if (router.pathname === '/') {
-			timeOut = setTimeout(() => setShow(true), 9000);
+			timeOut = setTimeout(() => setShow(true), 4000);
 		} else if (router.pathname !== '/') {
 			setShow(true);
 		}
 		return () => clearTimeout(timeOut);
 	}, []);
-	useEffect(() => {
-		setTheme('dark');
-	}, []);
+
 	return (
 		<div className='h-full overflow-hidden'>
 			<Head>

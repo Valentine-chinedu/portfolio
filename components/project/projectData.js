@@ -12,7 +12,8 @@ export const projects = [
 	{
 		id: 2,
 		title: 'NFTMarket',
-		description: 'Web3 Application for creating and minting ERC-721 NFTs.',
+		description:
+			'Web3 Application built on the ethereum blockchain for minting and selling of ERC-721 NFTs.',
 		tools: [
 			'Nextjs',
 			'Solidity',
