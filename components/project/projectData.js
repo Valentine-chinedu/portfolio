@@ -3,29 +3,28 @@ export const projects = [
 		id: 1,
 		title: 'Onstore',
 		description:
-			'Headless E-commerce web app where clothing accessories like Suit Trousers, Joggers Pants, shirts, shoes and watches can be purchased. ',
-		tools: ['React', 'Typescript', 'Tailwindcss', 'Context-api', 'commerce.js'],
+			'fullstack E-commerce Store web application where clothing accessories like Suit Trousers, Joggers Pants, shirts, shoes and watches can be purchased. ',
+		tools: [
+			'Reactjs',
+			'Expressjs',
+			'Typescript',
+			'Tailwindcss',
+			'Mongodb',
+			'Redux/toolkit',
+			'Stripe',
+		],
 		github: 'https://github.com/Valentine-chinedu/onstore_project',
-		url: 'https://onstore.vercel.app/',
+		url: 'https://onstore-frontend.vercel.app/',
 		image: '/onstore_new.png',
 	},
 	{
 		id: 2,
-		title: 'NFTMarket',
-		description:
-			'Web3 Application built on the ethereum blockchain for minting and selling of ERC-721 NFTs.',
-		tools: [
-			'Nextjs',
-			'Solidity',
-			'TailwindCSS',
-			'Hardhat',
-			'IPFS',
-			'Alchemy',
-			'Ethers.js',
-		],
-		github: 'https://github.com/Valentine-chinedu/NFT-Market',
-		url: 'https://nft-market-rust-five.vercel.app',
-		image: '/nft_marketplace.png',
+		title: 'Friends',
+		description: 'Fully featured fullstack Social Media web application. ',
+		tools: ['Reactjs', 'Expressjs', 'CSS', 'Mongodb', 'Redux', 'Socket.io'],
+		github: 'https://github.com/Valentine-chinedu/friends-client',
+		url: 'https://friends-client.vercel.app',
+		image: '/friends_screen_shot.png',
 	},
 
 	{
@@ -38,7 +37,6 @@ export const projects = [
 		url: 'https://estate-guru.vercel.app/',
 		image: '/estate-guru-new.png',
 	},
-
 	{
 		id: 4,
 		title: 'spaceX-Info',
@@ -57,14 +55,25 @@ export const projects = [
 	},
 	{
 		id: 5,
-		title: 'CryptodApp',
+		title: 'NFTMarket',
 		description:
-			'Web3 application built on the Ethereum blockchain for transfer of ERC20 token and coins between wallets. ',
-		tools: ['Reactjs', 'Solidity', 'Ethers.js', 'Hardhat', 'Alchemy'],
-		github: 'https://github.com/Valentine-chinedu/web3-crypto-dapp',
-		url: 'https://web3-crypto-dapp.vercel.app/',
-		image: '/crypto _app_pics.png',
+			'Web3 Application built on the ethereum blockchain for minting and selling of ERC-721 NFTs.',
+		tools: [
+			'Nextjs',
+			'Solidity',
+			'TailwindCSS',
+			'Hardhat',
+			'IPFS',
+			'Alchemy',
+			'Ethers.js',
+		],
+		github: 'https://github.com/Valentine-chinedu/NFT-Market',
+		url: 'https://nft-market-rust-five.vercel.app',
+		image: '/nft_marketplace.png',
 	},
+];
+
+export const projects2 = [
 	{
 		id: 6,
 		title: 'SocialHangout',
@@ -75,17 +84,6 @@ export const projects = [
 		url: 'https://socialhangout-f995d.web.app/',
 		image: '/twitter_clone.png',
 	},
-
-	{
-		id: 7,
-		title: 'Portfolio',
-		description:
-			'Personal Portfolio website designed to showcase my personal projects, skills and contact information.',
-		tools: ['Nextjs', 'TailwindCSS', 'Framer-Motion'],
-		github: 'https://github.com/Valentine-chinedu/Portfolio',
-		url: 'https://www.valentinechinedu.dev',
-		image: '/portfolio-photo.png',
-	},
 	{
 		id: 8,
 		title: 'Movie-search-app',
@@ -95,5 +93,25 @@ export const projects = [
 		github: 'https://github.com/Valentine-chinedu/movie-app',
 		url: 'https://movie-app-c3582.web.app',
 		image: '/movie-image.jpg',
+	},
+	{
+		id: 5,
+		title: 'CryptodApp',
+		description:
+			'Web3 application built on the Ethereum blockchain for transfer of ERC20 token and coins between wallets. ',
+		tools: ['Reactjs', 'CSS', 'Solidity', 'Ethers.js', 'Hardhat', 'Alchemy'],
+		github: 'https://github.com/Valentine-chinedu/web3-crypto-dapp',
+		url: 'https://web3-crypto-dapp.vercel.app/',
+		image: '/crypto _app_pics.png',
+	},
+	{
+		id: 7,
+		title: 'Portfolio',
+		description:
+			'Personal Portfolio website designed to showcase my personal projects, skills and contact information.',
+		tools: ['Nextjs', 'TailwindCSS', 'Framer-Motion'],
+		github: 'https://github.com/Valentine-chinedu/Portfolio',
+		url: 'https://www.valentinechinedu.dev',
+		image: '/portfolio-photo.png',
 	},
 ];

@@ -55,6 +55,7 @@ function Skills() {
 						</div>
 						<ul className='space-y-2 text-center text-lg font-medium lg:text-base'>
 							<li>Javascript</li>
+							<li>Nodejs</li>
 							<li>Typescript</li>
 							<li>Solidity</li>
 							<li>Html</li>
@@ -71,6 +72,7 @@ function Skills() {
 
 						<ul className='space-y-2 text-center text-lg font-medium lg:text-base'>
 							<li>Reactjs/Nextjs</li>
+							<li>Expressjs</li>
 							<li>Redux/Toolkit</li>
 							<li>React-Query</li>
 							<li>Ethers.js</li>
@@ -84,11 +86,12 @@ function Skills() {
 						<div className='flex flex-col items-center space-y-1 border-b-2 border-[#00ffff] px-4 pb-1 md:space-y-4'>
 							<FaTools className='text-4xl' />
 							<h2 className='font-bold uppercase text-[#00ffff] lg:text-xl'>
-								Tools/Platforms
+								DataBase/Platforms
 							</h2>
 						</div>
 
 						<ul className='space-y-2 text-center text-lg font-medium lg:text-base'>
+							<li>MongoDb</li>
 							<li>Figma</li>
 							<li>Github</li>
 							<li>Git</li>

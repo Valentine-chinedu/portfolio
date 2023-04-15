@@ -48,16 +48,6 @@ const NavBar = ({ openSideBar, setOpenSideBar }) => {
 				>
 					Skills
 				</AnchorLink>
-
-				<a
-					href='/chinedu_valentine_okosi_resume.pdf'
-					download
-					rel='noonpener noreferrer'
-					target='blank'
-					className='rounded-lg bg-[#1fd8d8] py-1.5 px-4 text-sm font-bold text-gray-900 hover:bg-[#00FFFF] md:py-1.5 md:px-4 md:text-base'
-				>
-					Resume
-				</a>
 			</nav>
 			{openSideBar ? (
 				<div

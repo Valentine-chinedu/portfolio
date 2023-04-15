@@ -1,7 +1,10 @@
-import { projects } from '../project/projectData';
+import { useState } from 'react';
+import { projects, projects2 } from '../project/projectData';
 import ProjectDetails from '../project/ProjectDetails';
 
 function Projects() {
+	const [showMore, setShowMore] = useState(false);
+
 	return (
 		<div
 			className='flex h-full w-full flex-col items-center bg-[url("/fakurian-design-ICTjWYzpoc0-unsplash.jpg")] bg-cover bg-fixed py-12 lg:py-40'
@@ -15,22 +18,48 @@ function Projects() {
 					Projects that I have built
 				</h3>
 			</div>
-
-			{projects.map((project) => (
-				<div
-					key={project.id}
-					className='flex- mb-12 flex h-full w-full items-center overflow-x-hidden md:mb-20 lg:mb-32 lg:w-full'
-				>
-					<ProjectDetails
-						title={project.title}
-						description={project.description}
-						tools={project.tools}
-						github={project.github}
-						url={project.url}
-						image={project.image}
-					/>
+			<div>
+				{projects.map((project) => (
+					<div
+						key={project.id}
+						className='flex- mb-12 flex h-full w-full items-center overflow-x-hidden md:mb-20 lg:mb-32 lg:w-full'
+					>
+						<ProjectDetails
+							title={project.title}
+							description={project.description}
+							tools={project.tools}
+							github={project.github}
+							url={project.url}
+							image={project.image}
+						/>
+					</div>
+				))}
+				<div className='flex justify-center'>
+					<button
+						onClick={() => setShowMore((prev) => !prev)}
+						className='mb-16 rounded-md border-4 border-[#00FFFF] px-3 py-1 text-sm font-bold tracking-wider text-gray-100 hover:bg-[#00FFFF] hover:text-gray-700 md:mb-24 md:px-6 md:py-2 md:text-base lg:mb-32'
+					>
+						{showMore ? 'Show Less' : 'Show More'}
+					</button>
 				</div>
-			))}
+				{projects2.map((project) => (
+					<div
+						key={project.id}
+						className={`flex- mb-12 flex h-full w-full items-center overflow-x-hidden md:mb-20 lg:mb-32 lg:w-full ${
+							showMore ? '' : 'hidden'
+						}`}
+					>
+						<ProjectDetails
+							title={project.title}
+							description={project.description}
+							tools={project.tools}
+							github={project.github}
+							url={project.url}
+							image={project.image}
+						/>
+					</div>
+				))}
+			</div>
 		</div>
 	);
 }

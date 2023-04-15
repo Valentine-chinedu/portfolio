@@ -51,8 +51,6 @@ function About() {
 							<p>
 								Creating the best software exprience for costumers and
 								presenting products and services with the best possible design.
-								Currently I'm working as a frontend developer for PAGA, a
-								financial service provider focusing on mobile payment.
 							</p>
 						</div>
 						<div
@@ -69,7 +67,7 @@ function About() {
 							<p>
 								Fast-forward to today and I have become confortable designing
 								and building high qaulity web applications, utilizing modern
-								technologies like React, Nextjs and Figma.
+								technologies.
 							</p>
 						</div>
 						<div className='text-sm text-[#00FFFF] md:text-base lg:text-base'>
