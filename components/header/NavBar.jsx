@@ -48,6 +48,15 @@ const NavBar = ({ openSideBar, setOpenSideBar }) => {
 				>
 					Skills
 				</AnchorLink>
+				<AnchorLink
+					href='#contact'
+					className='cursor-pointer px-2 tracking-wider after:absolute after:bg-[#00FFFF] after:duration-1000 hover:text-gray-100 hover:after:transition-[width] lg:after:bottom-1 lg:after:block lg:after:h-0.5 lg:after:w-0 lg:hover:after:w-11'
+					onClick={() => {
+						setOpenSideBar(false);
+					}}
+				>
+					Contact
+				</AnchorLink>
 			</nav>
 			{openSideBar ? (
 				<div
