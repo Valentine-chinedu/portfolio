@@ -26,7 +26,7 @@ function About() {
 	return (
 		<motion.div
 			ref={ref}
-			className='flex h-full w-full flex-col items-center justify-center bg-slate-900 md:h-screen'
+			className='flex h-full w-full flex-col items-center justify-center md:h-screen'
 			id='about'
 		>
 			<motion.div
