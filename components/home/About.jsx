@@ -55,7 +55,7 @@ function About() {
 						</div>
 						<div
 							className={` space-y-2 overflow-hidden text-sm transition-[height] duration-500 md:text-base ${
-								show ? 'h-48 lg:h-32' : 'h-0'
+								show ? 'h-48 lg:h-44' : 'h-0'
 							}`}
 						>
 							<p>
@@ -65,7 +65,7 @@ function About() {
 								softwares, so I took interest in learning software development.
 							</p>
 							<p>
-								Fast-forward to today and I have become confortable designing
+								Fast-forward to today and I have become comfortable designing
 								and building high qaulity web applications, utilizing modern
 								technologies.
 							</p>

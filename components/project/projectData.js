@@ -96,7 +96,7 @@ export const projects2 = [
 	},
 	{
 		id: 5,
-		title: 'CryptodApp',
+		title: 'CryptoDApp',
 		description:
 			'Web3 application built on the Ethereum blockchain for transfer of ERC20 token and coins between wallets. ',
 		tools: ['Reactjs', 'CSS', 'Solidity', 'Ethers.js', 'Hardhat', 'Alchemy'],

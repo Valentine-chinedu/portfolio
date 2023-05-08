@@ -20,7 +20,7 @@ const LandingPage = () => {
 						transition={{ duration: 1.5, ease: 'easeIn', delay: 0.5 }}
 						className='mb-8 flex h-auto w-11/12 flex-col items-start space-y-4 px-4 md:space-y-12 lg:mb-0 lg:h-80 lg:w-full lg:justify-center lg:px-0'
 					>
-						<h1 className='text-2xl font-bold text-[#00FFFF] md:text-5xl lg:text-8xl'>
+						<h1 className='text-2xl font-bold text-[#00FFFF] md:text-5xl lg:text-7xl'>
 							Chinedu Valentine Okosi.
 						</h1>
 						<p className='pb-6 text-left text-base font-medium text-gray-100 md:text-xl lg:w-[40rem] lg:pb-6 lg:text-left lg:text-2xl '>

@@ -70,7 +70,7 @@ const Footer = () => {
 					</svg>
 				</a>
 			</div>
-			<h3 className=' text-sm font-medium text-gray-900 dark:text-gray-300 md:text-base'>
+			<h3 className='text-sm font-medium text-gray-300 md:text-base'>
 				&copy;2022 Chinedu Valentine Okosi.
 			</h3>
 		</div>
