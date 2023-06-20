@@ -2,10 +2,14 @@ import { useAnimation, motion } from 'framer-motion';
 import Image from 'next/image';
 import { useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
+import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
+import Carousel from 'react-grid-carousel';
 
-function Blog() {
+function Blog({ articles }) {
 	const [ref, inView] = useInView({ threshold: 0.3 });
 	const animation = useAnimation();
+
+	console.log(articles);
 
 	useEffect(() => {
 		if (inView) {
@@ -28,9 +32,9 @@ function Blog() {
 			<motion.div
 				animate={animation}
 				initial={{ y: 100, opacity: 0 }}
-				className='flex w-[90%] flex-col items-center justify-center py-8 md:w-4/5 md:py-12 lg:w-4/6 lg:py-14'
+				className='flex w-[90%] flex-col items-center justify-center py-8 md:w-4/5 md:py-12 lg:w-4/6 lg:space-y-6 lg:py-14'
 			>
-				<div className='relative flex w-full flex-col items-center'>
+				<div className='relative mb-4 flex w-full flex-col items-center'>
 					<h2 className='text-6xl font-bold uppercase text-gray-800 md:text-7xl lg:text-9xl'>
 						Blog
 					</h2>
@@ -38,23 +42,72 @@ function Blog() {
 						Technical Writing
 					</h3>
 				</div>
-				<div className='relative h-80 w-80 md:h-96 md:w-96'>
-					<Image src='/illustra/news.png' alt='profile picture' layout='fill' />
-				</div>
-				<p className=' mb-8 text-center font-medium text-gray-100 md:text-lg lg:w-4/5 lg:px-0 '>
+				<p className=' mb-10 text-center font-medium text-gray-100 md:text-lg lg:w-4/5 lg:px-0 lg:pb-14 '>
 					I occussionally write about the technologies that I have learnt. It
-					helps me reinforce, retain and share Knowledge, improve my ability to
-					talk about technologies. If I can write about them, I can talk about
-					them.
+					helps me reinforce, retain and share Knowledge.
 				</p>
-				<a
-					className='rounded-md border-2 border-[#00FFFF] px-4 py-2 text-sm font-bold tracking-wider text-gray-100 hover:bg-[#00FFFF] hover:text-gray-600 md:px-8 md:text-xl'
-					href='https://valentineokosi.hashnode.dev'
-					target='_blank'
-					rel='noopener noreferrer'
-				>
-					View Blog
-				</a>
+				<div className='w-screen pl-4 md:container md:mx-auto '>
+					<Carousel
+						responsiveLayout={[
+							{
+								breakpoint: 767,
+								cols: 1,
+								rows: 1,
+								gap: 20,
+								loop: true,
+							},
+
+							{
+								breakpoint: 768,
+								cols: 2,
+								rows: 1,
+								gap: 4,
+								loop: true,
+							},
+							{},
+						]}
+						cols={3}
+						rows={1}
+						gap={0}
+						showDots={true}
+						loop={true}
+					>
+						{articles?.map((article) => (
+							<Carousel.Item id={article._id}>
+								<div className='mb-8 flex h-96 w-80 flex-col overflow-hidden border-4 border-[#00FFFF] md:w-64 lg:w-72'>
+									<a
+										className='mb-4'
+										href={`https://valentineokosi.hashnode.dev/${article.slug}`}
+										target='_blank'
+										rel='noopener noreferrer'
+									>
+										<div className='relative h-60 w-auto '>
+											<Image
+												src={article.coverImage}
+												alt='profile picture'
+												layout='fill'
+												className=''
+											/>
+										</div>
+									</a>
+									<h2 className='mx-4 mb-4 text-center text-sm text-gray-100'>
+										{article.title}
+									</h2>
+									<div className='flex w-full justify-center'>
+										<a
+											href={`https://valentineokosi.hashnode.dev/${article.slug}`}
+											target='_blank'
+											rel='noopener noreferrer'
+											className='text-[#00FFFF] hover:text-cyan-500'
+										>
+											Read
+										</a>
+									</div>
+								</div>
+							</Carousel.Item>
+						))}
+					</Carousel>
+				</div>
 			</motion.div>
 		</div>
 	);

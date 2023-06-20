@@ -1,21 +1,15 @@
 import React, { useContext } from 'react';
 import Head from 'next/head';
-import { useEffect } from 'react';
 
 import Home from '../components/home/Home';
 import Intro from '../components/home/Intro';
 
-import { useTheme } from 'next-themes';
 import GlobalStateContext from '../contextprovider/Context';
 
-export default function index() {
+import { ApolloClient, InMemoryCache, gql } from '@apollo/client';
+
+export default function index({ articles }) {
 	const { isLoaded } = useContext(GlobalStateContext);
-
-	const { setTheme } = useTheme();
-
-	useEffect(() => {
-		setTheme('dark');
-	}, []);
 
 	return (
 		<div className='z-20 h-full w-full overflow-x-hidden bg-[#010e03] font-sans text-gray-400'>
@@ -28,7 +22,39 @@ export default function index() {
 				<meta property='og:image:height' content='300' />
 			</Head>
 
-			{isLoaded ? <Home /> : <Intro />}
+			{isLoaded ? <Home articles={articles} /> : <Intro />}
 		</div>
 	);
+}
+
+export async function getStaticProps() {
+	const client = new ApolloClient({
+		uri: 'https://api.hashnode.com',
+		cache: new InMemoryCache(),
+	});
+
+	const { data } = await client.query({
+		query: gql`
+			query GetPosts {
+				user(username: "okosival") {
+					publication {
+						posts(page: 0) {
+							_id
+							coverImage
+							slug
+							title
+							brief
+							dateAdded
+						}
+					}
+				}
+			}
+		`,
+	});
+
+	return {
+		props: {
+			articles: data.user.publication.posts,
+		},
+	};
 }

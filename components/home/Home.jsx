@@ -7,8 +7,9 @@ import Projects from '../home/Projects';
 import Contact from '../home/Contact';
 
 import LandingPage from './LandingPage';
+import Blog from './Blog';
 
-const Home = () => {
+const Home = ({ articles }) => {
 	const { openSideBar, setOpenSideBar } = useContext(GlobalStateContext);
 
 	return (
@@ -28,7 +29,8 @@ const Home = () => {
 			>
 				<LandingPage />
 				<Projects />
-				<About />
+				<Blog articles={articles} />
+				{/* <About /> */}
 				<Skills />
 				<Contact />
 			</main>
