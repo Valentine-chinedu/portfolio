@@ -71,7 +71,7 @@ const Footer = () => {
 				</a>
 			</div>
 			<h3 className='text-sm font-medium text-gray-300 md:text-base'>
-				&copy;2022 Chinedu Valentine Okosi.
+				&copy; 2023 Chinedu Valentine Okosi. All rights reserved
 			</h3>
 		</div>
 	);
