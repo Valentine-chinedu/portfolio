@@ -31,13 +31,13 @@ const NavBar = ({ openSideBar, setOpenSideBar }) => {
 					Projects
 				</AnchorLink>
 				<AnchorLink
-					href='#about'
-					className=' z-50 cursor-pointer px-2 tracking-wider after:absolute after:bg-[#00FFFF] after:duration-1000 hover:text-gray-100 hover:after:transition-[width] lg:after:bottom-1 lg:after:block lg:after:h-0.5 lg:after:w-0 lg:hover:after:w-12'
+					href='#blog'
+					className=' z-50 cursor-pointer px-2 tracking-wider after:absolute after:bg-[#00FFFF] after:duration-1000 hover:text-gray-100 hover:after:transition-[width] lg:after:bottom-1 lg:after:block lg:after:h-0.5 lg:after:w-0 lg:hover:after:w-10'
 					onClick={() => {
 						setOpenSideBar(false);
 					}}
 				>
-					About
+					Blog
 				</AnchorLink>
 				<AnchorLink
 					href='#skills'
@@ -50,23 +50,13 @@ const NavBar = ({ openSideBar, setOpenSideBar }) => {
 				</AnchorLink>
 				<AnchorLink
 					href='#contact'
-					className='cursor-pointer px-2 tracking-wider after:absolute after:bg-[#00FFFF] after:duration-1000 hover:text-gray-100 hover:after:transition-[width] lg:after:bottom-1 lg:after:block lg:after:h-0.5 lg:after:w-0 lg:hover:after:w-11'
+					className='cursor-pointer px-2 tracking-wider after:absolute after:bg-[#00FFFF] after:duration-1000 hover:text-gray-100 hover:after:transition-[width] lg:after:bottom-1 lg:after:block lg:after:h-0.5 lg:after:w-0 lg:hover:after:w-16'
 					onClick={() => {
 						setOpenSideBar(false);
 					}}
 				>
 					Contact
 				</AnchorLink>
-				<a
-					href='https://valentineokosi.hashnode.dev/'
-					target='_blank'
-					className='cursor-pointer px-2 tracking-wider after:absolute after:bg-[#00FFFF] after:duration-1000 hover:text-gray-100 hover:after:transition-[width] lg:after:bottom-1 lg:after:block lg:after:h-0.5 lg:after:w-0 lg:hover:after:w-11'
-					onClick={() => {
-						setOpenSideBar(false);
-					}}
-				>
-					Blog
-				</a>
 			</nav>
 			{openSideBar ? (
 				<div
