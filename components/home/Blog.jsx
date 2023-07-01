@@ -9,6 +9,16 @@ function Blog({ articles }) {
 	const [ref, inView] = useInView({ threshold: 0.3 });
 	const animation = useAnimation();
 
+	function formattedDate(date) {
+		const newDate = new Date(date);
+		const formatted = newDate.toLocaleDateString('en-US', {
+			day: 'numeric',
+			month: 'numeric',
+			year: 'numeric',
+		});
+		return formatted;
+	}
+
 	console.log(articles);
 
 	useEffect(() => {
@@ -26,7 +36,7 @@ function Blog({ articles }) {
 	return (
 		<div
 			ref={ref}
-			className='flex h-screen w-full flex-col items-center justify-center'
+			className='flex h-screen w-full flex-col items-center justify-center bg-[url("/blog_background_4.png")] bg-cover bg-right'
 			id='blog'
 		>
 			<motion.div
@@ -43,7 +53,7 @@ function Blog({ articles }) {
 					</h3>
 				</div>
 				<p className=' mb-10 text-center font-medium text-gray-100 md:text-lg lg:w-4/5 lg:px-0 lg:pb-14 '>
-					I occussionally write about the technologies that I have learnt. It
+					I occussionally write about the technologies that I work with. It
 					helps me reinforce, retain and share Knowledge.
 				</p>
 				<div className='w-screen pl-4 md:container md:mx-auto '>
@@ -68,13 +78,15 @@ function Blog({ articles }) {
 						]}
 						cols={3}
 						rows={1}
-						gap={0}
+						gap={4}
 						showDots={true}
+						dotColorActive={'#ffff'}
+						dotColorInactive={'#0a0a0a'}
 						loop={true}
 					>
 						{articles?.map((article) => (
 							<Carousel.Item id={article._id}>
-								<div className='mb-8 flex h-96 w-80 flex-col overflow-hidden border-4 border-[#00FFFF] md:w-64 lg:w-72'>
+								<div className='mb-8 flex h-96 w-80 flex-col overflow-hidden border-4 border-[#00FFFF] bg-black md:w-64 lg:w-72'>
 									<a
 										className='mb-4'
 										href={`https://valentineokosi.hashnode.dev/${article.slug}`}
@@ -90,18 +102,23 @@ function Blog({ articles }) {
 											/>
 										</div>
 									</a>
-									<h2 className='mx-4 mb-4 text-center text-sm text-gray-100'>
-										{article.title}
-									</h2>
-									<div className='flex w-full justify-center'>
-										<a
-											href={`https://valentineokosi.hashnode.dev/${article.slug}`}
-											target='_blank'
-											rel='noopener noreferrer'
-											className='text-[#00FFFF] hover:text-cyan-500'
-										>
-											Read
-										</a>
+									<div className='space-y-16 px-4 text-xs'>
+										<h2 className=' text-center text-gray-100'>
+											{article.title}
+										</h2>
+										<div className='flex w-full justify-between'>
+											<p className='text-gray-400 '>
+												{formattedDate(article.dateAdded)}
+											</p>
+											<a
+												href={`https://valentineokosi.hashnode.dev/${article.slug}`}
+												target='_blank'
+												rel='noopener noreferrer'
+												className='text-[#00FFFF] hover:text-cyan-500'
+											>
+												Read
+											</a>
+										</div>
 									</div>
 								</div>
 							</Carousel.Item>

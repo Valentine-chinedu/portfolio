@@ -16,13 +16,17 @@ const ProjectDetails = ({ title, description, tools, github, url, image }) => {
 				opacity: 1,
 				transition: {
 					duration: 1.25,
+					delay: 0.5,
 				},
 			});
 		}
 	}, [inView]);
 
 	return (
-		<div ref={ref} className='relative mb-4 flex h-full w-full flex-col'>
+		<div
+			ref={ref}
+			className='relative mb-4 flex h-full w-full flex-col lg:px-4'
+		>
 			<div className=' flex h-full w-full flex-col items-center justify-center space-y-8 lg:flex-row lg:space-y-0 lg:space-x-36'>
 				<motion.div
 					initial={{ x: 100, opacity: 0 }}

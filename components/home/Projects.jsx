@@ -7,7 +7,7 @@ function Projects() {
 
 	return (
 		<div
-			className='flex h-full w-full flex-col items-center bg-[url("/fakurian-design-ICTjWYzpoc0-unsplash.jpg")] bg-cover bg-fixed py-12 lg:py-40'
+			className='flex h-full w-full flex-col items-center bg-slate-900 py-12 lg:py-40'
 			id='projects'
 		>
 			<div className='relative mb-12 flex w-full justify-center lg:mb-20'>
@@ -15,7 +15,7 @@ function Projects() {
 					portfolio
 				</h2>
 				<h3 className='absolute bottom-3 text-lg font-semibold text-[#00FFFF] md:text-2xl lg:bottom-6 lg:text-3xl lg:font-bold'>
-					Projects that I have built
+					Personal Side Projects
 				</h3>
 			</div>
 			<div>
