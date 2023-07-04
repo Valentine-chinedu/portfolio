@@ -30,15 +30,15 @@ const LandingPage = () => {
 							and occasionally designing apps with high perfomance and intuitive
 							user experience.
 						</p>
-						<div className='space-x-4 md:space-x-6 lg:mt-4 lg:space-x-8'>
+						<div className='flex  w-full items-center justify-center space-x-4 md:space-x-6 lg:mt-4 lg:w-auto lg:flex-none lg:space-x-8'>
 							<AnchorLink href='#contact'>
-								<a className='rounded-lg bg-[#1fd8d8] py-1.5 px-4 text-sm font-bold text-gray-900 hover:bg-[#00FFFF] md:py-3 md:px-6 md:text-base lg:py-4 lg:px-8 lg:text-lg'>
+								<a className='rounded-lg bg-[#1fd8d8] px-4 py-1.5 text-sm font-bold text-gray-900 hover:bg-[#00FFFF] md:px-6 md:py-3 md:text-base lg:px-8 lg:py-4 lg:text-lg'>
 									Get In Touch
 								</a>
 							</AnchorLink>
 							<AnchorLink
 								href='#projects'
-								className='hover:text-100 rounded-lg bg-gray-100 py-2 px-3 text-xs font-bold text-gray-900 hover:bg-[#00FFFF] hover:text-gray-800 md:py-3 md:px-6 md:text-base lg:py-4 lg:px-8 lg:text-lg'
+								className='hover:text-100 rounded-lg bg-gray-100 px-3 py-2 text-xs font-bold text-gray-900 hover:bg-[#00FFFF] hover:text-gray-800 md:px-6 md:py-3 md:text-base lg:px-8 lg:py-4 lg:text-lg'
 							>
 								Projects
 							</AnchorLink>
