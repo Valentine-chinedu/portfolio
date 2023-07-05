@@ -7,7 +7,7 @@ function Projects() {
 
 	return (
 		<div
-			className='flex h-full w-full flex-col items-center bg-slate-900 py-12 lg:py-40'
+			className='flex h-full w-full flex-col items-center bg-black py-12 lg:py-40'
 			id='projects'
 		>
 			<div className='relative mb-12 flex w-full justify-center lg:mb-20'>

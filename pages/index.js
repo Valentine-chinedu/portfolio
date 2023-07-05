@@ -12,7 +12,7 @@ export default function index({ articles }) {
 	const { isLoaded } = useContext(GlobalStateContext);
 
 	return (
-		<div className='z-20 h-full w-full overflow-x-hidden bg-[#010e03] font-sans text-gray-400'>
+		<div className='z-20 h-full w-full overflow-x-hidden font-sans text-gray-400'>
 			<Head>
 				<title>Valentine Okosi.</title>
 				<link rel='icon' href='/favicon-32x32.png' />

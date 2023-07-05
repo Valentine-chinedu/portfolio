@@ -19,7 +19,7 @@ function Intro() {
 			animate='in'
 			exit='out'
 			variants={pageVariantsAnim}
-			className='flex h-screen flex-col items-center justify-center space-y-10 overflow-hidden'
+			className='flex h-screen flex-col items-center justify-center space-y-10 overflow-hidden bg-black'
 		>
 			<motion.svg
 				initial={{ opacity: 0 }}
