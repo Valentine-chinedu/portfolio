@@ -44,6 +44,7 @@ export async function getStaticProps() {
 							slug
 							title
 							brief
+							brief
 							dateAdded
 						}
 					}

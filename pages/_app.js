@@ -1,11 +1,10 @@
 import '../styles.css';
 import { useEffect, useState } from 'react';
 
-import { ThemeProvider, useTheme } from 'next-themes';
-import { GlobalStateProvider } from '../contextprovider/Context';
-
 import Head from 'next/head';
 import { useRouter } from 'next/router';
+
+import { GlobalStateProvider } from '../contextprovider/Context';
 
 import Footer from '../components/Footer';
 import Header from '../components/header/Header';
@@ -36,11 +35,9 @@ function MyApp({ Component, pageProps }) {
 				/>
 			</Head>
 			<GlobalStateProvider>
-				<ThemeProvider attribute='class'>
-					{show && <Header />}
-					<Component {...pageProps} />
-					{show && <Footer />}
-				</ThemeProvider>
+				{show && <Header />}
+				<Component {...pageProps} />
+				{show && <Footer />}
 			</GlobalStateProvider>
 		</div>
 	);

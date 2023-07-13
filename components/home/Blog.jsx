@@ -52,7 +52,7 @@ function Blog({ articles }) {
 						Technical Writing
 					</h3>
 				</div>
-				<p className=' mb-10 text-center font-medium text-gray-100 md:text-lg lg:w-4/5 lg:px-0 lg:pb-14 '>
+				<p className=' mb-10 text-center font-medium text-gray-100 md:text-lg lg:w-4/5 lg:px-0 lg:pb-14 lg:text-xl '>
 					I occussionally write about the technologies that I work with. It
 					helps me reinforce, retain and share Knowledge.
 				</p>
@@ -86,7 +86,7 @@ function Blog({ articles }) {
 					>
 						{articles?.map((article) => (
 							<Carousel.Item id={article._id}>
-								<div className='mb-8 flex h-96 w-80 flex-col overflow-hidden border-4 border-[#00FFFF] bg-black md:w-64 lg:w-72'>
+								<div className='mb-8 flex h-96 w-80 flex-col overflow-hidden border-4 border-[#00FFFF] bg-black md:w-64 lg:h-[28rem] lg:w-96'>
 									<a
 										className='mb-4'
 										href={`https://valentineokosi.hashnode.dev/${article.slug}`}
@@ -102,11 +102,16 @@ function Blog({ articles }) {
 											/>
 										</div>
 									</a>
-									<div className='space-y-16 px-4 text-xs'>
-										<h2 className=' text-center text-gray-100'>
-											{article.title}
-										</h2>
-										<div className='flex w-full justify-between'>
+									<div className='flex h-full flex-col justify-between px-4 pb-2 text-xs font-semibold lg:pb-4 lg:text-base'>
+										<div className='space-y-2'>
+											<h2 className='text-center text-gray-100'>
+												{article.title}
+											</h2>
+											<p className='line-clamp-3 text-xs text-gray-300 lg:text-sm'>
+												{article.brief}
+											</p>
+										</div>
+										<div className='flex w-full justify-between '>
 											<p className='text-gray-400 '>
 												{formattedDate(article.dateAdded)}
 											</p>
@@ -116,7 +121,7 @@ function Blog({ articles }) {
 												rel='noopener noreferrer'
 												className='text-[#00FFFF] hover:text-cyan-500'
 											>
-												Read
+												Read More
 											</a>
 										</div>
 									</div>

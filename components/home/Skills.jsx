@@ -39,7 +39,7 @@ function Skills() {
 						Technologies I work with
 					</h2>
 				</div>
-				<div className=' mb-8 flex flex-col items-center space-y-4 font-medium text-gray-300 md:mb-14 md:space-y-8 md:text-lg'>
+				<div className=' mb-8 flex flex-col items-center space-y-4 font-medium text-gray-300 md:mb-14 md:space-y-8 md:text-lg lg:text-xl'>
 					<p className='mb-6 text-center lg:mb-0'>
 						I'm fully committed to the philosophy of life-long learning, and I
 						believe if given the opportunity, I can learn anything.

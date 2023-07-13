@@ -15,7 +15,7 @@ function Projects() {
 					portfolio
 				</h2>
 				<h3 className='absolute bottom-3 text-lg font-semibold text-[#00FFFF] md:text-2xl lg:bottom-6 lg:text-3xl lg:font-bold'>
-					Personal Side Projects
+					Featured Projects
 				</h3>
 			</div>
 			<div>

@@ -11,34 +11,35 @@ const LandingPage = () => {
 			animate='in'
 			exit='out'
 			variants={pageVariantsAnim}
-			className='flex h-screen w-screen flex-col items-center justify-center space-y-20 bg-[url("/landing_page_background.jpg")] bg-right md:space-y-32 md:px-12 lg:h-[90%] lg:space-y-80 lg:bg-cover lg:px-0 lg:pt-32'
+			className='flex h-screen w-screen flex-col items-center justify-center space-y-20 bg-[url("/landing_page_background.jpg")] bg-right md:space-y-32 md:px-12 lg:space-y-0 lg:bg-cover lg:px-0 '
 			id='home'
 		>
-			<div className='z-10 flex w-full flex-col justify-center lg:items-center  '>
+			<div className='z-10 flex w-full flex-col justify-center lg:mb-44 lg:items-center  '>
 				<div className='w-ful flex flex-col items-center justify-center space-y-6  md:space-y-14 lg:w-9/12 lg:flex-row lg:space-x-12'>
 					<motion.div
 						initial={{ opacity: 0, x: -100 }}
 						animate={{ opacity: 1, x: 0 }}
 						transition={{ duration: 1.5, ease: 'easeIn', delay: 0.5 }}
-						className='mb-8 flex h-auto w-11/12 flex-col items-start space-y-8 px-4 md:space-y-12 lg:mb-0 lg:h-80 lg:w-full lg:justify-center lg:px-0'
+						className='mb-8 flex h-auto w-11/12 flex-col items-start space-y-8 md:space-y-12 lg:mb-0 lg:h-80 lg:w-full lg:justify-center lg:px-0'
 					>
-						<h1 className='bg-gradient-to-r from-cyan-200 to-cyan-600 bg-clip-text text-2xl font-bold text-transparent md:text-5xl lg:text-6xl'>
+						<h1 className='bg-gradient-to-r from-cyan-200 to-cyan-600 bg-clip-text text-4xl font-bold text-transparent md:text-5xl lg:text-8xl'>
 							Chinedu Valentine Okosi.
 						</h1>
-						<p className='pb-6 text-left text-base font-medium text-gray-100 lg:w-[40rem] lg:pb-6 lg:text-left lg:text-xl '>
-							A fullstack web developer specialized in building web applications
-							and occasionally designing apps with high perfomance and intuitive
-							user experience.
+						<p className='pb-6 text-left text-base font-medium text-gray-100 md:text-xl lg:w-[40rem] lg:pb-6 lg:text-left lg:text-2xl '>
+							Greetings! I'm a proficient full-stack web developer, possessing
+							expertise in crafting exceptional web applications that seamlessly
+							blend cutting-edge performance with an intuitively immersive user
+							experience.
 						</p>
 						<div className='flex  w-full items-center justify-center space-x-4 md:space-x-6 lg:mt-4 lg:w-auto lg:flex-none lg:space-x-8'>
 							<AnchorLink href='#contact'>
-								<a className='rounded-lg bg-[#1fd8d8] px-4 py-1.5 text-sm font-bold text-gray-900 hover:bg-[#00FFFF] md:px-6 md:py-3 md:text-base lg:px-8 lg:py-4 lg:text-lg'>
+								<a className='rounded-lg bg-[#1fd8d8] p-4 text-sm font-bold text-gray-900 hover:bg-[#00FFFF] md:px-6 md:py-3 md:text-base lg:px-8 lg:py-4 lg:text-lg'>
 									Get In Touch
 								</a>
 							</AnchorLink>
 							<AnchorLink
 								href='#projects'
-								className='hover:text-100 rounded-lg bg-gray-100 px-3 py-2 text-xs font-bold text-gray-900 hover:bg-[#00FFFF] hover:text-gray-800 md:px-6 md:py-3 md:text-base lg:px-8 lg:py-4 lg:text-lg'
+								className='hover:text-100 rounded-lg bg-gray-100 p-4 text-xs font-bold text-gray-900 hover:bg-[#00FFFF] hover:text-gray-800 md:px-6 md:py-3 md:text-base lg:px-8 lg:py-4 lg:text-lg'
 							>
 								Projects
 							</AnchorLink>
@@ -108,7 +109,7 @@ const LandingPage = () => {
 					</a>
 				</div>
 				<svg
-					className='h-5 animate-bounce md:h-6'
+					className='h-8 animate-bounce md:h-6'
 					xmlns='http://www.w3.org/2000/svg'
 					viewBox='0 0 24 24'
 				>
