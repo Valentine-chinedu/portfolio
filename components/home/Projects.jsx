@@ -7,10 +7,10 @@ function Projects() {
 
 	return (
 		<div
-			className='flex h-full w-full flex-col items-center bg-black py-12 lg:py-40'
+			className='flex h-full w-full flex-col items-center bg-black py-16 lg:py-32'
 			id='projects'
 		>
-			<div className='relative mb-12 flex w-full justify-center lg:mb-20'>
+			<div className='relative mb-16 flex w-full justify-center lg:mb-20'>
 				<h2 className=' text-6xl font-bold uppercase text-gray-700 md:text-7xl lg:text-9xl'>
 					portfolio
 				</h2>
@@ -22,7 +22,7 @@ function Projects() {
 				{projects.map((project) => (
 					<div
 						key={project.id}
-						className='flex- mb-12 flex h-full w-full items-center overflow-x-hidden md:mb-20 lg:mb-32 lg:w-full'
+						className='flex- mb-16 flex h-full w-full items-center overflow-x-hidden md:mb-20 lg:mb-32 lg:w-full'
 					>
 						<ProjectDetails
 							title={project.title}
