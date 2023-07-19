@@ -5,7 +5,7 @@ import { FaCode, FaTools } from 'react-icons/fa';
 import { IoCodeWorkingSharp } from 'react-icons/io5';
 
 function Skills() {
-	const [ref, inView] = useInView({ threshold: 0.3 });
+	const [ref, inView] = useInView({ threshold: 0.2 });
 	const animation = useAnimation();
 
 	useEffect(() => {
