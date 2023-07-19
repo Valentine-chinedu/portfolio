@@ -67,7 +67,7 @@ function Projects() {
 							</h3>
 						</div>
 
-						<p className='mb-8 text-start font-medium text-gray-300 md:mb-12 md:text-lg lg:mb-12 lg:px-60 lg:text-xl'>
+						<p className='mb-16 text-center font-medium text-gray-300 md:text-lg lg:px-60 lg:text-xl'>
 							Do you think that I would make a great addition to your team? I
 							think so too. I am a young and passionate learner, ready to
 							succeed in the tech world. I have a background that has built up
@@ -117,7 +117,7 @@ function Projects() {
 								</div>
 								<div className='mb-10 flex w-full items-start md:mb-16 lg:mb-12'>
 									<button
-										className='rounded-md border border-[#00FFFF] px-3 py-1 text-sm font-bold tracking-wider text-gray-300 hover:bg-[#00FFFF] hover:text-gray-700 md:px-6 md:py-2 md:text-base'
+										className='rounded-md border border-[#00FFFF] px-4 py-2 text-sm font-bold tracking-wider text-gray-300 hover:bg-[#00FFFF] hover:text-gray-700 md:px-6 md:py-3 md:text-base'
 										type='submit'
 									>
 										Send

@@ -80,6 +80,7 @@ function Skills() {
 							<li>SASS</li>
 							<li>Bootstrap</li>
 							<li>Styled Component</li>
+							<li>Cypress</li>
 						</ul>
 					</div>
 					<div className='flex flex-col items-center space-y-4 text-gray-100'>

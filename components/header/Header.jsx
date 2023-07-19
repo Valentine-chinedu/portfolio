@@ -48,7 +48,7 @@ function Header() {
 			animate='in'
 			exit='out'
 			variants={pageVariantsAnim}
-			className={`fixed z-50 flex w-full items-center justify-center overflow-y-hidden bg-black bg-opacity-30 py-3 text-gray-400 transition-all duration-500 lg:z-20 ${
+			className={`fixed z-50 flex w-full items-center justify-center overflow-y-hidden bg-black bg-opacity-30 text-gray-400 transition-all duration-500 lg:z-20 ${
 				isVisible && 'shadow shadow-[#00FFFF]'
 			} ${isHeaderVisible ? 'h-[3rem] md:h-[4rem]' : 'h-0 py-0'} `}
 		>

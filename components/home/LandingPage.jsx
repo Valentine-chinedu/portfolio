@@ -4,6 +4,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { pageVariantsAnim } from '../../animation';
 import { BsEnvelope, BsGithub } from 'react-icons/bs';
 import { ImLinkedin } from 'react-icons/im';
+
 const LandingPage = () => {
 	return (
 		<motion.div
@@ -11,49 +12,94 @@ const LandingPage = () => {
 			animate='in'
 			exit='out'
 			variants={pageVariantsAnim}
-			className='flex h-screen w-screen flex-col items-center justify-center space-y-20 bg-[url("/landing_page_background.jpg")] bg-right md:space-y-32 md:px-12 lg:space-y-0 lg:bg-cover lg:px-0 '
+			className='flex h-screen w-screen flex-col items-center justify-center space-y-4 bg-[url("/landing_page_background.jpg")] bg-right md:space-y-16 md:px-12 lg:space-y-0 lg:bg-cover lg:px-0 '
 			id='home'
 		>
-			<div className='z-10 flex w-full flex-col justify-center lg:mb-44 lg:items-center  '>
-				<div className='w-ful flex flex-col items-center justify-center space-y-6  md:space-y-14 lg:w-9/12 lg:flex-row lg:space-x-12'>
+			<div className='  flex w-full flex-col items-center lg:h-[60%] lg:justify-center'>
+				<div className='w-ful flex flex-col items-center justify-end space-y-6 md:space-y-12 lg:w-9/12 lg:flex-row lg:justify-center '>
 					<motion.div
 						initial={{ opacity: 0, x: -100 }}
 						animate={{ opacity: 1, x: 0 }}
 						transition={{ duration: 1.5, ease: 'easeIn', delay: 0.5 }}
-						className='mb-8 flex h-auto w-11/12 flex-col items-start space-y-8 md:space-y-12 lg:mb-0 lg:h-80 lg:w-full lg:justify-center lg:px-0'
+						className='mb-16 flex h-auto w-11/12 flex-col items-center space-y-12 md:space-y-10 lg:mb-0 lg:w-full lg:items-start lg:justify-center lg:px-0'
 					>
-						<h1 className='bg-gradient-to-r from-cyan-200 to-cyan-600 bg-clip-text text-4xl font-bold text-transparent md:text-5xl lg:text-8xl'>
+						<h1 className='bg-gradient-to-r from-cyan-200 to-cyan-600 bg-clip-text text-3xl font-bold text-transparent md:text-5xl lg:text-7xl'>
 							Chinedu Valentine Okosi.
 						</h1>
-						<p className='pb-6 text-left text-base font-medium text-gray-100 md:text-xl lg:w-[40rem] lg:pb-6 lg:text-left lg:text-2xl '>
-							Greetings! I'm a proficient full-stack web developer, possessing
-							expertise in crafting exceptional web applications that seamlessly
-							blend cutting-edge performance with an intuitively immersive user
+						<p className='text-center text-sm font-medium text-gray-100 md:text-lg lg:w-[40rem] lg:text-left '>
+							Greetings! I'm a proficient web developer, possessing expertise in
+							crafting exceptional web applications that seamlessly blend
+							cutting-edge performance with an intuitively immersive user
 							experience.
 						</p>
-						<div className='flex  w-full items-center justify-center space-x-4 md:space-x-6 lg:mt-4 lg:w-auto lg:flex-none lg:space-x-8'>
-							<AnchorLink href='#contact'>
-								<a className='rounded-lg bg-[#1fd8d8] p-4 text-sm font-bold text-gray-900 hover:bg-[#00FFFF] md:px-6 md:py-3 md:text-base lg:px-8 lg:py-4 lg:text-lg'>
-									Get In Touch
-								</a>
-							</AnchorLink>
-							<AnchorLink
-								href='#projects'
-								className='hover:text-100 rounded-lg bg-gray-100 p-4 text-xs font-bold text-gray-900 hover:bg-[#00FFFF] hover:text-gray-800 md:px-6 md:py-3 md:text-base lg:px-8 lg:py-4 lg:text-lg'
-							>
-								Projects
-							</AnchorLink>
+						<div className='flex space-x-4'>
+							<div className='flex flex-col justify-center space-y-2 md:space-y-1 '>
+								<p className='text-sm text-gray-300 md:text-base'>
+									Frontend Development
+								</p>
+
+								<p className='text-sm text-gray-300 md:text-base'>
+									Backend Development
+								</p>
+
+								<p className='text-sm text-gray-300 md:text-base'>
+									UI/UX design
+								</p>
+							</div>
+							<div className='flex flex-col justify-center space-y-4'>
+								<div className='relative flex h-3 w-40 items-center justify-center overflow-hidden bg-gray-100 md:w-72'>
+									<motion.div
+										animate={{ x: 0 }}
+										initial={{ x: -300 }}
+										transition={{ duration: 2, ease: 'easeIn', delay: 1 }}
+										className='absolute inset-0 z-10 h-3 w-full bg-[#00FFFF] text-center text-xs text-gray-900'
+									></motion.div>
+									<div className='z-20 text-center text-xs font-bold text-gray-900'>
+										100%
+									</div>
+								</div>
+								<div className='relative flex h-3 w-40 items-center justify-center overflow-hidden bg-gray-100 md:w-72'>
+									<motion.div
+										animate={{ x: 0 }}
+										initial={{ x: -300 }}
+										transition={{ duration: 2, ease: 'easeIn', delay: 1 }}
+										className='absolute inset-0 z-10 h-3 w-3/5 bg-[#00FFFF] text-center text-xs text-gray-900'
+									></motion.div>
+									<div className='z-20 text-center text-xs font-bold text-gray-900'>
+										60%
+									</div>
+								</div>
+								<div className='relative flex h-3 w-40 items-center justify-center overflow-hidden bg-gray-100 md:w-72'>
+									<motion.div
+										animate={{ x: 0 }}
+										initial={{ x: -300 }}
+										transition={{ duration: 2, ease: 'easeIn', delay: 1 }}
+										className='absolute inset-0 z-10 h-3 w-2/4 bg-[#00FFFF] text-center text-xs text-gray-900'
+									></motion.div>
+									<div className='z-20 text-center text-xs font-bold text-gray-900'>
+										50%
+									</div>
+								</div>
+							</div>
 						</div>
 					</motion.div>
 				</div>
 			</div>
-			<div
-				initial={{ opacity: 0 }}
-				animate={{ opacity: 1 }}
-				transition={{ duration: 1.5, ease: 'easeIn', delay: 0.5 }}
-				className='flex flex-col justify-center space-y-16 lg:space-y-8'
-			>
-				<div className='md flex items-center space-x-8  lg:space-x-10'>
+			<div className='flex flex-col justify-center space-y-12 lg:space-y-8'>
+				<div className='flex  w-full items-center justify-center space-x-4 md:space-x-6 lg:space-x-8'>
+					<AnchorLink href='#contact'>
+						<a className='md:p-o rounded-lg bg-[#1fd8d8] px-3 py-2 text-sm font-bold text-gray-900 hover:bg-[#00FFFF] md:px-6 md:py-3 md:text-base lg:px-8 lg:py-4 lg:text-lg'>
+							Get In Touch
+						</a>
+					</AnchorLink>
+					<AnchorLink
+						href='#projects'
+						className='hover:text-100 rounded-lg bg-gray-100 px-3 py-2 text-sm font-bold text-gray-900 hover:bg-[#00FFFF] hover:text-gray-800 md:px-6 md:py-3 md:text-base lg:px-8 lg:py-4 lg:text-lg'
+					>
+						Projects
+					</AnchorLink>
+				</div>
+				<div className='flex items-center space-x-8 pb-4 lg:space-x-10'>
 					<a
 						href='mailto:valentine11.dev@gmail.com'
 						target='_blank'
@@ -62,7 +108,7 @@ const LandingPage = () => {
 						<BsEnvelope className='text-3xl text-[#00FFFF] hover:text-[#14caca] md:text-4xl' />
 					</a>
 					<a
-						className='relative h-8 w-8 md:h-8 md:w-8'
+						className='relative h-6 w-6 md:h-8 md:w-8'
 						href='https://www.behance.net/valentichinedu'
 						target='_blank'
 						rel='noopener noreferrer'
@@ -109,7 +155,7 @@ const LandingPage = () => {
 					</a>
 				</div>
 				<svg
-					className='h-8 animate-bounce md:h-6'
+					className='h-6 animate-bounce md:h-8'
 					xmlns='http://www.w3.org/2000/svg'
 					viewBox='0 0 24 24'
 				>
@@ -120,8 +166,6 @@ const LandingPage = () => {
 					/>
 				</svg>
 			</div>
-
-			{/* <div className='absolute inset-0 h-screen bg-black b lg:h-[750px]'></div> */}
 		</motion.div>
 	);
 };

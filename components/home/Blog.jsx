@@ -44,7 +44,7 @@ function Blog({ articles }) {
 				initial={{ y: 100, opacity: 0 }}
 				className='flex w-[90%] flex-col items-center justify-center py-8 md:w-4/5 md:py-12 lg:w-4/6 lg:space-y-6 lg:py-14'
 			>
-				<div className='relative mb-4 flex w-full flex-col items-center'>
+				<div className='relative mb-8 flex w-full flex-col items-center'>
 					<h2 className='text-6xl font-bold uppercase text-gray-800 md:text-7xl lg:text-9xl'>
 						Blog
 					</h2>
@@ -52,83 +52,86 @@ function Blog({ articles }) {
 						Technical Writing
 					</h3>
 				</div>
-				<p className=' mb-10 text-center font-medium text-gray-100 md:text-lg lg:w-4/5 lg:px-0 lg:pb-14 lg:text-xl '>
-					I occussionally write about the technologies that I work with. It
-					helps me reinforce, retain and share Knowledge.
+				<p className=' pb-16 text-center font-medium text-gray-100 md:text-lg lg:w-4/5 lg:px-0 lg:text-xl '>
+					I actively contribute to the tech community by producing blog articles
+					on various aspects of web development. Writing these technological
+					blog articles allows me to share my expertise, stay updated on the
+					latest industry trends, and reinforce my knowledge in the field
 				</p>
-				<div className='w-screen pl-4 md:container md:mx-auto '>
-					<Carousel
-						responsiveLayout={[
-							{
-								breakpoint: 767,
-								cols: 1,
-								rows: 1,
-								gap: 20,
-								loop: true,
-							},
+				<div className='flex items-center justify-center'>
+					<div className='w-screen pl-4 md:container md:pl-16'>
+						<Carousel
+							responsiveLayout={[
+								{
+									breakpoint: 767,
+									cols: 1,
+									rows: 1,
+									gap: 20,
+									loop: true,
+								},
 
-							{
-								breakpoint: 768,
-								cols: 2,
-								rows: 1,
-								gap: 4,
-								loop: true,
-							},
-							{},
-						]}
-						cols={3}
-						rows={1}
-						gap={4}
-						showDots={true}
-						dotColorActive={'#ffff'}
-						dotColorInactive={'#0a0a0a'}
-						loop={true}
-					>
-						{articles?.map((article) => (
-							<Carousel.Item id={article._id}>
-								<div className='mb-8 flex h-96 w-80 flex-col overflow-hidden border-4 border-[#00FFFF] bg-black md:w-64 lg:h-[28rem] lg:w-96'>
-									<a
-										className='mb-4'
-										href={`https://valentineokosi.hashnode.dev/${article.slug}`}
-										target='_blank'
-										rel='noopener noreferrer'
-									>
-										<div className='relative h-60 w-auto '>
-											<Image
-												src={article.coverImage}
-												alt='profile picture'
-												layout='fill'
-												className=''
-											/>
-										</div>
-									</a>
-									<div className='flex h-full flex-col justify-between px-4 pb-2 text-xs font-semibold lg:pb-4 lg:text-base'>
-										<div className='space-y-2'>
-											<h2 className='text-center text-gray-100'>
-												{article.title}
-											</h2>
-											<p className='line-clamp-3 text-xs text-gray-300 lg:text-sm'>
-												{article.brief}
-											</p>
-										</div>
-										<div className='flex w-full justify-between '>
-											<p className='text-gray-400 '>
-												{formattedDate(article.dateAdded)}
-											</p>
-											<a
-												href={`https://valentineokosi.hashnode.dev/${article.slug}`}
-												target='_blank'
-												rel='noopener noreferrer'
-												className='text-[#00FFFF] hover:text-cyan-500'
-											>
-												Read More
-											</a>
+								{
+									breakpoint: 768,
+									cols: 2,
+									rows: 1,
+									gap: 2,
+									loop: true,
+								},
+							]}
+							cols={3}
+							rows={1}
+							gap={4}
+							showDots={true}
+							dotColorActive={'#ffff'}
+							dotColorInactive={'#0a0a0a'}
+							loop={true}
+						>
+							{articles?.map((article) => (
+								<Carousel.Item id={article._id}>
+									<div className='mb-8 flex h-96 w-80 flex-col overflow-hidden border-4 border-[#00FFFF] bg-black md:w-64 lg:h-[28rem] lg:w-96'>
+										<a
+											className='mb-4'
+											href={`https://valentineokosi.hashnode.dev/${article.slug}`}
+											target='_blank'
+											rel='noopener noreferrer'
+										>
+											<div className='relative h-60 w-auto '>
+												<Image
+													src={article.coverImage}
+													alt='profile picture'
+													layout='fill'
+													className=''
+												/>
+											</div>
+										</a>
+										<div className='flex h-full flex-col justify-between px-4 pb-2 text-xs font-semibold lg:pb-4 lg:text-base'>
+											<div className='space-y-2'>
+												<h2 className='text-center text-gray-100'>
+													{article.title}
+												</h2>
+												<p className='line-clamp-3 text-center text-xs text-gray-300 lg:text-sm'>
+													{article.brief}
+												</p>
+											</div>
+											<div className='flex w-full justify-between '>
+												<p className='text-gray-400 '>
+													{formattedDate(article.dateAdded)}
+												</p>
+												<a
+													href={`https://valentineokosi.hashnode.dev/${article.slug}`}
+													target='_blank'
+													rel='noopener noreferrer'
+													className='text-[#00FFFF] hover:text-cyan-500'
+												>
+													Read More
+												</a>
+											</div>
 										</div>
 									</div>
-								</div>
-							</Carousel.Item>
-						))}
-					</Carousel>
+								</Carousel.Item>
+							))}
+						</Carousel>
+					</div>
 				</div>
 			</motion.div>
 		</div>
