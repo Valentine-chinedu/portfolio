@@ -30,7 +30,7 @@ const HeroSection = () => {
 				initial={{ opacity: 0, x: -100 }}
 				animate={{ opacity: 1, x: 0 }}
 				transition={{ duration: 1.5, ease: 'easeIn', delay: 0.5 }}
-				className='flex flex-col items-center space-y-8 lg:w-full lg:items-start'
+				className='flex flex-col items-center space-y-4 md:space-y-8 lg:w-full lg:items-start'
 			>
 				<p className='text-center text-sm font-medium text-gray-100 md:text-lg lg:w-[40rem] lg:text-left '>
 					Greetings! I'm a proficient web developer, possessing expertise in
