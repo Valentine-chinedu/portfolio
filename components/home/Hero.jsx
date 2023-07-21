@@ -5,87 +5,94 @@ import { pageVariantsAnim } from '../../animation';
 import { BsEnvelope, BsGithub } from 'react-icons/bs';
 import { ImLinkedin } from 'react-icons/im';
 
-const LandingPage = () => {
+const HeroSection = () => {
 	return (
 		<motion.div
 			initial='initial'
 			animate='in'
 			exit='out'
 			variants={pageVariantsAnim}
-			className='flex h-screen w-screen flex-col items-center justify-center space-y-4 bg-[url("/landing_page_background.jpg")] bg-right md:space-y-16 md:px-12 lg:space-y-0 lg:bg-cover lg:px-0 '
+			className='flex h-screen w-screen flex-col items-center justify-center space-y-16 bg-[url("/landing_page_background.jpg")] bg-right px-8 pt-16 md:space-y-20 md:px-12 lg:space-y-24 lg:bg-cover lg:px-32 lg:pt-20 '
 			id='home'
 		>
-			<div className='  flex w-full flex-col items-center lg:h-[60%] lg:justify-center'>
-				<div className='w-ful flex flex-col items-center justify-end space-y-6 md:space-y-12 lg:w-9/12 lg:flex-row lg:justify-center '>
-					<motion.div
-						initial={{ opacity: 0, x: -100 }}
-						animate={{ opacity: 1, x: 0 }}
-						transition={{ duration: 1.5, ease: 'easeIn', delay: 0.5 }}
-						className='mb-16 flex h-auto w-11/12 flex-col items-center space-y-12 md:space-y-10 lg:mb-0 lg:w-full lg:items-start lg:justify-center lg:px-0'
-					>
-						<h1 className='bg-gradient-to-r from-cyan-200 to-cyan-600 bg-clip-text text-3xl font-bold text-transparent md:text-5xl lg:text-7xl'>
-							Chinedu Valentine Okosi.
-						</h1>
-						<p className='text-center text-sm font-medium text-gray-100 md:text-lg lg:w-[40rem] lg:text-left '>
-							Greetings! I'm a proficient web developer, possessing expertise in
-							crafting exceptional web applications that seamlessly blend
-							cutting-edge performance with an intuitively immersive user
-							experience.
+			<motion.div
+				initial={{ opacity: 0, x: -100 }}
+				animate={{ opacity: 1, x: 0 }}
+				transition={{ duration: 1.5, ease: 'easeIn', delay: 0.5 }}
+				className=' flex flex-col items-center lg:w-full lg:items-start lg:justify-center'
+			>
+				<h1 className='bg-gradient-to-r from-cyan-200 to-cyan-600 bg-clip-text text-4xl font-bold text-transparent md:text-5xl lg:text-7xl'>
+					Chinedu V. Okosi.
+				</h1>
+			</motion.div>
+
+			<motion.div
+				initial={{ opacity: 0, x: -100 }}
+				animate={{ opacity: 1, x: 0 }}
+				transition={{ duration: 1.5, ease: 'easeIn', delay: 0.5 }}
+				className='flex flex-col items-center space-y-8 lg:w-full lg:items-start'
+			>
+				<p className='text-center text-sm font-medium text-gray-100 md:text-lg lg:w-[40rem] lg:text-left '>
+					Greetings! I'm a proficient web developer, possessing expertise in
+					crafting exceptional web applications that seamlessly blend
+					cutting-edge performance with an intuitively immersive user
+					experience.
+				</p>
+				<div className='flex space-x-4'>
+					<div className='flex flex-col justify-center space-y-2 md:space-y-1 '>
+						<p className='text-sm text-gray-300 md:text-base'>
+							Frontend Development
 						</p>
-						<div className='flex space-x-4'>
-							<div className='flex flex-col justify-center space-y-2 md:space-y-1 '>
-								<p className='text-sm text-gray-300 md:text-base'>
-									Frontend Development
-								</p>
 
-								<p className='text-sm text-gray-300 md:text-base'>
-									Backend Development
-								</p>
+						<p className='text-sm text-gray-300 md:text-base'>
+							Backend Development
+						</p>
 
-								<p className='text-sm text-gray-300 md:text-base'>
-									UI/UX design
-								</p>
-							</div>
-							<div className='flex flex-col justify-center space-y-4'>
-								<div className='relative flex h-3 w-40 items-center justify-center overflow-hidden bg-gray-100 md:w-72'>
-									<motion.div
-										animate={{ x: 0 }}
-										initial={{ x: -300 }}
-										transition={{ duration: 2, ease: 'easeIn', delay: 1 }}
-										className='absolute inset-0 z-10 h-3 w-full bg-[#00FFFF] text-center text-xs text-gray-900'
-									></motion.div>
-									<div className='z-20 text-center text-xs font-bold text-gray-900'>
-										100%
-									</div>
-								</div>
-								<div className='relative flex h-3 w-40 items-center justify-center overflow-hidden bg-gray-100 md:w-72'>
-									<motion.div
-										animate={{ x: 0 }}
-										initial={{ x: -300 }}
-										transition={{ duration: 2, ease: 'easeIn', delay: 1 }}
-										className='absolute inset-0 z-10 h-3 w-3/5 bg-[#00FFFF] text-center text-xs text-gray-900'
-									></motion.div>
-									<div className='z-20 text-center text-xs font-bold text-gray-900'>
-										60%
-									</div>
-								</div>
-								<div className='relative flex h-3 w-40 items-center justify-center overflow-hidden bg-gray-100 md:w-72'>
-									<motion.div
-										animate={{ x: 0 }}
-										initial={{ x: -300 }}
-										transition={{ duration: 2, ease: 'easeIn', delay: 1 }}
-										className='absolute inset-0 z-10 h-3 w-2/4 bg-[#00FFFF] text-center text-xs text-gray-900'
-									></motion.div>
-									<div className='z-20 text-center text-xs font-bold text-gray-900'>
-										50%
-									</div>
-								</div>
+						<p className='text-sm text-gray-300 md:text-base'>UI/UX design</p>
+					</div>
+					<div className='flex flex-col justify-center space-y-4'>
+						<div className='relative flex h-3 w-40 items-center justify-center overflow-hidden bg-gray-100 md:w-72'>
+							<motion.div
+								animate={{ x: 0 }}
+								initial={{ x: -300 }}
+								transition={{ duration: 2, ease: 'easeIn', delay: 1 }}
+								className='absolute inset-0 z-10 h-3 w-full bg-[#00FFFF] text-center text-xs text-gray-900'
+							></motion.div>
+							<div className='z-20 text-center text-xs font-bold text-gray-900'>
+								100%
 							</div>
 						</div>
-					</motion.div>
+						<div className='relative flex h-3 w-40 items-center justify-center overflow-hidden bg-gray-100 md:w-72'>
+							<motion.div
+								animate={{ x: 0 }}
+								initial={{ x: -300 }}
+								transition={{ duration: 2, ease: 'easeIn', delay: 1 }}
+								className='absolute inset-0 z-10 h-3 w-3/4 bg-[#00FFFF] text-center text-xs text-gray-900'
+							></motion.div>
+							<div className='z-20 text-center text-xs font-bold text-gray-900'>
+								70%
+							</div>
+						</div>
+						<div className='relative flex h-3 w-40 items-center justify-center overflow-hidden bg-gray-100 md:w-72'>
+							<motion.div
+								animate={{ x: 0 }}
+								initial={{ x: -300 }}
+								transition={{ duration: 2, ease: 'easeIn', delay: 1 }}
+								className='absolute inset-0 z-10 h-3 w-2/4 bg-[#00FFFF] text-center text-xs text-gray-900'
+							></motion.div>
+							<div className='z-20 text-center text-xs font-bold text-gray-900'>
+								50%
+							</div>
+						</div>
+					</div>
 				</div>
-			</div>
-			<div className='flex flex-col justify-center space-y-12 lg:space-y-8'>
+			</motion.div>
+			<motion.div
+				initial={{ opacity: 0, y: 300 }}
+				animate={{ opacity: 1, y: 0 }}
+				transition={{ duration: 1.5, ease: 'easeIn', delay: 0.5 }}
+				className='flex flex-col justify-center space-y-10 lg:space-y-8'
+			>
 				<div className='flex  w-full items-center justify-center space-x-4 md:space-x-6 lg:space-x-8'>
 					<AnchorLink href='#contact'>
 						<a className='md:p-o rounded-lg bg-[#1fd8d8] px-3 py-2 text-sm font-bold text-gray-900 hover:bg-[#00FFFF] md:px-6 md:py-3 md:text-base lg:px-8 lg:py-4 lg:text-lg'>
@@ -99,7 +106,7 @@ const LandingPage = () => {
 						Projects
 					</AnchorLink>
 				</div>
-				<div className='flex items-center space-x-8 pb-4 lg:space-x-10'>
+				<div className='flex items-center space-x-8 pb-4 lg:space-x-10 lg:pb-8'>
 					<a
 						href='mailto:valentine11.dev@gmail.com'
 						target='_blank'
@@ -165,9 +172,9 @@ const LandingPage = () => {
 						fill='rgba(60,231,213,1)'
 					/>
 				</svg>
-			</div>
+			</motion.div>
 		</motion.div>
 	);
 };
 
-export default LandingPage;
+export default HeroSection;

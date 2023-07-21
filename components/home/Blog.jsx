@@ -2,7 +2,7 @@ import { useAnimation, motion } from 'framer-motion';
 import Image from 'next/image';
 import { useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
-import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import Carousel from 'react-grid-carousel';
 
 function Blog({ articles }) {
@@ -100,7 +100,6 @@ function Blog({ articles }) {
 													src={article.coverImage}
 													alt='profile picture'
 													layout='fill'
-													className=''
 												/>
 											</div>
 										</a>

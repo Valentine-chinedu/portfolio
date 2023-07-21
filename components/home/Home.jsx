@@ -6,7 +6,7 @@ import Skills from '../home/Skills';
 import Projects from '../home/Projects';
 import Contact from '../home/Contact';
 
-import LandingPage from './LandingPage';
+import HeroSection from './Hero';
 import Blog from './Blog';
 
 const Home = ({ articles }) => {
@@ -27,7 +27,7 @@ const Home = ({ articles }) => {
 			<main
 				className={`overflow-hidden ${openSideBar ? 'blur-sm filter' : ''}`}
 			>
-				<LandingPage />
+				<HeroSection />
 				<Projects />
 				<Blog articles={articles} />
 				{/* <About /> */}

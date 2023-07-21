@@ -99,7 +99,6 @@ function Skills() {
 							<li>Gimp</li>
 							<li>Google</li>
 							<li>Firebase</li>
-							<li>Moralis</li>
 							<li>Vercel</li>
 						</ul>
 					</div>
