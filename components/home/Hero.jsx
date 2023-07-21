@@ -12,33 +12,25 @@ const HeroSection = () => {
 			animate='in'
 			exit='out'
 			variants={pageVariantsAnim}
-			className='flex h-screen w-screen flex-col items-center justify-center space-y-16 bg-[url("/landing_page_background.jpg")] bg-right px-8 pt-16 md:space-y-20 md:px-12 lg:space-y-24 lg:bg-cover lg:px-32 lg:pt-20 '
+			className='flex h-screen w-screen flex-col items-center justify-center space-y-20 bg-[url("/landing_page_background.jpg")] bg-right px-8 pt-16 md:px-12 lg:space-y-24 lg:bg-cover lg:px-0 lg:pt-20 '
 			id='home'
 		>
-			<motion.div
+			<div
 				initial={{ opacity: 0, x: -100 }}
 				animate={{ opacity: 1, x: 0 }}
 				transition={{ duration: 1.5, ease: 'easeIn', delay: 0.5 }}
-				className=' flex flex-col items-center lg:w-full lg:items-start lg:justify-center'
+				className=' flex flex-col items-center space-y-6 md:space-y-8 lg:w-full lg:items-start lg:justify-center lg:pl-56'
 			>
 				<h1 className='bg-gradient-to-r from-cyan-200 to-cyan-600 bg-clip-text text-4xl font-bold text-transparent md:text-5xl lg:text-7xl'>
 					Chinedu V. Okosi.
 				</h1>
-			</motion.div>
-
-			<motion.div
-				initial={{ opacity: 0, x: -100 }}
-				animate={{ opacity: 1, x: 0 }}
-				transition={{ duration: 1.5, ease: 'easeIn', delay: 0.5 }}
-				className='flex flex-col items-center space-y-4 md:space-y-8 lg:w-full lg:items-start'
-			>
 				<p className='text-center text-sm font-medium text-gray-100 md:text-lg lg:w-[40rem] lg:text-left '>
 					Greetings! I'm a proficient web developer, possessing expertise in
 					crafting exceptional web applications that seamlessly blend
 					cutting-edge performance with an intuitively immersive user
 					experience.
 				</p>
-				<div className='flex space-x-4'>
+				<div className='flex w-full justify-center space-x-4 lg:justify-start'>
 					<div className='flex flex-col justify-center space-y-2 md:space-y-1 '>
 						<p className='text-sm text-gray-300 md:text-base'>
 							Frontend Development
@@ -86,12 +78,13 @@ const HeroSection = () => {
 						</div>
 					</div>
 				</div>
-			</motion.div>
+			</div>
+
 			<motion.div
 				initial={{ opacity: 0, y: 300 }}
 				animate={{ opacity: 1, y: 0 }}
 				transition={{ duration: 1.5, ease: 'easeIn', delay: 0.5 }}
-				className='flex flex-col justify-center space-y-10 lg:space-y-8'
+				className='flex w-full flex-col items-center justify-center space-y-10 lg:space-y-8'
 			>
 				<div className='flex  w-full items-center justify-center space-x-4 md:space-x-6 lg:space-x-8'>
 					<AnchorLink href='#contact'>
