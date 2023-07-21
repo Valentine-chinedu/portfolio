@@ -15,12 +15,7 @@ const HeroSection = () => {
 			className='flex h-screen w-screen flex-col items-center justify-center space-y-20 bg-[url("/landing_page_background.jpg")] bg-right px-8 pt-16 md:px-12 lg:space-y-24 lg:bg-cover lg:px-0 lg:pt-20 '
 			id='home'
 		>
-			<div
-				initial={{ opacity: 0, x: -100 }}
-				animate={{ opacity: 1, x: 0 }}
-				transition={{ duration: 1.5, ease: 'easeIn', delay: 0.5 }}
-				className=' flex flex-col items-center space-y-6 md:space-y-8 lg:w-full lg:items-start lg:justify-center lg:pl-56'
-			>
+			<div className=' flex flex-col items-center space-y-6 md:space-y-8 lg:w-full lg:items-start lg:justify-center lg:pl-56'>
 				<h1 className='bg-gradient-to-r from-cyan-200 to-cyan-600 bg-clip-text text-4xl font-bold text-transparent md:text-5xl lg:text-7xl'>
 					Chinedu V. Okosi.
 				</h1>
@@ -83,7 +78,7 @@ const HeroSection = () => {
 			<motion.div
 				initial={{ opacity: 0, y: 300 }}
 				animate={{ opacity: 1, y: 0 }}
-				transition={{ duration: 1.5, ease: 'easeIn', delay: 0.5 }}
+				transition={{ duration: 2, ease: 'easeIn', delay: 0.5 }}
 				className='flex w-full flex-col items-center justify-center space-y-10 lg:space-y-8'
 			>
 				<div className='flex  w-full items-center justify-center space-x-4 md:space-x-6 lg:space-x-8'>
