@@ -1,7 +1,6 @@
 import React, { useContext } from 'react';
 import GlobalStateContext from '../../contextprovider/Context';
 
-import About from '../home/About';
 import Skills from '../home/Skills';
 import Projects from '../home/Projects';
 import Contact from '../home/Contact';
@@ -30,7 +29,6 @@ const Home = ({ articles }) => {
 				<HeroSection />
 				<Projects />
 				<Blog articles={articles} />
-				{/* <About /> */}
 				<Skills />
 				<Contact />
 			</main>

@@ -7,7 +7,7 @@ import { ImLinkedin } from 'react-icons/im';
 
 const HeroSection = () => {
 	return (
-		<motion.div
+		<motion.section
 			initial='initial'
 			animate='in'
 			exit='out'
@@ -173,7 +173,7 @@ const HeroSection = () => {
 					/>
 				</svg>
 			</motion.div>
-		</motion.div>
+		</motion.section>
 	);
 };
 

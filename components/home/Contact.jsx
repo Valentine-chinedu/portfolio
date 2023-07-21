@@ -46,7 +46,7 @@ function Projects() {
 	}, [inView]);
 
 	return (
-		<div
+		<section
 			ref={ref}
 			className='h-full w-full bg-[url("/two-hands-shaking-with-pen-pen-desk.jpg")] bg-cover bg-center'
 			id='contact'
@@ -128,7 +128,7 @@ function Projects() {
 					</div>
 				</motion.div>
 			</div>
-		</div>
+		</section>
 	);
 }
 

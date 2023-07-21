@@ -21,7 +21,7 @@ function Skills() {
 	}, [inView]);
 
 	return (
-		<motion.div
+		<motion.section
 			className='flex h-full w-full items-center justify-center bg-black  px-4 py-14 md:h-screen md:px-12 md:py-0 lg:px-0'
 			id='skills'
 			ref={ref}
@@ -104,7 +104,7 @@ function Skills() {
 					</div>
 				</div>
 			</motion.div>
-		</motion.div>
+		</motion.section>
 	);
 }
 

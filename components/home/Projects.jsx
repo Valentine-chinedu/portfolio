@@ -23,7 +23,7 @@ function Projects() {
 	}, [inView]);
 
 	return (
-		<div ref={ref} className='bg-black py-16 lg:py-32'>
+		<section ref={ref} className='bg-black py-16 lg:py-32'>
 			<motion.div
 				animate={animation}
 				initial={{ y: 100, opacity: 0 }}
@@ -81,7 +81,7 @@ function Projects() {
 					))}
 				</div>
 			</motion.div>
-		</div>
+		</section>
 	);
 }
 

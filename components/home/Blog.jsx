@@ -34,7 +34,7 @@ function Blog({ articles }) {
 	}, [inView]);
 
 	return (
-		<div
+		<section
 			ref={ref}
 			className='flex h-screen w-full flex-col items-center justify-center bg-[url("/blog_background_4.png")] bg-cover bg-right'
 			id='blog'
@@ -105,12 +105,12 @@ function Blog({ articles }) {
 										</a>
 										<div className='flex h-full flex-col justify-between px-4 pb-2 text-xs font-semibold lg:pb-4 lg:text-base'>
 											<div className='space-y-2'>
-												<h2 className='text-center text-gray-100'>
+												<h3 className='text-center text-gray-100'>
 													{article.title}
-												</h2>
-												<p className='line-clamp-3 text-center text-xs text-gray-300 lg:text-sm'>
+												</h3>
+												<article className='line-clamp-3 text-center text-xs text-gray-300 lg:text-sm'>
 													{article.brief}
-												</p>
+												</article>
 											</div>
 											<div className='flex w-full justify-between '>
 												<p className='text-gray-400 '>
@@ -133,7 +133,7 @@ function Blog({ articles }) {
 					</div>
 				</div>
 			</motion.div>
-		</div>
+		</section>
 	);
 }
 
