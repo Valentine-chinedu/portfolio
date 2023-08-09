@@ -56,7 +56,16 @@ function Blog({ articles }) {
 					I actively contribute to the tech community by producing blog articles
 					on various aspects of web development. Writing these technological
 					blog articles allows me to share my expertise, stay updated on the
-					latest industry trends, and reinforce my knowledge in the field
+					latest industry trends, and reinforce my knowledge in the field. Visit
+					my
+					<a
+						class="... px-1 text-[#00ffff] after:content-['_↗']"
+						href="'https://valentineokosi.hashnode.dev'"
+						target='_blank'
+					>
+						Blog
+					</a>
+					for more articles.
 				</p>
 				<div className='flex items-center justify-center'>
 					<div className='w-screen pl-4 md:container md:pl-16'>

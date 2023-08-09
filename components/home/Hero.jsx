@@ -7,15 +7,16 @@ import { ImLinkedin } from 'react-icons/im';
 
 const HeroSection = () => {
 	return (
-		<motion.section
-			initial='initial'
-			animate='in'
-			exit='out'
-			variants={pageVariantsAnim}
+		<section
 			className='flex h-screen w-screen flex-col items-center justify-center space-y-20 bg-[url("/landing_page_background.jpg")] bg-right px-8 pt-16 md:px-12 lg:space-y-24 lg:bg-cover lg:px-0 lg:pt-20 '
 			id='home'
 		>
-			<div className=' flex flex-col items-center space-y-6 md:space-y-8 lg:w-full lg:items-start lg:justify-center lg:pl-56'>
+			<motion.div
+				initial={{ opacity: 0, x: -100 }}
+				animate={{ opacity: 1, x: 0 }}
+				transition={{ duration: 2, ease: 'easeIn', delay: 0.5 }}
+				className=' flex flex-col items-center space-y-6 md:space-y-8 lg:w-full lg:items-start lg:justify-center lg:pl-56'
+			>
 				<h1 className='bg-gradient-to-r from-cyan-200 to-cyan-600 bg-clip-text text-4xl font-bold text-transparent md:text-5xl lg:text-7xl'>
 					Chinedu V. Okosi.
 				</h1>
@@ -25,56 +26,41 @@ const HeroSection = () => {
 					cutting-edge performance with an intuitively immersive user
 					experience.
 				</p>
-				<div className='flex w-full justify-center space-x-4 lg:justify-start'>
-					<div className='flex flex-col justify-center space-y-2 md:space-y-1 '>
+
+				<div className='flex w-64 flex-col justify-center space-y-4 overflow-hidden lg:justify-start'>
+					<div className=' items-center justify-center '>
 						<p className='text-sm text-gray-300 md:text-base'>
 							Frontend Development
 						</p>
-
+						<motion.div
+							animate={{ x: 0 }}
+							initial={{ x: -300 }}
+							transition={{ duration: 2, ease: 'easeIn', delay: 1 }}
+							className=' z-10 h-1 w-full bg-[#00FFFF] text-center text-xs text-gray-900'
+						></motion.div>
+					</div>
+					<div className='items-center justify-center'>
 						<p className='text-sm text-gray-300 md:text-base'>
 							Backend Development
 						</p>
-
-						<p className='text-sm text-gray-300 md:text-base'>UI/UX design</p>
+						<motion.div
+							animate={{ x: 0 }}
+							initial={{ x: -300 }}
+							transition={{ duration: 2, ease: 'easeIn', delay: 1 }}
+							className=' h-1 w-full bg-[#00FFFF] text-center text-xs text-gray-900'
+						></motion.div>
 					</div>
-					<div className='flex flex-col justify-center space-y-4'>
-						<div className='relative flex h-3 w-40 items-center justify-center overflow-hidden bg-gray-100 md:w-72'>
-							<motion.div
-								animate={{ x: 0 }}
-								initial={{ x: -300 }}
-								transition={{ duration: 2, ease: 'easeIn', delay: 1 }}
-								className='absolute inset-0 z-10 h-3 w-full bg-[#00FFFF] text-center text-xs text-gray-900'
-							></motion.div>
-							<div className='z-20 text-center text-xs font-bold text-gray-900'>
-								100%
-							</div>
-						</div>
-						<div className='relative flex h-3 w-40 items-center justify-center overflow-hidden bg-gray-100 md:w-72'>
-							<motion.div
-								animate={{ x: 0 }}
-								initial={{ x: -300 }}
-								transition={{ duration: 2, ease: 'easeIn', delay: 1 }}
-								className='absolute inset-0 z-10 h-3 w-3/4 bg-[#00FFFF] text-center text-xs text-gray-900'
-							></motion.div>
-							<div className='z-20 text-center text-xs font-bold text-gray-900'>
-								70%
-							</div>
-						</div>
-						<div className='relative flex h-3 w-40 items-center justify-center overflow-hidden bg-gray-100 md:w-72'>
-							<motion.div
-								animate={{ x: 0 }}
-								initial={{ x: -300 }}
-								transition={{ duration: 2, ease: 'easeIn', delay: 1 }}
-								className='absolute inset-0 z-10 h-3 w-2/4 bg-[#00FFFF] text-center text-xs text-gray-900'
-							></motion.div>
-							<div className='z-20 text-center text-xs font-bold text-gray-900'>
-								50%
-							</div>
-						</div>
+					<div className=' items-center justify-center'>
+						<p className='text-sm text-gray-300 md:text-base'>SEO</p>
+						<motion.div
+							animate={{ x: 0 }}
+							initial={{ x: -300 }}
+							transition={{ duration: 2, ease: 'easeIn', delay: 1 }}
+							className='h-1 w-full bg-[#00FFFF] text-center text-xs text-gray-900'
+						></motion.div>
 					</div>
 				</div>
-			</div>
-
+			</motion.div>
 			<motion.div
 				initial={{ opacity: 0, y: 300 }}
 				animate={{ opacity: 1, y: 0 }}
@@ -161,7 +147,7 @@ const HeroSection = () => {
 					/>
 				</svg>
 			</motion.div>
-		</motion.section>
+		</section>
 	);
 };
 

@@ -93,11 +93,10 @@ function Skills() {
 
 						<ul className='space-y-2 text-center text-lg font-medium lg:text-base'>
 							<li>MongoDb</li>
+							<li>Postgresql</li>
 							<li>Figma</li>
 							<li>Github</li>
 							<li>Git</li>
-							<li>Gimp</li>
-							<li>Google</li>
 							<li>Firebase</li>
 							<li>Vercel</li>
 						</ul>
