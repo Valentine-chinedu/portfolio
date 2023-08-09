@@ -31,7 +31,7 @@ function Skills() {
 				initial={{ y: 100, opacity: 0 }}
 				className='flex h-full flex-col items-center justify-center'
 			>
-				<div className='relative mb-4 flex w-full justify-center md:mb-16'>
+				<div className='relative mb-8 flex w-full justify-center'>
 					<h2 className='text-6xl font-bold text-gray-800 md:text-7xl lg:text-9xl lg:font-bold'>
 						SKILLS
 					</h2>
@@ -39,7 +39,7 @@ function Skills() {
 						Technologies I work with
 					</h2>
 				</div>
-				<div className=' mb-8 flex flex-col items-center space-y-4 font-medium text-gray-300 md:mb-14 md:space-y-8 md:text-lg lg:text-xl'>
+				<div className=' mb-8 flex flex-col items-center space-y-4 text-sm font-medium text-gray-300 md:mb-16 md:space-y-8 lg:text-base'>
 					<p className='mb-6 text-center lg:mb-0'>
 						I'm fully committed to the philosophy of life-long learning, and I
 						believe if given the opportunity, I can learn anything.
@@ -53,7 +53,7 @@ function Skills() {
 								programming
 							</h2>
 						</div>
-						<ul className='space-y-2 text-center text-lg font-medium lg:text-base'>
+						<ul className='space-y-2 text-center text-sm font-medium lg:text-base'>
 							<li>Javascript</li>
 							<li>Nodejs</li>
 							<li>Typescript</li>
@@ -70,7 +70,7 @@ function Skills() {
 							</h2>
 						</div>
 
-						<ul className='space-y-2 text-center text-lg font-medium lg:text-base'>
+						<ul className='space-y-2 text-center text-sm font-medium lg:text-base'>
 							<li>Reactjs/Nextjs</li>
 							<li>Expressjs</li>
 							<li>Redux/Toolkit</li>
@@ -91,7 +91,7 @@ function Skills() {
 							</h2>
 						</div>
 
-						<ul className='space-y-2 text-center text-lg font-medium lg:text-base'>
+						<ul className='space-y-2 text-center text-sm font-medium lg:text-base'>
 							<li>MongoDb</li>
 							<li>Postgresql</li>
 							<li>Figma</li>

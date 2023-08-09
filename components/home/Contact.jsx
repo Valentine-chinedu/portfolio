@@ -58,7 +58,7 @@ function Projects() {
 					className='flex h-full w-4/5 flex-col items-center justify-center'
 				>
 					<div className='flex h-full flex-col items-center justify-center'>
-						<div className='relative mb-10 flex w-full flex-col items-center lg:mb-20'>
+						<div className='relative mb-8 flex w-full flex-col items-center'>
 							<h2 className='text-5xl font-bold uppercase text-gray-800 md:text-6xl lg:text-9xl'>
 								contact
 							</h2>
@@ -67,7 +67,7 @@ function Projects() {
 							</h3>
 						</div>
 
-						<p className='mb-16 text-center font-medium text-gray-300 md:text-lg lg:px-60 lg:text-xl'>
+						<p className='mb-8 text-center text-sm font-medium text-gray-300 lg:mb-16 lg:px-60 lg:text-base'>
 							Do you think that I would make a great addition to your team? I
 							think so too. I am a young and passionate learner, ready to
 							succeed in the tech world. I have a background that has built up

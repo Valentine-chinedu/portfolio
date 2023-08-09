@@ -30,7 +30,7 @@ function Projects() {
 				className='flex h-full w-full flex-col items-center '
 				id='projects'
 			>
-				<div className='relative mb-16 flex w-full justify-center lg:mb-20'>
+				<div className='relative mb-16 flex w-full justify-center'>
 					<h2 className=' text-6xl font-bold uppercase text-gray-700 md:text-7xl lg:text-8xl'>
 						portfolio
 					</h2>

@@ -42,7 +42,7 @@ function Blog({ articles }) {
 			<motion.div
 				animate={animation}
 				initial={{ y: 100, opacity: 0 }}
-				className='flex w-[90%] flex-col items-center justify-center py-8 md:w-4/5 md:py-12 lg:w-4/6 lg:space-y-6 lg:py-14'
+				className='flex w-[90%] flex-col items-center justify-center py-8 md:w-4/5 md:py-12 lg:w-4/6 lg:py-14'
 			>
 				<div className='relative mb-8 flex w-full flex-col items-center'>
 					<h2 className='text-6xl font-bold uppercase text-gray-800 md:text-7xl lg:text-9xl'>
@@ -52,7 +52,7 @@ function Blog({ articles }) {
 						Technical Writing
 					</h3>
 				</div>
-				<p className=' pb-16 text-center font-medium text-gray-100 md:text-lg lg:w-4/5 lg:px-0 lg:text-xl '>
+				<p className=' pb-8 text-center text-sm font-medium text-gray-100 lg:w-4/5 lg:px-0 lg:pb-16 lg:text-base '>
 					I actively contribute to the tech community by producing blog articles
 					on various aspects of web development. Writing these technological
 					blog articles allows me to share my expertise, stay updated on the
