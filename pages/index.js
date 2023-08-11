@@ -14,7 +14,7 @@ export default function index({ articles }) {
 	return (
 		<div className='z-20 h-full w-full overflow-x-hidden font-sans text-gray-400'>
 			<Head>
-				<title>Valentine Okosi.</title>
+				<title>Chinedu Okosi.</title>
 				<link rel='icon' href='/favicon-32x32.png' />
 				<meta property='og:image' content='/portfolio-photo.png' />
 				<meta property='og:image:type' content='image/png' />

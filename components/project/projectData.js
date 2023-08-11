@@ -102,7 +102,7 @@ export const projects2 = [
 		tools: ['Reactjs', 'CSS', 'Solidity', 'Ethers.js', 'Hardhat', 'Alchemy'],
 		github: 'https://github.com/Valentine-chinedu/web3-crypto-dapp',
 		url: 'https://web3-crypto-dapp.vercel.app/',
-		image: '/crypto _app_pics.png',
+		image: '/crypto_app_pics.png',
 	},
 	{
 		id: 7,
