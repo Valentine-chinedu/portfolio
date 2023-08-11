@@ -82,7 +82,7 @@ const HeroSection = () => {
 				</div>
 				<div className='flex items-center space-x-8 pb-4 lg:space-x-10 lg:pb-8'>
 					<a
-						href='mailto:valentine11.dev@gmail.com'
+						href='mailto:chineduokosi.dev@gmail.com'
 						target='_blank'
 						rel='noopener noreferrer'
 					>
@@ -103,7 +103,7 @@ const HeroSection = () => {
 						</svg>
 					</a>
 					<a
-						href='https://linkedin.com/in/valentine-okosi'
+						href='https://linkedin.com/in/chineduokosi'
 						target='_blank'
 						rel='noopener noreferrer'
 					>
@@ -118,7 +118,7 @@ const HeroSection = () => {
 					</a>
 					<a
 						className='relative h-8 w-8 md:h-10 md:w-10'
-						href='https://valentineokosi.hashnode.dev'
+						href='https://chineduokosi.hashnode.dev'
 						target='_blank'
 						rel='noopener noreferrer'
 					>

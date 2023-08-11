@@ -1,5 +1,3 @@
-import Image from 'next/image';
-
 import { useContext } from 'react';
 import { BsEnvelope, BsGithub } from 'react-icons/bs';
 
@@ -17,7 +15,7 @@ const Footer = () => {
 		>
 			<div className='md flex items-center space-x-8  lg:space-x-10'>
 				<a
-					href='mailto:valentine11.dev@gmail.com'
+					href='mailto:chineduokosi.dev@gmail.com'
 					target='_blank'
 					rel='noopener noreferrer'
 				>
@@ -38,7 +36,7 @@ const Footer = () => {
 					</svg>
 				</a>
 				<a
-					href='https://linkedin.com/in/valentine-okosi'
+					href='https://linkedin.com/in/chineduokosi'
 					target='_blank'
 					rel='noopener noreferrer'
 				>
@@ -53,7 +51,7 @@ const Footer = () => {
 				</a>
 				<a
 					className='relative h-8 w-8 md:h-10 md:w-10'
-					href='https://valentineokosi.hashnode.dev'
+					href='https://chineduokosi.hashnode.dev'
 					target='_blank'
 					rel='noopener noreferrer'
 				>
@@ -71,7 +69,7 @@ const Footer = () => {
 				</a>
 			</div>
 			<h3 className='text-sm font-medium text-gray-300 md:text-base'>
-				&copy; 2023 Chinedu Valentine Okosi. All rights reserved
+				&copy; 2023 Chinedu V Okosi. All rights reserved
 			</h3>
 		</div>
 	);
