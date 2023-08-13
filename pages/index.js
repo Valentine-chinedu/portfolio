@@ -36,14 +36,13 @@ export async function getStaticProps() {
 	const { data } = await client.query({
 		query: gql`
 			query GetPosts {
-				user(username: "okosival") {
+				user(username: "chineduokosi") {
 					publication {
 						posts(page: 0) {
 							_id
 							coverImage
 							slug
 							title
-							brief
 							brief
 							dateAdded
 						}
