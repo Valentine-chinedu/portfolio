@@ -1,6 +1,4 @@
-
-
-![portfolio-photo](https://user-images.githubusercontent.com/65251662/185623430-2ee07885-fa46-455e-837c-b0bb1de18319.png)
+![portfolio-photo](https://github.com/Valentine-chinedu/portfolio/assets/65251662/e937e71a-ce4b-4af6-a547-4d73aac4477f)
 
 
 ## General info
@@ -15,7 +13,7 @@ This is my personal Portfolio website built to showcase projects and other relev
 
 ## View Website
 
-[valentineokosi.com](https://www.valentineokosi.com/) 
+[Portfolio](https://www.nedu.dev/) 
 
 
 
