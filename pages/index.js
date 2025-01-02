@@ -29,22 +29,32 @@ export default function index({ articles }) {
 
 export async function getStaticProps() {
 	const client = new ApolloClient({
-		uri: 'https://api.hashnode.com',
+		uri: 'https://gql.hashnode.com',
 		cache: new InMemoryCache(),
+		headers: {
+			'Content-Type': 'application/json',
+			Authorization: process.env.HASHNODE_ACCESS_TOKEN,
+		},
 	});
 
 	const { data } = await client.query({
 		query: gql`
-			query GetPosts {
-				user(username: "chineduokosi") {
-					publication {
-						posts(page: 0) {
-							_id
-							coverImage
-							slug
-							title
-							brief
-							dateAdded
+			query Publication {
+				publication(host: "chineduokosi.hashnode.dev/") {
+					isTeam
+					title
+					posts(first: 9) {
+						edges {
+							node {
+								title
+								brief
+								url
+								id
+								publishedAt
+								coverImage {
+									url
+								}
+							}
 						}
 					}
 				}
@@ -52,9 +62,18 @@ export async function getStaticProps() {
 		`,
 	});
 
+	console.log(data);
+
 	return {
 		props: {
-			articles: data.user.publication.posts,
+			articles: data.publication.posts.edges.map((edge) => ({
+				_id: edge.node?.id,
+				title: edge.node?.title,
+				brief: edge.node?.brief,
+				url: edge.node?.url,
+				dateAdded: edge.node?.publishedAt,
+				coverImage: edge.node.coverImage?.url,
+			})),
 		},
 	};
 }

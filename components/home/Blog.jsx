@@ -100,7 +100,7 @@ function Blog({ articles }) {
 									<div className='mb-8 flex h-96 w-80 flex-col overflow-hidden border-4 border-[#00FFFF] bg-black md:w-64 lg:h-[28rem] lg:w-96'>
 										<a
 											className='mb-4'
-											href={`https://chineduokosi.hashnode.dev/${article.slug}`}
+											href={article.url}
 											target='_blank'
 											rel='noopener noreferrer'
 										>
@@ -126,7 +126,7 @@ function Blog({ articles }) {
 													{formattedDate(article.dateAdded)}
 												</p>
 												<a
-													href={`https://chineduokosi.hashnode.dev/${article.slug}`}
+													href={article.url}
 													target='_blank'
 													rel='noopener noreferrer'
 													className='text-[#00FFFF] hover:text-cyan-500'
