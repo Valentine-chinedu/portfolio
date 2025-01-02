@@ -55,21 +55,13 @@ export const projects = [
 	},
 	{
 		id: 5,
-		title: 'NFTMarket',
+		title: 'Gemini chatbot',
 		description:
-			'Web3 Application built on the ethereum blockchain for minting and selling of ERC-721 NFTs.',
-		tools: [
-			'Nextjs',
-			'Solidity',
-			'TailwindCSS',
-			'Hardhat',
-			'IPFS',
-			'Alchemy',
-			'Ethers.js',
-		],
-		github: 'https://github.com/Valentine-chinedu/NFT-Market',
-		url: 'https://nft-market-rust-five.vercel.app',
-		image: '/nft_marketplace.png',
+			'A modern AI chatbot application built with Next.js and Gemini API, featuring authentication and real-time chat capabilities.',
+		tools: ['Next.js', 'Tailwind CSS', 'shadcn/ui', 'Sonner toast'],
+		github: 'https://github.com/Valentine-chinedu/ai-chatbot',
+		url: 'https://ai-chatbot-nine-gules.vercel.app/',
+		image: '/ai-pic.png',
 	},
 ];
 
