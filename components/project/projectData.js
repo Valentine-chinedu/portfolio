@@ -1,6 +1,16 @@
 export const projects = [
 	{
 		id: 1,
+		title: 'Gemini chatbot',
+		description:
+			'A modern AI chatbot application built with Next.js and Gemini API, featuring authentication and real-time chat capabilities.',
+		tools: ['Next.js', 'Tailwind CSS', 'shadcn/ui', 'Sonner toast'],
+		github: 'https://github.com/Valentine-chinedu/ai-chatbot',
+		url: 'https://ai-chatbot-nine-gules.vercel.app/',
+		image: '/ai-pic.png',
+	},
+	{
+		id: 2,
 		title: 'Onstore',
 		description:
 			'fullstack E-commerce Store web application where clothing accessories like Suit Trousers, Joggers Pants, shirts, shoes and watches can be purchased. ',
@@ -18,7 +28,7 @@ export const projects = [
 		image: '/onstore_new.png',
 	},
 	{
-		id: 2,
+		id: 3,
 		title: 'Friends',
 		description: 'Fully featured fullstack Social Media web application. ',
 		tools: ['Reactjs', 'Expressjs', 'CSS', 'Mongodb', 'Redux', 'Socket.io'],
@@ -28,7 +38,7 @@ export const projects = [
 	},
 
 	{
-		id: 3,
+		id: 4,
 		title: 'EstateGuru',
 		description:
 			'An Estate Agency Website for Buying and renting your favourite Realestate in Dubia. ',
@@ -38,7 +48,7 @@ export const projects = [
 		image: '/estate-guru-new.png',
 	},
 	{
-		id: 4,
+		id: 5,
 		title: 'spaceX-Info',
 		description:
 			'Get information on spaceX rocket launches. View past and upcoming launches including starlinks. ',
@@ -52,16 +62,6 @@ export const projects = [
 		github: 'https://github.com/Valentine-chinedu/spaceX-launches',
 		url: 'http://space-x-launches-iota.vercel.app/',
 		image: '/spacex-img.jpg',
-	},
-	{
-		id: 5,
-		title: 'Gemini chatbot',
-		description:
-			'A modern AI chatbot application built with Next.js and Gemini API, featuring authentication and real-time chat capabilities.',
-		tools: ['Next.js', 'Tailwind CSS', 'shadcn/ui', 'Sonner toast'],
-		github: 'https://github.com/Valentine-chinedu/ai-chatbot',
-		url: 'https://ai-chatbot-nine-gules.vercel.app/',
-		image: '/ai-pic.png',
 	},
 ];
 
