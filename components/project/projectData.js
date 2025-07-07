@@ -96,14 +96,4 @@ export const projects2 = [
 		url: 'https://web3-crypto-dapp.vercel.app/',
 		image: '/crypto_app_pics.png',
 	},
-	{
-		id: 7,
-		title: 'Portfolio',
-		description:
-			'Personal Portfolio website designed to showcase my personal projects, skills and contact information.',
-		tools: ['Nextjs', 'TailwindCSS', 'Framer-Motion'],
-		github: 'https://github.com/Valentine-chinedu/Portfolio',
-		url: 'https://www.valentinechinedu.dev',
-		image: '/portfolio-photo.png',
-	},
 ];
