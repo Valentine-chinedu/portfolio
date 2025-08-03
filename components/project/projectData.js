@@ -24,7 +24,7 @@ export const projects = [
 			'Stripe',
 		],
 		github: 'https://github.com/Valentine-chinedu/onstore_project',
-		url: 'https://onstore-frontend.vercel.app/',
+		url: 'https://onstore-frontend-g2ec9k3h0-valentinechinedus-projects.vercel.app/',
 		image: '/onstore_new.png',
 	},
 	{
