@@ -36,7 +36,7 @@ function Blog({ articles }) {
 	return (
 		<section
 			ref={ref}
-			className='flex h-screen w-full flex-col items-center justify-center bg-[url("/blog_background_4.png")] bg-cover bg-right'
+			className='flex h-screen w-full flex-col items-center justify-center border-t border-[#00FFFF] bg-[url("/blog_background_4.png")] bg-cover bg-right'
 			id='blog'
 		>
 			<motion.div
@@ -59,9 +59,10 @@ function Blog({ articles }) {
 					latest industry trends, and reinforce my knowledge in the field. Visit
 					my
 					<a
-						class="... px-1 text-[#00ffff] after:content-['_↗']"
-						href="'https://chineduokosi.hashnode.dev'"
+						class="px-1 text-[#00ffff] after:content-['_↗']"
+						href='https://chineduokosi.hashnode.dev'
 						target='_blank'
+						rel='noopener noreferrer'
 					>
 						Blog
 					</a>
@@ -97,7 +98,7 @@ function Blog({ articles }) {
 						>
 							{articles?.map((article) => (
 								<Carousel.Item id={article._id}>
-									<div className='mb-8 flex h-96 w-80 flex-col overflow-hidden border-4 border-[#00FFFF] bg-black md:w-64 lg:h-[28rem] lg:w-96'>
+									<div className='mb-8 flex h-96 w-80 flex-col overflow-hidden border-4 border-[#00FFFF] bg-black md:w-64 lg:ml-12 lg:h-[28rem] lg:w-96'>
 										<a
 											className='mb-4'
 											href={article.url}
