@@ -38,7 +38,7 @@ function Projects() {
 					<h2 className=' text-6xl font-bold uppercase text-gray-700 md:text-7xl lg:text-8xl'>
 						portfolio
 					</h2>
-					<h3 className='absolute bottom-3 text-lg font-semibold text-[#00FFFF] md:text-2xl lg:bottom-6 lg:text-3xl lg:font-bold'>
+					<h3 className='absolute bottom-3 text-2xl font-bold text-[#00FFFF] md:text-3xl lg:bottom-6 lg:text-4xl'>
 						Projects
 					</h3>
 				</div>
