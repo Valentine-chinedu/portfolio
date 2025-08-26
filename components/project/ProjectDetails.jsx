@@ -27,7 +27,7 @@ const ProjectDetails = ({ title, description, tools, github, url, image }) => {
 			ref={ref}
 			className='relative mb-4 flex h-full w-full flex-col lg:px-4'
 		>
-			<div className=' flex h-full w-full flex-col items-center justify-center space-y-8 lg:flex-row lg:space-y-0 lg:space-x-36'>
+			<div className=' flex h-full w-full flex-col items-center justify-center space-y-8 lg:flex-row lg:space-x-36 lg:space-y-0'>
 				<motion.div
 					initial={{ x: 100, opacity: 0 }}
 					animate={animation}
@@ -54,7 +54,7 @@ const ProjectDetails = ({ title, description, tools, github, url, image }) => {
 						<h2 className='text-lg font-bold text-[#00FFFF] md:text-3xl lg:w-96'>
 							{title}
 						</h2>
-						<p className='bg-gradient-to-br from-cyan-900 to-cyan-600 p-2 text-sm font-semibold tracking-wide text-stone-50 shadow-lg shadow-gray-500 md:w-[26rem] md:p-4 md:text-lg lg:w-96 lg:rounded'>
+						<p className='rounded bg-gradient-to-br from-cyan-900 to-cyan-600 p-2 text-sm font-semibold tracking-wide text-stone-50 shadow-lg shadow-gray-500 md:w-[26rem] md:p-4 md:text-lg lg:w-96 lg:rounded'>
 							{description}
 						</p>
 
