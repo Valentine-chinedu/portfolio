@@ -7,14 +7,14 @@ const NavBar = ({ openSideBar, setOpenSideBar }) => {
 	return (
 		<>
 			<nav
-				className={` fixed inset-y-0 right-0 flex flex-col items-center justify-center space-y-16 overflow-x-hidden bg-black text-lg font-bold text-gray-50/80 md:space-y-20 md:text-xl lg:relative lg:h-10 lg:w-[35rem] lg:flex-row lg:space-x-4 lg:space-y-0 lg:bg-opacity-0 lg:text-sm ${
+				className={` fixed inset-y-0 right-0 flex flex-col items-center justify-center space-y-16 overflow-x-hidden bg-black text-lg font-bold text-gray-50 md:space-y-20 md:text-xl lg:relative lg:h-10 lg:w-[35rem] lg:flex-row lg:space-x-4 lg:space-y-0 lg:bg-opacity-0 lg:text-sm ${
 					openSideBar ? 'w-64 md:w-96' : 'w-0'
 				} z-50 h-full text-sm transition-[width] duration-500`}
 			>
 				<AnchorLink
 					href='#home'
 					offset={() => 100}
-					className='z-50 cursor-pointer px-2 tracking-wider after:absolute after:bg-[#00FFFF] after:duration-1000 hover:text-gray-100 hover:after:transition-[width] lg:after:bottom-1 lg:after:block lg:after:h-0.5 lg:after:w-0 lg:hover:after:w-12'
+					className='z-50 cursor-pointer px-2 tracking-wider after:absolute after:bg-[#00FFFF] after:duration-1000 hover:after:transition-[width] lg:after:bottom-1 lg:after:block lg:after:h-0.5 lg:after:w-0 lg:hover:after:w-12'
 					onClick={() => {
 						setOpenSideBar(false);
 					}}
@@ -23,7 +23,7 @@ const NavBar = ({ openSideBar, setOpenSideBar }) => {
 				</AnchorLink>
 				<AnchorLink
 					href='#projects'
-					className='z-50 cursor-pointer px-2 tracking-wider after:absolute after:bg-[#00FFFF] after:duration-1000 hover:text-gray-100 hover:after:transition-[width] lg:after:bottom-1 lg:after:block lg:after:h-0.5 lg:after:w-0 lg:hover:after:w-[4.2rem]'
+					className='z-50 cursor-pointer px-2 tracking-wider after:absolute after:bg-[#00FFFF] after:duration-1000 hover:after:transition-[width] lg:after:bottom-1 lg:after:block lg:after:h-0.5 lg:after:w-0 lg:hover:after:w-[4.2rem]'
 					onClick={() => {
 						setOpenSideBar(false);
 					}}
@@ -32,7 +32,7 @@ const NavBar = ({ openSideBar, setOpenSideBar }) => {
 				</AnchorLink>
 				<AnchorLink
 					href='#blog'
-					className=' z-50 cursor-pointer px-2 tracking-wider after:absolute after:bg-[#00FFFF] after:duration-1000 hover:text-gray-100 hover:after:transition-[width] lg:after:bottom-1 lg:after:block lg:after:h-0.5 lg:after:w-0 lg:hover:after:w-10'
+					className=' z-50 cursor-pointer px-2 tracking-wider after:absolute after:bg-[#00FFFF] after:duration-1000 hover:after:transition-[width] lg:after:bottom-1 lg:after:block lg:after:h-0.5 lg:after:w-0 lg:hover:after:w-10'
 					onClick={() => {
 						setOpenSideBar(false);
 					}}
@@ -41,7 +41,7 @@ const NavBar = ({ openSideBar, setOpenSideBar }) => {
 				</AnchorLink>
 				<AnchorLink
 					href='#skills'
-					className='cursor-pointer px-2 tracking-wider after:absolute after:bg-[#00FFFF] after:duration-1000 hover:text-gray-100 hover:after:transition-[width] lg:after:bottom-1 lg:after:block lg:after:h-0.5 lg:after:w-0 lg:hover:after:w-11'
+					className='cursor-pointer px-2 tracking-wider after:absolute after:bg-[#00FFFF] after:duration-1000 hover:after:transition-[width] lg:after:bottom-1 lg:after:block lg:after:h-0.5 lg:after:w-0 lg:hover:after:w-11'
 					onClick={() => {
 						setOpenSideBar(false);
 					}}
@@ -50,7 +50,7 @@ const NavBar = ({ openSideBar, setOpenSideBar }) => {
 				</AnchorLink>
 				<AnchorLink
 					href='#contact'
-					className='cursor-pointer px-2 tracking-wider after:absolute after:bg-[#00FFFF] after:duration-1000 hover:text-gray-100 hover:after:transition-[width] lg:after:bottom-1 lg:after:block lg:after:h-0.5 lg:after:w-0 lg:hover:after:w-16'
+					className='cursor-pointer px-2 tracking-wider after:absolute after:bg-[#00FFFF] after:duration-1000 hover:after:transition-[width] lg:after:bottom-1 lg:after:block lg:after:h-0.5 lg:after:w-0 lg:hover:after:w-16'
 					onClick={() => {
 						setOpenSideBar(false);
 					}}
