@@ -43,7 +43,7 @@ export async function getStaticProps() {
 				publication(host: "chineduokosi.hashnode.dev/") {
 					isTeam
 					title
-					posts(first: 9) {
+					posts(first: 10) {
 						edges {
 							node {
 								title
