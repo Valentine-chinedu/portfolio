@@ -3,6 +3,7 @@ import { projects, projects2 } from '../project/projectData';
 import ProjectDetails from '../project/ProjectDetails';
 import { useInView } from 'react-intersection-observer';
 import { motion, useAnimation } from 'framer-motion';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 function Projects() {
 	const [showMore, setShowMore] = useState(false);
@@ -23,7 +24,10 @@ function Projects() {
 	}, [inView]);
 
 	return (
-		<section ref={ref} className='bg-black py-16 lg:py-32'>
+		<section
+			ref={ref}
+			className='border-t border-[#00FFFF] bg-black py-16 lg:py-16'
+		>
 			<motion.div
 				animate={animation}
 				initial={{ y: 100, opacity: 0 }}
@@ -35,7 +39,7 @@ function Projects() {
 						portfolio
 					</h2>
 					<h3 className='absolute bottom-3 text-lg font-semibold text-[#00FFFF] md:text-2xl lg:bottom-6 lg:text-3xl lg:font-bold'>
-						Featured Projects
+						Projects
 					</h3>
 				</div>
 				<div>
@@ -54,14 +58,16 @@ function Projects() {
 							/>
 						</div>
 					))}
-					<div className='flex justify-center'>
-						<button
-							onClick={() => setShowMore((prev) => !prev)}
-							className='mb-16 rounded-md border-4 border-[#00FFFF] px-3 py-1 text-sm font-bold tracking-wider text-gray-100 hover:bg-[#00FFFF] hover:text-gray-700 md:mb-24 md:px-6 md:py-2 md:text-base lg:mb-32'
-						>
-							{showMore ? 'Show Less' : 'Show More'}
-						</button>
-					</div>
+					{!showMore && (
+						<div className='flex justify-center'>
+							<button
+								onClick={() => setShowMore((prev) => !prev)}
+								className='mb-16 rounded-md border-4 border-[#00FFFF] px-3 py-1 text-sm font-bold tracking-wider text-gray-100 hover:bg-[#00FFFF] hover:text-gray-700 md:mb-24 md:px-6 md:py-2 md:text-base lg:mb-32'
+							>
+								Show more
+							</button>
+						</div>
+					)}
 					{projects2.map((project) => (
 						<div
 							key={project.id}
@@ -79,6 +85,17 @@ function Projects() {
 							/>
 						</div>
 					))}
+					{showMore && (
+						<div className='flex justify-center'>
+							<AnchorLink
+								href='#projects'
+								onClick={() => setShowMore(false)}
+								className='rounded-md border-4 border-[#00FFFF] px-3 py-1 text-sm font-bold tracking-wider text-gray-100 hover:bg-[#00FFFF] hover:text-gray-700 md:mb-24 md:px-6 md:py-2 md:text-base'
+							>
+								Show less
+							</AnchorLink>
+						</div>
+					)}
 				</div>
 			</motion.div>
 		</section>
