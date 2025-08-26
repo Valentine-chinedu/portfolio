@@ -22,7 +22,7 @@ function Skills() {
 
 	return (
 		<motion.section
-			className='flex h-full w-full items-center justify-center bg-black  px-4 py-14 md:h-screen md:px-12 md:py-0 lg:px-0'
+			className='flex h-full w-full items-center justify-center border-t border-[#00FFFF] bg-black  px-4 py-14 md:h-screen md:px-12 md:py-0 lg:px-0'
 			id='skills'
 			ref={ref}
 		>
@@ -50,55 +50,67 @@ function Skills() {
 						<div className='flex flex-col items-center space-y-1 border-b-2 border-[#00ffff] px-4 pb-1'>
 							<FaCode className='text-5xl' />
 							<h2 className='font-bold uppercase text-[#00ffff] lg:text-xl'>
-								programming
+								Frontend
 							</h2>
 						</div>
 						<ul className='space-y-2 text-center text-sm font-medium lg:text-base'>
 							<li>Javascript</li>
-							<li>Nodejs</li>
-							<li>Typescript</li>
-							<li>Solidity</li>
 							<li>Html</li>
 							<li>CSS</li>
+							<li>Typescript</li>
+							<li>Reactjs/Nextjs</li>
+							<li>Graphql</li>
+							<li>Redux/Toolkit</li>
+							<li>React-Query</li>
+							<li>Framer-motion</li>
+							<li>Tailwindcss</li>
+							<li>SASS</li>
+							<li>Styled Component</li>
 						</ul>
 					</div>
 					<div className='flex flex-col items-center space-y-4 text-gray-100'>
 						<div className='flex flex-col items-center space-y-1 border-b-2 border-[#00ffff] px-4 pb-1'>
 							<IoCodeWorkingSharp className='text-5xl' />
 							<h2 className='font-bold uppercase text-[#00ffff] lg:text-xl'>
-								Frameworks
+								Backend/Database
 							</h2>
 						</div>
 
 						<ul className='space-y-2 text-center text-sm font-medium lg:text-base'>
-							<li>Reactjs/Nextjs</li>
+							<li>Nodejs</li>
 							<li>Expressjs</li>
-							<li>Redux/Toolkit</li>
-							<li>React-Query</li>
-							<li>Ethers.js</li>
-							<li>Tailwindcss</li>
-							<li>SASS</li>
-							<li>Bootstrap</li>
-							<li>Styled Component</li>
-							<li>Cypress</li>
+							<li>MongoDb</li>
+							<li>Postgresql</li>
+							<li>MySQL</li>
+							<li>Prisma</li>
+							<li>TypeORM</li>
+							<li>REST API</li>
+							<li>Graphql API</li>
+							<li>Apollo Server</li>
+							<li>Supabase</li>
+							<li>Firebase</li>
 						</ul>
 					</div>
 					<div className='flex flex-col items-center space-y-4 text-gray-100'>
 						<div className='flex flex-col items-center space-y-1 border-b-2 border-[#00ffff] px-4 pb-1 md:space-y-4'>
 							<FaTools className='text-4xl' />
 							<h2 className='font-bold uppercase text-[#00ffff] lg:text-xl'>
-								DataBase/Platforms
+								Testing/Platforms
 							</h2>
 						</div>
 
 						<ul className='space-y-2 text-center text-sm font-medium lg:text-base'>
-							<li>MongoDb</li>
-							<li>Postgresql</li>
-							<li>Figma</li>
+							<li>PostMan</li>
+							<li>Jest</li>
+							<li>React Testing Library</li>
+							<li>Playwright</li>
+							<li>Cypress</li>
 							<li>Github</li>
-							<li>Git</li>
-							<li>Firebase</li>
+							<li>Netlify</li>
+							<li>Heroku</li>
 							<li>Vercel</li>
+							<li>Docker</li>
+							<li>Figma</li>
 						</ul>
 					</div>
 				</div>
