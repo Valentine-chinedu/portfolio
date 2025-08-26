@@ -21,10 +21,10 @@ const HeroSection = () => {
 					Chinedu V. Okosi.
 				</h1>
 				<p className='text-center text-sm font-medium text-gray-100 md:text-lg lg:w-[40rem] lg:text-left '>
-					Greetings! I'm a proficient web developer, possessing expertise in
-					crafting exceptional web applications that seamlessly blend
-					cutting-edge performance with an intuitively immersive user
-					experience.
+					Greetings! I'm a Fullstack Software Developer with 2.5 years of
+					professional experience, specializing in frontend development. I hold
+					a strong foundation in Computer Science and focus on crafting fast,
+					scalable, and user-friendly web interfaces using modern technologies.
 				</p>
 
 				<div className='flex w-64 flex-col justify-center space-y-4 overflow-hidden lg:justify-start'>
@@ -88,7 +88,7 @@ const HeroSection = () => {
 					>
 						<BsEnvelope className='text-3xl text-[#00FFFF] hover:text-[#14caca] md:text-4xl' />
 					</a>
-					<a
+					{/* <a
 						className='relative h-6 w-6 md:h-8 md:w-8'
 						href='https://www.behance.net/valentichinedu'
 						target='_blank'
@@ -99,9 +99,10 @@ const HeroSection = () => {
 							xmlns='http://www.w3.org/2000/svg'
 							viewBox='0 0 24 24'
 						>
+							<title>Beha</title>
 							<path d='M8.228 15.01h-2.228v-2.01h2.261c1.878 0 2.003 2.01-.033 2.01zm6.758-2.677h3.018c-.117-1.715-2.73-1.977-3.018 0zm-6.804-3.333h-2.182v2h2.389c1.673 0 1.937-2-.207-2zm15.818-4v14c0 2.761-2.238 5-5 5h-14c-2.762 0-5-2.239-5-5v-14c0-2.761 2.238-5 5-5h14c2.762 0 5 2.239 5 5zm-10 3h5v-1h-5v1zm-3.552 3.618c1.907-.974 1.837-4.55-1.813-4.604h-4.635v9.978h4.311c4.522 0 4.445-4.534 2.137-5.374zm9.487.602c-.274-1.763-1.528-2.95-3.583-2.95-2.094 0-3.352 1.34-3.352 3.947 0 2.631 1.367 3.783 3.416 3.783s3.106-1.135 3.4-2h-2.111c-.736.855-2.893.521-2.767-1.353h5.06c.01-.634-.012-1.089-.063-1.427z' />
 						</svg>
-					</a>
+					</a> */}
 					<a
 						href='https://linkedin.com/in/chineduokosi'
 						target='_blank'
