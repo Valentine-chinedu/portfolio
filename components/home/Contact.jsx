@@ -48,7 +48,7 @@ function Projects() {
 	return (
 		<section
 			ref={ref}
-			className='h-full w-full bg-[url("/two-hands-shaking-with-pen-pen-desk.jpg")] bg-cover bg-center'
+			className='h-full w-full border-y border-[#00FFFF] bg-[url("/two-hands-shaking-with-pen-pen-desk.jpg")] bg-cover bg-center'
 			id='contact'
 		>
 			<div className='flex h-full w-full flex-col items-center justify-center bg-black bg-opacity-50 py-14 lg:py-20'>
