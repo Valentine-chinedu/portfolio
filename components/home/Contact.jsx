@@ -73,7 +73,7 @@ function Projects() {
 							succeed in the tech world. I have a background that has built up
 							my collabrative and communication skills. I'm dedicated to
 							learning the ins and outs of your tech stack to keep up with high
-							standard your users are used to.
+							standard your customers are used to.
 						</p>
 
 						<form
