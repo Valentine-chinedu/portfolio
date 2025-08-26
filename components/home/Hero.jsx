@@ -82,7 +82,7 @@ const HeroSection = () => {
 				</div>
 				<div className='flex items-center space-x-8 pb-4 lg:space-x-10 lg:pb-8'>
 					<a
-						href='mailto:chineduokosi.dev@gmail.com'
+						href='mailto:valentine11.dev@gmail.com'
 						target='_blank'
 						rel='noopener noreferrer'
 					>

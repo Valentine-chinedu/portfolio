@@ -15,7 +15,7 @@ const Footer = () => {
 		>
 			<div className='md flex items-center space-x-8  lg:space-x-10'>
 				<a
-					href='mailto:chineduokosi.dev@gmail.com'
+					href='mailto:valentine11.dev@gmail.com'
 					target='_blank'
 					rel='noopener noreferrer'
 				>
