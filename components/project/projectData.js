@@ -3,7 +3,7 @@ export const projects = [
 		id: 1,
 		title: 'Gemini chatbot',
 		description:
-			'A modern AI chatbot application built with Next.js and Gemini API, featuring authentication and real-time chat capabilities.',
+			'A modern AI chatbot application built with Next.js and Gemini API, featuring user authentication and real-time chat capabilities.',
 		tools: ['Next.js', 'Tailwind CSS', 'shadcn/ui', 'Sonner toast'],
 		github: 'https://github.com/Valentine-chinedu/ai-chatbot',
 		url: 'https://ai-chatbot-nine-gules.vercel.app/',
