@@ -28,7 +28,7 @@ const Home = ({ articles }) => {
 			>
 				<HeroSection />
 				<Projects />
-				{/* <Blog articles={articles} /> */}
+				<Blog articles={articles} />
 				<Skills />
 				<Contact />
 			</main>
