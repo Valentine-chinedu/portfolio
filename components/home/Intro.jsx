@@ -50,13 +50,6 @@ function Intro() {
 					stroke='#00FFFF'
 					stroke-width='20'
 				/>
-				{/* <rect
-					x='16'
-					y='16.1886'
-					width='300.653'
-					height='242.462'
-					fill='#0a0014'
-				/> */}
 				<g className='mix-blend-hard-light'>
 					<motion.path
 						initial={{ opacity: 0 }}
@@ -71,48 +64,6 @@ function Intro() {
 					/>
 				</g>
 			</motion.svg>
-
-			{/* {show && (
-				<motion.div
-					variants={sentence}
-					initial='hidden'
-					animate='visible'
-					className='flex w-full flex-col items-center justify-center font-serif uppercase '
-				>
-					<div className='text-gray-300'>
-						{line1.split('').map((char, index) => (
-							<motion.span
-								key={char + '-' + index}
-								variants={letter}
-								className='text-lg md:text-xl lg:text-2xl'
-							>
-								{char}
-							</motion.span>
-						))}
-						<br />
-						{line2.split('').map((char, index) => (
-							<motion.span
-								key={char + '-' + index}
-								variants={letter}
-								className='relative left-14 w-screen text-lg md:left-[4rem] md:text-xl lg:left-20 lg:text-2xl '
-							>
-								{char}
-							</motion.span>
-						))}
-
-						<br />
-						{line3.split('').map((char, index) => (
-							<motion.span
-								key={char + '-' + index}
-								variants={letter}
-								className='relative left-4 text-lg md:text-xl lg:text-2xl'
-							>
-								{char}
-							</motion.span>
-						))}
-					</div>
-				</motion.div>
-			)} */}
 		</motion.div>
 	);
 }
