@@ -1,14 +1,14 @@
 import React from "react";
 
-import { render, screen, cleanup } from "@testing-library/react";
-import LandingPage from "../components/LandingPage";
+import { render, screen } from "@testing-library/react";
+import HeroSection from "../components/home/Hero";
 
-afterEach(cleanup);
-
-describe("LandPage", () => {
+describe("Landing page", () => {
 	it("should render the heading", () => {
-		render(<LandingPage />);
+		render(<HeroSection />);
 
-		const heading = screen.getByText;
+		expect(
+			screen.getByRole("heading", { name: "Chinedu V. Okosi.", level: 1 })
+		).toBeInTheDocument();
 	});
 });
