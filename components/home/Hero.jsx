@@ -66,10 +66,11 @@ const HeroSection = () => {
 				className='flex w-full flex-col items-center justify-center space-y-10 lg:space-y-8'
 			>
 				<div className='flex  w-full items-center justify-center space-x-4 md:space-x-6 lg:space-x-8'>
-					<AnchorLink href='#contact'>
-						<a className='md:p-o rounded-lg bg-[#1fd8d8] px-3 py-2 text-sm font-bold text-gray-900 hover:bg-[#00FFFF] md:px-6 md:py-3 md:text-base lg:px-8 lg:py-4 lg:text-lg'>
-							Get In Touch
-						</a>
+					<AnchorLink
+						href='#contact'
+						className='md:p-o rounded-lg bg-[#1fd8d8] px-3 py-2 text-sm font-bold text-gray-900 hover:bg-[#00FFFF] md:px-6 md:py-3 md:text-base lg:px-8 lg:py-4 lg:text-lg'
+					>
+						Get In Touch
 					</AnchorLink>
 					<AnchorLink
 						href='#projects'
@@ -112,9 +113,9 @@ const HeroSection = () => {
 							viewBox='0 0 256 256'
 							version='1.1'
 							xmlns='http://www.w3.org/2000/svg'
-							xmlnsxlink='http://www.w3.org/1999/xlink'
+							xmlnsXlink='http://www.w3.org/1999/xlink'
 						>
-							<g fill-rule='evenodd'>
+							<g fillRule='evenodd'>
 								<path d='M17.5913461,85.5328619 C-5.86378203,108.98799 -5.86378203,147.01185 17.5913461,170.464766 L85.5337714,238.409404 C108.9889,261.862319 147.01276,261.862319 170.465675,238.409404 L238.410313,170.464766 C261.863229,147.009638 261.863229,108.985777 238.410313,85.5328619 L170.465675,17.5904365 C147.010547,-5.86247884 108.986687,-5.86247884 85.5337714,17.5904365 L17.5913461,85.5328619 Z M157.724673,157.725976 C174.143262,141.307386 174.143262,114.690241 157.724673,98.2738645 C141.308296,81.8552748 114.691151,81.8552748 98.274774,98.2738645 C81.8561843,114.692454 81.8561843,141.307386 98.274774,157.725976 C114.693364,174.142353 141.308296,174.142353 157.726886,157.725976 L157.724673,157.725976 Z'></path>
 							</g>
 						</svg>
