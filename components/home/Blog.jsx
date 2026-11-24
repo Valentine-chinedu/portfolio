@@ -1,5 +1,5 @@
 import { useAnimation, motion } from 'framer-motion';
-import Image from 'next/image';
+import Image from 'next/legacy/image';
 import { useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
@@ -18,8 +18,6 @@ function Blog({ articles }) {
 		});
 		return formatted;
 	}
-
-	console.log(articles);
 
 	useEffect(() => {
 		if (inView) {
@@ -59,7 +57,7 @@ function Blog({ articles }) {
 					latest industry trends, and reinforce my knowledge in the field. Visit
 					my
 					<a
-						class="px-1 text-[#00ffff] after:content-['_↗']"
+						className="px-1 text-[#00ffff] after:content-['_↗']"
 						href='https://chineduokosi.hashnode.dev'
 						target='_blank'
 						rel='noopener noreferrer'
@@ -97,7 +95,7 @@ function Blog({ articles }) {
 							loop={true}
 						>
 							{articles?.map((article) => (
-								<Carousel.Item id={article._id}>
+								<Carousel.Item key={article._id}>
 									<div className='mb-8 flex h-96 w-80 flex-col overflow-hidden border-4 border-[#00FFFF] bg-black md:w-64 lg:ml-12 lg:h-[28rem] lg:w-96'>
 										<a
 											className='mb-4'
