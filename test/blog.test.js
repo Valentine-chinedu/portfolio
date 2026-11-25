@@ -20,3 +20,11 @@ it('renders article content and links through the carousel with React 18', () =>
 		'href', 'https://example.com/node-26'
 	);
 });
+
+it('keeps a direct blog link when the article feed is unavailable', () => {
+  render(<Blog articles={[]} />);
+  expect(screen.getByRole('link', { name: 'Blog' })).toHaveAttribute(
+    'href', 'https://chineduokosi.hashnode.dev'
+  );
+  expect(screen.getByText('Read my latest articles using the Blog link above.')).toBeInTheDocument();
+});

@@ -23,8 +23,11 @@ npm run dev
 ```
 
 Run `npm test -- --runInBand` for tests and `npm run build` for a production
-build. The build needs access to the Hashnode API and a `HASHNODE_ACCESS_TOKEN`
-in `.env.local`. Configure deployment environments to use Node.js 26.x too.
+build. Set `HASHNODE_ACCESS_TOKEN` in `.env.local` and in Vercel to fetch blog
+articles (the account also needs Hashnode API access). If the API is unavailable,
+the site builds with a direct blog link instead of article cards. Requests time
+out after 10 seconds, and Next.js revalidates the page after 5 minutes on a
+subsequent request. Configure deployment environments to use Node.js 26.x too.
 
 Next.js 15 and React 18 replace Next.js 12, whose bundled JWT dependency uses
 the removed Node.js `SlowBuffer` API. Images use `next/legacy/image` to preserve

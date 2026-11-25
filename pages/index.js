@@ -6,7 +6,7 @@ import Intro from '../components/home/Intro';
 
 import GlobalStateContext from '../contextprovider/Context';
 
-import { ApolloClient, InMemoryCache, gql } from '@apollo/client';
+import { getArticles } from '../utilities/getArticles';
 
 export default function index({ articles }) {
 	const { isLoaded } = useContext(GlobalStateContext);
@@ -28,52 +28,8 @@ export default function index({ articles }) {
 }
 
 export async function getStaticProps() {
-	const client = new ApolloClient({
-		uri: 'https://gql.hashnode.com',
-		cache: new InMemoryCache(),
-		headers: {
-			'Content-Type': 'application/json',
-			Authorization: process.env.HASHNODE_ACCESS_TOKEN,
-		},
-	});
-
-	const { data } = await client.query({
-		query: gql`
-			query Publication {
-				publication(host: "chineduokosi.hashnode.dev/") {
-					isTeam
-					title
-					posts(first: 12) {
-						edges {
-							node {
-								title
-								brief
-								url
-								id
-								publishedAt
-								coverImage {
-									url
-								}
-							}
-						}
-					}
-				}
-			}
-		`,
-	});
-
-	console.log(data);
-
 	return {
-		props: {
-			articles: data.publication.posts.edges.map((edge) => ({
-				_id: edge.node?.id,
-				title: edge.node?.title,
-				brief: edge.node?.brief,
-				url: edge.node?.url,
-				dateAdded: edge.node?.publishedAt,
-				coverImage: edge.node.coverImage?.url,
-			})),
-		},
+		props: { articles: await getArticles() },
+		revalidate: 300,
 	};
 }

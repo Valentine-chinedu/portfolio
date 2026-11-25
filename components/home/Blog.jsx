@@ -66,6 +66,7 @@ function Blog({ articles }) {
 					</a>
 					for more articles.
 				</p>
+				{articles?.length > 0 ? (
 				<div className='flex items-center justify-center'>
 					<div className='w-screen pl-4 md:container md:pl-16'>
 						<Carousel
@@ -105,7 +106,7 @@ function Blog({ articles }) {
 										>
 											<div className='relative h-60 w-auto '>
 												<Image
-													src={article.coverImage}
+													src={article.coverImage || '/portfolio-photo.png'}
 													alt='profile picture'
 													layout='fill'
 												/>
@@ -140,6 +141,9 @@ function Blog({ articles }) {
 						</Carousel>
 					</div>
 				</div>
+				) : (
+					<p className='text-center text-gray-300'>Read my latest articles using the Blog link above.</p>
+				)}
 			</motion.div>
 		</section>
 	);
